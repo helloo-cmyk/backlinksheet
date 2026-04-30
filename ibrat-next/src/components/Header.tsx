@@ -27,7 +27,7 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-6xl justify-between items-center px-4 sm:px-6 py-4 sm:py-5">
         <Link href="/" className="flex items-center flex-shrink-0 gap-2" style={{ textDecoration: "none" }}>
-          <Image src="/logo.png" alt="ibrat logo" width={40} height={40} priority style={{ height: "40px", width: "auto" }} />
+          <Image src="/logo.png" alt="Ibrat Generator — Free Brat Generator" width={40} height={40} priority style={{ height: "40px", width: "auto" }} />
         </Link>
 
         {/* Desktop nav: inline on md and above */}

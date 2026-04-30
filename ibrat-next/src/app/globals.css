@@ -658,7 +658,7 @@ button {
   background: var(--hp-surface);
 }
 
-.hp-color-label h4 {
+.hp-color-label h3 {
   font-size: 14px;
   font-weight: 600;
   color: var(--hp-ink);

@@ -13,47 +13,47 @@ const faqSchema = {
       name: "Is this brat generator free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Completely free with no download limits. Create unlimited images up to 3000 px.",
+        text: "Yes. This free brat generator has no limits, no hidden fees, and no signup. Create and download as many images as you want at up to 3000 px.",
       },
     },
     {
       "@type": "Question",
-      name: "Does it have watermarks?",
+      name: "Does it add a watermark?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. Every export is clean and watermark-free.",
+        text: "No. Every PNG you export is completely clean. No watermark, no branding, no fine print.",
       },
     },
     {
       "@type": "Question",
-      name: "Can I use it on mobile?",
+      name: "What file format does it export?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. The editor works on phones and tablets with full touch support on iOS and Android.",
+        text: "PNG. You pick the resolution (1024, 1500, 2048, or 3000 px). No compression, no quality loss.",
       },
     },
     {
       "@type": "Question",
-      name: "What file format does it download?",
+      name: "Does it work on mobile?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "PNG at your chosen resolution. No compression, no quality loss.",
+        text: "Yes. The editor runs in your mobile browser with full touch support. Works on iPhone, Android, iPad, and tablets.",
       },
     },
     {
       "@type": "Question",
-      name: "Can I make a profile picture?",
+      name: "Can I use it as a profile picture?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Set the aspect ratio to 1:1, type your name, choose colors and font, then download. Works on TikTok, Instagram, Discord, and X.",
+        text: "Yes. Set the aspect ratio to 1:1, type your text, pick a color, and download. Works as a pfp on TikTok, Instagram, Discord, X, and WhatsApp.",
       },
     },
     {
       "@type": "Question",
-      name: "Can I use it commercially?",
+      name: "Can I use the images commercially?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Every image you create is yours to use however you want, including commercial projects.",
+        text: "Yes. Every image you create belongs to you. Use it for merch, social media, videos, print, or any commercial project.",
       },
     },
   ],
@@ -62,29 +62,23 @@ const faqSchema = {
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  name: "How to Use the Free Brat Generator",
+  name: "How to Use the Brat Generator — Step by Step",
   step: [
-    { "@type": "HowToStep", name: "Enter your text", text: "Type your phrase, caption, or name. The canvas updates as you type." },
-    { "@type": "HowToStep", name: "Customize the style", text: "Pick a font, set text and background colors, and adjust size and spacing." },
-    { "@type": "HowToStep", name: "Add stickers", text: "Place emojis on the canvas. Drag, resize, and rotate to fit your layout." },
-    { "@type": "HowToStep", name: "Download your image", text: "Click Download PNG and choose your resolution. No watermark, no signup, no limits." },
+    { "@type": "HowToStep", name: "Type your text", text: "Open the tool and type any word or phrase. The canvas updates live as you type." },
+    { "@type": "HowToStep", name: "Pick your colors", text: "Use the hex color pickers to set your background and text color. Try the classic brat green or go custom." },
+    { "@type": "HowToStep", name: "Adjust the layout", text: "Change the font size, letter spacing, and aspect ratio. Add stickers or emojis if you want." },
+    { "@type": "HowToStep", name: "Download your image", text: "Tap Download PNG and choose your resolution. The file saves instantly — no signup, no watermark." },
   ],
 };
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Free Brat Generator", item: "https://ibratgenerator.com/" },
-  ],
-};
+
 
 export const metadata = {
   title: {
-    absolute: "Brat Generator — Free Online Brat Text, Memes & Image Maker"
+    absolute: "Brat Generator — Free Brat Image & Text Maker [2026]"
   },
   description:
-    "Free brat generator — create brat text, memes, stickers & images online. No signup. No watermark. Works on mobile. Download PNG instantly.",
+    "Recreate the Charli XCX album aesthetic with this free brat generator. Design custom text images and pfps for TikTok. Download your clean PNG.",
   alternates: {
     canonical: "https://ibratgenerator.com/",
   },
@@ -101,16 +95,13 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+
 
       {/* ── HERO ── */}
       <section className="hp-hero">
         <h1 className="hp-hero-heading">Brat Generator</h1>
         <p className="hp-hero-sub">
-          Create bold brat-style visuals, memes, and album covers with this free brat generator. Type your brat text, pick colors and fonts, then download your image. No signup, no watermark.
+          Create brat-style images, memes, and profile pictures with this free brat image generator online. Type your text, pick colors, add stickers, and download a high-res PNG. No signup. No watermark. Inspired by the Charli XCX brat aesthetic.
         </p>
       </section>
 
@@ -130,70 +121,69 @@ export default function Home() {
         <div className="hp-two-col">
           <div>
             <span className="hp-eyebrow">About</span>
-            <p className="hp-display-heading">What Is a Brat Generator?</p>
+            <h2 className="hp-display-heading">What Is a Brat Generator?</h2>
           </div>
           <div>
             <p className="hp-body-text">
-              This tool turns your words into brat style text on a solid-color background: clean brat font, bold contrast, and minimal layout inspired by the{" "}
-              <a href="https://en.wikipedia.org/wiki/Brat_(album)" target="_blank" rel="nofollow noopener" className="hp-link">Charli XCX brat</a>{" "}
-              aesthetic. Type a phrase, adjust spacing, choose your colors, and get a PNG download in seconds. For text-focused work, try the{" "}
-              <Link href="/brat-text-generator/" className="hp-link">brat text generator</Link>, or use the{" "}
-              <Link href="/brat-maker/" className="hp-link">brat maker</Link> for stickers and layered edits.
+              A brat image generator turns any word or phrase into bold, minimal text on a solid-color background. The style comes from{" "}
+              <a href="https://en.wikipedia.org/wiki/Brat_(album)" target="_blank" rel="nofollow noopener" className="hp-link">Charli XCX&apos;s brat album</a>
+              {" "}— stretched lowercase type, saturated neon colors, and zero clutter.
+            </p>
+            <p className="hp-body-text mt-4">
+              People use it to make memes, profile pictures, stickers, and social posts. It runs in your browser. No app to install, no account to create.
+            </p>
+            <p className="hp-body-text mt-4">
+              For sticker and layered image edits, try the{" "}
+              <Link href="/brat-maker/" className="hp-link">brat maker</Link>.
             </p>
           </div>
         </div>
-        <p className="hp-body-text mt-8 max-w-3xl">
-          Looking for font controls? <Link href="/brat-font-generator/" className="hp-link">Try the Brat Font Generator</Link> →
-        </p>
       </div>
 
       {/* ── FEATURES ── */}
       <div className="hp-page-section hp-page-section-bordered">
         <span className="hp-eyebrow">Capabilities</span>
-        <h2 className="hp-display-heading">Brat Generator Features That Matter</h2>
-        <p className="hp-body-text">
-          Skip complex editors. These controls do what brat-style design actually needs.
-        </p>
+        <h2 className="hp-display-heading">Brat Image Generator Features</h2>
         <div className="hp-features-grid">
           <div className="hp-feature-card">
             <div className="hp-feature-icon">⚡</div>
-            <h3>Real-time editing</h3>
-            <p>Every change renders instantly on the canvas.</p>
+            <h3>Live preview</h3>
+            <p>Every keystroke updates the canvas instantly. No lag, no refresh button.</p>
           </div>
           <div className="hp-feature-card">
             <div className="hp-feature-icon">🎨</div>
-            <h3>Custom colors</h3>
-            <p>Full hex picker for text and background.</p>
+            <h3>Full color control</h3>
+            <p>Pick any hex color for text and background. Go classic neon green or make it your own.</p>
           </div>
           <div className="hp-feature-card">
             <div className="hp-feature-icon">📐</div>
-            <h3>Multiple aspect ratios</h3>
-            <p>1:1 for profiles, 4:5 for feeds, 9:16 for stories, 16:9 for banners.</p>
+            <h3>Aspect ratio presets</h3>
+            <p>1:1 for pfps, 4:5 for Instagram, 9:16 for stories, 16:9 for banners.</p>
           </div>
           <div className="hp-feature-card">
-            <div className="hp-feature-icon">🖼️</div>
+            <div className="hp-feature-icon">😎</div>
             <h3>Stickers and emojis</h3>
-            <p>Drag, resize, and rotate them on the canvas.</p>
+            <p>Drop emojis onto the canvas. Drag, resize, and rotate them freely.</p>
           </div>
           <div className="hp-feature-card">
             <div className="hp-feature-icon">🔤</div>
-            <h3>Font control</h3>
-            <p>Adjust size, weight, spacing, and alignment.</p>
+            <h3>Typography controls</h3>
+            <p>Adjust font size, weight, letter spacing, and text alignment.</p>
           </div>
           <div className="hp-feature-card">
             <div className="hp-feature-icon">📱</div>
-            <h3>Mobile-optimized</h3>
-            <p>Works on phones, tablets, and desktops.</p>
+            <h3>Works on mobile</h3>
+            <p>Full touch support on iPhone, Android, and tablets. No app needed.</p>
           </div>
           <div className="hp-feature-card">
             <div className="hp-feature-icon">🔓</div>
-            <h3>No account needed</h3>
-            <p>Open the page and start creating.</p>
+            <h3>No signup required</h3>
+            <p>Open the page and start creating. No email, no password, no paywall.</p>
           </div>
           <div className="hp-feature-card">
             <div className="hp-feature-icon">💾</div>
-            <h3>High-res export</h3>
-            <p>PNG up to 3000 px, no watermark.</p>
+            <h3>High-res PNG export</h3>
+            <p>Download up to 3000 px. No watermark, no compression.</p>
           </div>
         </div>
       </div>
@@ -201,52 +191,93 @@ export default function Home() {
       {/* ── HOW TO USE ── */}
       <div className="hp-page-section hp-page-section-bordered">
         <span className="hp-eyebrow">Getting started</span>
-        <h2 className="hp-display-heading">How to Use a Brat Generator (Step-by-Step)</h2>
+        <h2 className="hp-display-heading">How to Use the Brat Creator — Step by Step</h2>
         <div className="hp-steps-grid">
           <div className="hp-step-card">
             <span className="hp-step-num">1</span>
-            <h3>Enter your text</h3>
-            <p>Type your phrase, caption, or name. The canvas updates as you type.</p>
+            <h3>Type your text</h3>
+            <p>Open the tool above and type any word or phrase. The canvas renders it live in the brat style.</p>
           </div>
           <div className="hp-step-card">
             <span className="hp-step-num">2</span>
-            <h3>Customize the style</h3>
-            <p>Pick a font, set text and background colors, and adjust size and spacing.</p>
+            <h3>Pick your colors</h3>
+            <p>Use the color pickers to set your background and text. Try neon green for the classic look, or enter any hex code.</p>
           </div>
           <div className="hp-step-card">
             <span className="hp-step-num">3</span>
-            <h3>Add stickers</h3>
-            <p>Place emojis on the canvas. Drag, resize, and rotate to fit your layout.</p>
+            <h3>Adjust the layout</h3>
+            <p>Change font size, letter spacing, and aspect ratio. Drop stickers or emojis if you want extra detail.</p>
           </div>
           <div className="hp-step-card">
             <span className="hp-step-num">4</span>
             <h3>Download your image</h3>
-            <p>Click Download PNG and choose your resolution. No watermark, no signup, no limits.</p>
+            <p>Tap Download PNG and pick a resolution. The file saves to your device instantly — no account needed.</p>
+          </div>
+        </div>
+        <p className="hp-body-text mt-8 max-w-3xl">
+          Use it as a brat word generator — type any single word and download in seconds. The{" "}
+          <Link href="/brat-name-generator/" className="hp-link">brat name generator</Link> lets you add names directly onto custom backgrounds.
+        </p>
+      </div>
+
+      {/* ── WHO IS THIS FOR ── */}
+      <div className="hp-page-section hp-page-section-bordered">
+        <span className="hp-eyebrow">Use cases</span>
+        <h2 className="hp-display-heading">Who Is This For?</h2>
+        <div className="hp-two-col">
+          <div>
+            <p className="hp-body-text">
+              <strong>Social media users.</strong> Make brat-style profile pictures, story covers, and posts for TikTok, Instagram, X, and Discord. This brat pfp maker gives you a 1:1 export sized perfectly for avatars.
+            </p>
+            <p className="hp-body-text mt-4">
+              <strong>Meme creators.</strong> Turn any phrase into a bold brat photo with one click. The brat simulator feel — type, see it, save it — makes reaction images fast.
+            </p>
+            <p className="hp-body-text mt-4">
+              <strong>Charli XCX fans.</strong> Recreate the album cover look or remix it with your own words. Share your brat generator sticker edits on group chats and WhatsApp.
+            </p>
+          </div>
+          <div>
+            <p className="hp-body-text">
+              <strong>Content creators.</strong> Use it as a brat photo maker — build thumbnails, overlays, and text graphics for YouTube, Reels, and TikTok without opening heavyweight design software.
+            </p>
+            <p className="hp-body-text mt-4">
+              <strong>Designers and marketers.</strong> Quickly mock up brat-inspired visuals for campaigns, merch ideas, or client pitches. Export brat generator png files at print-ready resolution. Use the{" "}
+              <Link href="/brat-album-cover-generator/" className="hp-link">brat album cover generator</Link> for full album art layouts.
+            </p>
           </div>
         </div>
       </div>
 
-      {/* ── CREATE BRAT DESIGNS / TOOLS ── */}
+      {/* ── WHY USE INSTEAD OF CANVA ── */}
+      <div className="hp-page-section hp-page-section-bordered">
+        <span className="hp-eyebrow">Comparison</span>
+        <h2 className="hp-display-heading">Why Use a Brat Creator Instead of Canva or Photoshop?</h2>
+        <div className="max-w-3xl">
+          <p className="hp-body-text">
+            Canva and Photoshop are general-purpose tools. You open a blank canvas, search for fonts, resize layers, and scroll through menus before you get one output. That makes sense for a brand deck. It does not make sense for a brat meme.
+          </p>
+          <p className="hp-body-text mt-4">
+            This brat creator does one thing well. Type text, pick a color, download. Every control on the page exists for brat-style design. Nothing else gets in the way. Adding brat-style text on photo takes seconds here — no workflow, no extra tools.
+          </p>
+          <p className="hp-body-text mt-4">
+            No subscription. No project files. No 14-day trial. Open the page, make your image, and move on. For dedicated typography work, the{" "}
+            <Link href="/brat-font-generator/" className="hp-link">brat font generator</Link> gives you deeper font controls.
+          </p>
+        </div>
+      </div>
+
+      {/* ── MORE TOOLS ── */}
       <div className="hp-page-section hp-page-section-bordered">
         <span className="hp-eyebrow">More tools</span>
-        <h2 className="hp-display-heading">Create Memes, Covers, and Brat-Style Visuals in One Tool</h2>
+        <h2 className="hp-display-heading">Explore All Brat Tools</h2>
         <p className="hp-body-text">
-          This tool is a brat meme generator, brat image maker, and{" "}
-          <Link href="/brat-album-cover-generator/" className="hp-link">album cover generator</Link> in one.
-          Pick from different{" "}
-          <Link href="/brat-font-generator/" className="hp-link">brat font styles</Link>, add stickers, and build complete brat album cover layouts without switching tools.
-          Every export is a high-res PNG ready for social feeds, stories, and profiles.
+          Each tool targets a specific workflow. Pick the one that fits what you need.
         </p>
         <div className="hp-tools-grid">
           <Link href="/brat-text-generator/" className="hp-tool-link">
             Brat Text Generator <span className="hp-tool-arrow">→</span>
           </Link>
-          <Link href="/brat-maker/" className="hp-tool-link">
-            Brat Maker <span className="hp-tool-arrow">→</span>
-          </Link>
-          <Link href="/brat-font-generator/" className="hp-tool-link">
-            Brat Font Generator <span className="hp-tool-arrow">→</span>
-          </Link>
+
           <Link href="/brat-name-generator/" className="hp-tool-link">
             Brat Name Generator <span className="hp-tool-arrow">→</span>
           </Link>
@@ -259,7 +290,7 @@ export default function Home() {
       {/* ── COLOR STYLES ── */}
       <div className="hp-page-section hp-page-section-bordered">
         <span className="hp-eyebrow">Variants</span>
-        <h2 className="hp-display-heading">Brat Generator Color Styles (Green, Pink, Black &amp; More)</h2>
+        <h2 className="hp-display-heading">Color Styles (Green, Pink, Black & More)</h2>
         <p className="hp-body-text">
           Switch between signature brat palettes for posts, profiles, or campaigns.
         </p>
@@ -269,8 +300,8 @@ export default function Home() {
               <span style={{ color: "rgba(0,0,0,0.45)" }}>brat</span>
             </div>
             <div className="hp-color-label">
-              <h4>Green Brat Tool</h4>
-              <p>Classic neon green text from brat summer.</p>
+              <h3>Green Brat Tool</h3>
+              <p>Classic neon green from brat summer.</p>
             </div>
           </Link>
           <Link href="/brat-generator-pink/" className="hp-color-card">
@@ -278,7 +309,7 @@ export default function Home() {
               <span style={{ color: "rgba(255,255,255,0.6)" }}>brat</span>
             </div>
             <div className="hp-color-label">
-              <h4>Pink Brat Creator</h4>
+              <h3>Pink Brat Creator</h3>
               <p>Softer, warmer brat aesthetic tone.</p>
             </div>
           </Link>
@@ -287,7 +318,7 @@ export default function Home() {
               <span style={{ color: "rgba(255,255,255,0.4)" }}>brat</span>
             </div>
             <div className="hp-color-label">
-              <h4>Black Generator Tool</h4>
+              <h3>Black Generator Tool</h3>
               <p>High contrast dark style.</p>
             </div>
           </Link>
@@ -296,26 +327,9 @@ export default function Home() {
               <span style={{ color: "rgba(0,0,0,0.45)" }}>brat</span>
             </div>
             <div className="hp-color-label">
-              <h4>White Brat Look</h4>
+              <h3>White Brat Look</h3>
               <p>Clean minimalist approach.</p>
             </div>
-          </Link>
-        </div>
-      </div>
-
-      {/* ── LEARN / BLOG ── */}
-      <div className="hp-page-section hp-page-section-bordered">
-        <span className="hp-eyebrow">Resources</span>
-        <h2 className="hp-display-heading">Why Use a Brat Generator Instead of Design Apps</h2>
-        <p className="hp-body-text">
-          Design apps like Canva require you to find a template, adjust layers, resize text boxes, and fight menus before you get one output. This tool skips that. Type text, pick a color, download. The controls are built for brat visuals specifically, so there is nothing to configure that does not belong. No subscription, no project files, no learning curve.
-        </p>
-        <div className="hp-blog-links">
-          <Link href="/blog/what-is-brat-font" className="hp-blog-link">
-            what is the brat font: typography explained <span>→</span>
-          </Link>
-          <Link href="/blog/how-to-make-brat-text" className="hp-blog-link">
-            how to make brat-style graphics: step-by-step <span>→</span>
           </Link>
         </div>
       </div>
@@ -323,22 +337,12 @@ export default function Home() {
       {/* ── EXAMPLES ── */}
       <div className="hp-page-section hp-page-section-bordered" id="examples">
         <span className="hp-eyebrow">Gallery</span>
-        <h2 className="hp-display-heading">Brat Generator Examples (Real Outputs)</h2>
+        <h2 className="hp-display-heading">Real Examples From This Tool</h2>
         <p className="hp-body-text">
-          Browse real outputs from this brat creator for layout, text, and color ideas.
-          Use these as quick inspiration before exporting your own design.
+          Browse real outputs for layout, text, and color ideas. Use these as inspiration before exporting your own design.
         </p>
         <div className="hp-examples-wrap">
           <ExampleGallery />
-        </div>
-      </div>
-
-      {/* ── BRIDGE ── */}
-      <div className="hp-bridge">
-        <div className="hp-bridge-inner">
-          <p>
-            This brat generator makes bold visuals fast. Create images, memes, and brat style text in one place.
-          </p>
         </div>
       </div>
 
@@ -346,53 +350,53 @@ export default function Home() {
       <div className="hp-faq-wrap">
         <FAQAccordion
           title="Frequently Asked Questions"
-          intro="Common questions about this brat generator."
+          intro="Quick answers about this tool."
           items={[
             {
               question: "Is this brat generator free?",
               answer: (
                 <p>
-                  Yes. Completely free with no download limits. Create unlimited images up to 3000 px.
+                  Yes. This free brat generator has no limits, no hidden fees, and no signup. Create and download as many images as you want at up to 3000 px resolution.
                 </p>
               ),
             },
             {
-              question: "Does it have watermarks?",
+              question: "Does it add a watermark?",
               answer: (
                 <p>
-                  No. Every export is clean and watermark-free.
+                  No. Every PNG you export is completely clean. No watermark, no branding, no fine print.
                 </p>
               ),
             },
             {
-              question: "Can I use it on mobile?",
+              question: "What file format does it export?",
               answer: (
                 <p>
-                  Yes. The editor works on phones and tablets with full touch support on iOS and Android.
+                  PNG. You pick the resolution — 1024, 1500, 2048, or 3000 px. No compression, no quality loss.
                 </p>
               ),
             },
             {
-              question: "What file format does it download?",
+              question: "Does it work on mobile?",
               answer: (
                 <p>
-                  PNG at your chosen resolution. No compression, no quality loss.
+                  Yes. The editor runs in your mobile browser with full touch support. Works on iPhone, Android, iPad, and tablets. No app install needed.
                 </p>
               ),
             },
             {
-              question: "Can I make a profile picture?",
+              question: "Can I use it as a profile picture (pfp)?",
               answer: (
                 <p>
-                  Set the aspect ratio to 1:1, type your name, choose colors and font, then download. Works on TikTok, Instagram, Discord, X, and WhatsApp.
+                  Yes. Set the aspect ratio to 1:1, type your text, choose a color, and download. This brat generator online works as a pfp maker for TikTok, Instagram, Discord, X, and WhatsApp.
                 </p>
               ),
             },
             {
-              question: "Can I use it commercially?",
+              question: "Can I use the images commercially?",
               answer: (
                 <p>
-                  Yes. Every image you create is yours to use however you want, including commercial projects.
+                  Yes. Every image you create belongs to you. Use it for merch, social media, videos, print, or any commercial project. No attribution required.
                 </p>
               ),
             },

@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const HOME_EXAMPLES = [
-  { src: "/examples/brat-demo-1.png", alt: "green brat text preview saying brat summer vibes" },
-  { src: "/examples/brat-demo-2.png", alt: "minimal brat meme example saying stay toxic" },
-  { src: "/examples/brat-demo-3.png", alt: "bold brat text image saying main character energy" },
-  { src: "/examples/brat-demo-4.png", alt: "neon green brat-style text reading chaotic good" },
-  { src: "/examples/brat-demo-5.png", alt: "pink brat meme style image saying delulu mode activated" },
-  { src: "/examples/brat-demo-6.png", alt: "square brat text design reading hot girl walk" },
+  { src: "/examples/brat-demo-1.png", alt: "brat generator example — green text saying brat summer vibes" },
+  { src: "/examples/brat-demo-2.png", alt: "brat generator example — minimal brat meme saying stay toxic" },
+  { src: "/examples/brat-demo-3.png", alt: "brat generator example — bold text saying main character energy" },
+  { src: "/examples/brat-demo-4.png", alt: "brat generator example — neon green text reading chaotic good" },
+  { src: "/examples/brat-demo-5.png", alt: "brat generator example — pink brat style image saying delulu mode activated" },
+  { src: "/examples/brat-demo-6.png", alt: "brat generator example — square text design reading hot girl walk" },
 ];
 
 const MAKER_EXAMPLES = [

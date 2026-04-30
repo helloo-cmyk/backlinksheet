@@ -34,7 +34,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block">
-              <Image src="/logo.png" alt="ibrat logo" width={32} height={32} style={{ height: "32px", width: "auto" }} />
+              <Image src="/logo.png" alt="Ibrat Generator logo" width={32} height={32} style={{ height: "32px", width: "auto" }} />
             </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-foreground/70">
               Create brat-style text, images, and profile pictures for free. No signup required.

@@ -1,0 +1,130 @@
+# Homepage SEO & Content Documentation
+URL: https://ibratgenerator.com/
+
+## 1. Meta Tags
+- **Meta Title:** Brat Generator — Free Brat Image & Text Maker [2026] [FIX 1 APPLIED]
+- **Meta Description:** Recreate the Charli XCX album aesthetic with this free brat generator. Design custom text images and pfps for TikTok. Download your clean PNG.
+- **Canonical URL:** https://ibratgenerator.com/
+
+## 2. Structured Data (JSON-LD Schemas)
+- **FAQPage Schema:** Covers questions about price, watermarks, formats, mobile support, pfp usage, and commercial rights.
+- **HowTo Schema:** "How to Use the Brat Generator — Step by Step" with 4 steps (Type your text, Pick your colors, Adjust the layout, Download your image).
+- **BreadcrumbList Schema:** REMOVED [FIX 2 APPLIED]
+- **Global Schemas (from layout):** WebSite, SoftwareApplication.
+
+## 3. Images Used (Total: 8)
+1. **Header Logo:** `/logo.png` (Alt: Ibrat Generator — Free Brat Generator) [FIX 11 APPLIED]
+2. **Footer Logo:** `/logo.png` (Alt: Ibrat Generator logo) [FIX 11 APPLIED]
+3. **Example Gallery Image 1:** `/examples/brat-demo-1.png` (Alt: brat generator example — green text saying brat summer vibes) [FIX 10 APPLIED]
+4. **Example Gallery Image 2:** `/examples/brat-demo-2.png` (Alt: brat generator example — minimal brat meme saying stay toxic) [FIX 10 APPLIED]
+5. **Example Gallery Image 3:** `/examples/brat-demo-3.png` (Alt: brat generator example — bold text saying main character energy) [FIX 10 APPLIED]
+6. **Example Gallery Image 4:** `/examples/brat-demo-4.png` (Alt: brat generator example — neon green text reading chaotic good) [FIX 10 APPLIED]
+7. **Example Gallery Image 5:** `/examples/brat-demo-5.png` (Alt: brat generator example — pink brat style image saying delulu mode activated) [FIX 10 APPLIED]
+8. **Example Gallery Image 6:** `/examples/brat-demo-6.png` (Alt: brat generator example — square text design reading hot girl walk) [FIX 10 APPLIED]
+
+## 4. Internal Linking & Anchor Texts
+### Main Content Body
+- **Charli XCX's brat album:** -> `https://en.wikipedia.org/wiki/Brat_(album)` (External)
+- **brat maker:** -> `/brat-maker/`
+- **brat name generator:** -> `/brat-name-generator/`
+- **brat album cover generator:** -> `/brat-album-cover-generator/`
+- **brat font generator:** -> `/brat-font-generator/`
+- **Brat Text Generator:** -> `/brat-text-generator/` (Tools Grid)
+- ~~**Brat Maker:** -> `/brat-maker/` (Tools Grid)~~ REMOVED — duplicate [FIX 9 APPLIED]
+- ~~**Brat Font Generator:** -> `/brat-font-generator/` (Tools Grid)~~ REMOVED — duplicate [FIX 9 APPLIED]
+- **Brat Name Generator:** -> `/brat-name-generator/` (Tools Grid)
+- **Brat Album Cover Generator:** -> `/brat-album-cover-generator/` (Tools Grid)
+- **Green Brat Tool (Card Link):** -> `/brat-green-generator/`
+- **Pink Brat Creator (Card Link):** -> `/brat-generator-pink/`
+- **Black Generator Tool (Card Link):** -> `/brat-black-generator/`
+- **White Brat Look (Card Link):** -> `/brat-generator-white/`
+
+---
+
+## 5. Feature Flow Sections & Full Page Content
+
+### HERO SECTION
+**[H1]** Brat Generator
+**[p]** Create brat-style images, memes, and profile pictures with this free brat image generator online. Type your text, pick colors, add stickers, and download a high-res PNG. No signup. No watermark. Inspired by the Charli XCX brat aesthetic.
+
+### GENERATOR COMPONENT
+**[Label]** Live Generator
+*(Interactive BratGeneratorLazy Component loads here)*
+
+### ABOUT SECTION
+**[Eyebrow]** About
+**[H2]** What Is a Brat Generator?
+**[p]** A brat image generator turns any word or phrase into bold, minimal text on a solid-color background. The style comes from Charli XCX's brat album — stretched lowercase type, saturated neon colors, and zero clutter.
+**[p]** People use it to make memes, profile pictures, stickers, and social posts. It runs in your browser. No app to install, no account to create. [FIX 3 APPLIED]
+**[p]** For sticker and layered image edits, try the brat maker.
+
+### CAPABILITIES SECTION
+**[Eyebrow]** Capabilities
+**[H2]** Brat Image Generator Features
+- **[H3] Live preview:** **[p]** Every keystroke updates the canvas instantly. No lag, no refresh button.
+- **[H3] Full color control:** **[p]** Pick any hex color for text and background. Go classic neon green or make it your own.
+- **[H3] Aspect ratio presets:** **[p]** 1:1 for pfps, 4:5 for Instagram, 9:16 for stories, 16:9 for banners.
+- **[H3] Stickers and emojis:** **[p]** Drop emojis onto the canvas. Drag, resize, and rotate them freely.
+- **[H3] Typography controls:** **[p]** Adjust font size, weight, letter spacing, and text alignment.
+- **[H3] Works on mobile:** **[p]** Full touch support on iPhone, Android, and tablets. No app needed.
+- **[H3] No signup required:** **[p]** Open the page and start creating. No email, no password, no paywall.
+- **[H3] High-res PNG export:** **[p]** Download up to 3000 px. No watermark, no compression.
+
+### HOW TO USE SECTION
+**[Eyebrow]** Getting started
+**[H2]** How to Use the Brat Creator — Step by Step
+1. **[H3] Type your text:** **[p]** Open the tool above and type any word or phrase. The canvas renders it live in the brat style.
+2. **[H3] Pick your colors:** **[p]** Use the color pickers to set your background and text. Try neon green for the classic look, or enter any hex code.
+3. **[H3] Adjust the layout:** **[p]** Change font size, letter spacing, and aspect ratio. Drop stickers or emojis if you want extra detail.
+4. **[H3] Download your image:** **[p]** Tap Download PNG and pick a resolution. The file saves to your device instantly — no account needed.
+**[p]** Use it as a brat word generator — type any single word and download in seconds. The brat name generator lets you add names directly onto custom backgrounds. [FIX 6 APPLIED]
+
+### USE CASES SECTION
+**[Eyebrow]** Use cases
+**[H2]** Who Is This For?
+**[p]** Social media users. Make brat-style profile pictures, story covers, and posts for TikTok, Instagram, X, and Discord. This brat pfp maker gives you a 1:1 export sized perfectly for avatars.
+**[p]** Meme creators. Turn any phrase into a bold brat photo with one click. The brat simulator feel — type, see it, save it — makes reaction images fast.
+**[p]** Charli XCX fans. Recreate the album cover look or remix it with your own words. Share your brat generator sticker edits on group chats and WhatsApp.
+**[p]** Content creators. Use it as a brat photo maker — build thumbnails, overlays, and text graphics for YouTube, Reels, and TikTok without opening heavyweight design software. [FIX 7 APPLIED]
+**[p]** Designers and marketers. Quickly mock up brat-inspired visuals for campaigns, merch ideas, or client pitches. Export brat generator png files at print-ready resolution. Use the brat album cover generator for full album art layouts.
+
+### COMPARISON SECTION
+**[Eyebrow]** Comparison
+**[H2]** Why Use a Brat Creator Instead of Canva or Photoshop?
+**[p]** Canva and Photoshop are general-purpose tools. You open a blank canvas, search for fonts, resize layers, and scroll through menus before you get one output. That makes sense for a brand deck. It does not make sense for a brat meme.
+**[p]** This brat creator does one thing well. Type text, pick a color, download. Every control on the page exists for brat-style design. Nothing else gets in the way. Adding brat-style text on photo takes seconds here — no workflow, no extra tools. [FIX 8 APPLIED]
+**[p]** No subscription. No project files. No 14-day trial. Open the page, make your image, and move on. For dedicated typography work, the brat font generator gives you deeper font controls.
+
+### MORE TOOLS SECTION
+**[Eyebrow]** More tools
+**[H2]** Explore All Brat Tools
+**[p]** Each tool targets a specific workflow. Pick the one that fits what you need.
+- **[Link]** Brat Text Generator
+- **[Link]** Brat Name Generator
+- **[Link]** Brat Album Cover Generator
+[FIX 9 APPLIED — Removed Brat Maker and Brat Font Generator (already linked contextually in About and Comparison)]
+
+### VARIANTS SECTION
+**[Eyebrow]** Variants
+**[H2]** Color Styles (Green, Pink, Black & More)
+**[p]** Switch between signature brat palettes for posts, profiles, or campaigns.
+- **[H3]** Green Brat Tool: **[p]** Classic neon green from brat summer. [FIX 5 APPLIED]
+- **[H3]** Pink Brat Creator: **[p]** Softer, warmer brat aesthetic tone. [FIX 5 APPLIED]
+- **[H3]** Black Generator Tool: **[p]** High contrast dark style. [FIX 5 APPLIED]
+- **[H3]** White Brat Look: **[p]** Clean minimalist approach. [FIX 5 APPLIED]
+
+### GALLERY SECTION
+**[Eyebrow]** Gallery
+**[H2]** Real Examples From This Tool
+**[p]** Browse real outputs for layout, text, and color ideas. Use these as inspiration before exporting your own design.
+*(ExampleGallery Component displays 6 images here)*
+
+### FAQ SECTION
+**[H2]** Frequently Asked Questions
+**[p]** Quick answers about this tool. [FIX 4 APPLIED]
+- **[Q] Is this brat generator free?** **[A]** Yes. This free brat generator has no limits, no hidden fees, and no signup. Create and download as many images as you want at up to 3000 px resolution.
+- **[Q] Does it add a watermark?** **[A]** No. Every PNG you export is completely clean. No watermark, no branding, no fine print.
+- **[Q] What file format does it export?** **[A]** PNG. You pick the resolution — 1024, 1500, 2048, or 3000 px. No compression, no quality loss.
+- **[Q] Does it work on mobile?** **[A]** Yes. The editor runs in your mobile browser with full touch support. Works on iPhone, Android, iPad, and tablets. No app install needed.
+- **[Q] Can I use it as a profile picture (pfp)?** **[A]** Yes. Set the aspect ratio to 1:1, type your text, choose a color, and download. This brat generator online works as a pfp maker for TikTok, Instagram, Discord, X, and WhatsApp.
+- **[Q] Can I use the images commercially?** **[A]** Yes. Every image you create belongs to you. Use it for merch, social media, videos, print, or any commercial project. No attribution required.
