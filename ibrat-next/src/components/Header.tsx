@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/brat-maker/", label: "Brat Generator" },
+  { href: "/brat-maker/", label: "Brat Maker" },
   { href: "/brat-text-generator/", label: "Brat Text Generator" },
   { href: "/brat-font-generator/", label: "Brat Font Generator" },
 ];
