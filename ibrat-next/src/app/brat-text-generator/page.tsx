@@ -5,12 +5,12 @@ import FAQAccordion from "@/components/FAQAccordion";
 import HomeScrollReveal from "@/components/HomeScrollReveal";
 
 const BRAT_TEXT_EXAMPLES = [
-  { src: "/examples/brat-text-demo-1.png", phrase: "typography", alt: "brat text generator example — green background with classic lowercase text" },
-  { src: "/examples/brat-text-demo-2.png", phrase: "clean text", alt: "brat text generator example — bold typography layout" },
-  { src: "/examples/brat-text-demo-3.png", phrase: "bold look", alt: "brat text generator example — minimal brat text style" },
-  { src: "/examples/brat-text-demo-4.png", phrase: "pure vibe", alt: "brat text generator example — neon green aesthetic text" },
-  { src: "/examples/brat-text-demo-5.png", phrase: "minimalist", alt: "brat text generator example — pink background with black brat text" },
-  { src: "/examples/brat-text-demo-6.png", phrase: "no distractions", alt: "brat text generator example — custom color brat text image" },
+  { src: "/examples/brat-text-ex-1.png", phrase: "typography", alt: "brat text generator example — green background with classic lowercase text" },
+  { src: "/examples/brat-text-ex-2.png", phrase: "clean text", alt: "brat text generator example — bold typography layout" },
+  { src: "/examples/brat-text-ex-3.png", phrase: "bold look", alt: "brat text generator example — minimal brat text style" },
+  { src: "/examples/brat-text-ex-4.png", phrase: "pure vibe", alt: "brat text generator example — neon green aesthetic text" },
+  { src: "/examples/brat-text-ex-5.png", phrase: "minimalist", alt: "brat text generator example — pink background with black brat text" },
+  { src: "/examples/brat-text-ex-6.png", phrase: "no distractions", alt: "brat text generator example — custom color brat text image" },
 ];
 
 const faqSchema = {
