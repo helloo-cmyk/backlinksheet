@@ -10,18 +10,18 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is the brat font name?",
+      name: "What is the brat font download alternative?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "There is no single official brat font name. The style draws from geometric sans-serif typefaces like Helvetica Neue Bold, Avenir Heavy, and Gotham. This generator recreates the visual style without requiring a specific font file.",
+        text: "There is no official font file to download for the brat style. This brat font generator recreates the exact look in your browser — correct weight, tight spacing, and the right layout. No installation, no font file hunting required.",
       },
     },
     {
       "@type": "Question",
-      name: "Is there an official brat font file to download?",
+      name: "How do I get the brat font for free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. The brat look is a typographic style, not a single downloadable file. This tool generates the style directly in your browser and exports PNG images.",
+        text: "Use this free brat font generator. Type your text, set your colors, and export a watermark-free PNG at up to 3000px resolution. No signup, no payment, no download needed.",
       },
     },
     {
@@ -61,7 +61,7 @@ const faqSchema = {
 
 export const metadata = {
   title: {
-    absolute: "Brat Font Generator — Create Charli XCX Style Text Free",
+    absolute: "Brat Font Generator — Free Brat Font Download Alternative [2026]",
   },
   alternates: {
     canonical: "https://ibratgenerator.com/brat-font-generator/",
@@ -82,7 +82,7 @@ export default function BratFontGeneratorPage() {
       <section className="hp-hero">
         <h1 className="hp-hero-heading mt-6 mb-3 mx-auto">Brat Font Generator</h1>
         <p className="hp-hero-sub">
-          This brat font generator lets you create and study brat font style typography with full control over spacing, weight, and color. Use the controls on this page to match the look, then export as PNG.
+          This brat font generator and brat font maker lets you create brat-style typography with full control over spacing, weight, and color. Use the controls on this page to match the look, then export as PNG.
         </p>
       </section>
 
@@ -114,20 +114,10 @@ export default function BratFontGeneratorPage() {
 
       {/* ── WHAT IS THE BRAT FONT ── */}
       <div className="hp-page-section hp-page-section-bordered" id="overview">
-        <div className="hp-two-col">
-          <div>
-            <span className="hp-eyebrow">Overview</span>
-            <h2 className="hp-display-heading">What Is the Brat Font?</h2>
-          </div>
-          <div>
-            <p className="hp-body-text">
-              There is no official brat font name tied to a commercial typeface release. The brat typeface refers to a category of geometric sans-serif typography: heavy strokes, clean letter forms, and deliberate spacing that creates a bold, flat visual. It sits in the tradition of Swiss design typography, where legibility and structure take priority over decoration. The style became widely associated with Brat-themed visuals and album artwork, but it was never sold as a single font product. This brat font generator recreates that look so you do not need to identify or install any specific file. For a deeper breakdown, read our guide on{" "}
-              <Link href="/blog/what-is-brat-font" className="hp-link">what the brat font actually is</Link>.
-            </p>
-            <p className="hp-body-text mt-4">
-              Want to create quick brat text? Use the <Link href="/brat-text-generator/" className="hp-link">Brat Text Generator</Link> →
-            </p>
-          </div>
+        <div className="max-w-3xl">
+          <p className="hp-body-text">
+            The brat font style is a typographic approach, not a single downloadable file. For a full breakdown of what defines it, read our <Link href="/blog/what-is-brat-font" className="hp-link">guide to brat typography</Link>. This tool gives you the controls to recreate it directly.
+          </p>
         </div>
       </div>
 
@@ -175,7 +165,7 @@ export default function BratFontGeneratorPage() {
       {/* ── WHAT FONT IS USED ── */}
       <div className="hp-page-section hp-page-section-bordered">
         <span className="hp-eyebrow">Typeface Details</span>
-        <h2 className="hp-display-heading">What Font Is Used In The Brat Album Style?</h2>
+        <h2 className="hp-display-heading">Why No Font File Matches the Brat Style</h2>
         <div className="max-w-3xl">
           <p className="hp-body-text mt-4">
             The Brat album style does not use a single named commercial font. It draws from a lineage of geometric sans-serif typefaces that prioritize clarity, weight, and minimal decoration. Designers and fans often compare it to Helvetica Neue Bold, Avenir Heavy, or Gotham, all of which share clean geometric forms and strong x-heights. The key is not letter-by-letter matching but the overall impression: heavy weight, tight letter spacing, and a sense of confidence rooted in Swiss design typography.
@@ -259,8 +249,8 @@ export default function BratFontGeneratorPage() {
         title="Frequently Asked Questions"
         intro="Common questions about the brat font and this generator."
         items={[
-          { question: "What is the brat font name?", answer: <p>There is no single official brat font name. The style draws from geometric sans-serif typefaces like Helvetica Neue Bold, Avenir Heavy, and Gotham. This generator recreates the visual style without requiring a specific font file.</p> },
-          { question: "Is there an official brat font file to download?", answer: <p>No. The brat look is a typographic style, not a single downloadable file. This tool generates the style directly in your browser and exports PNG images.</p> },
+          { question: "What is the brat font download alternative?", answer: <p>There is no official font file to download for the brat style. This brat font generator recreates the exact look in your browser — correct weight, tight spacing, and the right layout. No installation, no font file hunting required.</p> },
+          { question: "How do I get the brat font for free?", answer: <p>Use this free brat font generator. Type your text, set your colors, and export a watermark-free PNG at up to 3000px resolution. No signup, no payment, no download needed.</p> },
           { question: "Does this recreate the Charli XCX brat font style?", answer: <p>Yes. The generator recreates the bold, minimal typography associated with Charli XCX Brat visuals, including spacing, weight, and alignment.</p> },
           { question: "Can I export my typography as PNG?", answer: <p>Yes. Export at 1024, 1500, 2048, or 3000 px. No watermark, no compression.</p> },
           { question: "Is this tool free?", answer: <p>Yes. Unlimited use, no signup, no payment.</p> },

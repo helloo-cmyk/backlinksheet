@@ -1,0 +1,116 @@
+# Brat Font Generator SEO & Content Documentation
+URL: https://ibratgenerator.com/brat-font-generator/
+
+## 1. Meta Tags
+[FIX 1 APPLIED]
+- **Meta Title:** Brat Font Generator — Free Brat Font Download Alternative [2026]
+- **Meta Description:** Free brat font generator — recreate bold Charli XCX brat typography instantly. Adjust spacing, weight & color. No signup, no watermark. Download PNG.
+- **Canonical URL:** https://ibratgenerator.com/brat-font-generator/
+
+## 2. Structured Data (JSON-LD Schemas)
+[FIX 7 APPLIED]
+- **FAQPage Schema:** Covers questions about: "What is the brat font download alternative?" and "How do I get the brat font for free?", recreating Charli XCX style, PNG export, pricing, and Arial comparison.
+- **Global Schemas (from layout):** WebSite, SoftwareApplication.
+
+## 3. Images Used (Total: 8)
+1. **Header Logo:** `/logo.png` (Alt: Ibrat Generator — Free Brat Text Generator)
+2. **Footer Logo:** `/logo.png` (Alt: Ibrat Generator logo)
+3. **Example Gallery Image 1:** `/examples/brat-font-demo-1.png` (Alt: brat font generator example — bold typography layout)
+4. **Example Gallery Image 2:** `/examples/brat-font-demo-2.png` (Alt: brat font generator example — classic lowercase text)
+5. **Example Gallery Image 3:** `/examples/brat-font-demo-3.png` (Alt: brat font generator example — minimal brat text style)
+6. **Example Gallery Image 4:** `/examples/brat-font-demo-4.png` (Alt: brat font generator example — neon green aesthetic text)
+7. **Example Gallery Image 5:** `/examples/brat-font-demo-5.png` (Alt: brat font generator example — pink background with black brat text)
+8. **Example Gallery Image 6:** `/examples/brat-font-demo-6.png` (Alt: brat font generator example — custom color brat text image)
+*(Note: Example gallery alt texts dynamically adapt based on the ExampleGallery type="font" component)*
+
+## 4. Internal Linking & Anchor Texts
+### Main Content Body
+- **free brat generator:** -> `/`
+- **what the brat font actually is:** -> `/blog/what-is-brat-font`
+- **Brat Text Generator:** -> `/brat-text-generator/`
+- **brat text generator:** -> `/brat-text-generator/`
+- **brat maker:** -> `/brat-maker/`
+- **black brat generator:** -> `/brat-black-generator/`
+- **brat generator:** -> `/`
+- **guide to brat typography:** -> `/blog/what-is-brat-font`
+
+---
+
+## 5. Feature Flow Sections & Full Page Content
+
+### HERO SECTION
+**[H1]** Brat Font Generator
+[FIX 2 APPLIED]
+**[p]** This brat font generator and brat font maker lets you create brat-style typography with full control over spacing, weight, and color. Use the controls on this page to match the look, then export as PNG.
+
+### GENERATOR COMPONENT
+**[Label]** Live Generator
+*(Interactive BratGeneratorLazy Component loads here)*
+**[p]** Looking for all features? Try the **[Link]** free brat generator to create memes, images, and more in one place.
+
+### INTRO PARAGRAPH
+**[p]** The brat font is not a single downloadable file. It is a typographic style defined by bold weight, tight spacing, and minimal decoration. People searching for what font is brat or the Charli XCX brat font are looking for this style, not a specific .ttf file. This page explains the details and gives you a tool to generate it directly.
+
+### WHAT IS THE BRAT FONT SECTION
+[FIX 3 APPLIED]
+**[p]** The brat font style is a typographic approach, not a single downloadable file. For a full breakdown of what defines it, read our **[Link]** guide to brat typography → /blog/what-is-brat-font/. This tool gives you the controls to recreate it directly.
+
+### KEY CHARACTERISTICS SECTION
+**[Eyebrow]** Traits
+**[H2]** Key Characteristics of Brat Typography
+**[p]** The brat font style is defined by six consistent design principles.
+- **[H3] Bold weight:** **[p]** Heavy strokes at 700+ weight. The text feels dense and grounded, not thin or decorative. This is what separates brat typography from standard body text.
+- **[H3] Clean sans-serif forms:** **[p]** No serifs, no swashes, no ornamentation. The letterforms follow geometric sans-serif construction with even stroke widths and open counters.
+- **[H3] Tight letter spacing:** **[p]** Characters sit close together with deliberate, compact gaps. Tight letter spacing gives the text a solid, connected appearance that reads as a single visual block.
+- **[H3] High contrast:** **[p]** Dark text on bright backgrounds or light text on deep black. The brat typography aesthetic depends on strong separation between foreground and background.
+- **[H3] Minimal ornamentation:** **[p]** The text is the design. No gradients, no shadows, no outlines. Just type on a flat color field.
+- **[H3] Centered or deliberate layouts:** **[p]** Text is placed with intention. Centered alignment is most common, but offset compositions work when the asymmetry is clearly purposeful.
+
+### WHAT FONT IS USED SECTION
+**[Eyebrow]** Typeface Details
+[FIX 4 APPLIED]
+**[H2]** Why No Font File Matches the Brat Style
+**[p]** The Brat album style does not use a single named commercial font. It draws from a lineage of geometric sans-serif typefaces that prioritize clarity, weight, and minimal decoration. Designers and fans often compare it to Helvetica Neue Bold, Avenir Heavy, or Gotham, all of which share clean geometric forms and strong x-heights. The key is not letter-by-letter matching but the overall impression: heavy weight, tight letter spacing, and a sense of confidence rooted in Swiss design typography.
+**[p]** When people search for the brat font name or Charli XCX brat font, they are trying to match this visual. No single .ttf or .otf file will get you there on its own because the style also depends on spacing, alignment, and background choices. That is why this brat font generator exists: it handles all of those variables together. You do not need to hunt for brat font Canva presets or search for the exact file. The look is built into the controls.
+
+### WHY BETTER THAN DOWNLOADING SECTION
+**[H2]** Why This Tool Is Better Than Downloading Fonts
+**[p]** Searching for brat font download or brat font free download usually leads to generic bold sans-serif files that still need manual kerning, background setup, and export configuration. You install a font, open a design app, fight the default spacing, and then realize the result does not match. This tool skips all of that. The brat font generator gives you the correct weight, spacing, and layout defaults in your browser with a direct PNG export. No installation, no design software, no guessing.
+
+### TYPOGRAPHY CONTROLS SECTION
+**[Eyebrow]** Parameters
+**[H2]** Typography Controls on This Page
+- **[H3] Font Size & Weight:** **[p]** Scale from compact captions to large album-style headings.
+- **[H3] Letter Spacing & Alignment:** **[p]** Tighten or open character gaps and set text position.
+- **[H3] Line Height:** **[p]** Control vertical density for single-line or multi-line phrases.
+- **[H3] Color System:** **[p]** Full hex picker for text and background beyond neon green.
+
+### EXAMPLES SECTION
+**[Eyebrow]** Gallery
+**[H2]** Brat Font Generator Examples
+**[p]** Real outputs from this brat font generator. Each shows a different combination of weight, spacing, and color. Type your own phrase above to create similar results.
+*(ExampleGallery Component displays font examples here)*
+
+### RELATED TOOLS SECTION
+**[H2]** Related Tools
+**[p]** This page focuses on typography. For other brat workflows, these tools handle different parts of the process.
+- **[Link]** Use the brat text generator for quick text-only designs with fast PNG export.
+- **[Link]** Try the brat maker to build full images with stickers and image layers.
+- **[Link]** Explore the black brat generator for high-contrast dark typography.
+- **[Link]** Use the brat generator for the complete editor with all tools in one place.
+
+### FAQ SECTION
+**[H2]** Frequently Asked Questions
+**[p]** Common questions about the brat font and this generator.
+[FIX 5 APPLIED]
+[FIX 6 APPLIED]
+- **[Q] What is the brat font download alternative?** **[A]** There is no official font file to download for the brat style. This brat font generator recreates the exact look in your browser — correct weight, tight spacing, and the right layout. No installation, no font file hunting required.
+- **[Q] How do I get the brat font for free?** **[A]** Use this free brat font generator. Type your text, set your colors, and export a watermark-free PNG at up to 3000px resolution. No signup, no payment, no download needed.
+- **[Q] Does this recreate the Charli XCX brat font style?** **[A]** Yes. The generator recreates the bold, minimal typography associated with Charli XCX Brat visuals, including spacing, weight, and alignment.
+- **[Q] Can I export my typography as PNG?** **[A]** Yes. Export at 1024, 1500, 2048, or 3000 px. No watermark, no compression.
+- **[Q] Is this tool free?** **[A]** Yes. Unlimited use, no signup, no payment.
+- **[Q] What is the difference between brat font and regular Arial?** **[A]** Arial is a standard system font with neutral proportions. The brat font style uses heavier weight, tighter letter spacing, and higher contrast layouts. Arial Bold gets close but lacks the deliberate spacing and compositional choices that define brat typography.
+
+### LEARN MORE SECTION
+**[H2]** Learn More About Brat Typography
+**[p]** For a full breakdown of the brat font style and how it is used, read our **[Link]** guide to brat typography.
