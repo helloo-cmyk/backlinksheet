@@ -19,6 +19,8 @@ const BLOG_POSTS = [
     description: "Learn about the iconic Brat text aesthetic, its origins, and why it became a viral sensation. Discover how to create your own bold graphics.",
     category: "AESTHETICS",
     image: "/examples/brat-text-ex-1.png",
+    date: "May 01, 2026",
+    readTime: "5 MIN READ"
   },
   {
     title: "What Is a Brat Generator? Simple Explanation",
@@ -26,6 +28,8 @@ const BLOG_POSTS = [
     description: "A simple explanation of the music-inspired text aesthetic, how the cultural trend started, and how you can create your own bold typographic graphics.",
     category: "CULTURE",
     image: "/examples/brat-maker-ex-4.png",
+    date: "May 01, 2026",
+    readTime: "4 MIN READ"
   },
   {
     title: "Brat Font Aesthetic Explained",
@@ -33,6 +37,8 @@ const BLOG_POSTS = [
     description: "Learn about the specific typography, blur effects, and messy aesthetics that make up the iconic Brat album cover font look.",
     category: "TYPOGRAPHY",
     image: "/examples/brat-font-ex-3.png",
+    date: "May 01, 2026",
+    readTime: "6 MIN READ"
   },
   {
     title: "How to Make Brat Text (Step-by-Step)",
@@ -40,6 +46,8 @@ const BLOG_POSTS = [
     description: "A quick, step-by-step guide on how to generate custom Brat meme text for your social media without needing Photoshop.",
     category: "TUTORIAL",
     image: "/examples/brat-text-ex-1.png",
+    date: "May 01, 2026",
+    readTime: "4 MIN READ"
   },
   {
     title: "Best Brat Captions for Instagram & TikTok",
@@ -47,6 +55,8 @@ const BLOG_POSTS = [
     description: "Looking for the perfect words? Here are the best, most unhinged, and aesthetic Brat captions to use for your next post.",
     category: "IDEAS & INSPO",
     image: "/examples/brat-demo-5.png",
+    date: "May 02, 2026",
+    readTime: "7 MIN READ"
   }
 ];
 
@@ -89,6 +99,11 @@ export default function BlogIndexPage() {
 
                 {/* Card Content */}
                 <div className="p-8 flex flex-col flex-grow">
+                  <div className="flex items-center text-[11px] font-bold text-[var(--hp-ink)] tracking-widest uppercase opacity-60 mb-4">
+                    <span>{post.date}</span>
+                    <span className="mx-2">•</span>
+                    <span>{post.readTime}</span>
+                  </div>
                   <h2 className="text-[22px] sm:text-[24px] font-serif font-medium text-[var(--hp-ink)] leading-[1.25] mb-4 group-hover:text-[var(--hp-primary)] transition-colors line-clamp-2">
                     {post.title}
                   </h2>

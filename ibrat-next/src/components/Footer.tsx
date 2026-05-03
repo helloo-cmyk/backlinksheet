@@ -16,11 +16,11 @@ const styleLinks = [
 ];
 
 const supportLinks = [
-  { href: "/about-us", label: "About" },
-  { href: "/contact-us", label: "Contact" },
-  { href: "/feedback", label: "Feedback" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+  { href: "/blog", label: "Blog" },
   { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/terms-conditions", label: "Terms & Conditions" },
+  { href: "/terms", label: "Terms" },
   { href: "/disclaimer", label: "Disclaimer" },
 ];
 

@@ -18,18 +18,33 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/brat-creator',
-        destination: '/brat-maker',
+        source: '/brat-creator/',
+        destination: '/brat-maker/',
         permanent: true,
       },
       {
-        source: '/brat-summer-meme-generator',
-        destination: '/brat-maker',
+        source: '/brat-summer-meme-generator/',
+        destination: '/brat-maker/',
         permanent: true,
       },
       {
         source: '/what-is-brat-generator/',
         destination: '/blog/what-is-brat-generator/',
+        permanent: true,
+      },
+      {
+        source: '/about-us/',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/contact-us/',
+        destination: '/contact/',
+        permanent: true,
+      },
+      {
+        source: '/terms-conditions/',
+        destination: '/terms/',
         permanent: true,
       },
     ];

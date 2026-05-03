@@ -3,6 +3,8 @@ import Script from "next/script";
 import { Geist, Geist_Mono, DM_Serif_Display } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import CookieConsentBanner from "@/components/CookieConsentBanner";
+import AnalyticsScripts from "@/components/AnalyticsScripts";
 import "./globals.css";
 
 const jsonLd = [
@@ -47,9 +49,6 @@ const dmSerif = DM_Serif_Display({
   variable: "--font-display",
   display: "swap",
 });
-
-const GA_MEASUREMENT_ID = "G-XEV70REQ21";
-const ADSENSE_CLIENT_ID = "ca-pub-4083132987699578";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ibratgenerator.com"),
@@ -98,43 +97,7 @@ export default function RootLayout({
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Script
-          id="ga-loader"
-          strategy="lazyOnload"
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        />
-        <Script
-          id="ga-inline"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${GA_MEASUREMENT_ID}', { send_page_view: true });
-            `,
-          }}
-        />
-        {process.env.NODE_ENV === "production" && (
-          <script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
-            crossOrigin="anonymous"
-          />
-        )}
-        <Script
-          id="clarity-script"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "w7xme9goii");
-            `,
-          }}
-        />
+        <AnalyticsScripts />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${dmSerif.variable} flex min-h-screen flex-col antialiased`}
@@ -145,6 +108,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <CookieConsentBanner />
       </body>
     </html>
   );

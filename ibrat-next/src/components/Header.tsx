@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/brat-maker/", label: "Brat Maker" },
   { href: "/brat-text-generator/", label: "Brat Text Generator" },
   { href: "/brat-font-generator/", label: "Brat Font Generator" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export default function Header() {

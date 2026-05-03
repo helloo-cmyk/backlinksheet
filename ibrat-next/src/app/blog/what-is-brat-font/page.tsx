@@ -71,8 +71,8 @@ export default function WhatIsBratFontPage() {
       <BlogHero 
         category="TYPOGRAPHY"
         title="What Is the Brat Font? Charli XCX Brat Font Name & Style Explained"
-        subtitle=""
-        readTime="4 MIN READ"
+        subtitle="No official brat font download exists — the style is a set of typography rules. Learn what defines the Charli XCX brat aesthetic and how to recreate it."
+        readTime="6 MIN READ"
         imageSrc="/examples/brat-font-ex-3.png"
         imageAlt="brat font style example — bold lowercase typography on neon green background"
       />
@@ -125,6 +125,28 @@ export default function WhatIsBratFontPage() {
 
           <p className="hp-body-text mb-16 text-[17px] sm:text-[18px]">
             Instead of spending time adjusting kerning and line height manually, the easiest method is to let a dedicated tool handle the typography rules. Try the <Link href="/brat-font-generator" className="hp-link">brat font generator</Link> to create clean, accurate text visuals in seconds.
+          </p>
+
+          <h2 className="hp-display-heading mt-16 mb-6 !text-3xl">How the Brat Font Spread on Social Media</h2>
+          <p className="hp-body-text mb-6 text-[17px] sm:text-[18px]">
+            The Brat font became a global phenomenon during the "Brat Summer" of mid-2024. It all started when fans on TikTok and Instagram began recreating the iconic neon green album cover for their own posts. The bold, lowercase typography stood out because it looked simple, raw, and authentic.
+          </p>
+          <p className="hp-body-text mb-6 text-[17px] sm:text-[18px]">
+            As the trend grew, fans used online brat generators to turn their names and favorite phrases into aesthetic graphics. These generators allowed people who weren't designers to participate in the culture instantly. The font stopped being just an album cover and became a way for people to express a specific mood.
+          </p>
+          <p className="hp-body-text mb-12 text-[17px] sm:text-[18px]">
+            The viral trend reached a massive peak when it crossed into the mainstream world. One of the biggest moments was the "Kamala IS brat" social media wave. This moment proved that the font was more than just a music trend—it was a powerful tool for communication that anyone could use.
+          </p>
+
+          <h2 className="hp-display-heading mt-16 mb-6 !text-3xl">Brat Font vs Other Minimalist Fonts</h2>
+          <p className="hp-body-text mb-6 text-[17px] sm:text-[18px]">
+            Many people compare the Brat font to other famous minimalist fonts. You might see similarities with Helvetica Neue Bold, Arial Bold, DIN, or Futura. These are all high-quality sans-serif fonts that share a clean and heavy look. However, using these fonts alone won't give you the true Brat aesthetic.
+          </p>
+          <p className="hp-body-text mb-6 text-[17px] sm:text-[18px]">
+            The secret to the Brat style is not just the font choice, but the specific formatting. It requires "crushed" letter spacing where the characters almost touch each other. Most standard fonts have much wider default spacing. When you pair this tight spacing with a flat neon green background, you get a look that is distinct from traditional graphic design.
+          </p>
+          <p className="hp-body-text mb-16 text-[17px] sm:text-[18px]">
+            If you want to see the difference for yourself, try the <Link href="/brat-font-generator/" className="hp-link">brat font generator</Link> to create a perfect match in seconds.
           </p>
 
           {/* ── FAQ ── */}

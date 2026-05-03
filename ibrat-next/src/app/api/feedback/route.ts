@@ -29,7 +29,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev', // Using resend onboarding email
-      to: 'ibratgenerator1@gmail.com',
+      to: 'ibratgenerator@gmail.com',
       subject: 'New Feedback Submission',
       html: `
         <h3>New Feedback Received</h3>

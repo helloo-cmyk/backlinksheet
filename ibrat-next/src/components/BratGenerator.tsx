@@ -25,6 +25,7 @@ const BRAT_STYLES = `
   min-height: 400px;
   z-index: 1000;
   padding: 28px;
+  margin: 60px 0;
   background: #ffffff;
   color: #0f172a;
   overflow: visible;

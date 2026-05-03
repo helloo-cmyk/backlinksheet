@@ -6,11 +6,22 @@ interface BlogHeroProps {
   title: string;
   subtitle: string;
   readTime?: string;
+  author?: string;
+  publishDate?: string;
   imageSrc?: string;
   imageAlt?: string;
 }
 
-export default function BlogHero({ category, title, subtitle, readTime = "5 MIN READ", imageSrc, imageAlt = "Blog hero graphic" }: BlogHeroProps) {
+export default function BlogHero({ 
+  category, 
+  title, 
+  subtitle, 
+  readTime = "5 MIN READ", 
+  author = "Ibrat Generator Team",
+  publishDate = "May 01, 2026",
+  imageSrc, 
+  imageAlt = "Blog hero graphic" 
+}: BlogHeroProps) {
   return (
     <section className="px-4 py-12 sm:py-20 lg:py-24 border-b border-[var(--hp-border)] relative overflow-hidden bg-gradient-to-b from-[var(--hp-surface-warm)] to-transparent">
       <div className="max-w-[1200px] mx-auto grid lg:grid-cols-12 gap-12 items-center">
@@ -35,8 +46,23 @@ export default function BlogHero({ category, title, subtitle, readTime = "5 MIN 
           <p className="intro-text max-w-xl text-left opacity-80 mb-6 border-none bg-transparent p-0 shadow-none text-[18px] sm:text-[20px] leading-relaxed block w-full">
             {subtitle}
           </p>
+
+          <div className="flex flex-wrap gap-4 items-center mt-2 mb-6">
+            <div className="flex items-center">
+              <div className="w-8 h-8 rounded-full bg-[#8ACE00] flex items-center justify-center text-black font-bold text-[10px] mr-3 shadow-sm">
+                IG
+              </div>
+              <p className="text-[13px] font-bold text-[var(--hp-ink)] opacity-90">
+                By {author}
+              </p>
+            </div>
+            <div className="w-1.5 h-1.5 rounded-full bg-[var(--hp-ink)] opacity-20"></div>
+            <p className="text-[13px] font-medium text-[var(--hp-ink)] opacity-60">
+              Published: {publishDate} | Updated: May 03, 2026
+            </p>
+          </div>
           
-          <p className="text-[12px] font-semibold text-[var(--hp-ink)] opacity-50 tracking-widest uppercase mt-4">
+          <p className="text-[12px] font-semibold text-[var(--hp-ink)] opacity-50 tracking-widest uppercase">
             {readTime}
           </p>
         </div>
