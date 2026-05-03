@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import Script from "next/script";
-import { getCookie } from "cookies-next"; // I should probably install this or just use native JS
 
 const GA_MEASUREMENT_ID = "G-XEV70REQ21";
 const ADSENSE_CLIENT_ID = "ca-pub-4083132987699578";
