@@ -112,7 +112,12 @@ export default function Home() {
             <span className="hp-gen-dot" />
             Live Generator
           </div>
-          <BratGeneratorLazy />
+          <div className="tool-intro-hint">
+            Type your text, pick a color, and download your brat-style image — the whole process takes under 30 seconds.
+          </div>
+          <div style={{ minHeight: '520px' }}>
+            <BratGeneratorLazy />
+          </div>
         </div>
       </div>
 

@@ -137,7 +137,12 @@ export default function BratTextGeneratorPage() {
 
       {/* ── GENERATOR ── */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 mt-2 mb-16">
-        <BratGeneratorLazy />
+        <div className="tool-intro-hint">
+          Type any word or phrase — brat-style text renders instantly on the canvas below.
+        </div>
+        <div style={{ minHeight: '520px' }}>
+          <BratGeneratorLazy />
+        </div>
       </div>
 
       {/* ── ABOUT SECTION ── */}

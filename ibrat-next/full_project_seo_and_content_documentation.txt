@@ -1,0 +1,190 @@
+# IBRATGENERATOR.COM — FULL PROJECT SEO & CONTENT DOCUMENTATION
+
+This document serves as the master architectural and content reference for the entire ibratgenerator.com project. It includes all SEO metadata, feature flows, structured data, internal linking strategies, and body content for every page.
+
+---
+
+## 1. GLOBAL ARCHITECTURE & SEO (layout.tsx)
+
+- **Base URL:** https://ibratgenerator.com
+- **Verification:** Google Search Console (Udx1enXz...), Pinterest (a5fad...), AdSense (ca-pub-40831...)
+- **Default Title Template:** %s | Ibrat Generator
+- **Global Structured Data (JSON-LD):**
+    - **WebSite:** name: "Ibrat Generator", url: "https://ibratgenerator.com"
+    - **SoftwareApplication:** name: "Brat Generator", applicationCategory: "MultimediaApplication", description: "Create brat-style text, images, memes, and profile pictures..."
+- **Global Header Logo Alt:** "Ibrat Generator — Free Brat Generator"
+- **Global Footer Logo Alt:** "Ibrat Generator logo"
+- **Global Navigation Links (Header):**
+    - Home (/)
+    - Brat Maker (/brat-maker/)
+    - Brat Text Generator (/brat-text-generator/)
+    - Brat Font Generator (/brat-font-generator/)
+    - Blog (/blog)
+- **Global Footer Links:**
+    - Tools: brat maker, brat text generator, Brat Name Generator, Brat Font Generator, Brat Album Cover Generator, Brat Green Generator.
+    - Styles: Pink Brat Generator.
+    - Support & Legal: About, Contact, Blog, Privacy Policy, Terms, Disclaimer.
+
+---
+
+## 2. HOMEPAGE (/)
+
+- **Meta Title:** Brat Generator — Free Brat Image & Text Maker [2026]
+- **Meta Description:** Recreate the Charli XCX album aesthetic with this free brat generator. Design custom text images and pfps for TikTok. Download your clean PNG.
+- **H1:** Brat Generator
+- **Feature Flow (Steps):**
+    1. Type your text
+    2. Pick your colors
+    3. Adjust the layout
+    4. Download your image
+- **Core Features:** Live preview, Full color control, Aspect ratio presets, Stickers and emojis, Typography controls, Mobile support, No signup, High-res PNG export.
+- **Structured Data:** FAQPage (6 items), HowTo (4 steps).
+- **Internal Linking:**
+    - /brat-maker/ (Anchor: brat maker)
+    - /brat-name-generator/ (Anchor: brat name generator)
+    - /brat-album-cover-generator/ (Anchor: brat album cover generator)
+    - /brat-font-generator/ (Anchor: brat font generator)
+    - /brat-text-generator/ (Anchor: Brat Text Generator)
+    - /brat-green-generator/ (Anchor: Green Brat Tool)
+    - /brat-generator-pink/ (Anchor: Pink Brat Creator)
+    - /brat-black-generator/ (Anchor: Black Generator Tool)
+    - /brat-generator-white/ (Anchor: White Brat Look)
+
+---
+
+## 3. BRAT MAKER (/brat-maker/)
+
+- **Meta Title:** Brat Maker – Create Brat Images & Memes Instantly
+- **Meta Description:** Try our free brat maker to create brat images and memes instantly. Customize text and colors. No signup required.
+- **H1:** Brat Maker
+- **Feature Flow (Steps):**
+    1. Add Your Text
+    2. Customize the Style
+    3. Images and Layout
+    4. Download Instantly
+- **Primary Use Cases:** Meme creation, Reaction images, Brat profile pictures, Social posts.
+- **Features:** Bold Text on Images, Brat Image Maker, Profile Picture Maker, Brat Meme Creator, Multiple Ratios, Custom Themes, High-Quality Export, Mobile-Optimized.
+- **Internal Linking:**
+    - / (Anchor: free brat generator)
+    - /brat-text-generator/ (Anchor: Brat Text Generator)
+    - /brat-font-generator (Anchor: Brat Font Generator)
+
+---
+
+## 4. BRAT TEXT GENERATOR (/brat-text-generator/)
+
+- **Meta Title:** Brat Text Generator — Free Brat Text Maker & Image Creator [2026]
+- **Meta Description:** Free brat text generator inspired by Charli XCX. Type any phrase, customize colors, and download a clean watermark-free PNG. Works on mobile. No signup.
+- **H1:** Brat Text Generator
+- **Feature Flow (Steps):**
+    1. Type your message
+    2. Adjust typography
+    3. Set the colors
+    4. Download Your Brat Text as PNG
+- **Gallery Images (6 items):** /examples/brat-text-ex-1.png to ex-6.png.
+- **Alt Text Pattern:** "brat text generator example — green background with classic lowercase text"
+- **Structured Data:** FAQPage (7 items), HowTo (4 steps).
+- **Internal Linking:**
+    - / (Anchor: brat generator)
+    - /brat-font-generator/ (Anchor: brat font generator)
+    - /brat-maker/ (Anchor: brat maker)
+
+---
+
+## 5. BRAT FONT GENERATOR (/brat-font-generator/)
+
+- **Meta Title:** Brat Font Generator — Free Brat Font Download Alternative [2026]
+- **Meta Description:** Free brat font generator — recreate bold Charli XCX brat typography instantly. Adjust spacing, weight & color. No signup, no watermark. Download PNG.
+- **H1:** Brat Font Generator
+- **Feature Flow (Typography Parameters):**
+    1. Font Size & Weight
+    2. Letter Spacing & Alignment
+    3. Line Height
+    4. Color System
+- **Key Concepts:** "Crushed" letter spacing, Bold weight (700+), High contrast, Swiss design origins (Arial/Helvetica Bold).
+- **Internal Linking:**
+    - / (Anchor: free brat generator)
+    - /blog/what-is-brat-font (Anchor: guide to brat typography)
+    - /brat-text-generator/ (Anchor: brat text generator)
+    - /brat-maker/ (Anchor: brat maker)
+    - /brat-black-generator/ (Anchor: black brat generator)
+
+---
+
+## 6. COLOR VARIANT PAGES (Black, Pink, White, Green)
+
+All color pages follow a consistent feature flow (5 Steps) and H2 structure, but with unique color-specific copy.
+
+### A. Black Brat Generator (/brat-black-generator/)
+- **Meta Title:** Brat Generator Black — Free Dark Aesthetic Text, No Watermark
+- **Keyword:** black brat generator
+- **Key Content:** OLED contrast, "dark mode" aesthetics, #0A0A0A hex code.
+
+### B. Pink Brat Generator (/brat-generator-pink/)
+- **Meta Title:** Pink Brat Generator – Free Pink Brat Text & Images
+- **Keyword:** pink brat generator
+- **Key Content:** Pastel aesthetic, softer palette, #FF90E8 hex code.
+
+### C. White Brat Generator (/brat-generator-white/)
+- **Meta Title:** Brat Generator White — Free Clean Aesthetic Text, No Watermark
+- **Keyword:** white brat generator
+- **Key Content:** Minimalist approach, "Clean Girl" aesthetic, #FFFFFF hex code.
+- **Unique Feature:** Contains a 6-image gallery.
+
+### D. Green Brat Generator (/brat-green-generator/)
+- **Meta Title:** Brat Green Generator – Free Neon Green Brat Text & Images
+- **Keyword:** brat green generator
+- **Key Content:** Original Charli XCX color, "Acid Green", #C1FF00 hex code.
+
+---
+
+## 7. BRAT ALBUM COVER GENERATOR (/brat-album-cover-generator/)
+
+- **Meta Title:** Brat Album Cover Generator – Free Brat Cover Art Maker
+- **Meta Description:** Free brat album cover generator — create brat-style album art, playlist covers & music visuals instantly. No signup, no watermark. Download high-res PNG.
+- **H1:** Brat Album Cover Generator
+- **Feature Flow (6 Steps):**
+    1. Choose Your Canvas
+    2. Add Your Album Text
+    3. Upload a Background
+    4. Customize Typography
+    5. Apply Color Styling
+    6. Download Cover
+- **Target Keywords:** brat album art style, brat cover maker, Spotify playlist covers.
+
+---
+
+## 8. BRAT NAME GENERATOR (/brat-name-generator/)
+
+- **Meta Title:** Free Brat Name Generator – Create Unique Brat Names Instantly
+- **Meta Description:** Use our free brat name generator to create unique brat names and text instantly. Generate your brat identity with no signup required.
+- **H1:** Brat Name Generator
+- **Traits of a Brat Name:** Short, lowercase, blunt, slightly abstract (e.g., "denial", "so julia").
+- **Features:** Instant Generation, Album-Ready Names, Profile and Username Ideas.
+
+---
+
+## 9. BLOG POSTS & TOPICAL CONTENT
+
+### What Is the Brat Font? (/blog/what-is-brat-font/)
+- **Meta Title:** What Is the Brat Font? Charli XCX Brat Typography Explained [2026]
+- **Core Message:** No official font download exists; it's a set of typography rules (crushed Arial/Helvetica Bold).
+- **Images:** /examples/brat-font-ex-3.png (Alt: brat font style example — bold lowercase typography on neon green background).
+
+### Other Blog Posts:
+- /blog/brat-captions-for-instagram/
+- /blog/how-to-make-brat-pfp/
+- /blog/how-to-make-brat-text/
+- /blog/what-is-brat-generator/
+- /blog/what-is-brat-text/
+
+---
+
+## 10. TECHNICAL SEO SUMMARY
+
+- **Canonical Strategy:** Every page contains a self-referential canonical URL.
+- **Robots:** index, follow (default).
+- **Sitemap:** /sitemap.xml (Standard Next.js sitemap).
+- **Rendering:** All pages use Server-Side Rendering (SSR) via Next.js App Router for optimal indexability.
+- **Responsive Design:** 100% mobile-optimized with touch-friendly controls.
+- **Image Strategy:** High-resolution PNG exports (up to 3000px) with descriptive alt text across all galleries.
