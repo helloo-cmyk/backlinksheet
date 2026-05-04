@@ -43,7 +43,14 @@ function getOrCreateEmojiBitmap(char: string): HTMLCanvasElement | null {
  * Brat Generator init logic - runs after mount when JSZip and FileSaver are loaded.
  * Returns cleanup function for window listeners.
  */
-export function initBratGenerator(options?: { defaultBg?: string; defaultFg?: string }): () => void {
+export function initBratGenerator(options?: { 
+  defaultBg?: string; 
+  defaultFg?: string;
+  defaultTab?: 'text' | 'style' | 'stickers';
+  defaultRatio?: '1:1' | '4:5' | '9:16' | '16:9';
+  defaultResolution?: '1024' | '1500' | '2048' | '3000';
+  defaultPlaceholder?: string;
+}): () => void {
   const root = document.getElementById("brat-embed-root");
   const widget = document.getElementById("brat-widget");
   if (!root || !widget) return () => {};
@@ -128,7 +135,7 @@ export function initBratGenerator(options?: { defaultBg?: string; defaultFg?: st
   }
 
   const state = {
-    text: "brat",
+    text: options?.defaultPlaceholder || "brat",
     fontSize: 180,
     lineHeight: 1.0,
     letterSpacing: 0,
@@ -139,8 +146,8 @@ export function initBratGenerator(options?: { defaultBg?: string; defaultFg?: st
     shadowColor: "#000000",
     bg: options?.defaultBg || "#c1ff00",
     fg: options?.defaultFg || "#0a0a0a",
-    ratio: "1:1",
-    res: 1500,
+    ratio: (options?.defaultRatio || "1:1") as string,
+    res: Number(options?.defaultResolution) || 1500,
     safe: false,
     bgImage: null as HTMLImageElement | null,
     stickers: [] as {
@@ -1648,7 +1655,7 @@ export function initBratGenerator(options?: { defaultBg?: string; defaultFg?: st
     requestDraw();
   }, 100);
   setCanvasSize();
-  switchTab("text");
+  switchTab(options?.defaultTab || "text");
   updateUndoRedoButtons();
 
   const onResize = () => {
@@ -1661,7 +1668,7 @@ export function initBratGenerator(options?: { defaultBg?: string; defaultFg?: st
 
   const isMobileInit = window.matchMedia("(max-width: 999px)").matches;
   if (isMobileInit && controlsEl) {
-    switchTab("text");
+    switchTab(options?.defaultTab || "text");
   }
 
   return () => {

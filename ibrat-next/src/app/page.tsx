@@ -112,21 +112,26 @@ export default function Home() {
             <span className="hp-gen-dot" />
             Live Generator
           </div>
-          <div className="tool-intro-hint">
-            Type your text, pick a color, and download your brat-style image — the whole process takes under 30 seconds.
-          </div>
           <div style={{ minHeight: '520px' }}>
-            <BratGeneratorLazy />
+            <BratGeneratorLazy
+              mode="full"
+              defaultTab="text"
+              defaultRatio="1:1"
+              defaultPlaceholder="brat"
+              hideSelfieMode={false}
+              hidePresets={false}
+              showRandomButton={false}
+            />
           </div>
         </div>
       </div>
 
-      {/* ── WHAT IS A BRAT GENERATOR ── */}
+      {/* ── WHAT IS THE BRAT TREND ── */}
       <div className="hp-page-section hp-page-section-bordered">
         <div className="hp-two-col">
           <div>
-            <span className="hp-eyebrow">About</span>
-            <h2 className="hp-display-heading">What Is a Brat Generator?</h2>
+            <span className="hp-eyebrow">Trends</span>
+            <h2 className="hp-display-heading">What Is the Brat Trend?</h2>
           </div>
           <div>
             <p className="hp-body-text">
@@ -136,6 +141,9 @@ export default function Home() {
             </p>
             <p className="hp-body-text mt-4">
               People use it to make memes, profile pictures, stickers, and social posts. It runs in your browser. No app to install, no account to create.
+            </p>
+            <p className="hp-body-text mt-4">
+              To learn more about the culture and rules behind this viral look, read our complete <Link href="/blog/brat-aesthetic-guide/" className="hp-link">brat aesthetic guide</Link>.
             </p>
             <p className="hp-body-text mt-4">
               For sticker and layered image edits, try the{" "}

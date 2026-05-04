@@ -85,7 +85,17 @@ export default function BratAlbumCoverGeneratorPage() {
 
       {/* ── GENERATOR APP ── */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 mt-2 mb-16">
-        <BratGeneratorLazy />
+        <div style={{ minHeight: '520px', position: 'relative', width: '100%' }}>
+          <BratGeneratorLazy
+            mode="album"
+            defaultTab="style"
+            defaultRatio="1:1"
+            defaultResolution="3000"
+            defaultPlaceholder="album title"
+            hideSelfieMode={false}
+            hidePresets={false}
+          />
+        </div>
       </div>
 
       {/* ── INTERNAL LINK ── */}

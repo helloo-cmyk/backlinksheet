@@ -1187,13 +1187,52 @@ const BRAT_STYLES = `
 
 `;
 
-export default function BratGenerator({ defaultBg, defaultFg }: { defaultBg?: string; defaultFg?: string }) {
+type BratGeneratorMode = 'full' | 'text-only' | 'font-only' | 'album' | 'name' | 'color-variant';
+
+interface BratGeneratorProps {
+  defaultBg?: string;
+  defaultFg?: string;
+  mode?: BratGeneratorMode;
+  defaultTab?: 'text' | 'style' | 'stickers';
+  defaultRatio?: '1:1' | '4:5' | '9:16' | '16:9';
+  defaultResolution?: '1024' | '1500' | '2048' | '3000';
+  defaultPlaceholder?: string;
+  lockBg?: boolean;
+  lockFg?: boolean;
+  hideSelfieMode?: boolean;
+  hideAspectRatio?: boolean;
+  hidePresets?: boolean;
+  showRandomButton?: boolean;
+}
+
+export default function BratGenerator({ 
+  defaultBg, 
+  defaultFg, 
+  mode = 'full',
+  defaultTab,
+  defaultRatio,
+  defaultResolution,
+  defaultPlaceholder,
+  lockBg,
+  lockFg,
+  hideSelfieMode,
+  hideAspectRatio,
+  hidePresets,
+  showRandomButton
+}: BratGeneratorProps) {
   const rootRef = useRef<HTMLDivElement>(null);
   const cleanupRef = useRef<(() => void) | null>(null);
 
   useEffect(() => {
     if (rootRef.current) {
-      cleanupRef.current = initBratGenerator({ defaultBg, defaultFg });
+      cleanupRef.current = initBratGenerator({ 
+        defaultBg, 
+        defaultFg, 
+        defaultTab,
+        defaultRatio,
+        defaultResolution,
+        defaultPlaceholder
+      });
     }
     return () => {
       if (cleanupRef.current) {
@@ -1201,7 +1240,7 @@ export default function BratGenerator({ defaultBg, defaultFg }: { defaultBg?: st
         cleanupRef.current = null;
       }
     };
-  }, [defaultBg, defaultFg]);
+  }, [defaultBg, defaultFg, defaultTab, defaultRatio, defaultResolution, defaultPlaceholder]);
 
   return (
     <div id="brat-embed-root" ref={rootRef} style={{ all: "initial" }}>
@@ -1212,6 +1251,13 @@ export default function BratGenerator({ defaultBg, defaultFg }: { defaultBg?: st
         rel="stylesheet"
       />
       <style dangerouslySetInnerHTML={{ __html: BRAT_STYLES }} />
+      
+      {/* TAB DIFFERENTIATION LOGIC */}
+      {(mode === 'text-only' || mode === 'font-only' || mode === 'color-variant') && (
+        <style dangerouslySetInnerHTML={{ __html: `
+          [data-tab="stickers"], #brat-acc-stickers { display: none !important; }
+        ` }} />
+      )}
       <div id="brat-widget" aria-live="polite">
         <div id="brat-wrap">
           <div className="brat-grid">
@@ -1240,9 +1286,28 @@ export default function BratGenerator({ defaultBg, defaultFg }: { defaultBg?: st
                       <textarea
                         id="brat-text"
                         rows={4}
-                        placeholder="write your brat text here (it will be lowercased)"
-                        defaultValue="brat"
+                        placeholder={defaultPlaceholder ?? 'brat'}
+                        defaultValue={defaultPlaceholder ?? 'brat'}
                       />
+
+                      {(mode === 'name' || showRandomButton === true) && (
+                        <button 
+                          type="button" 
+                          id="brat-randomBtn" 
+                          className="brat-btn"
+                          style={{ 
+                            width: '100%', 
+                            marginTop: 10, 
+                            marginBottom: 10, 
+                            background: '#CCFF00', 
+                            color: '#000', 
+                            fontWeight: 'bold',
+                            display: 'block'
+                          }}
+                        >
+                          Generate Random Name
+                        </button>
+                      )}
 
                       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
                         <div>
@@ -1316,7 +1381,7 @@ export default function BratGenerator({ defaultBg, defaultFg }: { defaultBg?: st
                   </button>
                   <div className="brat-acc-b">
                     <div className="brat-controls-inner" style={{ padding: 10 }}>
-                      <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                      <div style={{ display: hidePresets ? "none" : "flex", gap: 8, flexWrap: "wrap" }}>
                         <div className="brat-pill" data-bg="#c1ff00" data-fg="#0a0a0a">
                           <span
                             style={{
@@ -1369,17 +1434,17 @@ export default function BratGenerator({ defaultBg, defaultFg }: { defaultBg?: st
                         </div>
                       </div>
                       <div style={{ display: "flex", justifyContent: "space-between", gap: 8 }}>
-                        <div>
+                        <div style={{ opacity: lockBg ? 0.4 : 1, pointerEvents: lockBg ? 'none' : 'auto' }}>
                           <label className="brat-label" htmlFor="brat-bgColor">
-                            Background
+                            Background {lockBg && <span style={{ fontSize: '10px', color: '#666', textTransform: 'lowercase' }}>(locked)</span>}
                           </label>
-                          <input type="color" id="brat-bgColor" defaultValue="#c1ff00" />
+                          <input type="color" id="brat-bgColor" defaultValue="#c1ff00" disabled={lockBg} />
                         </div>
-                        <div>
+                        <div style={{ opacity: lockFg ? 0.4 : 1, pointerEvents: lockFg ? 'none' : 'auto' }}>
                           <label className="brat-label" htmlFor="brat-fgColor">
-                            Text
+                            Text {lockFg && <span style={{ fontSize: '10px', color: '#666', textTransform: 'lowercase' }}>(locked)</span>}
                           </label>
-                          <input type="color" id="brat-fgColor" defaultValue="#0a0a0a" />
+                          <input type="color" id="brat-fgColor" defaultValue="#0a0a0a" disabled={lockFg} />
                         </div>
                       </div>
                       <div className="brat-row">
@@ -1394,7 +1459,7 @@ export default function BratGenerator({ defaultBg, defaultFg }: { defaultBg?: st
                   <button type="button" className="brat-acc-h" data-acc="canvas">
                     Canvas
                   </button>
-                  <div className="brat-acc-b">
+                  <div className="brat-acc-b" style={{ display: hideAspectRatio ? "none" : undefined }}>
                     <div className="brat-controls-inner" style={{ padding: 10 }}>
                       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
                         <div>
@@ -1432,7 +1497,7 @@ export default function BratGenerator({ defaultBg, defaultFg }: { defaultBg?: st
                   <button type="button" className="brat-acc-h" data-acc="selfie">
                     Selfie Mode
                   </button>
-                  <div className="brat-acc-b">
+                  <div className="brat-acc-b" style={{ display: hideSelfieMode ? "none" : undefined }}>
                     <div className="brat-controls-inner" style={{ padding: 10 }}>
                       <div className="brat-row">
                         <input type="file" id="brat-bgUpload" accept="image/*" />
@@ -1468,7 +1533,7 @@ export default function BratGenerator({ defaultBg, defaultFg }: { defaultBg?: st
                 <button type="button" id="brat-download" />
                 <button type="button" id="brat-copy" />
                 <button type="button" id="brat-altBtn" />
-                <button type="button" id="brat-randomBtn" />
+                {!(mode === 'name' || showRandomButton === true) && <button type="button" id="brat-randomBtn" />}
                 <button type="button" id="brat-batchBtn" />
                 <textarea id="brat-batch" />
               </div>

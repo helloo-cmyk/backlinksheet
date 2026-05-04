@@ -87,7 +87,17 @@ export default function BratGeneratorWhitePage() {
 
       {/* ── GENERATOR APP ── */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 mt-2 mb-16">
-        <BratGeneratorLazy defaultBg="#ffffff" defaultFg="#0a0a0a" />
+        <div style={{ minHeight: '520px', position: 'relative', width: '100%' }}>
+          <BratGeneratorLazy
+            mode="full"
+            defaultBg="#ffffff"
+            defaultFg="#0a0a0a"
+            lockBg={true}
+            hidePresets={true}
+            defaultTab="text"
+            defaultPlaceholder="minimal brat"
+          />
+        </div>
       </div>
 
       {/* ── INTERNAL LINK ── */}

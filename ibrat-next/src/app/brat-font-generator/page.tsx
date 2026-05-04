@@ -93,11 +93,15 @@ export default function BratFontGeneratorPage() {
             <span className="hp-gen-dot" />
             Live Generator
           </div>
-          <div className="tool-intro-hint">
-            Adjust spacing, weight, and color — the brat font style applies automatically as you type.
-          </div>
-          <div style={{ minHeight: '520px' }}>
-            <BratGeneratorLazy />
+          <div style={{ minHeight: '520px', position: 'relative', width: '100%' }}>
+            <BratGeneratorLazy
+              mode="font-only"
+              defaultTab="text"
+              defaultRatio="1:1"
+              defaultPlaceholder="brat font"
+              hideSelfieMode={true}
+              hidePresets={false}
+            />
           </div>
         </div>
       </div>

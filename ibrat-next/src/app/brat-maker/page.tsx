@@ -28,7 +28,16 @@ export default function BratMakerPage() {
 
       {/* ── GENERATOR ── */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 mt-2 mb-16">
-        <BratGeneratorLazy />
+        <div style={{ minHeight: '520px', position: 'relative', width: '100%' }}>
+          <BratGeneratorLazy
+            mode="full"
+            defaultTab="style"
+            defaultRatio="9:16"
+            defaultPlaceholder="caption here"
+            hideSelfieMode={false}
+            hidePresets={false}
+          />
+        </div>
       </div>
 
       {/* ── INTERNAL LINK ── */}

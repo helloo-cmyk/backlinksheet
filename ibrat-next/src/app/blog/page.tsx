@@ -57,6 +57,15 @@ const BLOG_POSTS = [
     image: "/examples/brat-demo-5.png",
     date: "May 02, 2026",
     readTime: "7 MIN READ"
+  },
+  {
+    title: "Brat Aesthetic Guide — What It Is and How to Use It in 2026",
+    slug: "brat-aesthetic-guide",
+    description: "The ultimate guide to the bold, minimal, and viral visual trend that redefined digital culture. Learn the rules of the aesthetic and how to create your own.",
+    category: "AESTHETICS",
+    image: "/examples/brat-demo-5.png",
+    date: "May 04, 2026",
+    readTime: "8 MIN READ"
   }
 ];
 

@@ -77,7 +77,17 @@ export default function BratGeneratorPinkPage() {
 
       {/* ── GENERATOR APP ── */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 mt-2 mb-16">
-        <BratGeneratorLazy defaultBg="#ff90e8" defaultFg="#0a0a0a" />
+        <div style={{ minHeight: '520px', position: 'relative', width: '100%' }}>
+          <BratGeneratorLazy
+            mode="full"
+            defaultBg="#ff90e8"
+            defaultFg="#0a0a0a"
+            lockBg={true}
+            hidePresets={true}
+            defaultTab="text"
+            defaultPlaceholder="pink brat"
+          />
+        </div>
       </div>
 
       {/* ── INTERNAL LINK ── */}
