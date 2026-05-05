@@ -39,6 +39,11 @@ export default function Footer() {
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-foreground/70">
               Create brat-style text, images, and profile pictures for free. No signup required.
             </p>
+            <div className="mt-6">
+              <a href="https://startupfa.me/s/ibrat?utm_source=ibratgenerator.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://startupfa.me/badges/featured-badge-small.webp" alt="Brat Generator - Featured on Startup Fame" width="224" height="36" className="opacity-80 hover:opacity-100 transition-opacity" />
+              </a>
+            </div>
           </div>
 
           {/* Tools column */}
