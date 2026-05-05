@@ -13,9 +13,52 @@ export const metadata = {
     "A simple explanation of the music-inspired text aesthetic, how the cultural trend started, and how you can create your own bold typographic graphics.",
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a brat generator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a web-based tool that automatically formats your text into the bold, minimal style popularized by the 2024 album cover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a brat generator free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, this brat generator no signup tool is completely free with unlimited downloads."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need design skills to use one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No design experience is necessary. You simply type your phrase and the tool handles the font weight, spacing, and colors for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file format does it export?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The tool exports high-quality PNG files so your text remains sharp when uploaded to social media."
+      }
+    }
+  ]
+};
+
 export default function WhatIsBratGeneratorPage() {
   return (
     <main className="hp-root pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
       <BlogHero 
         category="CULTURE"

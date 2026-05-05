@@ -13,9 +13,52 @@ export const metadata = {
     "Learn about the iconic Brat text aesthetic, its origins, and why it became a viral sensation. Discover how to create your own bold graphics.",
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What colors does brat text come in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The original and most popular color is neon green, but variations often use stark white, solid black, or hot pink backgrounds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What font is used in brat text?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The brat text font style relies on a heavy, sans-serif font like Arial Bold or Helvetica Neue Bold with extremely tight letter spacing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does brat text look blurry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The slight blur is an intentional choice that gives the graphic a raw, low-resolution, and unpolished appearance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I make brat text for free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can use a web-based text generator to instantly create and download the graphics without paying or creating an account."
+      }
+    }
+  ]
+};
+
 export default function WhatIsBratTextPage() {
   return (
     <main className="hp-root pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
       <BlogHero 
         category="AESTHETICS"

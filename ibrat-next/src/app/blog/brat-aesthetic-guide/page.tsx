@@ -14,6 +14,45 @@ export const metadata = {
     "Learn about the brat aesthetic 2026. Discover the origins, design rules, and color palettes that define the viral Charli XCX visual trend.",
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is this visual style in simple terms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a minimal design style that uses bold, lowercase text on flat, bright backgrounds. It prioritizes attitude and speed over perfection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What color is brat green exactly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The exact hex code for the signature neon green is #C1FF00. It is often called \"acid green\" or \"slime green\" due to its high saturation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the trend over in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. While it is no longer a viral daily news story, the visual rules have become a standard way to make bold text posts and memes online."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What font does the look use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It uses a thick, bold sans-serif font. If you want to match the look exactly, you can use our brat font generator to set the perfect weight and spacing."
+      }
+    }
+  ]
+};
+
 export default function BratAestheticGuidePage() {
   const today = new Date().toLocaleDateString('en-US', {
     month: 'long',
@@ -23,6 +62,10 @@ export default function BratAestheticGuidePage() {
 
   return (
     <main className="hp-root pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <BlogHero 
         category="AESTHETICS"
         title="Brat Aesthetic Guide — What It Is and How to Use It in 2026"

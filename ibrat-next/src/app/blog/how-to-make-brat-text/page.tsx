@@ -13,9 +13,52 @@ export const metadata = {
     "Learn how to make brat text step-by-step in under 30 seconds. Discover the best way to create brat text online for TikTok, Instagram, and more.",
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to download anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You can create brat text directly in your web browser without installing any apps or fonts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, generating and downloading the text graphics is completely free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use brat text on Instagram and TikTok?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The tool allows you to select the correct aspect ratios specifically for Instagram (1:1 or 4:5) and TikTok (9:16)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The process takes seconds. Type your phrase, pick a color, and hit download immediately."
+      }
+    }
+  ]
+};
+
 export default function HowToMakeBratTextPage() {
   return (
     <main className="hp-root pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <BlogHero 
         category="TUTORIAL"
         title="How to Make Brat Text – Step-by-Step"
