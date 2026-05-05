@@ -11,46 +11,82 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
         <style type="text/css">
+          :root {
+            --primary: #CCFF00;
+            --bg: #0A0A0A;
+            --surface: #121212;
+            --text: #FFFFFF;
+            --text-dim: #A1A1AA;
+            --border: #27272A;
+          }
           body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             font-size: 14px;
-            color: #333;
+            color: var(--text);
             margin: 0;
-            background: #f8fafc;
+            background: var(--bg);
+            line-height: 1.5;
           }
           a {
-            color: #1a1a1a;
+            color: var(--text);
             text-decoration: none;
-            font-weight: 600;
+            transition: all 0.2s ease;
           }
           a:hover {
-            text-decoration: underline;
-            color: #000;
+            color: var(--primary);
+          }
+          .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
           }
           .header {
-            background: #000;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
           }
-          .header h1 {
+          .header-left h1 {
             margin: 0;
-            font-size: 28px;
-            letter-spacing: -0.02em;
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.04em;
           }
-          .header p {
-            margin: 10px 0 0;
-            opacity: 0.7;
+          .header-left p {
+            margin: 8px 0 0;
+            color: var(--text-dim);
             font-size: 16px;
           }
-          .content {
-            max-width: 1000px;
-            margin: -40px auto 40px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          .stats {
+            display: flex;
+            gap: 20px;
+          }
+          .stat-item {
+            background: var(--surface);
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+          }
+          .stat-value {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+          }
+          .stat-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-dim);
+          }
+          .content-card {
+            background: var(--surface);
+            border-radius: 16px;
+            border: 1px solid var(--border);
             overflow: hidden;
-            padding: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
           }
           table {
             width: 100%;
@@ -58,84 +94,123 @@
           }
           th {
             text-align: left;
-            padding: 15px;
-            border-bottom: 2px solid #CCFF00;
-            font-size: 12px;
+            padding: 18px 24px;
+            background: #18181B;
+            font-size: 11px;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #666;
+            letter-spacing: 0.15em;
+            color: var(--text-dim);
+            border-bottom: 1px solid var(--border);
           }
           td {
-            padding: 15px;
-            border-bottom: 1px solid #f1f5f9;
-            word-break: break-all;
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-dim);
+          }
+          tr:last-child td {
+            border-bottom: none;
           }
           tr:hover td {
-            background: #fdfdfd;
+            background: #18181B;
+            color: var(--text);
+          }
+          .url-text {
+            color: var(--text);
+            font-weight: 500;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 13px;
+          }
+          .priority-tag {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            background: rgba(204, 255, 0, 0.1);
+            color: var(--primary);
+            border: 1px solid rgba(204, 255, 0, 0.2);
+          }
+          .freq-tag {
+            font-size: 12px;
+            color: var(--text-dim);
+          }
+          .date-text {
+            font-size: 12px;
+            opacity: 0.8;
           }
           .footer {
+            margin-top: 40px;
             text-align: center;
-            padding: 20px;
-            color: #94a3b8;
+            color: var(--text-dim);
             font-size: 12px;
           }
-          .priority-high { color: #059669; font-weight: bold; }
-          .priority-med { color: #0891b2; }
-          .priority-low { color: #64748b; }
         </style>
       </head>
       <body>
-        <div class="header">
-          <h1>Ibrat Generator Sitemap</h1>
-          <p>Total URLs: <xsl:value-of select="count(sitemap:urlset/sitemap:url)"/></p>
-        </div>
-        <div class="content">
-          <table>
-            <thead>
-              <tr>
-                <th width="70%">URL</th>
-                <th width="10%">Priority</th>
-                <th width="10%">Changefreq</th>
-                <th width="10%">Last Modified</th>
-              </tr>
-            </thead>
-            <tbody>
-              <xsl:for-each select="sitemap:urlset/sitemap:url">
+        <div class="container">
+          <div class="header">
+            <div class="header-left">
+              <h1>XML Sitemap</h1>
+              <p>Index of ibratgenerator.com</p>
+            </div>
+            <div class="stats">
+              <div class="stat-item">
+                <span class="stat-value"><xsl:value-of select="count(sitemap:urlset/sitemap:url)"/></span>
+                <span class="stat-label">Total URLs</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value"><xsl:value-of select="count(sitemap:urlset/sitemap:url[contains(sitemap:loc, '/blog/')])"/></span>
+                <span class="stat-label">Blog Posts</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-card">
+            <table>
+              <thead>
                 <tr>
-                  <td>
-                    <xsl:variable name="itemURL">
-                      <xsl:value-of select="sitemap:loc"/>
-                    </xsl:variable>
-                    <a href="{$itemURL}">
-                      <xsl:value-of select="sitemap:loc"/>
-                    </a>
-                  </td>
-                  <td>
-                    <xsl:variable name="priority" select="sitemap:priority"/>
-                    <span>
-                      <xsl:attribute name="class">
-                        <xsl:choose>
-                          <xsl:when test="$priority &gt;= 0.8">priority-high</xsl:when>
-                          <xsl:when test="$priority &gt;= 0.5">priority-med</xsl:when>
-                          <xsl:otherwise>priority-low</xsl:otherwise>
-                        </xsl:choose>
-                      </xsl:attribute>
-                      <xsl:value-of select="sitemap:priority"/>
-                    </span>
-                  </td>
-                  <td>
-                    <xsl:value-of select="sitemap:changefreq"/>
-                  </td>
-                  <td>
-                    <xsl:value-of select="substring(sitemap:lastmod, 0, 11)"/>
-                  </td>
+                  <th width="65%">URL Location</th>
+                  <th width="10%">Priority</th>
+                  <th width="10%">Update</th>
+                  <th width="15%">Last Modified</th>
                 </tr>
-              </xsl:for-each>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer">
-          Generated by Ibrat Generator XML Sitemap Engine
+              </thead>
+              <tbody>
+                <xsl:for-each select="sitemap:urlset/sitemap:url">
+                  <xsl:sort select="sitemap:priority" order="descending"/>
+                  <tr>
+                    <td>
+                      <xsl:variable name="itemURL">
+                        <xsl:value-of select="sitemap:loc"/>
+                      </xsl:variable>
+                      <a href="{$itemURL}" class="url-text">
+                        <xsl:value-of select="sitemap:loc"/>
+                      </a>
+                    </td>
+                    <td>
+                      <span class="priority-tag">
+                        <xsl:value-of select="sitemap:priority"/>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="freq-tag">
+                        <xsl:value-of select="sitemap:changefreq"/>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="date-text">
+                        <xsl:value-of select="substring(sitemap:lastmod, 0, 11)"/>
+                      </span>
+                    </td>
+                  </tr>
+                </xsl:for-each>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="footer">
+            Generated by Ibrat Generator — The ultimate brat aesthetic toolkit.
+          </div>
         </div>
       </body>
     </html>
