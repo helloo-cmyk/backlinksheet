@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" 
+<xsl:stylesheet version="1.0" 
                 xmlns:html="http://www.w3.org/TR/REC-html40"
                 xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -21,7 +21,7 @@
           a {
             color: #1a1a1a;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
           }
           a:hover {
             text-decoration: underline;
@@ -112,7 +112,14 @@
                   </td>
                   <td>
                     <xsl:variable name="priority" select="sitemap:priority"/>
-                    <span class="priority-{if ($priority >= 0.8) then 'high' else if ($priority >= 0.5) then 'med' else 'low'}">
+                    <span>
+                      <xsl:attribute name="class">
+                        <xsl:choose>
+                          <xsl:when test="$priority &gt;= 0.8">priority-high</xsl:when>
+                          <xsl:when test="$priority &gt;= 0.5">priority-med</xsl:when>
+                          <xsl:otherwise>priority-low</xsl:otherwise>
+                        </xsl:choose>
+                      </xsl:attribute>
                       <xsl:value-of select="sitemap:priority"/>
                     </span>
                   </td>
