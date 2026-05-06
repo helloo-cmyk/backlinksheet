@@ -7,7 +7,8 @@
     "build": "npm run generate:examples && next build",
     "start": "next start",
     "lint": "eslint",
-    "generate:examples": "node scripts/generateExamples.js"
+    "generate:examples": "node scripts/generateExamples.js",
+    "ping-index": "node scripts/ping-indexnow.js"
   },
   "dependencies": {
     "canvas": "^3.2.1",
