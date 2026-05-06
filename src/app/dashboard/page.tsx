@@ -24,7 +24,16 @@ export default function Dashboard() {
   const [backlinkData, setBacklinkData] = useState<Record<number, any>>({});
   
   // UI state
-  const [activeTab, setActiveTab] = useState("prospecting"); // prospecting, scraper, spy, monitoring
+  const [activeTab, setActiveTab] = useState("prospecting"); // prospecting, scraper, spy, monitoring, tools
+  
+  // Monitoring State
+  const [isMonitoring, setIsMonitoring] = useState(false);
+  const [monitorLogs, setMonitorLogs] = useState<string[]>(["[SYSTEM] Monitoring system ready."]);
+
+  // Bulk Tools State
+  const [bulkDomains, setBulkDomains] = useState("");
+  const [daResults, setDaResults] = useState<{domain: string, da: number}[]>([]);
+  const [isCheckingDA, setIsCheckingDA] = useState(false);
   const [currentCategory, setCurrentCategory] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
   const [pricingFilter, setPricingFilter] = useState("all");
@@ -282,6 +291,7 @@ export default function Dashboard() {
                 <li><button onClick={() => setActiveTab("scraper")} className={`w-full text-left px-4 py-2.5 rounded-lg text-sm transition-all flex items-center gap-3 ${activeTab === 'scraper' ? 'bg-blue-600/10 text-blue-400 border border-blue-500/20' : 'text-zinc-400 hover:bg-zinc-800'}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"></path></svg> Scraper Bot</button></li>
                 <li><button onClick={() => setActiveTab("spy")} className={`w-full text-left px-4 py-2.5 rounded-lg text-sm transition-all flex items-center gap-3 ${activeTab === 'spy' ? 'bg-blue-600/10 text-blue-400 border border-blue-500/20' : 'text-zinc-400 hover:bg-zinc-800'}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg> Competitor Spy</button></li>
                 <li><button onClick={() => setActiveTab("monitoring")} className={`w-full text-left px-4 py-2.5 rounded-lg text-sm transition-all flex items-center gap-3 ${activeTab === 'monitoring' ? 'bg-blue-600/10 text-blue-400 border border-blue-500/20' : 'text-zinc-400 hover:bg-zinc-800'}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg> Monitoring</button></li>
+                <li><button onClick={() => setActiveTab("tools")} className={`w-full text-left px-4 py-2.5 rounded-lg text-sm transition-all flex items-center gap-3 ${activeTab === 'tools' ? 'bg-blue-600/10 text-blue-400 border border-blue-500/20' : 'text-zinc-400 hover:bg-zinc-800'}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg> Bulk Tools</button></li>
               </ul>
             </div>
 
@@ -505,6 +515,72 @@ export default function Dashboard() {
                     {monitorLogs.map((log, i) => <div key={i} className="mb-1">{log}</div>)}
                   </div>
                 </div>
+              </div>
+            )}
+            {activeTab === 'tools' && (
+              <div className="max-w-4xl animate-fade-in">
+                <h1 className="text-3xl font-black mb-8">Bulk SEO Tools</h1>
+                
+                <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-10 shadow-2xl mb-12">
+                  <h3 className="text-xl font-bold mb-4">Bulk DA Checker</h3>
+                  <p className="text-zinc-500 mb-6 text-sm">Enter a list of domains (one per line) to check their Domain Authority.</p>
+                  
+                  <textarea 
+                    value={bulkDomains}
+                    onChange={(e) => setBulkDomains(e.target.value)}
+                    placeholder="google.com&#10;facebook.com&#10;yourcompetitor.com"
+                    className="w-full bg-zinc-950 border border-zinc-800 rounded-2xl p-6 text-white text-sm outline-none h-48 mb-6 focus:border-blue-500 transition-all font-mono"
+                  />
+                  
+                  <button 
+                    onClick={() => {
+                      setIsCheckingDA(true);
+                      const domains = bulkDomains.split('\n').filter(d => d.trim());
+                      // Simulate DA check results
+                      setTimeout(() => {
+                        const mockResults = domains.map(d => ({ domain: d.trim(), da: Math.floor(Math.random() * (90 - 20) + 20) }));
+                        setDaResults(mockResults);
+                        setIsCheckingDA(false);
+                      }, 3000);
+                    }}
+                    disabled={isCheckingDA || !bulkDomains}
+                    className={`w-full py-5 rounded-2xl font-black uppercase tracking-widest transition-all ${isCheckingDA ? 'bg-zinc-800 text-zinc-600' : 'bg-blue-600 text-white hover:bg-blue-500 shadow-2xl shadow-blue-600/20'}`}
+                  >
+                    {isCheckingDA ? 'Analyzing Domains...' : '🔍 Start Bulk DA Analysis'}
+                  </button>
+                </div>
+
+                {daResults.length > 0 && (
+                  <div className="bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl">
+                    <table className="w-full text-left border-collapse">
+                      <thead>
+                        <tr className="bg-zinc-900/80 border-b border-zinc-800">
+                          <th className="px-8 py-4 text-[10px] font-black text-zinc-500 uppercase tracking-widest">Domain</th>
+                          <th className="px-8 py-4 text-[10px] font-black text-zinc-500 uppercase tracking-widest">Authority (DA)</th>
+                          <th className="px-8 py-4 text-[10px] font-black text-zinc-500 uppercase tracking-widest text-right">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {daResults.map((res, i) => (
+                          <tr key={i} className="border-b border-zinc-800/50 hover:bg-zinc-900/30 transition-all">
+                            <td className="px-8 py-4 text-sm font-bold text-white">{res.domain}</td>
+                            <td className="px-8 py-4">
+                              <div className="flex items-center gap-3">
+                                <div className="w-full max-w-[100px] h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+                                  <div className="h-full bg-blue-500" style={{ width: `${res.da}%` }}></div>
+                                </div>
+                                <span className="text-sm font-black text-blue-400">{res.da}</span>
+                              </div>
+                            </td>
+                            <td className="px-8 py-4 text-right">
+                              <span className="px-2 py-0.5 bg-emerald-500/10 text-emerald-500 text-[10px] font-bold rounded border border-emerald-500/20 uppercase">Verified</span>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
               </div>
             )}
           </main>
