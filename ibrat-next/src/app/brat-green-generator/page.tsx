@@ -273,6 +273,14 @@ export default function BratGreenGeneratorPage() {
         </div>
       </div>
 
+      {/* ── LEARN MORE ── */}
+      <div className="hp-page-section hp-page-section-bordered px-4">
+        <h2 className="hp-display-heading">Learn More About Brat Green</h2>
+        <p className="hp-body-text mt-4">
+          For a full breakdown of the signature green and its companion colors, read our <Link href="/blog/brat-color-code/" className="hp-link">complete brat color code guide →</Link>
+        </p>
+      </div>
+
       {/* ── FAQ ── */}
       <FAQAccordion
         title="Frequently Asked Questions"

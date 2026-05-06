@@ -73,7 +73,7 @@ export default function WhatIsBratFontPage() {
         title="What Is the Brat Font? Charli XCX Brat Font Name & Style Explained"
         subtitle="No official brat font download exists — the style is a set of typography rules. Learn what defines the Charli XCX brat aesthetic and how to recreate it."
         readTime="6 MIN READ"
-        imageSrc="/examples/brat-font-ex-3.png"
+        imageSrc="/blog-images/font-hero-v2.png"
         imageAlt="brat font style example — bold lowercase typography on neon green background"
       />
 

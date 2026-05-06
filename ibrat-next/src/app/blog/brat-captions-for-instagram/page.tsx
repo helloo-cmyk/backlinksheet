@@ -22,7 +22,7 @@ export default function BratCaptionsForInstagramPage() {
         title="Brat Captions for Instagram (50+ Real Examples You Can Copy)"
         subtitle=""
         readTime="5 MIN READ"
-        imageSrc="/examples/brat-demo-5.png"
+        imageSrc="/blog-images/captions-hero.png"
       />
 
       {/* ── ARTICLE BODY ── */}

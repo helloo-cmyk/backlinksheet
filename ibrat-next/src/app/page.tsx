@@ -140,7 +140,7 @@ export default function Home() {
               {" "}— stretched lowercase type, saturated neon colors, and zero clutter.
             </p>
             <p className="hp-body-text mt-4">
-              People use it to make memes, profile pictures, stickers, and social posts. It runs in your browser. No app to install, no account to create.
+              People use it to make memes, profile pictures, stickers, and social posts. Curious about the deeper cultural impact? Read our full guide on the <Link href="/blog/brat-summer-meaning" className="hp-link">brat summer meaning</Link>. It runs entirely in your browser with no app to install.
             </p>
             <p className="hp-body-text mt-4">
               To learn more about the culture and rules behind this viral look, read our complete <Link href="/blog/brat-aesthetic-guide/" className="hp-link">brat aesthetic guide</Link>.
@@ -148,6 +148,27 @@ export default function Home() {
             <p className="hp-body-text mt-4">
               For sticker and layered image edits, try the{" "}
               <Link href="/brat-maker/" className="hp-link">brat maker</Link>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* ── WHAT FONT IS THE BRAT ALBUM ── */}
+      <div className="hp-page-section hp-page-section-bordered">
+        <div className="hp-two-col">
+          <div>
+            <span className="hp-eyebrow">Typography</span>
+            <h2 className="hp-display-heading">What Font Is the Brat Album?</h2>
+          </div>
+          <div>
+            <p className="hp-body-text">
+              The brat album cover uses a bold, lowercase sans-serif font. While there is no official downloadable file, it is typically recreated using Arial Bold or Helvetica Neue Bold with extremely tight letter spacing.
+            </p>
+            <p className="hp-body-text mt-4">
+              For the full color palette with hex codes, see our <Link href="/blog/brat-color-code/" className="hp-link">brat color code guide →</Link>
+            </p>
+            <p className="hp-body-text mt-4">
+              To study the typography rules in detail, check out the <Link href="/blog/what-is-brat-font/" className="hp-link">brat font guide</Link>.
             </p>
           </div>
         </div>

@@ -65,7 +65,7 @@ export default function WhatIsBratTextPage() {
         title="What Is Brat Text? Aesthetic Explained"
         subtitle=""
         readTime="4 MIN READ"
-        imageSrc="/examples/brat-text-ex-1.png"
+        imageSrc="/blog-images/what-is-hero.png"
       />
 
       {/* ── ARTICLE BODY ── */}

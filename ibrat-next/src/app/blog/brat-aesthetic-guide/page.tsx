@@ -72,7 +72,7 @@ export default function BratAestheticGuidePage() {
         subtitle="The ultimate guide to the bold, minimal, and viral visual trend that redefined digital culture. Learn the rules of the aesthetic and how to create your own."
         readTime="8 MIN READ"
         publishDate={today}
-        imageSrc="/examples/brat-demo-5.png"
+        imageSrc="/blog-images/aesthetic-hero-v2.png"
         imageAlt="Brat aesthetic visual example — neon green background with bold lowercase text"
       />
 

@@ -65,9 +65,9 @@ export default function HowToMakeBratPfpPage() {
         title="How to Make a Brat PFP for TikTok, Instagram, and Discord"
         subtitle="Learn how to create a custom brat-style profile picture for TikTok, Instagram, Discord, and X. Step-by-step guide using the free brat maker tool."
         readTime="7 MIN READ"
-        author="Antigravity"
+        author="ibratgenerator"
         publishDate="May 04, 2026"
-        imageSrc="/examples/brat-text-ex-1.png"
+        imageSrc="/blog-images/pfp-hero-v2.png"
         imageAlt="brat profile picture example — bold lowercase text on neon green background"
       />
 

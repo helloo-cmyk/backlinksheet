@@ -64,7 +64,7 @@ export default function HowToMakeBratTextPage() {
         title="How to Make Brat Text – Step-by-Step"
         subtitle=""
         readTime="3 MIN READ"
-        imageSrc="/examples/brat-text-ex-1.png"
+        imageSrc="/blog-images/how-to-hero.png"
       />
 
       {/* ── ARTICLE BODY ── */}

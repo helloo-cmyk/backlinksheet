@@ -17,7 +17,7 @@ export default function BlogHero({
   title, 
   subtitle, 
   readTime = "5 MIN READ", 
-  author = "Ibrat Generator Team",
+  author = "ibratgenerator",
   publishDate = "May 01, 2026",
   imageSrc, 
   imageAlt = "Blog hero graphic" 

@@ -71,7 +71,7 @@ export default function BratTextVsFontPage() {
         subtitle="Confused about which tool to use? We explain the core differences between our text and font generators so you can pick the right one for your project."
         readTime="5 MIN READ"
         publishDate={today}
-        imageSrc="/examples/brat-demo-5.png"
+        imageSrc="/blog-images/text-vs-font-hero.png"
         imageAlt="Brat text vs font comparison visual"
       />
 

@@ -65,7 +65,7 @@ export default function WhatIsBratGeneratorPage() {
         title="What Is a Brat Generator? Simple Explanation"
         subtitle=""
         readTime="4 MIN READ"
-        imageSrc="/examples/brat-maker-ex-4.png"
+        imageSrc="/blog-images/generator-hero-v2.png"
       />
 
       {/* ── ARTICLE BODY ── */}
