@@ -7386,7 +7386,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Submit a Tool At Monkey AI Tools, we're constantly scouting for the newest and most innovative AI ...",
+        "tip": "Submit a Tool At Monkey AI Tools, we're constantly scouting for the newest and most innovative AI ...",
         "pricing": "Free"
     },
     {
@@ -7401,7 +7401,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Got a cool AI tool that's not listed on our site? Or do you love an AI-related product that you wo...",
+        "tip": "Got a cool AI tool that's not listed on our site? Or do you love an AI-related product that you wo...",
         "pricing": "Free"
     },
     {
@@ -7416,7 +7416,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Stand out with a Verified Listing that gets your AI tool featured site-wide! From the Home page to...",
+        "tip": "Stand out with a Verified Listing that gets your AI tool featured site-wide! From the Home page to...",
         "pricing": "Free"
     },
     {
@@ -7431,7 +7431,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Do you have an AI tool that can help others transform their projects? At iatools.tools, we want to...",
+        "tip": "Do you have an AI tool that can help others transform their projects? At iatools.tools, we want to...",
         "pricing": "Free"
     },
     {
@@ -7446,7 +7446,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Submit AI Tools - AI Tool Submission Directory Find and Explore the Best AI Tools Submit AI Tools ...",
+        "tip": "Submit AI Tools - AI Tool Submission Directory Find and Explore the Best AI Tools Submit AI Tools ...",
         "pricing": "Free"
     },
     {
@@ -7461,7 +7461,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Increase your SaaS visibility by submitting to 140+ directories. Save time, gain high-quality back...",
+        "tip": "Increase your SaaS visibility by submitting to 140+ directories. Save time, gain high-quality back...",
         "pricing": "Free"
     },
     {
@@ -7476,7 +7476,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Submit your saas to 300+ Startup Directories including AI, Saas and Software listing websites with...",
+        "tip": "Submit your saas to 300+ Startup Directories including AI, Saas and Software listing websites with...",
         "pricing": "Free"
     },
     {
@@ -7491,7 +7491,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """"""" Submit Your Saas makes me 100x more productive. I launched my SaaS in days instead of a month...",
+        "tip": "Submit Your Saas makes me 100x more productive. I launched my SaaS in days instead of a month...",
         "pricing": "Free"
     },
     {
@@ -7506,7 +7506,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Submit your saas on these directories, launch platforms, maker communities, startups sites, and ge...",
+        "tip": "Submit your saas on these directories, launch platforms, maker communities, startups sites, and ge...",
         "pricing": "Free"
     },
     {
@@ -7521,7 +7521,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Want to list your SaaS product in 2025? Find the best SaaS directories to boost visibility, gain t...",
+        "tip": "Want to list your SaaS product in 2025? Find the best SaaS directories to boost visibility, gain t...",
         "pricing": "Free"
     },
     {
@@ -7536,7 +7536,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """SubmitSaas is an online platform designed to help you submit your SaaS (Software as a Service) pro...",
+        "tip": "SubmitSaas is an online platform designed to help you submit your SaaS (Software as a Service) pro...",
         "pricing": "Free"
     },
     {
@@ -7551,7 +7551,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Software Submission Service - Upload your data once, get your SaaS submitted in up to 20+ software...",
+        "tip": "Software Submission Service - Upload your data once, get your SaaS submitted in up to 20+ software...",
         "pricing": "Free"
     },
     {
@@ -7566,7 +7566,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Launching a startup in 2026? This comprehensive guide explores a massive, free directory of 1000+ ...",
+        "tip": "Launching a startup in 2026? This comprehensive guide explores a massive, free directory of 1000+ ...",
         "pricing": "Free"
     },
     {
@@ -7581,7 +7581,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Curated list of 50 startup directories and launch platforms ranked by domain authority. Get visibi...",
+        "tip": "Curated list of 50 startup directories and launch platforms ranked by domain authority. Get visibi...",
         "pricing": "Free"
     },
     {
@@ -7596,7 +7596,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """What are startup directories? Startup Directories are websites that help collate and organize list...",
+        "tip": "What are startup directories? Startup Directories are websites that help collate and organize list...",
         "pricing": "Free"
     },
     {
@@ -7641,7 +7641,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Explore 11 top startup submission sites in 2026 to promote your product, get backlinks, improve SE...",
+        "tip": "Explore 11 top startup submission sites in 2026 to promote your product, get backlinks, improve SE...",
         "pricing": "Free"
     },
     {
@@ -7656,7 +7656,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Startup directories help you earn backlinks, boost visibility, and reach early adopters. Here are ...",
+        "tip": "Startup directories help you earn backlinks, boost visibility, and reach early adopters. Here are ...",
         "pricing": "Free"
     },
     {
@@ -7671,7 +7671,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """A comprehensive, up-to-date list of AI tool directories with monthly visits, unique visitors, doma...",
+        "tip": "A comprehensive, up-to-date list of AI tool directories with monthly visits, unique visitors, doma...",
         "pricing": "Free"
     },
     {
@@ -7686,7 +7686,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Discover 11,531+ AI tools across 272+ categories. Find the best AI solutions for productivity, cre...",
+        "tip": "Discover 11,531+ AI tools across 272+ categories. Find the best AI solutions for productivity, cre...",
         "pricing": "Free"
     },
     {
@@ -7701,7 +7701,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Discover the best open source alternatives and tools. Browse through our curated collection with G...",
+        "tip": "Discover the best open source alternatives and tools. Browse through our curated collection with G...",
         "pricing": "Free"
     },
     {
@@ -7716,7 +7716,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Discover the most comprehensive AI tools directory of 2025. Browse 1500 curated AI software, machi...",
+        "tip": "Discover the most comprehensive AI tools directory of 2025. Browse 1500 curated AI software, machi...",
         "pricing": "Free"
     },
     {
@@ -7731,7 +7731,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """AI Tools Directory 2025 is your go-to hub to explore the most powerful and trending generative AI ...",
+        "tip": "AI Tools Directory 2025 is your go-to hub to explore the most powerful and trending generative AI ...",
         "pricing": "Free"
     },
     {
@@ -7746,7 +7746,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """This list only includes directories with an Authority Rank of more than 20 (with a few exceptions ...",
+        "tip": "This list only includes directories with an Authority Rank of more than 20 (with a few exceptions ...",
         "pricing": "Free"
     },
     {
@@ -7761,7 +7761,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """To write a review on Trustpilot, you need to have had a genuine buying or service experience with ...",
+        "tip": "To write a review on Trustpilot, you need to have had a genuine buying or service experience with ...",
         "pricing": "Free"
     },
     {
@@ -7791,7 +7791,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Free Review posting sites list, Get the best review submission websites for products and services ...",
+        "tip": "Free Review posting sites list, Get the best review submission websites for products and services ...",
         "pricing": "Free"
     },
     {
@@ -7806,7 +7806,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Boost your SEO and online reputation with our list of high-DA review submission sites. Increase vi...",
+        "tip": "Boost your SEO and online reputation with our list of high-DA review submission sites. Increase vi...",
         "pricing": "Free"
     },
     {
@@ -7836,7 +7836,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Discover 100+ FREE high DA review submission sites list for 2026. Submit reviews, earn quality bac...",
+        "tip": "Discover 100+ FREE high DA review submission sites list for 2026. Submit reviews, earn quality bac...",
         "pricing": "Free"
     },
     {
@@ -7866,7 +7866,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Discover the best website review sites and online review platforms. Learn how reviews boost SEO, c...",
+        "tip": "Discover the best website review sites and online review platforms. Learn how reviews boost SEO, c...",
         "pricing": "Free"
     },
     {
@@ -7881,7 +7881,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Discover top SaaS tools to increase team productivity and operational efficiency, reduce developme...",
+        "tip": "Discover top SaaS tools to increase team productivity and operational efficiency, reduce developme...",
         "pricing": "Free"
     },
     {
@@ -7896,7 +7896,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Explore the top SaaS tools of 2026 that are transforming businesses. Uncover key features, benefit...",
+        "tip": "Explore the top SaaS tools of 2026 that are transforming businesses. Uncover key features, benefit...",
         "pricing": "Free"
     },
     {
@@ -7911,7 +7911,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Compare 30 essential SaaS tools ranked by features, pricing, and ROI. Our expert guide covers the ...",
+        "tip": "Compare 30 essential SaaS tools ranked by features, pricing, and ROI. Our expert guide covers the ...",
         "pricing": "Free"
     },
     {
@@ -7941,7 +7941,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Key Takeaways Best SaaS applications in 2024, highlighting their role in revolutionizing business ...",
+        "tip": "Key Takeaways Best SaaS applications in 2024, highlighting their role in revolutionizing business ...",
         "pricing": "Free"
     },
     {
@@ -7956,7 +7956,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Looking for useful SaaS tools? This list of 30 top picks will help your business work faster, stay...",
+        "tip": "Looking for useful SaaS tools? This list of 30 top picks will help your business work faster, stay...",
         "pricing": "Free"
     },
     {
@@ -7971,7 +7971,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Explore the top 30+ SaaS tools for businesses in 2026 that can enhance efficiency, productivity, a...",
+        "tip": "Explore the top 30+ SaaS tools for businesses in 2026 that can enhance efficiency, productivity, a...",
         "pricing": "Free"
     },
     {
@@ -7986,7 +7986,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Feeling overwhelmed by the abundance of SaaS tools? Our handy list have listed all the tools & cut...",
+        "tip": "Feeling overwhelmed by the abundance of SaaS tools? Our handy list have listed all the tools & cut...",
         "pricing": "Free"
     },
     {
@@ -8031,7 +8031,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Submit your startup and explore innovative products in our curated directory. Gain visibility, att...",
+        "tip": "Submit your startup and explore innovative products in our curated directory. Gain visibility, att...",
         "pricing": "Free"
     },
     {
@@ -8046,7 +8046,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """99 free places to promote your startup in 2026 — directories, communities, and launch platforms th...",
+        "tip": "99 free places to promote your startup in 2026 — directories, communities, and launch platforms th...",
         "pricing": "Free"
     },
     {
@@ -8091,7 +8091,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """100+ Top & Free Search Engine Submission Sites List 2026 Massive List of Search Engine Submission ...",
+        "tip": "100+ Top & Free Search Engine Submission Sites List 2026 Massive List of Search Engine Submission ...",
         "pricing": "Free"
     },
     {
@@ -8106,7 +8106,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """This guide helps you navigate the top AI tool directories where you can submit your tool for disco...",
+        "tip": "This guide helps you navigate the top AI tool directories where you can submit your tool for disco...",
         "pricing": "Free"
     },
     {
@@ -8121,7 +8121,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Discover the 7 best link submission platforms to improve your SEO. Compare pricing, domain authori...",
+        "tip": "Discover the 7 best link submission platforms to improve your SEO. Compare pricing, domain authori...",
         "pricing": "Free"
     },
     {
@@ -8136,7 +8136,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """In the rapidly evolving world of artificial intelligence, gaining visibility for your AI tools can...",
+        "tip": "In the rapidly evolving world of artificial intelligence, gaining visibility for your AI tools can...",
         "pricing": "Free"
     },
     {
@@ -8166,7 +8166,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Organizations worldwide, from governments and universities to foundations and non-profits, trust S...",
+        "tip": "Organizations worldwide, from governments and universities to foundations and non-profits, trust S...",
         "pricing": "Free"
     },
     {
@@ -8181,7 +8181,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """SEO and submission software including Website Submitter, Feed Submitter, Article Submitter, Articl...",
+        "tip": "SEO and submission software including Website Submitter, Feed Submitter, Article Submitter, Articl...",
         "pricing": "Free"
     },
     {
@@ -8226,7 +8226,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Save time submitting your AI tool to directories with SubmitPal. Auto-fill forms, track submission...",
+        "tip": "Save time submitting your AI tool to directories with SubmitPal. Auto-fill forms, track submission...",
         "pricing": "Free"
     },
     {
@@ -8241,7 +8241,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Need help getting your website noticed by search engines? Free website submission tools can help y...",
+        "tip": "Need help getting your website noticed by search engines? Free website submission tools can help y...",
         "pricing": "Free"
     },
     {
@@ -8256,7 +8256,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Submit your AI tool for free and reach a global audience! Fast, easy listings to boost visibility ...",
+        "tip": "Submit your AI tool for free and reach a global audience! Fast, easy listings to boost visibility ...",
         "pricing": "Free"
     },
     {
@@ -8271,7 +8271,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Submit your SaaS company to The SaaS Directory, a global directory of SaaS companies.""...",
+        "tip": "Submit your SaaS company to The SaaS Directory, a global directory of SaaS companies.\"\"...",
         "pricing": "Free"
     },
     {
@@ -8301,7 +8301,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """LeadWave's hand-researched list of 170+ SaaS directories and websites to list your SaaS startup. S...",
+        "tip": "LeadWave's hand-researched list of 170+ SaaS directories and websites to list your SaaS startup. S...",
         "pricing": "Free"
     },
     {
@@ -8316,7 +8316,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Check out our favorite SaaS product directories and learn how your company can get featured, and s...",
+        "tip": "Check out our favorite SaaS product directories and learn how your company can get featured, and s...",
         "pricing": "Free"
     },
     {
@@ -8331,7 +8331,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """The Yellow Pages of SaaS. Browse 360+ verified SaaS products with real revenue data, rankings, and...",
+        "tip": "The Yellow Pages of SaaS. Browse 360+ verified SaaS products with real revenue data, rankings, and...",
         "pricing": "Free"
     },
     {
@@ -8346,7 +8346,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """TechnologyAdvice is a user-focused SaaS directory that facilitates informed purchasing decisions b...",
+        "tip": "TechnologyAdvice is a user-focused SaaS directory that facilitates informed purchasing decisions b...",
         "pricing": "Free"
     },
     {
@@ -8361,7 +8361,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Complete list of 40+ SaaS directories to submit your product in 2026 — organised by priority, doma...",
+        "tip": "Complete list of 40+ SaaS directories to submit your product in 2026 — organised by priority, doma...",
         "pricing": "Free"
     },
     {
@@ -8376,7 +8376,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Quality tools can last a lifetime and help you handle everything from day-to-day fix-it tasks to m...",
+        "tip": "Quality tools can last a lifetime and help you handle everything from day-to-day fix-it tasks to m...",
         "pricing": "Free"
     },
     {
@@ -8391,7 +8391,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Want to Update or Remove Your Tool? If your tool is already listed and you need to update details ...",
+        "tip": "Want to Update or Remove Your Tool? If your tool is already listed and you need to update details ...",
         "pricing": "Free"
     },
     {
@@ -8406,7 +8406,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """Submit an AI Tool for Review AI Tools Directory accepts submissions from developers, startups, and...",
+        "tip": "Submit an AI Tool for Review AI Tools Directory accepts submissions from developers, startups, and...",
         "pricing": "Free"
     },
     {
@@ -8421,7 +8421,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """AI Tools List is a leading directory showcasing the latest and most impactful AI-powered solutions...",
+        "tip": "AI Tools List is a leading directory showcasing the latest and most impactful AI-powered solutions...",
         "pricing": "Free"
     },
     {
@@ -8436,7 +8436,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """I submitted my AI tool to 50+ directories. Here's which ones actually work in 2025 - the complete ...",
+        "tip": "I submitted my AI tool to 50+ directories. Here's which ones actually work in 2025 - the complete ...",
         "pricing": "Free"
     },
     {
@@ -8451,7 +8451,7 @@ export const sitesData = [
             "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": """#1 directory submission service on the market since 2022 Submit Website To Directories with Listin...",
+        "tip": "#1 directory submission service on the market since 2022 Submit Website To Directories with Listin...",
         "pricing": "Free"
     },
     {
