@@ -24,7 +24,7 @@ export default function Dashboard() {
   const [backlinkData, setBacklinkData] = useState<Record<number, any>>({});
   
   // UI state
-  const [activeTab, setActiveTab] = useState("prospecting"); // prospecting, scraper, spy, settings
+  const [activeTab, setActiveTab] = useState("prospecting"); // prospecting, scraper, spy, monitoring
   const [currentCategory, setCurrentCategory] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
   const [pricingFilter, setPricingFilter] = useState("all");
@@ -166,20 +166,6 @@ export default function Dashboard() {
     setActivePitch({ id: site.id, text: pitch });
   };
 
-  const insertDate = (id: number) => {
-    const dateStr = new Date().toLocaleDateString("en-US", { month: "short", day: "numeric" });
-    const currentNote = backlinkData[id]?.notes || "";
-    const newNote = currentNote + (currentNote ? "\n" : "") + `[${dateStr}] `;
-    handleNoteChange(id, newNote);
-  };
-
-  const copyNotes = (id: number) => {
-    const note = backlinkData[id]?.notes || "";
-    navigator.clipboard.writeText(note);
-    setCopiedNoteId(id);
-    setTimeout(() => setCopiedNoteId(null), 2000);
-  };
-
   const startScraping = () => {
     setIsScraping(true);
     setScrapingLogs(prev => [...prev, `[USER] Started scraping for: ${scraperKeywords}`, "[SYSTEM] Launching Puppeteer engine...", "[SEARCH] Querying search footprints..."]);
@@ -189,8 +175,12 @@ export default function Dashboard() {
     setTimeout(() => setScrapingLogs(prev => [...prev, "[CRAWL] Deep crawling 14 URLs for contact info...", "[MATCH] Found email: info@startup-list.com", "[MATCH] Found contact page: /submit"]), 5000);
     setTimeout(() => {
       setIsScraping(false);
-      setScrapingLogs(prev => [...prev, "🎉 Scraping complete! 12 new sites added to master_results.csv."]);
+      setScrapingLogs(prev => [...prev, "🎉 Scraping complete! Results saved."]);
     }, 8000);
+  };
+
+  const downloadCSV = () => {
+    window.open('/api/export-scraped', '_blank');
   };
 
   // Filtering
@@ -347,51 +337,75 @@ export default function Dashboard() {
                     <option value="pending">⏳ Pending</option>
                     <option value="outreach">✉️ Outreach</option>
                     <option value="live">✅ Live</option>
+                    <option value="dropped">⚠️ Dropped</option>
                     <option value="rejected">❌ Rejected</option>
                   </select>
                 </div>
 
-                <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-12">
                   {filteredSites.map((site) => {
                     const status = backlinkData[site.id]?.status || "pending";
                     const isLive = status === 'live';
                     return (
-                      <div key={site.id} className={`bg-zinc-900 border border-zinc-800 rounded-2xl p-6 transition-all hover:border-zinc-700 ${isLive ? 'border-emerald-500/20' : ''}`}>
-                        <div className="flex justify-between items-start mb-4">
+                      <div key={site.id} className={`bg-zinc-900 border border-zinc-800 rounded-3xl p-8 transition-all hover:border-zinc-700 shadow-xl ${isLive ? 'border-emerald-500/20' : ''}`}>
+                        <div className="flex justify-between items-start mb-6">
                           <div>
-                            <h3 className={`text-lg font-bold mb-1 ${status === 'dropped' ? 'text-rose-500' : 'text-white'}`}>{site.name}</h3>
+                            <h3 className={`text-xl font-bold mb-1 ${status === 'dropped' ? 'text-rose-500' : 'text-white'}`}>{site.name}</h3>
                             <div className="flex items-center gap-2">
-                              <span className="text-xs text-zinc-500 uppercase tracking-widest">{site.category}</span>
+                              <span className="text-xs text-zinc-500 uppercase tracking-widest font-bold">{site.category}</span>
                               {backlinkData[site.id]?.last_checked_at && (
                                 <span className="text-[9px] text-zinc-600 font-bold uppercase tracking-tighter bg-zinc-800/50 px-1.5 py-0.5 rounded">Checked: {new Date(backlinkData[site.id].last_checked_at).toLocaleDateString()}</span>
                               )}
                             </div>
                           </div>
-                          <div className="flex flex-col gap-1 items-end">
-                            <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20">DA {site.da}</span>
-                            {status === 'dropped' && <span className="animate-pulse px-2 py-0.5 rounded text-[9px] font-black bg-rose-500/20 text-rose-500 border border-rose-500/30 uppercase tracking-widest">Dropped!</span>}
+                          <div className="flex flex-col gap-2 items-end">
+                            <span className="px-3 py-1 rounded-full text-xs font-black bg-blue-600/10 text-blue-400 border border-blue-500/20">DA {site.da}</span>
+                            <span className="px-3 py-1 rounded-full text-[10px] font-black bg-zinc-800 text-zinc-400 border border-zinc-700 uppercase tracking-widest">{site.pricing}</span>
                           </div>
                         </div>
 
-                        {/* Contact Info */}
-                        {(backlinkData[site.id]?.contact_email || backlinkData[site.id]?.contact_url) && (
-                          <div className="flex flex-wrap gap-4 mb-5 px-3 py-2 bg-blue-500/5 rounded-lg border border-blue-500/10">
-                            {backlinkData[site.id]?.contact_email && <div className="text-[11px] text-blue-300 flex items-center gap-1">✉️ {backlinkData[site.id].contact_email}</div>}
-                            {backlinkData[site.id]?.contact_url && <a href={backlinkData[site.id].contact_url} target="_blank" className="text-[11px] text-blue-400 hover:underline">🔗 Contact Page</a>}
+                        {/* restored detail - steps */}
+                        <div className="mb-6">
+                          <h4 className="text-[10px] font-black text-zinc-500 uppercase tracking-widest mb-3 flex items-center gap-2">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                            Submission Steps
+                          </h4>
+                          <ul className="space-y-2">
+                            {site.steps.map((step, i) => (
+                              <li key={i} className="text-[13px] text-zinc-400 leading-relaxed flex gap-3">
+                                <span className="text-blue-500 font-black shrink-0">{i+1}.</span>
+                                {step}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        {site.tip && (
+                          <div className="mb-6 p-4 bg-amber-500/5 border border-amber-500/10 rounded-2xl">
+                            <div className="text-[10px] font-black text-amber-500 uppercase tracking-widest mb-1">Expert Tip</div>
+                            <p className="text-[12px] text-amber-200/70 italic leading-relaxed">"{site.tip}"</p>
                           </div>
                         )}
 
-                        <div className="mb-6 bg-zinc-950 border border-zinc-800 rounded-xl overflow-hidden">
-                          <div className="flex justify-between items-center px-3 py-1.5 bg-zinc-900/50 border-b border-zinc-800">
-                            <span className="text-[10px] uppercase font-bold text-zinc-500">Notes & AI Pitch</span>
-                            <button onClick={() => generatePitch(site)} className="px-2 py-0.5 bg-blue-600 text-white text-[9px] font-black uppercase rounded-full hover:bg-blue-500">✨ Generate Pitch</button>
+                        {/* Contact Info */}
+                        {(backlinkData[site.id]?.contact_email || backlinkData[site.id]?.contact_url) && (
+                          <div className="flex flex-wrap gap-4 mb-6 px-4 py-3 bg-blue-500/5 rounded-2xl border border-blue-500/10">
+                            {backlinkData[site.id]?.contact_email && <div className="text-[11px] text-blue-300 flex items-center gap-1 font-bold">✉️ {backlinkData[site.id].contact_email}</div>}
+                            {backlinkData[site.id]?.contact_url && <a href={backlinkData[site.id].contact_url} target="_blank" className="text-[11px] text-blue-400 hover:underline font-bold">🔗 Contact Page</a>}
                           </div>
-                          <textarea value={backlinkData[site.id]?.notes || ""} onChange={(e) => handleNoteChange(site.id, e.target.value)} onBlur={(e) => upsertBacklinkRecord(site.id, { notes: e.target.value })} placeholder="Add notes..." className="w-full bg-transparent border-none text-zinc-300 p-3 text-[13px] resize-none h-24 outline-none" />
+                        )}
+
+                        <div className="mb-6 bg-zinc-950 border border-zinc-800 rounded-2xl overflow-hidden">
+                          <div className="flex justify-between items-center px-4 py-2 bg-zinc-900/50 border-b border-zinc-800">
+                            <span className="text-[10px] uppercase font-black text-zinc-500 tracking-widest">Outreach Pitch</span>
+                            <button onClick={() => generatePitch(site)} className="px-3 py-1 bg-blue-600 text-white text-[9px] font-black uppercase rounded-full hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20">✨ Generate Pitch</button>
+                          </div>
+                          <textarea value={backlinkData[site.id]?.notes || ""} onChange={(e) => handleNoteChange(site.id, e.target.value)} onBlur={(e) => upsertBacklinkRecord(site.id, { notes: e.target.value })} placeholder="Add progress notes..." className="w-full bg-transparent border-none text-zinc-300 p-4 text-[13px] resize-none h-28 outline-none custom-scrollbar" />
                         </div>
 
-                        <div className="flex gap-3">
-                          <a href={site.url} target="_blank" className="flex-1 py-3 bg-zinc-800 text-white text-center rounded-xl text-sm font-bold border border-zinc-700 hover:bg-zinc-700 transition-all">Visit</a>
-                          <select value={status} onChange={(e) => updateStatus(site.id, e.target.value)} className={`flex-1 py-3 rounded-xl text-sm font-bold text-center border outline-none transition-all ${status === 'live' ? 'bg-emerald-500/10 text-emerald-500 border-emerald-500/30' : status === 'dropped' ? 'bg-rose-500/10 text-rose-500 border-rose-500/40 animate-pulse' : 'bg-zinc-800 text-zinc-400 border-zinc-700'}`}>
+                        <div className="flex gap-4">
+                          <a href={site.url} target="_blank" className="flex-1 py-4 bg-zinc-800 text-white text-center rounded-2xl text-sm font-black border border-zinc-700 hover:bg-zinc-700 transition-all uppercase tracking-widest">Visit Site</a>
+                          <select value={status} onChange={(e) => updateStatus(site.id, e.target.value)} className={`flex-1 py-4 rounded-2xl text-sm font-black text-center border outline-none transition-all uppercase tracking-widest cursor-pointer ${status === 'live' ? 'bg-emerald-500/10 text-emerald-500 border-emerald-500/30 shadow-lg shadow-emerald-500/10' : status === 'dropped' ? 'bg-rose-500/10 text-rose-500 border-rose-500/40 animate-pulse' : 'bg-zinc-800 text-zinc-400 border-zinc-700'}`}>
                             <option value="pending">⏳ Pending</option>
                             <option value="outreach">✉️ Outreach</option>
                             <option value="live">✅ Live</option>
@@ -408,16 +422,22 @@ export default function Dashboard() {
 
             {activeTab === 'scraper' && (
               <div className="max-w-4xl animate-fade-in">
-                <h1 className="text-3xl font-black mb-8">Scraper Bot Control</h1>
-                <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 mb-8">
-                  <label className="block text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Search Footprints</label>
-                  <textarea value={scraperKeywords} onChange={(e) => setScraperKeywords(e.target.value)} placeholder="e.g. submit saas tool" className="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-4 text-white text-sm outline-none h-32 mb-6" />
-                  <button onClick={startScraping} disabled={isScraping} className={`w-full py-4 rounded-xl font-bold uppercase tracking-widest transition-all ${isScraping ? 'bg-zinc-800 text-zinc-600' : 'bg-blue-600 text-white hover:bg-blue-500 shadow-xl'}`}>
-                    {isScraping ? 'Scraping in Progress...' : '🚀 Start Bot Scan'}
+                <div className="flex justify-between items-center mb-8">
+                  <h1 className="text-3xl font-black">Scraper Bot Control</h1>
+                  <button onClick={downloadCSV} className="px-6 py-3 bg-zinc-800 text-zinc-300 rounded-xl font-bold text-sm border border-zinc-700 hover:bg-zinc-700 flex items-center gap-2">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Download Scraped CSV
                   </button>
                 </div>
-                <div className="bg-black border border-zinc-800 rounded-xl p-6 h-64 overflow-y-auto font-mono text-xs text-zinc-500 custom-scrollbar">
-                  {scrapingLogs.map((log, i) => <div key={i} className="mb-1">{log}</div>)}
+                <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-10 mb-8 shadow-2xl">
+                  <label className="block text-xs font-black text-zinc-500 uppercase tracking-widest mb-4">Search Footprints</label>
+                  <textarea value={scraperKeywords} onChange={(e) => setScraperKeywords(e.target.value)} placeholder="e.g. 'submit startup' OR 'add tool' saas" className="w-full bg-zinc-950 border border-zinc-800 rounded-2xl p-6 text-white text-sm outline-none h-40 mb-8 focus:border-blue-500 transition-all font-mono" />
+                  <button onClick={startScraping} disabled={isScraping} className={`w-full py-5 rounded-2xl font-black uppercase tracking-widest transition-all text-base ${isScraping ? 'bg-zinc-800 text-zinc-600' : 'bg-blue-600 text-white hover:bg-blue-500 shadow-2xl shadow-blue-600/30'}`}>
+                    {isScraping ? 'Bot is Searching...' : '🚀 Launch Search Engine'}
+                  </button>
+                </div>
+                <div className="bg-black border border-zinc-800 rounded-2xl p-8 h-80 overflow-y-auto font-mono text-[11px] text-zinc-500 custom-scrollbar shadow-inner">
+                  {scrapingLogs.map((log, i) => <div key={i} className={`mb-1.5 ${log.includes('[MATCH]') ? 'text-blue-400' : log.includes('complete') ? 'text-emerald-400 font-bold' : ''}`}>{log}</div>)}
                 </div>
               </div>
             )}
@@ -433,6 +453,7 @@ export default function Dashboard() {
                 <p className="mt-12 text-zinc-700 text-[10px] uppercase font-black tracking-widest">Coming in v2.1</p>
               </div>
             )}
+            
             {activeTab === 'monitoring' && (
               <div className="max-w-4xl animate-fade-in">
                 <div className="mb-12">
