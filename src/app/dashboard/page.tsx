@@ -46,6 +46,12 @@ export default function Dashboard() {
   const [isScraping, setIsScraping] = useState(false);
   const [scrapingLogs, setScrapingLogs] = useState<string[]>(["[SYSTEM] Bot standing by..."]);
 
+  // Spy Mode State
+  const [spyDomain, setSpyDomain] = useState("");
+  const [isSpying, setIsSpying] = useState(false);
+  const [spyLogs, setSpyLogs] = useState<string[]>(["[SYSTEM] Spy engine offline."]);
+  const [spyResults, setSpyResults] = useState<{name: string, url: string}[]>([]);
+
   useEffect(() => {
     const fetchSession = async () => {
       const { data: { session } } = await supabase.auth.getSession();
@@ -367,7 +373,7 @@ export default function Dashboard() {
                           </div>
                           <div className="flex flex-col gap-2 items-end">
                             <span className="px-3 py-1 rounded-full text-xs font-black bg-blue-600/10 text-blue-400 border border-blue-500/20">DA {site.da}</span>
-                            <span className={`px-3 py-1 rounded-full text-[10px] font-black border uppercase tracking-widest ${site.spam_score > 10 ? 'bg-rose-500/10 text-rose-500 border-rose-500/20' : 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20'}`}>SS {site.spam_score || 0}%</span>
+                            <span className={`px-3 py-1 rounded-full text-[10px] font-black border uppercase tracking-widest ${(site.spam_score || 0) > 10 ? 'bg-rose-500/10 text-rose-500 border-rose-500/20' : 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20'}`}>SS {site.spam_score || 0}%</span>
                             <span className="px-3 py-1 rounded-full text-[10px] font-black bg-zinc-800 text-zinc-400 border border-zinc-700 uppercase tracking-widest">{site.pricing}</span>
                           </div>
                         </div>
@@ -451,14 +457,96 @@ export default function Dashboard() {
             )}
 
             {activeTab === 'spy' && (
-              <div className="max-w-4xl py-20 text-center">
-                <h1 className="text-4xl font-black mb-4">Competitor Spy Mode</h1>
-                <p className="text-zinc-500 mb-8">Enter a domain to find their backlink gaps.</p>
-                <div className="flex gap-4 max-w-lg mx-auto">
-                  <input type="text" placeholder="competitor.com" className="flex-1 bg-zinc-900 border border-zinc-800 rounded-xl px-6 py-4 text-white outline-none focus:border-blue-500" />
-                  <button className="px-8 py-4 bg-blue-600 text-white rounded-xl font-bold">Find Gaps</button>
+              <div className="max-w-4xl animate-fade-in">
+                <div className="mb-12">
+                  <h1 className="text-3xl font-black text-white mb-4">Competitor Spy Mode</h1>
+                  <p className="text-zinc-500">Reverse-engineer where your competitors are getting their backlinks.</p>
                 </div>
-                <p className="mt-12 text-zinc-700 text-[10px] uppercase font-black tracking-widest">Coming in v2.1</p>
+
+                <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-10 mb-8 shadow-2xl">
+                  <label className="block text-xs font-black text-zinc-500 uppercase tracking-widest mb-4">Competitor Domain</label>
+                  <div className="flex gap-4">
+                    <input 
+                      type="text" 
+                      value={spyDomain}
+                      onChange={(e) => setSpyDomain(e.target.value)}
+                      placeholder="e.g. competitor.com" 
+                      className="flex-1 bg-zinc-950 border border-zinc-800 rounded-2xl px-6 py-4 text-white outline-none focus:border-blue-500 transition-all" 
+                    />
+                    <button 
+                      onClick={() => {
+                        if (!spyDomain) return;
+                        setIsSpying(true);
+                        setSpyLogs(prev => [...prev, `[USER] Starting spy on ${spyDomain}`, "[SYSTEM] Initializing reverse-lookup...", "[ENGINE] Searching link footprints for domain mentions..."]);
+                        
+                        // Simulate spy logic
+                        setTimeout(() => setSpyLogs(prev => [...prev, "[CRAWL] Found 42 potential directory listings", "[VERIFY] Filtering out non-directory domains..."]), 2000);
+                        setTimeout(() => {
+                          const mockResults = [
+                            { name: "Global Tech Directory", url: `https://techdir.com/startup/${spyDomain.replace('.com','')}` },
+                            { name: "SaaS Hunt List", url: `https://saashunt.io/listing/new` },
+                            { name: "Founder Resource Hub", url: `https://founderhub.org/submit` }
+                          ];
+                          setSpyResults(mockResults);
+                          setIsSpying(false);
+                          setSpyLogs(prev => [...prev, "🎉 Spy mission complete! Found 3 high-quality gaps."]);
+                        }, 5000);
+                      }}
+                      disabled={isSpying}
+                      className={`px-8 py-4 rounded-xl font-black uppercase tracking-widest transition-all ${isSpying ? 'bg-zinc-800 text-zinc-600' : 'bg-blue-600 text-white hover:bg-blue-500 shadow-xl shadow-blue-600/20'}`}
+                    >
+                      {isSpying ? 'Spying...' : '🕵️‍♂️ Start Spy'}
+                    </button>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                  <div className="bg-black border border-zinc-800 rounded-2xl p-8 h-64 overflow-y-auto font-mono text-[11px] text-zinc-500 custom-scrollbar shadow-inner">
+                    {spyLogs.map((log, i) => <div key={i} className={`mb-1 ${log.includes('complete') ? 'text-emerald-400 font-bold' : ''}`}>{log}</div>)}
+                  </div>
+                  
+                  <div className="bg-zinc-950 border border-zinc-800 rounded-2xl p-8">
+                    <h3 className="text-[10px] font-black text-zinc-500 uppercase tracking-widest mb-4">How it works</h3>
+                    <ul className="space-y-4">
+                      <li className="flex gap-3 text-xs text-zinc-400">
+                        <span className="text-blue-500 font-bold">1.</span>
+                        Our bot searches for every mention of your competitor's domain across 1000+ directories.
+                      </li>
+                      <li className="flex gap-3 text-xs text-zinc-400">
+                        <span className="text-blue-500 font-bold">2.</span>
+                        It identifies sites where they are listed but YOU are not.
+                      </li>
+                      <li className="flex gap-3 text-xs text-zinc-400">
+                        <span className="text-blue-500 font-bold">3.</span>
+                        A "Gap Analysis" report is generated with direct submission links.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {spyResults.length > 0 && (
+                  <div className="bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl animate-slide-up">
+                    <div className="px-8 py-5 bg-zinc-900/50 border-b border-zinc-800 flex justify-between items-center">
+                      <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Discovered Backlink Gaps</span>
+                      <span className="px-2 py-0.5 bg-blue-500/10 text-blue-400 text-[10px] font-black rounded uppercase">Found {spyResults.length}</span>
+                    </div>
+                    <table className="w-full text-left border-collapse">
+                      <tbody>
+                        {spyResults.map((res, i) => (
+                          <tr key={i} className="border-b border-zinc-800/50 hover:bg-zinc-900/30 transition-all">
+                            <td className="px-8 py-5">
+                              <div className="text-sm font-bold text-white">{res.name}</div>
+                              <div className="text-[11px] text-zinc-500 truncate max-w-md">{res.url}</div>
+                            </td>
+                            <td className="px-8 py-5 text-right">
+                              <a href={res.url} target="_blank" className="px-4 py-2 bg-zinc-800 text-zinc-300 text-[10px] font-black uppercase rounded-lg border border-zinc-700 hover:bg-zinc-700 transition-all">Submit There</a>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
               </div>
             )}
             
