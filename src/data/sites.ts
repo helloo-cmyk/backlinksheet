@@ -14,7 +14,8 @@ export const sitesData = [
             "CRITICAL: Visit your account icon > 'Manage My Company' > Claim profile to verify employment via email link."
         ],
         "tip": "Profiles with only a website and no founders/descriptions are often deleted as spam.",
-        "pricing": "Free"
+        "pricing": "Free",
+        "spam_score": 1
     },
     {
         "id": 2,

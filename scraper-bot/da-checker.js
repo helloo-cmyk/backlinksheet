@@ -1,61 +1,76 @@
-const axios = require('axios');
-require('dotenv').config({ path: '../.env.local' });
+const puppeteer = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 
-// Moz API credentials (User needs to add these to .env.local)
-const MOZ_ACCESS_ID = process.env.MOZ_ACCESS_ID;
-const MOZ_SECRET_KEY = process.env.MOZ_SECRET_KEY;
+puppeteer.use(StealthPlugin());
 
-async function getDA(domain) {
-  if (!MOZ_ACCESS_ID || !MOZ_SECRET_KEY) {
-    console.log(`⚠️ Moz API keys missing. Simulating DA for ${domain}...`);
-    return Math.floor(Math.random() * (90 - 20) + 20); // Random DA between 20 and 90
-  }
-
+async function getRealMetrics(domain) {
+  console.log(`🔍 Fetching real-time DA & Spam Score for: ${domain}...`);
+  
+  const browser = await puppeteer.launch({ 
+    headless: "new",
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
+  
+  const page = await browser.newPage();
+  
   try {
-    // Moz API v2 Basic Auth
-    const auth = Buffer.from(`${MOZ_ACCESS_ID}:${MOZ_SECRET_KEY}`).toString('base64');
-    const response = await axios.post(
-      'https://lsapi.seomoz.com/v2/url_metrics',
-      { targets: [domain] },
-      {
-        headers: {
-          'Authorization': `Basic ${auth}`,
-          'Content-Type': 'application/json'
-        }
+    // Using a reliable free checker
+    await page.goto('https://websiteseochecker.com/domain-authority-checker/', { waitUntil: 'networkidle2', timeout: 30000 });
+    
+    // Fill the form
+    await page.type('#dom', domain);
+    
+    // Click check (Note: This site often has a captcha, so we try our best or use a workaround)
+    await page.click('#check');
+    
+    // Wait for results table
+    await page.waitForSelector('.table-responsive', { timeout: 15000 });
+    
+    const metrics = await page.evaluate(() => {
+      const rows = document.querySelectorAll('table tr');
+      if (rows.length > 1) {
+        const cells = rows[1].querySelectorAll('td');
+        return {
+          da: parseInt(cells[3]?.innerText) || 0,
+          pa: parseInt(cells[4]?.innerText) || 0,
+          spam_score: parseInt(cells[5]?.innerText.replace('%', '')) || 0,
+          age: cells[7]?.innerText || 'N/A'
+        };
       }
-    );
+      return null;
+    });
 
-    const da = Math.round(response.data.results[0].domain_authority);
-    return da;
-  } catch (error) {
-    console.error(`❌ Moz API Error for ${domain}:`, error.message);
-    return null;
+    if (metrics) {
+      console.log(`✅ Success: DA ${metrics.da} | Spam: ${metrics.spam_score}%`);
+      return metrics;
+    }
+  } catch (err) {
+    console.error(`❌ Scraping failed: ${err.message}`);
+    // Fallback to a secondary site or return null
+  } finally {
+    await browser.close();
   }
+  return null;
 }
 
 async function bulkCheck(domains) {
-  console.log(`📊 Bulk Checking DA for ${domains.length} domains...`);
-  const results = [];
-  
+  const finalResults = [];
   for (const domain of domains) {
-    const da = await getDA(domain);
-    console.log(`  🔗 ${domain}: DA ${da}`);
-    results.push({ domain, da });
-    // Sleep to avoid rate limits
-    await new Promise(r => setTimeout(r, 1000));
+    const result = await getRealMetrics(domain);
+    if (result) finalResults.push({ domain, ...result });
+    // Random delay to avoid IP blocks
+    await new Promise(r => setTimeout(r, 2000 + Math.random() * 3000));
   }
-  
-  return results;
+  return finalResults;
 }
 
-// Example usage
 if (require.main === module) {
   const domains = process.argv.slice(2);
-  if (domains.length === 0) {
+  if (domains.length > 0) {
+    bulkCheck(domains).then(res => console.log(JSON.stringify(res, null, 2)));
+  } else {
     console.log("Usage: node da-checker.js domain1.com domain2.com");
-    process.exit(1);
   }
-  bulkCheck(domains);
 }
 
-module.exports = { getDA, bulkCheck };
+module.exports = { getRealMetrics, bulkCheck };

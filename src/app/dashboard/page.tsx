@@ -24,9 +24,15 @@ export default function Dashboard() {
   const [backlinkData, setBacklinkData] = useState<Record<number, any>>({});
   
   // UI state
-  const [activeTab, setActiveTab] = useState("prospecting"); // prospecting, scraper, spy, monitoring, tools
-  
-  // Monitoring State
+  const [activeTab, setActiveTab] = useState("prospecting"); // prospecting, scraper, spy, monitoring, tools, team
+  const [currentCategory, setCurrentCategory] = useState("All");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [pricingFilter, setPricingFilter] = useState("all");
+  const [statusFilter, setStatusFilter] = useState("all");
+  const [copiedNoteId, setCopiedNoteId] = useState<number | null>(null);
+  const [activePitch, setActivePitch] = useState<{ id: number; text: string } | null>(null);
+
+  // Monitoring UI State
   const [isMonitoring, setIsMonitoring] = useState(false);
   const [monitorLogs, setMonitorLogs] = useState<string[]>(["[SYSTEM] Monitoring system ready."]);
 
@@ -34,12 +40,6 @@ export default function Dashboard() {
   const [bulkDomains, setBulkDomains] = useState("");
   const [daResults, setDaResults] = useState<{domain: string, da: number}[]>([]);
   const [isCheckingDA, setIsCheckingDA] = useState(false);
-  const [currentCategory, setCurrentCategory] = useState("All");
-  const [searchTerm, setSearchTerm] = useState("");
-  const [pricingFilter, setPricingFilter] = useState("all");
-  const [statusFilter, setStatusFilter] = useState("all");
-  const [copiedNoteId, setCopiedNoteId] = useState<number | null>(null);
-  const [activePitch, setActivePitch] = useState<{ id: number; text: string } | null>(null);
 
   // Scraper UI State
   const [scraperKeywords, setScraperKeywords] = useState("");
@@ -367,18 +367,19 @@ export default function Dashboard() {
                           </div>
                           <div className="flex flex-col gap-2 items-end">
                             <span className="px-3 py-1 rounded-full text-xs font-black bg-blue-600/10 text-blue-400 border border-blue-500/20">DA {site.da}</span>
+                            <span className={`px-3 py-1 rounded-full text-[10px] font-black border uppercase tracking-widest ${site.spam_score > 10 ? 'bg-rose-500/10 text-rose-500 border-rose-500/20' : 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20'}`}>SS {site.spam_score || 0}%</span>
                             <span className="px-3 py-1 rounded-full text-[10px] font-black bg-zinc-800 text-zinc-400 border border-zinc-700 uppercase tracking-widest">{site.pricing}</span>
                           </div>
                         </div>
 
-                        {/* restored detail - steps */}
+                        {/* Submission Steps */}
                         <div className="mb-6">
                           <h4 className="text-[10px] font-black text-zinc-500 uppercase tracking-widest mb-3 flex items-center gap-2">
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
                             Submission Steps
                           </h4>
                           <ul className="space-y-2">
-                            {site.steps.map((step, i) => (
+                            {site.steps.map((step: any, i: number) => (
                               <li key={i} className="text-[13px] text-zinc-400 leading-relaxed flex gap-3">
                                 <span className="text-blue-500 font-black shrink-0">{i+1}.</span>
                                 {step}
@@ -541,7 +542,7 @@ export default function Dashboard() {
                       }, 3000);
                     }}
                     disabled={isCheckingDA || !bulkDomains}
-                    className={`w-full py-5 rounded-2xl font-black uppercase tracking-widest transition-all ${isCheckingDA ? 'bg-zinc-800 text-zinc-600' : 'bg-blue-600 text-white hover:bg-blue-500 shadow-2xl shadow-blue-600/20'}`}
+                    className={`w-full py-5 rounded-2xl font-black uppercase tracking-widest transition-all ${isCheckingDA ? 'bg-zinc-800 text-zinc-600' : 'bg-blue-600 text-white hover:bg-blue-500 shadow-2xl shadow-blue-600/30'}`}
                   >
                     {isCheckingDA ? 'Analyzing Domains...' : '🔍 Start Bulk DA Analysis'}
                   </button>
