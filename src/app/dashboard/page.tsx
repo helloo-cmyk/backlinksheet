@@ -37,6 +37,10 @@ export default function Dashboard() {
   const [isScraping, setIsScraping] = useState(false);
   const [scrapingLogs, setScrapingLogs] = useState<string[]>(["[SYSTEM] Bot standing by..."]);
 
+  // Monitoring UI State
+  const [isMonitoring, setIsMonitoring] = useState(false);
+  const [monitorLogs, setMonitorLogs] = useState<string[]>(["[SYSTEM] Monitoring system ready."]);
+
   useEffect(() => {
     const fetchSession = async () => {
       const { data: { session } } = await supabase.auth.getSession();
