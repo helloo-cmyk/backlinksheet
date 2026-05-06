@@ -1,0 +1,310 @@
+# ==========================================
+# 200+ ADVANCED SEO FOOTPRINTS FOR SCRAPER BOT
+# ==========================================
+# Usage: node index.js "<footprint_from_below>"
+
+# ------------------------------------------
+# 1. SAAS, STARTUP & TOOL DIRECTORIES
+# ------------------------------------------
+"submit a startup"
+"submit startup"
+"add startup"
+"submit a tool"
+"add tool"
+"submit tool"
+"submit software"
+"submit app"
+"submit product"
+"submit directory"
+"startup directory"
+"startup list" inurl:submit
+"submit SaaS"
+"SaaS directory"
+"suggest a tool"
+"suggest a startup"
+"recommend a tool"
+"add your startup"
+"add your tool"
+"feature your startup"
+"get listed" intitle:startup
+"get featured" intitle:tool
+"list your SaaS"
+"list your tool"
+"submit your site"
+"submit your website"
+"add your site"
+"add a site"
+inurl:"submit-startup"
+inurl:"add-startup"
+inurl:"submit-tool"
+inurl:"add-tool"
+intitle:"submit startup"
+intitle:"add startup"
+intitle:"submit tool"
+intitle:"add tool"
+
+# ------------------------------------------
+# 2. COMPETITOR / LISTICLES / ALTERNATIVES
+# ------------------------------------------
+"alternative to" inurl:blog
+"best alternatives to"
+"top alternatives to"
+"competitors to"
+"sites like"
+"tools like"
+"similar to"
+"top 10 SEO tools"
+"top 10 marketing tools"
+"best SEO tools"
+"best marketing tools"
+"best text generators"
+"best font generators"
+"must have SaaS tools"
+"top tools for startups"
+"top tools for founders"
+"ultimate list of tools"
+"list of SaaS tools"
+intitle:"top 10 tools"
+intitle:"best tools"
+
+# ------------------------------------------
+# 3. GUEST POSTING (WRITE FOR US)
+# ------------------------------------------
+"write for us" "SEO"
+"write for us" "marketing"
+"write for us" "SaaS"
+"write for us" "technology"
+"write for us" "business"
+"contribute to" "SEO"
+"contribute to our blog"
+"submit a guest post"
+"submit guest post"
+"become a contributor"
+"become a guest blogger"
+"guest post guidelines"
+"guest post by"
+"guest article"
+"accepting guest posts"
+"submit an article"
+"submit article"
+"submit your post"
+"writers wanted"
+"articles wanted"
+inurl:"write-for-us"
+inurl:"guest-post"
+inurl:"contributor-guidelines"
+inurl:"submit-guest-post"
+intitle:"write for us"
+intitle:"guest post"
+intitle:"contribute"
+
+# ------------------------------------------
+# 4. RESOURCE PAGES (USEFUL LINKS)
+# ------------------------------------------
+"useful links" "SEO"
+"useful resources" "SaaS"
+"recommended resources" "tools"
+"recommended links"
+"favorite links"
+"favorite tools"
+"resources" "SEO tools"
+"web resources"
+"helpful resources"
+"helpful links"
+"our partners" "tools"
+"link to us"
+"add a link"
+"suggest a link"
+inurl:resources "SEO"
+inurl:links "marketing"
+inurl:resources "tools"
+intitle:"useful links"
+intitle:"resources" "tools"
+
+# ------------------------------------------
+# 5. SPONSORSHIPS & PARTNERSHIPS
+# ------------------------------------------
+"sponsor this blog"
+"sponsor our newsletter"
+"advertise with us"
+"partner with us"
+"sponsorship opportunities"
+"become a sponsor"
+inurl:"advertise"
+inurl:"sponsor"
+intitle:"sponsorship"
+
+# ------------------------------------------
+# 6. FORUMS & COMMUNITIES (NICHE SPECIFIC)
+# ------------------------------------------
+"powered by vbulletin" "SEO"
+"powered by phpbb" "marketing"
+"powered by smf" "technology"
+"powered by xenforo" "startups"
+"powered by mybb" "SaaS"
+"powered by discourse" "founders"
+"powered by vanilla" "tools"
+"powered by flarum"
+"forum" "SEO tools"
+"board" "SaaS"
+"community" "founders"
+inurl:forum "marketing"
+inurl:board "startups"
+inurl:community "SEO"
+intitle:"forum" "SEO"
+
+# ------------------------------------------
+# 7. BLOG COMMENTS (DOFOLLOW / HIGH PR)
+# ------------------------------------------
+"leave a reply" "SEO"
+"leave a comment" "SaaS"
+"post a comment" "tools"
+"notify me of follow-up comments" "marketing"
+"notify me of new posts" "startups"
+"save my name, email, and website in this browser"
+"commentluv" "SEO"
+"keywordname" "submit comment"
+"powered by disqus" "SEO tools"
+"powered by livefyre"
+"this site uses keywordluv"
+"enable commentluv"
+
+# ------------------------------------------
+# 8. ROUNDUPS & INTERVIEWS
+# ------------------------------------------
+"weekly roundup" "SEO"
+"monthly roundup" "SaaS"
+"Friday roundup" "marketing"
+"marketing roundup"
+"tool roundup"
+"SaaS roundup"
+"interview with" "founder"
+"founder interview"
+"maker interview"
+inurl:roundup "tools"
+intitle:"roundup" "SEO"
+
+# ------------------------------------------
+# 9. EDU & GOV BACKLINKS
+# ------------------------------------------
+site:.edu "useful links"
+site:.edu "resources"
+site:.edu "suggest a link"
+site:.edu "seo"
+site:.edu "marketing tools"
+site:.edu "student resources"
+site:.edu "blog" "leave a comment"
+site:.gov "useful links"
+site:.gov "resources"
+
+# ------------------------------------------
+# 10. PROFILE CREATION & PORTFOLIOS
+# ------------------------------------------
+"create an account" "website"
+"register" "website"
+"sign up" "website"
+"user profile" "website"
+"member profile" "website"
+"portfolio" "website URL"
+inurl:"register" "SaaS"
+inurl:"signup" "tools"
+
+# ------------------------------------------
+# 11. AUDIO / PODCAST DIRECTORIES
+# ------------------------------------------
+"submit podcast"
+"add podcast"
+"suggest podcast"
+"podcast directory"
+"be a guest" "podcast"
+"interviewed on" "podcast"
+
+# ------------------------------------------
+# 12. VIDEO DIRECTORIES
+# ------------------------------------------
+"submit video"
+"add video"
+"video directory"
+
+# ------------------------------------------
+# 13. INFOGRAPHIC SUBMISSIONS
+# ------------------------------------------
+"submit infographic"
+"add infographic"
+"infographic directory"
+"submit an infographic"
+"share your infographic"
+inurl:"submit-infographic"
+
+# ------------------------------------------
+# 14. EVENT & WEBINAR DIRECTORIES
+# ------------------------------------------
+"submit event"
+"add event"
+"submit webinar"
+"add webinar"
+"events directory"
+
+# ------------------------------------------
+# 15. COUPON & DEAL DIRECTORIES (For SaaS)
+# ------------------------------------------
+"submit coupon"
+"add coupon"
+"submit deal"
+"add deal"
+"submit promo code"
+"software deals"
+"SaaS deals"
+"Black Friday SaaS deals"
+
+# ------------------------------------------
+# 16. JOB BOARDS (Many allow company profile + link)
+# ------------------------------------------
+"post a job"
+"submit a job"
+"add a job"
+"employer profile"
+"company profile"
+
+# ------------------------------------------
+# 17. APP DIRECTORIES (If you make an app/extension)
+# ------------------------------------------
+"submit app"
+"add app"
+"app directory"
+"submit chrome extension"
+"submit plugin"
+
+# ------------------------------------------
+# 18. DONATION / SPONSOR BACKLINKS
+# ------------------------------------------
+"sponsors" "link to your website"
+"donors list"
+"our sponsors"
+"thank you to our sponsors"
+"donate" "add your link"
+
+# ------------------------------------------
+# 19. REVIEW SITES
+# ------------------------------------------
+"write a review" "software"
+"leave a review" "SaaS"
+"review our tool"
+"software reviews"
+inurl:"review" "SaaS"
+
+# ------------------------------------------
+# 20. MISCELLANEOUS EXACT MATCH PHRASES
+# ------------------------------------------
+"add url"
+"submit url"
+"add site"
+"submit site"
+"suggest url"
+"suggest site"
+"add your link"
+"submit your link"
+"suggest a link"
+"exchange links"
+"link exchange"
+"submit to directory"
