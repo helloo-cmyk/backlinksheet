@@ -173,6 +173,10 @@ export default function Dashboard() {
     const matchesSearch =
       site.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       site.type.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      site.url.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      site.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      site.tip.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      site.steps.some(step => step.toLowerCase().includes(searchTerm.toLowerCase())) ||
       site.da.toString().includes(searchTerm);
 
     const isCompleted = completedIds.includes(site.id);
