@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+scraper-bot/node_modules
 .pnp.*
 .yarn/*
 !.yarn/patches
