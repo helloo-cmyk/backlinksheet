@@ -3,7 +3,7 @@ export const sitesData = [
         "id": 1,
         "category": "Foundation & Authority Profiles",
         "name": "Crunchbase",
-        "da": 91,
+        "da": 89,
         "type": "Dofollow",
         "url": "https://www.crunchbase.com/add-new",
         "steps": [
@@ -20,7 +20,7 @@ export const sitesData = [
         "id": 2,
         "category": "Foundation & Authority Profiles",
         "name": "Wellfound (AngelList)",
-        "da": 87,
+        "da": 89,
         "type": "Dofollow",
         "url": "https://wellfound.com/onboarding/recruit",
         "steps": [
@@ -36,7 +36,7 @@ export const sitesData = [
         "id": 3,
         "category": "Foundation & Authority Profiles",
         "name": "F6S",
-        "da": 72,
+        "da": 73,
         "type": "Dofollow",
         "url": "https://www.f6s.com/",
         "steps": [
@@ -82,7 +82,7 @@ export const sitesData = [
         "id": 6,
         "category": "Foundation & Authority Profiles",
         "name": "LinkedIn Company Page",
-        "da": 98,
+        "da": 96,
         "type": "Nofollow",
         "url": "https://www.linkedin.com/company/setup/new/",
         "steps": [
@@ -97,7 +97,7 @@ export const sitesData = [
         "id": 7,
         "category": "SaaS, AI & Startup Directories",
         "name": "Product Hunt",
-        "da": 91,
+        "da": 89,
         "type": "Dofollow",
         "url": "https://www.producthunt.com/posts/new",
         "steps": [
@@ -114,7 +114,7 @@ export const sitesData = [
         "id": 8,
         "category": "SaaS, AI & Startup Directories",
         "name": "G2",
-        "da": 92,
+        "da": 97,
         "type": "Dofollow",
         "url": "https://www.g2.com/products/new",
         "steps": [
@@ -130,7 +130,7 @@ export const sitesData = [
         "id": 9,
         "category": "SaaS, AI & Startup Directories",
         "name": "Capterra",
-        "da": 93,
+        "da": 95,
         "type": "Dofollow",
         "url": "https://vendors.capterra.com/",
         "steps": [
@@ -146,7 +146,7 @@ export const sitesData = [
         "id": 10,
         "category": "SaaS, AI & Startup Directories",
         "name": "AlternativeTo",
-        "da": 82,
+        "da": 81,
         "type": "Dofollow",
         "url": "https://alternativeto.net/",
         "steps": [
@@ -161,7 +161,7 @@ export const sitesData = [
         "id": 11,
         "category": "SaaS, AI & Startup Directories",
         "name": "SaaSHub",
-        "da": 57,
+        "da": 60,
         "type": "Dofollow",
         "url": "https://www.saashub.com/submit",
         "steps": [
@@ -175,7 +175,7 @@ export const sitesData = [
         "id": 12,
         "category": "SaaS, AI & Startup Directories",
         "name": "StackShare",
-        "da": 72,
+        "da": 70,
         "type": "Dofollow",
         "url": "https://stackshare.io/",
         "steps": [
@@ -190,7 +190,7 @@ export const sitesData = [
         "id": 13,
         "category": "SaaS, AI & Startup Directories",
         "name": "BetaList",
-        "da": 62,
+        "da": 67,
         "type": "Dofollow",
         "url": "https://betalist.com/submit",
         "steps": [
@@ -233,7 +233,7 @@ export const sitesData = [
         "id": 16,
         "category": "SaaS, AI & Startup Directories",
         "name": "Trustpilot",
-        "da": 93,
+        "da": 98,
         "type": "Nofollow",
         "url": "https://www.trustpilot.com/business",
         "steps": [
@@ -247,7 +247,7 @@ export const sitesData = [
         "id": 17,
         "category": "Content & Web 2.0 Platforms",
         "name": "Medium",
-        "da": 95,
+        "da": 99,
         "type": "Nofollow",
         "url": "https://medium.com/new-story",
         "steps": [
@@ -292,7 +292,7 @@ export const sitesData = [
         "id": 20,
         "category": "Content & Web 2.0 Platforms",
         "name": "HackerNoon",
-        "da": 78,
+        "da": 80,
         "type": "Dofollow",
         "url": "https://hackernoon.com/write",
         "steps": [
@@ -306,7 +306,7 @@ export const sitesData = [
         "id": 21,
         "category": "Content & Web 2.0 Platforms",
         "name": "DZone",
-        "da": 80,
+        "da": 81,
         "type": "Dofollow",
         "url": "https://dzone.com/articles/new",
         "steps": [
@@ -320,7 +320,7 @@ export const sitesData = [
         "id": 22,
         "category": "Content & Web 2.0 Platforms",
         "name": "Vocal.media",
-        "da": 76,
+        "da": 78,
         "type": "Dofollow",
         "url": "https://vocal.media/create-story",
         "steps": [
@@ -334,7 +334,7 @@ export const sitesData = [
         "id": 23,
         "category": "Communities & Bookmarking",
         "name": "Quora",
-        "da": 93,
+        "da": 92,
         "type": "Nofollow",
         "url": "https://www.quora.com/",
         "steps": [
@@ -363,7 +363,7 @@ export const sitesData = [
         "id": 25,
         "category": "Communities & Bookmarking",
         "name": "Stack Overflow",
-        "da": 94,
+        "da": 93,
         "type": "Nofollow",
         "url": "https://stackoverflow.com/",
         "steps": [
@@ -377,7 +377,7 @@ export const sitesData = [
         "id": 26,
         "category": "Communities & Bookmarking",
         "name": "Indie Hackers",
-        "da": 68,
+        "da": 67,
         "type": "Dofollow",
         "url": "https://www.indiehackers.com/products/new",
         "steps": [
@@ -391,7 +391,7 @@ export const sitesData = [
         "id": 27,
         "category": "Communities & Bookmarking",
         "name": "GrowthHackers",
-        "da": 62,
+        "da": 64,
         "type": "Dofollow",
         "url": "https://growthhackers.com/posts/submit",
         "steps": [
@@ -404,7 +404,7 @@ export const sitesData = [
         "id": 28,
         "category": "Content & Web 2.0 Platforms",
         "name": "WordPress.com",
-        "da": 93,
+        "da": 96,
         "type": "Mix",
         "url": "https://wordpress.com/start",
         "steps": [
@@ -419,7 +419,7 @@ export const sitesData = [
         "id": 29,
         "category": "Content & Web 2.0 Platforms",
         "name": "Blogger",
-        "da": 89,
+        "da": 91,
         "type": "Dofollow",
         "url": "https://www.blogger.com/",
         "steps": [
@@ -460,7 +460,7 @@ export const sitesData = [
         "id": 32,
         "category": "Content & Web 2.0 Platforms",
         "name": "Notion Public Pages",
-        "da": 91,
+        "da": 93,
         "type": "Nofollow",
         "url": "https://www.notion.so/",
         "steps": [
@@ -474,7 +474,7 @@ export const sitesData = [
         "id": 33,
         "category": "Visual & Asset Marketing",
         "name": "SlideShare",
-        "da": 91,
+        "da": 96,
         "type": "Dofollow",
         "url": "https://www.slideshare.net/upload",
         "steps": [
@@ -488,7 +488,7 @@ export const sitesData = [
         "id": 34,
         "category": "Visual & Asset Marketing",
         "name": "Behance",
-        "da": 93,
+        "da": 98,
         "type": "Dofollow",
         "url": "https://www.behance.net/",
         "steps": [
@@ -502,7 +502,7 @@ export const sitesData = [
         "id": 35,
         "category": "Visual & Asset Marketing",
         "name": "Dribbble",
-        "da": 91,
+        "da": 89,
         "type": "Nofollow",
         "url": "https://dribbble.com/shots/new",
         "steps": [
@@ -516,7 +516,7 @@ export const sitesData = [
         "id": 36,
         "category": "Visual & Asset Marketing",
         "name": "Pinterest",
-        "da": 94,
+        "da": 96,
         "type": "Nofollow",
         "url": "https://pinterest.com/pin-builder/",
         "steps": [
@@ -544,7 +544,7 @@ export const sitesData = [
         "id": 38,
         "category": "Integration Marketplaces",
         "name": "Zapier Directory",
-        "da": 91,
+        "da": 93,
         "type": "Dofollow",
         "url": "https://developer.zapier.com/",
         "steps": [
@@ -576,7 +576,7 @@ export const sitesData = [
         "id": 40,
         "category": "Integration Marketplaces",
         "name": "GitHub Marketplace",
-        "da": 96,
+        "da": 100,
         "type": "Dofollow",
         "url": "https://github.com/marketplace/new",
         "steps": [
@@ -592,7 +592,7 @@ export const sitesData = [
         "id": 41,
         "category": "Visual & Asset Marketing",
         "name": "Imgur",
-        "da": 91,
+        "da": 96,
         "type": "Dofollow",
         "url": "https://imgur.com/upload",
         "steps": [
@@ -607,7 +607,7 @@ export const sitesData = [
         "id": 42,
         "category": "Visual & Asset Marketing",
         "name": "Flickr",
-        "da": 91,
+        "da": 93,
         "type": "Dofollow",
         "url": "https://www.flickr.com/",
         "steps": [
@@ -622,7 +622,7 @@ export const sitesData = [
         "id": 43,
         "category": "Visual & Asset Marketing",
         "name": "DeviantArt",
-        "da": 90,
+        "da": 91,
         "type": "Dofollow",
         "url": "https://www.deviantart.com/",
         "steps": [
@@ -637,7 +637,7 @@ export const sitesData = [
         "id": 44,
         "category": "Visual & Asset Marketing",
         "name": "Giphy",
-        "da": 93,
+        "da": 97,
         "type": "Dofollow",
         "url": "https://giphy.com/apply",
         "steps": [
@@ -652,7 +652,7 @@ export const sitesData = [
         "id": 45,
         "category": "Visual & Asset Marketing",
         "name": "Archive.org",
-        "da": 93,
+        "da": 97,
         "type": "Dofollow",
         "url": "https://archive.org/upload/",
         "steps": [
@@ -667,7 +667,7 @@ export const sitesData = [
         "id": 46,
         "category": "Visual & Asset Marketing",
         "name": "Pixabay",
-        "da": 92,
+        "da": 95,
         "type": "Nofollow",
         "url": "https://pixabay.com/accounts/register/",
         "steps": [
@@ -682,7 +682,7 @@ export const sitesData = [
         "id": 47,
         "category": "Visual & Asset Marketing",
         "name": "ImgBB",
-        "da": 55,
+        "da": 54,
         "type": "Dofollow",
         "url": "https://imgbb.com/",
         "steps": [
@@ -697,7 +697,7 @@ export const sitesData = [
         "id": 48,
         "category": "Visual & Asset Marketing",
         "name": "Visual.ly",
-        "da": 78,
+        "da": 80,
         "type": "Dofollow",
         "url": "https://visual.ly/",
         "steps": [
@@ -712,7 +712,7 @@ export const sitesData = [
         "id": 49,
         "category": "Visual & Asset Marketing",
         "name": "Thinglink",
-        "da": 82,
+        "da": 81,
         "type": "Dofollow",
         "url": "https://www.thinglink.com/",
         "steps": [
@@ -727,7 +727,7 @@ export const sitesData = [
         "id": 50,
         "category": "Visual & Asset Marketing",
         "name": "Cloudinary",
-        "da": 70,
+        "da": 71,
         "type": "Dofollow",
         "url": "https://cloudinary.com/",
         "steps": [
@@ -742,7 +742,7 @@ export const sitesData = [
         "id": 51,
         "category": "Visual & Asset Marketing",
         "name": "Reddit r/Infographics",
-        "da": 98,
+        "da": 100,
         "type": "Nofollow",
         "url": "https://www.reddit.com/r/Infographics/",
         "steps": [
@@ -772,7 +772,7 @@ export const sitesData = [
         "id": 53,
         "category": "Visual & Asset Marketing",
         "name": "Infographic Journal",
-        "da": 55,
+        "da": 53,
         "type": "Dofollow",
         "url": "https://infographicjournal.com/submit-infographics/",
         "steps": [
@@ -787,7 +787,7 @@ export const sitesData = [
         "id": 54,
         "category": "Visual & Asset Marketing",
         "name": "Cool Infographics",
-        "da": 53,
+        "da": 54,
         "type": "Dofollow",
         "url": "https://coolinfographics.com/contact/",
         "steps": [
@@ -802,7 +802,7 @@ export const sitesData = [
         "id": 55,
         "category": "Visual & Asset Marketing",
         "name": "Infographics Archive",
-        "da": 47,
+        "da": 48,
         "type": "Dofollow",
         "url": "https://www.infographicsarchive.com/submit-infographics/",
         "steps": [
@@ -817,7 +817,7 @@ export const sitesData = [
         "id": 56,
         "category": "Visual & Asset Marketing",
         "name": "Best Infographics",
-        "da": 44,
+        "da": 47,
         "type": "Dofollow",
         "url": "https://www.best-infographics.com/submit-infographic/",
         "steps": [
@@ -832,7 +832,7 @@ export const sitesData = [
         "id": 57,
         "category": "Visual & Asset Marketing",
         "name": "Infographic List",
-        "da": 40,
+        "da": 44,
         "type": "Dofollow",
         "url": "https://www.infographiclist.com/submit-infographic/",
         "steps": [
@@ -846,7 +846,7 @@ export const sitesData = [
         "id": 58,
         "category": "Visual & Asset Marketing",
         "name": "Graphs.net",
-        "da": 48,
+        "da": 46,
         "type": "Dofollow",
         "url": "http://graphs.net/submit-infographic",
         "steps": [
@@ -875,7 +875,7 @@ export const sitesData = [
         "id": 60,
         "category": "Visual & Asset Marketing",
         "name": "Infographic Portal",
-        "da": 35,
+        "da": 40,
         "type": "Dofollow",
         "url": "http://infographicportal.com/submit-infographic/",
         "steps": [
@@ -889,7 +889,7 @@ export const sitesData = [
         "id": 61,
         "category": "Communities & Bookmarking",
         "name": "Digg",
-        "da": 91,
+        "da": 90,
         "type": "Dofollow",
         "url": "https://digg.com/submit",
         "steps": [
@@ -904,7 +904,7 @@ export const sitesData = [
         "id": 62,
         "category": "Communities & Bookmarking",
         "name": "Slashdot",
-        "da": 91,
+        "da": 90,
         "type": "Dofollow",
         "url": "https://slashdot.org/submission",
         "steps": [
@@ -919,7 +919,7 @@ export const sitesData = [
         "id": 63,
         "category": "Communities & Bookmarking",
         "name": "Flipboard",
-        "da": 91,
+        "da": 95,
         "type": "Nofollow",
         "url": "https://flipboard.com/",
         "steps": [
@@ -949,7 +949,7 @@ export const sitesData = [
         "id": 65,
         "category": "Communities & Bookmarking",
         "name": "Diigo",
-        "da": 83,
+        "da": 86,
         "type": "Dofollow",
         "url": "https://www.diigo.com/",
         "steps": [
@@ -964,7 +964,7 @@ export const sitesData = [
         "id": 66,
         "category": "Communities & Bookmarking",
         "name": "Mix.com",
-        "da": 81,
+        "da": 85,
         "type": "Nofollow",
         "url": "https://mix.com/",
         "steps": [
@@ -978,7 +978,7 @@ export const sitesData = [
         "id": 67,
         "category": "Communities & Bookmarking",
         "name": "BizSugar",
-        "da": 70,
+        "da": 74,
         "type": "Dofollow",
         "url": "https://www.bizsugar.com/",
         "steps": [
@@ -993,7 +993,7 @@ export const sitesData = [
         "id": 68,
         "category": "Communities & Bookmarking",
         "name": "Steemit",
-        "da": 75,
+        "da": 78,
         "type": "Dofollow",
         "url": "https://steemit.com/",
         "steps": [
@@ -1008,7 +1008,7 @@ export const sitesData = [
         "id": 69,
         "category": "Communities & Bookmarking",
         "name": "Raindrop.io",
-        "da": 60,
+        "da": 65,
         "type": "Nofollow",
         "url": "https://raindrop.io/",
         "steps": [
@@ -1023,7 +1023,7 @@ export const sitesData = [
         "id": 70,
         "category": "Communities & Bookmarking",
         "name": "Fark",
-        "da": 78,
+        "da": 80,
         "type": "Nofollow",
         "url": "https://www.fark.com/submit",
         "steps": [
@@ -1038,7 +1038,7 @@ export const sitesData = [
         "id": 71,
         "category": "Foundation & Authority Profiles",
         "name": "Facebook Brand Page",
-        "da": 96,
+        "da": 95,
         "type": "Nofollow",
         "url": "https://www.facebook.com/pages/create",
         "steps": [
@@ -1068,7 +1068,7 @@ export const sitesData = [
         "id": 73,
         "category": "Foundation & Authority Profiles",
         "name": "Instagram Business",
-        "da": 93,
+        "da": 94,
         "type": "Nofollow",
         "url": "https://www.instagram.com/",
         "steps": [
@@ -1083,7 +1083,7 @@ export const sitesData = [
         "id": 74,
         "category": "Foundation & Authority Profiles",
         "name": "LinkedIn Personal Profile",
-        "da": 98,
+        "da": 100,
         "type": "Nofollow",
         "url": "https://www.linkedin.com/",
         "steps": [
@@ -1097,7 +1097,7 @@ export const sitesData = [
         "id": 75,
         "category": "Visual & Asset Marketing",
         "name": "Dropbox Public Folder",
-        "da": 95,
+        "da": 94,
         "type": "Nofollow",
         "url": "https://www.dropbox.com/",
         "steps": [
@@ -1111,7 +1111,7 @@ export const sitesData = [
         "id": 76,
         "category": "Visual & Asset Marketing",
         "name": "MediaFire",
-        "da": 92,
+        "da": 96,
         "type": "Nofollow",
         "url": "https://www.mediafire.com/",
         "steps": [
@@ -1125,7 +1125,7 @@ export const sitesData = [
         "id": 77,
         "category": "Visual & Asset Marketing",
         "name": "4Shared",
-        "da": 91,
+        "da": 89,
         "type": "Dofollow",
         "url": "https://www.4shared.com/",
         "steps": [
@@ -1139,7 +1139,7 @@ export const sitesData = [
         "id": 78,
         "category": "Visual & Asset Marketing",
         "name": "LiveJournal",
-        "da": 92,
+        "da": 91,
         "type": "Dofollow",
         "url": "https://www.livejournal.com/update.bml",
         "steps": [
@@ -1168,7 +1168,7 @@ export const sitesData = [
         "id": 80,
         "category": "Visual & Asset Marketing",
         "name": "Zoho Notebook",
-        "da": 90,
+        "da": 88,
         "type": "Dofollow",
         "url": "https://www.zoho.com/notebook/",
         "steps": [
@@ -1182,7 +1182,7 @@ export const sitesData = [
         "id": 81,
         "category": "Visual & Asset Marketing",
         "name": "500px",
-        "da": 91,
+        "da": 92,
         "type": "Nofollow",
         "url": "https://500px.com/",
         "steps": [
@@ -1196,7 +1196,7 @@ export const sitesData = [
         "id": 82,
         "category": "Visual & Asset Marketing",
         "name": "SmugMug",
-        "da": 87,
+        "da": 85,
         "type": "Dofollow",
         "url": "https://www.smugmug.com/",
         "steps": [
@@ -1210,7 +1210,7 @@ export const sitesData = [
         "id": 83,
         "category": "Visual & Asset Marketing",
         "name": "Photobucket",
-        "da": 91,
+        "da": 94,
         "type": "Nofollow",
         "url": "https://photobucket.com/",
         "steps": [
@@ -1224,7 +1224,7 @@ export const sitesData = [
         "id": 84,
         "category": "Communities & Bookmarking",
         "name": "MetaFilter",
-        "da": 85,
+        "da": 89,
         "type": "Nofollow",
         "url": "https://www.metafilter.com/",
         "steps": [
@@ -1238,7 +1238,7 @@ export const sitesData = [
         "id": 85,
         "category": "Communities & Bookmarking",
         "name": "Folkd",
-        "da": 65,
+        "da": 67,
         "type": "Dofollow",
         "url": "http://www.folkd.com/",
         "steps": [
@@ -1253,7 +1253,7 @@ export const sitesData = [
         "id": 86,
         "category": "Communities & Bookmarking",
         "name": "Netvouz",
-        "da": 58,
+        "da": 56,
         "type": "Dofollow",
         "url": "http://www.netvouz.com/",
         "steps": [
@@ -1267,7 +1267,7 @@ export const sitesData = [
         "id": 87,
         "category": "Communities & Bookmarking",
         "name": "Blogmarks",
-        "da": 52,
+        "da": 55,
         "type": "Dofollow",
         "url": "http://blogmarks.net/",
         "steps": [
@@ -1281,7 +1281,7 @@ export const sitesData = [
         "id": 88,
         "category": "Communities & Bookmarking",
         "name": "Sitejot",
-        "da": 45,
+        "da": 48,
         "type": "Dofollow",
         "url": "http://www.sitejot.com/",
         "steps": [
@@ -1295,7 +1295,7 @@ export const sitesData = [
         "id": 89,
         "category": "Communities & Bookmarking",
         "name": "BibSonomy",
-        "da": 71,
+        "da": 73,
         "type": "Dofollow",
         "url": "https://www.bibsonomy.org/",
         "steps": [
@@ -1337,7 +1337,7 @@ export const sitesData = [
         "id": 92,
         "category": "Communities & Bookmarking",
         "name": "LinkArena",
-        "da": 48,
+        "da": 49,
         "type": "Dofollow",
         "url": "https://linkarena.com/",
         "steps": [
@@ -1351,7 +1351,7 @@ export const sitesData = [
         "id": 93,
         "category": "Visual & Asset Marketing",
         "name": "Venngage Community",
-        "da": 82,
+        "da": 83,
         "type": "Nofollow",
         "url": "https://venngage.com/",
         "steps": [
@@ -1365,7 +1365,7 @@ export const sitesData = [
         "id": 94,
         "category": "Visual & Asset Marketing",
         "name": "Infogram",
-        "da": 85,
+        "da": 83,
         "type": "Nofollow",
         "url": "https://infogram.com/",
         "steps": [
@@ -1379,7 +1379,7 @@ export const sitesData = [
         "id": 95,
         "category": "Visual & Asset Marketing",
         "name": "Easel.ly",
-        "da": 75,
+        "da": 73,
         "type": "Nofollow",
         "url": "https://www.easel.ly/",
         "steps": [
@@ -1393,7 +1393,7 @@ export const sitesData = [
         "id": 96,
         "category": "Visual & Asset Marketing",
         "name": "Visme",
-        "da": 81,
+        "da": 79,
         "type": "Nofollow",
         "url": "https://www.visme.co/",
         "steps": [
@@ -1407,7 +1407,7 @@ export const sitesData = [
         "id": 97,
         "category": "Visual & Asset Marketing",
         "name": "NerdGraph",
-        "da": 42,
+        "da": 46,
         "type": "Dofollow",
         "url": "http://nerdgraph.com/submit-infographics/",
         "steps": [
@@ -1421,7 +1421,7 @@ export const sitesData = [
         "id": 98,
         "category": "Visual & Asset Marketing",
         "name": "Infographic Mania",
-        "da": 38,
+        "da": 43,
         "type": "Dofollow",
         "url": "http://infographicsmania.com/submit-infographics/",
         "steps": [
@@ -1449,7 +1449,7 @@ export const sitesData = [
         "id": 100,
         "category": "Visual & Asset Marketing",
         "name": "Mashable (Niche)",
-        "da": 93,
+        "da": 95,
         "type": "Nofollow",
         "url": "https://mashable.com/category/infographics",
         "steps": [
@@ -1463,7 +1463,7 @@ export const sitesData = [
         "id": 104,
         "category": "Visual & Asset Marketing",
         "name": "Infographic Showcase",
-        "da": 40,
+        "da": 43,
         "type": "Dofollow",
         "url": "http://infographicsshowcase.com/submit-infographics/",
         "steps": [
@@ -1476,7 +1476,7 @@ export const sitesData = [
         "id": 107,
         "category": "Visual & Asset Marketing",
         "name": "Visualizing.org",
-        "da": 55,
+        "da": 53,
         "type": "Dofollow",
         "url": "http://visualizing.org/",
         "steps": [
@@ -1517,7 +1517,7 @@ export const sitesData = [
         "id": 123,
         "category": "Foundation & Authority Profiles",
         "name": "Snapchat Brand Profile",
-        "da": 95,
+        "da": 100,
         "type": "Nofollow",
         "url": "https://www.snapchat.com/",
         "steps": [
@@ -1531,7 +1531,7 @@ export const sitesData = [
         "id": 124,
         "category": "Foundation & Authority Profiles",
         "name": "Discord Server",
-        "da": 98,
+        "da": 97,
         "type": "Nofollow",
         "url": "https://discord.com/",
         "steps": [
@@ -1545,7 +1545,7 @@ export const sitesData = [
         "id": 125,
         "category": "Foundation & Authority Profiles",
         "name": "Pinterest Business",
-        "da": 94,
+        "da": 95,
         "type": "Dofollow",
         "url": "https://www.pinterest.com/",
         "steps": [
@@ -1559,7 +1559,7 @@ export const sitesData = [
         "id": 126,
         "category": "Foundation & Authority Profiles",
         "name": "IMDb",
-        "da": 95,
+        "da": 96,
         "type": "Nofollow",
         "url": "https://www.imdb.com/registration/",
         "steps": [
@@ -1573,7 +1573,7 @@ export const sitesData = [
         "id": 128,
         "category": "Foundation & Authority Profiles",
         "name": "SoundCloud",
-        "da": 94,
+        "da": 97,
         "type": "Dofollow",
         "url": "https://soundcloud.com/",
         "steps": [
@@ -1588,7 +1588,7 @@ export const sitesData = [
         "id": 130,
         "category": "Foundation & Authority Profiles",
         "name": "GitLab",
-        "da": 92,
+        "da": 93,
         "type": "Dofollow",
         "url": "https://gitlab.com/users/sign_up",
         "steps": [
@@ -1603,7 +1603,7 @@ export const sitesData = [
         "id": 131,
         "category": "Foundation & Authority Profiles",
         "name": "Scribd",
-        "da": 94,
+        "da": 98,
         "type": "Nofollow",
         "url": "https://www.scribd.com/",
         "steps": [
@@ -1618,7 +1618,7 @@ export const sitesData = [
         "id": 132,
         "category": "Foundation & Authority Profiles",
         "name": "Issuu",
-        "da": 94,
+        "da": 98,
         "type": "Nofollow",
         "url": "https://issuu.com/",
         "steps": [
@@ -1633,7 +1633,7 @@ export const sitesData = [
         "id": 134,
         "category": "Foundation & Authority Profiles",
         "name": "BuzzFeed",
-        "da": 92,
+        "da": 94,
         "type": "Nofollow",
         "url": "https://www.buzzfeed.com/signup",
         "steps": [
@@ -1648,7 +1648,7 @@ export const sitesData = [
         "id": 135,
         "category": "Foundation & Authority Profiles",
         "name": "Goodreads",
-        "da": 93,
+        "da": 94,
         "type": "Nofollow",
         "url": "https://www.goodreads.com/",
         "steps": [
@@ -1663,7 +1663,7 @@ export const sitesData = [
         "id": 136,
         "category": "Foundation & Authority Profiles",
         "name": "Academia.edu",
-        "da": 93,
+        "da": 91,
         "type": "Nofollow",
         "url": "https://www.academia.edu/signup",
         "steps": [
@@ -1678,7 +1678,7 @@ export const sitesData = [
         "id": 137,
         "category": "Foundation & Authority Profiles",
         "name": "Indiegogo",
-        "da": 91,
+        "da": 94,
         "type": "Nofollow",
         "url": "https://www.indiegogo.com/",
         "steps": [
@@ -1692,7 +1692,7 @@ export const sitesData = [
         "id": 138,
         "category": "Foundation & Authority Profiles",
         "name": "Foursquare",
-        "da": 91,
+        "da": 90,
         "type": "Nofollow",
         "url": "https://foursquare.com/signup",
         "steps": [
@@ -1706,7 +1706,7 @@ export const sitesData = [
         "id": 139,
         "category": "Foundation & Authority Profiles",
         "name": "Sketchfab",
-        "da": 89,
+        "da": 91,
         "type": "Dofollow",
         "url": "https://sketchfab.com/signup",
         "steps": [
@@ -1735,7 +1735,7 @@ export const sitesData = [
         "id": 141,
         "category": "Foundation & Authority Profiles",
         "name": "Gumroad",
-        "da": 89,
+        "da": 87,
         "type": "Nofollow",
         "url": "https://gumroad.com/signup",
         "steps": [
@@ -1749,7 +1749,7 @@ export const sitesData = [
         "id": 142,
         "category": "Foundation & Authority Profiles",
         "name": "Webflow",
-        "da": 91,
+        "da": 90,
         "type": "Nofollow",
         "url": "https://webflow.com/signup",
         "steps": [
@@ -1763,7 +1763,7 @@ export const sitesData = [
         "id": 143,
         "category": "Foundation & Authority Profiles",
         "name": "Speaker Deck",
-        "da": 88,
+        "da": 87,
         "type": "Nofollow",
         "url": "https://speakerdeck.com/signup",
         "steps": [
@@ -1777,7 +1777,7 @@ export const sitesData = [
         "id": 144,
         "category": "Foundation & Authority Profiles",
         "name": "HackerRank",
-        "da": 86,
+        "da": 88,
         "type": "Nofollow",
         "url": "https://www.hackerrank.com/signup",
         "steps": [
@@ -1791,7 +1791,7 @@ export const sitesData = [
         "id": 145,
         "category": "Foundation & Authority Profiles",
         "name": "HackerEarth",
-        "da": 70,
+        "da": 69,
         "type": "Nofollow",
         "url": "https://www.hackerearth.com/signup",
         "steps": [
@@ -1805,7 +1805,7 @@ export const sitesData = [
         "id": 146,
         "category": "Foundation & Authority Profiles",
         "name": "Change.org",
-        "da": 94,
+        "da": 95,
         "type": "Nofollow",
         "url": "https://www.change.org/signup",
         "steps": [
@@ -1819,7 +1819,7 @@ export const sitesData = [
         "id": 147,
         "category": "Foundation & Authority Profiles",
         "name": "Blogger Profile",
-        "da": 95,
+        "da": 94,
         "type": "Dofollow",
         "url": "https://www.blogger.com/profile-find.g",
         "steps": [
@@ -1833,7 +1833,7 @@ export const sitesData = [
         "id": 148,
         "category": "Foundation & Authority Profiles",
         "name": "Xing",
-        "da": 91,
+        "da": 90,
         "type": "Nofollow",
         "url": "https://www.xing.com/signup",
         "steps": [
@@ -1847,7 +1847,7 @@ export const sitesData = [
         "id": 149,
         "category": "Foundation & Authority Profiles",
         "name": "Wattpad",
-        "da": 91,
+        "da": 92,
         "type": "Nofollow",
         "url": "https://www.wattpad.com/signup",
         "steps": [
@@ -1861,7 +1861,7 @@ export const sitesData = [
         "id": 150,
         "category": "Foundation & Authority Profiles",
         "name": "IndieHackers",
-        "da": 55,
+        "da": 58,
         "type": "Dofollow",
         "url": "https://www.indiehackers.com/sign-up",
         "steps": [
@@ -1876,7 +1876,7 @@ export const sitesData = [
         "id": 151,
         "category": "Foundation & Authority Profiles",
         "name": "Warrior Forum",
-        "da": 72,
+        "da": 76,
         "type": "Nofollow",
         "url": "https://www.warriorforum.com/",
         "steps": [
@@ -1890,7 +1890,7 @@ export const sitesData = [
         "id": 152,
         "category": "Foundation & Authority Profiles",
         "name": "LeetCode",
-        "da": 68,
+        "da": 66,
         "type": "Nofollow",
         "url": "https://leetcode.com/",
         "steps": [
@@ -1904,7 +1904,7 @@ export const sitesData = [
         "id": 153,
         "category": "Foundation & Authority Profiles",
         "name": "GrabCAD",
-        "da": 78,
+        "da": 82,
         "type": "Dofollow",
         "url": "https://grabcad.com/",
         "steps": [
@@ -1918,7 +1918,7 @@ export const sitesData = [
         "id": 154,
         "category": "Foundation & Authority Profiles",
         "name": "Mendeley",
-        "da": 91,
+        "da": 93,
         "type": "Nofollow",
         "url": "https://www.mendeley.com/",
         "steps": [
@@ -1932,7 +1932,7 @@ export const sitesData = [
         "id": 155,
         "category": "Foundation & Authority Profiles",
         "name": "Credly",
-        "da": 75,
+        "da": 80,
         "type": "Nofollow",
         "url": "https://www.credly.com/",
         "steps": [
@@ -1946,7 +1946,7 @@ export const sitesData = [
         "id": 156,
         "category": "Foundation & Authority Profiles",
         "name": "Wakelet",
-        "da": 72,
+        "da": 74,
         "type": "Dofollow",
         "url": "https://wakelet.com/",
         "steps": [
@@ -1961,7 +1961,7 @@ export const sitesData = [
         "id": 157,
         "category": "Foundation & Authority Profiles",
         "name": "CakeResume",
-        "da": 65,
+        "da": 69,
         "type": "Dofollow",
         "url": "https://www.cakeresume.com/",
         "steps": [
@@ -1975,7 +1975,7 @@ export const sitesData = [
         "id": 158,
         "category": "Foundation & Authority Profiles",
         "name": "Orcid",
-        "da": 91,
+        "da": 89,
         "type": "Nofollow",
         "url": "https://orcid.org/",
         "steps": [
@@ -1989,7 +1989,7 @@ export const sitesData = [
         "id": 159,
         "category": "Foundation & Authority Profiles",
         "name": "Greasy Fork",
-        "da": 81,
+        "da": 80,
         "type": "Dofollow",
         "url": "https://greasyfork.org/",
         "steps": [
@@ -2003,7 +2003,7 @@ export const sitesData = [
         "id": 160,
         "category": "Foundation & Authority Profiles",
         "name": "StockTwits",
-        "da": 82,
+        "da": 83,
         "type": "Nofollow",
         "url": "https://stocktwits.com/",
         "steps": [
@@ -2017,7 +2017,7 @@ export const sitesData = [
         "id": 161,
         "category": "Foundation & Authority Profiles",
         "name": "E27",
-        "da": 70,
+        "da": 73,
         "type": "Nofollow",
         "url": "https://e27.co/",
         "steps": [
@@ -2031,7 +2031,7 @@ export const sitesData = [
         "id": 162,
         "category": "Foundation & Authority Profiles",
         "name": "Godot Engine Forum",
-        "da": 75,
+        "da": 73,
         "type": "Nofollow",
         "url": "https://godotengine.org/",
         "steps": [
@@ -2045,7 +2045,7 @@ export const sitesData = [
         "id": 163,
         "category": "Foundation & Authority Profiles",
         "name": "Creative Mornings",
-        "da": 71,
+        "da": 75,
         "type": "Dofollow",
         "url": "https://creativemornings.com/",
         "steps": [
@@ -2059,7 +2059,7 @@ export const sitesData = [
         "id": 164,
         "category": "Foundation & Authority Profiles",
         "name": "Turnkey Linux",
-        "da": 60,
+        "da": 63,
         "type": "Dofollow",
         "url": "https://www.turnkeylinux.org/",
         "steps": [
@@ -2086,7 +2086,7 @@ export const sitesData = [
         "id": 166,
         "category": "Foundation & Authority Profiles",
         "name": "Penzu",
-        "da": 70,
+        "da": 68,
         "type": "Nofollow",
         "url": "https://penzu.com/",
         "steps": [
@@ -2099,7 +2099,7 @@ export const sitesData = [
         "id": 167,
         "category": "Foundation & Authority Profiles",
         "name": "Edocr",
-        "da": 70,
+        "da": 71,
         "type": "Nofollow",
         "url": "https://www.edocr.com/",
         "steps": [
@@ -2127,7 +2127,7 @@ export const sitesData = [
         "id": 169,
         "category": "Foundation & Authority Profiles",
         "name": "Domestika",
-        "da": 85,
+        "da": 88,
         "type": "Nofollow",
         "url": "https://www.domestika.org/",
         "steps": [
@@ -2141,7 +2141,7 @@ export const sitesData = [
         "id": 170,
         "category": "Foundation & Authority Profiles",
         "name": "LibraryThing",
-        "da": 85,
+        "da": 89,
         "type": "Nofollow",
         "url": "https://www.librarything.com/",
         "steps": [
@@ -2155,7 +2155,7 @@ export const sitesData = [
         "id": 171,
         "category": "Foundation & Authority Profiles",
         "name": "FlipHTML5",
-        "da": 90,
+        "da": 91,
         "type": "Dofollow",
         "url": "https://fliphtml5.com/",
         "steps": [
@@ -2169,7 +2169,7 @@ export const sitesData = [
         "id": 172,
         "category": "Foundation & Authority Profiles",
         "name": "Carbonmade",
-        "da": 85,
+        "da": 87,
         "type": "Nofollow",
         "url": "https://carbonmade.com/",
         "steps": [
@@ -2197,7 +2197,7 @@ export const sitesData = [
         "id": 174,
         "category": "Foundation & Authority Profiles",
         "name": "ArtFire",
-        "da": 75,
+        "da": 76,
         "type": "Dofollow",
         "url": "https://www.artfire.com/",
         "steps": [
@@ -2211,7 +2211,7 @@ export const sitesData = [
         "id": 177,
         "category": "Foundation & Authority Profiles",
         "name": "InsanelyMac",
-        "da": 60,
+        "da": 65,
         "type": "Nofollow",
         "url": "https://www.insanelymac.com/",
         "steps": [
@@ -2225,7 +2225,7 @@ export const sitesData = [
         "id": 178,
         "category": "Foundation & Authority Profiles",
         "name": "MightyCause",
-        "da": 72,
+        "da": 75,
         "type": "Nofollow",
         "url": "https://www.mightycause.com/",
         "steps": [
@@ -2253,7 +2253,7 @@ export const sitesData = [
         "id": 180,
         "category": "Foundation & Authority Profiles",
         "name": "ImCreator",
-        "da": 80,
+        "da": 84,
         "type": "Nofollow",
         "url": "http://www.imcreator.com/",
         "steps": [
@@ -2267,7 +2267,7 @@ export const sitesData = [
         "id": 181,
         "category": "Foundation & Authority Profiles",
         "name": "AboutUs",
-        "da": 70,
+        "da": 72,
         "type": "Dofollow",
         "url": "https://www.aboutus.com/",
         "steps": [
@@ -2281,7 +2281,7 @@ export const sitesData = [
         "id": 182,
         "category": "Foundation & Authority Profiles",
         "name": "Spoke",
-        "da": 72,
+        "da": 75,
         "type": "Dofollow",
         "url": "http://www.spoke.com/",
         "steps": [
@@ -2295,7 +2295,7 @@ export const sitesData = [
         "id": 183,
         "category": "Foundation & Authority Profiles",
         "name": "Triberr",
-        "da": 68,
+        "da": 70,
         "type": "Nofollow",
         "url": "https://triberr.com/",
         "steps": [
@@ -2309,7 +2309,7 @@ export const sitesData = [
         "id": 184,
         "category": "Foundation & Authority Profiles",
         "name": "StartupXplore",
-        "da": 60,
+        "da": 58,
         "type": "Dofollow",
         "url": "https://startupxplore.com/",
         "steps": [
@@ -2323,7 +2323,7 @@ export const sitesData = [
         "id": 185,
         "category": "Foundation & Authority Profiles",
         "name": "ANotepad",
-        "da": 62,
+        "da": 63,
         "type": "Dofollow",
         "url": "https://anotepad.com/",
         "steps": [
@@ -2337,7 +2337,7 @@ export const sitesData = [
         "id": 186,
         "category": "Foundation & Authority Profiles",
         "name": "AuthorsDen",
-        "da": 65,
+        "da": 67,
         "type": "Dofollow",
         "url": "https://www.authorsden.com/",
         "steps": [
@@ -2351,7 +2351,7 @@ export const sitesData = [
         "id": 187,
         "category": "Foundation & Authority Profiles",
         "name": "Trepup",
-        "da": 55,
+        "da": 59,
         "type": "Dofollow",
         "url": "https://www.trepup.com/",
         "steps": [
@@ -2365,7 +2365,7 @@ export const sitesData = [
         "id": 188,
         "category": "Foundation & Authority Profiles",
         "name": "Typepad",
-        "da": 90,
+        "da": 88,
         "type": "Nofollow",
         "url": "https://www.typepad.com/",
         "steps": [
@@ -2379,7 +2379,7 @@ export const sitesData = [
         "id": 189,
         "category": "Foundation & Authority Profiles",
         "name": "KeepCalms",
-        "da": 55,
+        "da": 57,
         "type": "Dofollow",
         "url": "http://keepcalms.com/",
         "steps": [
@@ -2393,7 +2393,7 @@ export const sitesData = [
         "id": 190,
         "category": "Foundation & Authority Profiles",
         "name": "PinPDF",
-        "da": 45,
+        "da": 48,
         "type": "Dofollow",
         "url": "https://pinpdf.com/",
         "steps": [
@@ -2407,7 +2407,7 @@ export const sitesData = [
         "id": 191,
         "category": "Visual & Asset Marketing",
         "name": "Pixy",
-        "da": 42,
+        "da": 47,
         "type": "Dofollow",
         "url": "https://pixy.org/",
         "steps": [
@@ -2421,7 +2421,7 @@ export const sitesData = [
         "id": 192,
         "category": "Visual & Asset Marketing",
         "name": "ImageBam",
-        "da": 72,
+        "da": 75,
         "type": "Nofollow",
         "url": "http://www.imagebam.com/",
         "steps": [
@@ -2435,7 +2435,7 @@ export const sitesData = [
         "id": 193,
         "category": "Visual & Asset Marketing",
         "name": "ImageVenue",
-        "da": 65,
+        "da": 69,
         "type": "Nofollow",
         "url": "http://www.imagevenue.com/",
         "steps": [
@@ -2449,7 +2449,7 @@ export const sitesData = [
         "id": 194,
         "category": "Visual & Asset Marketing",
         "name": "PBase",
-        "da": 80,
+        "da": 85,
         "type": "Dofollow",
         "url": "https://www.pbase.com/",
         "steps": [
@@ -2463,7 +2463,7 @@ export const sitesData = [
         "id": 195,
         "category": "Visual & Asset Marketing",
         "name": "ImgBox",
-        "da": 68,
+        "da": 69,
         "type": "Dofollow",
         "url": "https://imgbox.com/",
         "steps": [
@@ -2477,7 +2477,7 @@ export const sitesData = [
         "id": 196,
         "category": "Communities & Bookmarking",
         "name": "Pearltrees",
-        "da": 85,
+        "da": 86,
         "type": "Nofollow",
         "url": "https://www.pearltrees.com/",
         "steps": [
@@ -2491,7 +2491,7 @@ export const sitesData = [
         "id": 200,
         "category": "Communities & Bookmarking",
         "name": "Refind",
-        "da": 55,
+        "da": 54,
         "type": "Nofollow",
         "url": "https://refind.com/",
         "steps": [
@@ -2504,7 +2504,7 @@ export const sitesData = [
         "id": 201,
         "category": "Foundation & Authority Profiles",
         "name": "TripAdvisor",
-        "da": 92,
+        "da": 97,
         "type": "Nofollow",
         "url": "https://www.tripadvisor.in/",
         "steps": [
@@ -2518,7 +2518,7 @@ export const sitesData = [
         "id": 202,
         "category": "Foundation & Authority Profiles",
         "name": "MyHeritage",
-        "da": 88,
+        "da": 91,
         "type": "Nofollow",
         "url": "https://www.myheritage.com/",
         "steps": [
@@ -2532,7 +2532,7 @@ export const sitesData = [
         "id": 203,
         "category": "Foundation & Authority Profiles",
         "name": "CouchSurfing",
-        "da": 85,
+        "da": 84,
         "type": "Nofollow",
         "url": "https://www.couchsurfing.com/",
         "steps": [
@@ -2546,7 +2546,7 @@ export const sitesData = [
         "id": 204,
         "category": "Foundation & Authority Profiles",
         "name": "Instructables",
-        "da": 91,
+        "da": 96,
         "type": "Nofollow",
         "url": "https://www.instructables.com/",
         "steps": [
@@ -2560,7 +2560,7 @@ export const sitesData = [
         "id": 206,
         "category": "Foundation & Authority Profiles",
         "name": "Patreon",
-        "da": 92,
+        "da": 93,
         "type": "Nofollow",
         "url": "https://www.patreon.com/",
         "steps": [
@@ -2574,7 +2574,7 @@ export const sitesData = [
         "id": 207,
         "category": "Foundation & Authority Profiles",
         "name": "Bandcamp",
-        "da": 92,
+        "da": 90,
         "type": "Dofollow",
         "url": "https://bandcamp.com/",
         "steps": [
@@ -2588,7 +2588,7 @@ export const sitesData = [
         "id": 208,
         "category": "Foundation & Authority Profiles",
         "name": "ReverbNation",
-        "da": 85,
+        "da": 88,
         "type": "Dofollow",
         "url": "https://www.reverbnation.com/",
         "steps": [
@@ -2602,7 +2602,7 @@ export const sitesData = [
         "id": 210,
         "category": "Foundation & Authority Profiles",
         "name": "Vimeo",
-        "da": 94,
+        "da": 98,
         "type": "Dofollow",
         "url": "https://vimeo.com/",
         "steps": [
@@ -2616,7 +2616,7 @@ export const sitesData = [
         "id": 211,
         "category": "Foundation & Authority Profiles",
         "name": "Substack",
-        "da": 90,
+        "da": 89,
         "type": "Nofollow",
         "url": "https://substack.com/",
         "steps": [
@@ -2644,7 +2644,7 @@ export const sitesData = [
         "id": 213,
         "category": "Foundation & Authority Profiles",
         "name": "Disqus",
-        "da": 93,
+        "da": 92,
         "type": "Nofollow",
         "url": "https://disqus.com/",
         "steps": [
@@ -2658,7 +2658,7 @@ export const sitesData = [
         "id": 214,
         "category": "Foundation & Authority Profiles",
         "name": "List.ly",
-        "da": 70,
+        "da": 71,
         "type": "Dofollow",
         "url": "https://list.ly/",
         "steps": [
@@ -2673,7 +2673,7 @@ export const sitesData = [
         "id": 215,
         "category": "Foundation & Authority Profiles",
         "name": "TechDirt",
-        "da": 85,
+        "da": 86,
         "type": "Nofollow",
         "url": "https://www.techdirt.com/",
         "steps": [
@@ -2687,7 +2687,7 @@ export const sitesData = [
         "id": 216,
         "category": "Foundation & Authority Profiles",
         "name": "Gab",
-        "da": 80,
+        "da": 83,
         "type": "Nofollow",
         "url": "https://gab.com/",
         "steps": [
@@ -2701,7 +2701,7 @@ export const sitesData = [
         "id": 217,
         "category": "Foundation & Authority Profiles",
         "name": "Mewe",
-        "da": 75,
+        "da": 79,
         "type": "Nofollow",
         "url": "https://mewe.com/",
         "steps": [
@@ -2715,7 +2715,7 @@ export const sitesData = [
         "id": 218,
         "category": "Foundation & Authority Profiles",
         "name": "Protopage",
-        "da": 60,
+        "da": 65,
         "type": "Dofollow",
         "url": "https://www.protopage.com/",
         "steps": [
@@ -2729,7 +2729,7 @@ export const sitesData = [
         "id": 221,
         "category": "Foundation & Authority Profiles",
         "name": "Zeef",
-        "da": 60,
+        "da": 63,
         "type": "Dofollow",
         "url": "https://zeef.com/",
         "steps": [
@@ -2743,7 +2743,7 @@ export const sitesData = [
         "id": 222,
         "category": "Foundation & Authority Profiles",
         "name": "Storeboard",
-        "da": 55,
+        "da": 60,
         "type": "Dofollow",
         "url": "https://www.storeboard.com/",
         "steps": [
@@ -2757,7 +2757,7 @@ export const sitesData = [
         "id": 223,
         "category": "Foundation & Authority Profiles",
         "name": "Dropmark",
-        "da": 65,
+        "da": 64,
         "type": "Nofollow",
         "url": "https://www.dropmark.com/",
         "steps": [
@@ -2770,7 +2770,7 @@ export const sitesData = [
         "id": 224,
         "category": "Foundation & Authority Profiles",
         "name": "Pinboard",
-        "da": 75,
+        "da": 74,
         "type": "Nofollow",
         "url": "https://pinboard.in/",
         "steps": [
@@ -2783,7 +2783,7 @@ export const sitesData = [
         "id": 225,
         "category": "Foundation & Authority Profiles",
         "name": "Instapaper",
-        "da": 85,
+        "da": 88,
         "type": "Nofollow",
         "url": "https://www.instapaper.com/",
         "steps": [
@@ -2810,7 +2810,7 @@ export const sitesData = [
         "id": 228,
         "category": "Foundation & Authority Profiles",
         "name": "Classmates",
-        "da": 80,
+        "da": 83,
         "type": "Nofollow",
         "url": "https://www.classmates.com/",
         "steps": [
@@ -2824,7 +2824,7 @@ export const sitesData = [
         "id": 229,
         "category": "Foundation & Authority Profiles",
         "name": "Symbaloo",
-        "da": 70,
+        "da": 68,
         "type": "Dofollow",
         "url": "https://www.symbaloo.com/",
         "steps": [
@@ -2838,7 +2838,7 @@ export const sitesData = [
         "id": 230,
         "category": "Foundation & Authority Profiles",
         "name": "EToro",
-        "da": 85,
+        "da": 88,
         "type": "Nofollow",
         "url": "https://www.etoro.com/",
         "steps": [
@@ -2852,7 +2852,7 @@ export const sitesData = [
         "id": 231,
         "category": "Foundation & Authority Profiles",
         "name": "Slack Community",
-        "da": 98,
+        "da": 96,
         "type": "Nofollow",
         "url": "https://slack.com/",
         "steps": [
@@ -2866,7 +2866,7 @@ export const sitesData = [
         "id": 232,
         "category": "Foundation & Authority Profiles",
         "name": "GaiaOnline",
-        "da": 75,
+        "da": 77,
         "type": "Nofollow",
         "url": "https://www.gaiaonline.com/",
         "steps": [
@@ -2880,7 +2880,7 @@ export const sitesData = [
         "id": 233,
         "category": "Foundation & Authority Profiles",
         "name": "ContactUp",
-        "da": 45,
+        "da": 46,
         "type": "Dofollow",
         "url": "https://contactup.io/",
         "steps": [
@@ -2894,7 +2894,7 @@ export const sitesData = [
         "id": 234,
         "category": "Foundation & Authority Profiles",
         "name": "JustPep",
-        "da": 40,
+        "da": 44,
         "type": "Dofollow",
         "url": "https://justpep.com/",
         "steps": [
@@ -2907,7 +2907,7 @@ export const sitesData = [
         "id": 235,
         "category": "Foundation & Authority Profiles",
         "name": "ABoogy",
-        "da": 40,
+        "da": 44,
         "type": "Dofollow",
         "url": "https://aboogy.com/",
         "steps": [
@@ -2933,7 +2933,7 @@ export const sitesData = [
         "id": 237,
         "category": "Foundation & Authority Profiles",
         "name": "TuffSocial",
-        "da": 35,
+        "da": 40,
         "type": "Dofollow",
         "url": "https://tuffsocial.com/",
         "steps": [
@@ -2946,7 +2946,7 @@ export const sitesData = [
         "id": 238,
         "category": "Foundation & Authority Profiles",
         "name": "MyKith",
-        "da": 35,
+        "da": 39,
         "type": "Dofollow",
         "url": "https://mykith.com/",
         "steps": [
@@ -2959,7 +2959,7 @@ export const sitesData = [
         "id": 239,
         "category": "Foundation & Authority Profiles",
         "name": "XYUpload",
-        "da": 35,
+        "da": 34,
         "type": "Dofollow",
         "url": "https://xyupload.com/",
         "steps": [
@@ -2972,7 +2972,7 @@ export const sitesData = [
         "id": 240,
         "category": "Foundation & Authority Profiles",
         "name": "Spinsnap",
-        "da": 45,
+        "da": 47,
         "type": "Nofollow",
         "url": "http://spinsnap.com/",
         "steps": [
@@ -2985,7 +2985,7 @@ export const sitesData = [
         "id": 241,
         "category": "Communities & Bookmarking",
         "name": "A1Bookmarks",
-        "da": 35,
+        "da": 34,
         "type": "Dofollow",
         "url": "https://a1bookmarks.com/",
         "steps": [
@@ -3011,7 +3011,7 @@ export const sitesData = [
         "id": 243,
         "category": "Communities & Bookmarking",
         "name": "Newsciti",
-        "da": 35,
+        "da": 34,
         "type": "Dofollow",
         "url": "https://newsciti.com/",
         "steps": [
@@ -3024,7 +3024,7 @@ export const sitesData = [
         "id": 244,
         "category": "Communities & Bookmarking",
         "name": "OyePin",
-        "da": 35,
+        "da": 34,
         "type": "Dofollow",
         "url": "https://oyepin.com/",
         "steps": [
@@ -3037,7 +3037,7 @@ export const sitesData = [
         "id": 245,
         "category": "Communities & Bookmarking",
         "name": "MozyLinks",
-        "da": 35,
+        "da": 38,
         "type": "Dofollow",
         "url": "https://mozylinks.com/",
         "steps": [
@@ -3050,7 +3050,7 @@ export const sitesData = [
         "id": 246,
         "category": "Communities & Bookmarking",
         "name": "SBookmarking",
-        "da": 35,
+        "da": 40,
         "type": "Dofollow",
         "url": "https://sbookmarking.com/",
         "steps": [
@@ -3063,7 +3063,7 @@ export const sitesData = [
         "id": 247,
         "category": "Communities & Bookmarking",
         "name": "IndianScoop",
-        "da": 35,
+        "da": 36,
         "type": "Dofollow",
         "url": "https://indianscoop.net/",
         "steps": [
@@ -3089,7 +3089,7 @@ export const sitesData = [
         "id": 249,
         "category": "Communities & Bookmarking",
         "name": "BookmarkTheme",
-        "da": 35,
+        "da": 38,
         "type": "Dofollow",
         "url": "https://bookmarktheme.com/",
         "steps": [
@@ -3102,7 +3102,7 @@ export const sitesData = [
         "id": 250,
         "category": "Communities & Bookmarking",
         "name": "BookmarkCart",
-        "da": 35,
+        "da": 36,
         "type": "Dofollow",
         "url": "https://bookmarkcart.com/",
         "steps": [
@@ -3115,7 +3115,7 @@ export const sitesData = [
         "id": 251,
         "category": "SaaS, AI & Startup Directories",
         "name": "FutureTools",
-        "da": 60,
+        "da": 63,
         "type": "Nofollow",
         "url": "https://www.futuretools.io/submit-a-tool",
         "steps": [
@@ -3129,7 +3129,7 @@ export const sitesData = [
         "id": 252,
         "category": "SaaS, AI & Startup Directories",
         "name": "Futurepedia",
-        "da": 62,
+        "da": 64,
         "type": "Nofollow",
         "url": "https://www.futurepedia.io/submit-tool",
         "steps": [
@@ -3143,7 +3143,7 @@ export const sitesData = [
         "id": 253,
         "category": "SaaS, AI & Startup Directories",
         "name": "There's An AI For That",
-        "da": 65,
+        "da": 66,
         "type": "Nofollow",
         "url": "https://theresanaiforthat.com/submit/",
         "steps": [
@@ -3157,7 +3157,7 @@ export const sitesData = [
         "id": 254,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Wizard",
-        "da": 45,
+        "da": 48,
         "type": "Nofollow",
         "url": "https://aiwizard.ai/submit-a-tool/",
         "steps": [
@@ -3170,7 +3170,7 @@ export const sitesData = [
         "id": 255,
         "category": "SaaS, AI & Startup Directories",
         "name": "Top AI Tools",
-        "da": 50,
+        "da": 49,
         "type": "Nofollow",
         "url": "https://topai.tools/submit",
         "steps": [
@@ -3183,7 +3183,7 @@ export const sitesData = [
         "id": 256,
         "category": "SaaS, AI & Startup Directories",
         "name": "AILaunchList",
-        "da": 42,
+        "da": 47,
         "type": "Nofollow",
         "url": "https://ailaunchlist.com/submit-a-tool/",
         "steps": [
@@ -3196,7 +3196,7 @@ export const sitesData = [
         "id": 257,
         "category": "SaaS, AI & Startup Directories",
         "name": "SaaS AI Tools",
-        "da": 48,
+        "da": 46,
         "type": "Nofollow",
         "url": "https://saasaitools.com/submit/",
         "steps": [
@@ -3209,7 +3209,7 @@ export const sitesData = [
         "id": 258,
         "category": "SaaS, AI & Startup Directories",
         "name": "AllThingsAI",
-        "da": 52,
+        "da": 53,
         "type": "Nofollow",
         "url": "https://allthingsai.com/submit",
         "steps": [
@@ -3222,7 +3222,7 @@ export const sitesData = [
         "id": 259,
         "category": "SaaS, AI & Startup Directories",
         "name": "AIScout",
-        "da": 45,
+        "da": 44,
         "type": "Nofollow",
         "url": "https://aiscout.net/submit-tool/",
         "steps": [
@@ -3235,7 +3235,7 @@ export const sitesData = [
         "id": 260,
         "category": "SaaS, AI & Startup Directories",
         "name": "EasyWithAI",
-        "da": 40,
+        "da": 41,
         "type": "Nofollow",
         "url": "https://easywithai.com/submit-tool/",
         "steps": [
@@ -3248,7 +3248,7 @@ export const sitesData = [
         "id": 261,
         "category": "SaaS, AI & Startup Directories",
         "name": "AICYclopedia",
-        "da": 42,
+        "da": 44,
         "type": "Nofollow",
         "url": "https://aicyclopedia.com/submit-a-tool/",
         "steps": [
@@ -3261,7 +3261,7 @@ export const sitesData = [
         "id": 262,
         "category": "SaaS, AI & Startup Directories",
         "name": "WhatTheAI",
-        "da": 38,
+        "da": 37,
         "type": "Nofollow",
         "url": "https://whattheai.tech/submit-a-tool/",
         "steps": [
@@ -3274,7 +3274,7 @@ export const sitesData = [
         "id": 263,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI-Hunter",
-        "da": 40,
+        "da": 44,
         "type": "Nofollow",
         "url": "https://ai-hunter.io/submit-a-tool/",
         "steps": [
@@ -3287,7 +3287,7 @@ export const sitesData = [
         "id": 264,
         "category": "SaaS, AI & Startup Directories",
         "name": "AIToolNet",
-        "da": 35,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://aitoolnet.com/",
         "steps": [
@@ -3300,7 +3300,7 @@ export const sitesData = [
         "id": 265,
         "category": "SaaS, AI & Startup Directories",
         "name": "FlipBytes",
-        "da": 35,
+        "da": 36,
         "type": "Nofollow",
         "url": "https://flipbytes.com/",
         "steps": [
@@ -3313,7 +3313,7 @@ export const sitesData = [
         "id": 266,
         "category": "SaaS, AI & Startup Directories",
         "name": "Wikiaitools",
-        "da": 35,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://wikiaitools.com/",
         "steps": [
@@ -3326,7 +3326,7 @@ export const sitesData = [
         "id": 267,
         "category": "SaaS, AI & Startup Directories",
         "name": "AIOfTheDay",
-        "da": 38,
+        "da": 41,
         "type": "Nofollow",
         "url": "https://aioftheday.com/submit/",
         "steps": [
@@ -3339,7 +3339,7 @@ export const sitesData = [
         "id": 268,
         "category": "SaaS, AI & Startup Directories",
         "name": "AIToolGuru",
-        "da": 35,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://aitoolguru.com/",
         "steps": [
@@ -3365,7 +3365,7 @@ export const sitesData = [
         "id": 270,
         "category": "SaaS, AI & Startup Directories",
         "name": "UneedBest",
-        "da": 45,
+        "da": 48,
         "type": "Nofollow",
         "url": "https://uneedbest.com/",
         "steps": [
@@ -3391,7 +3391,7 @@ export const sitesData = [
         "id": 272,
         "category": "SaaS, AI & Startup Directories",
         "name": "ToolScout",
-        "da": 40,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://toolscout.ai/",
         "steps": [
@@ -3404,7 +3404,7 @@ export const sitesData = [
         "id": 273,
         "category": "SaaS, AI & Startup Directories",
         "name": "ToolPilot",
-        "da": 38,
+        "da": 43,
         "type": "Nofollow",
         "url": "https://toolpilot.ai/",
         "steps": [
@@ -3417,7 +3417,7 @@ export const sitesData = [
         "id": 274,
         "category": "SaaS, AI & Startup Directories",
         "name": "DoMore.ai",
-        "da": 40,
+        "da": 45,
         "type": "Nofollow",
         "url": "https://domore.ai/submit-tool",
         "steps": [
@@ -3430,7 +3430,7 @@ export const sitesData = [
         "id": 276,
         "category": "SaaS, AI & Startup Directories",
         "name": "AiXploria",
-        "da": 40,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://www.aixploria.com/en/submit-a-tool/",
         "steps": [
@@ -3443,7 +3443,7 @@ export const sitesData = [
         "id": 277,
         "category": "SaaS, AI & Startup Directories",
         "name": "OpenTools",
-        "da": 45,
+        "da": 49,
         "type": "Nofollow",
         "url": "https://opentools.ai/",
         "steps": [
@@ -3456,7 +3456,7 @@ export const sitesData = [
         "id": 278,
         "category": "SaaS, AI & Startup Directories",
         "name": "FindMyAITool",
-        "da": 42,
+        "da": 44,
         "type": "Nofollow",
         "url": "https://findmyaitool.com/",
         "steps": [
@@ -3469,7 +3469,7 @@ export const sitesData = [
         "id": 279,
         "category": "SaaS, AI & Startup Directories",
         "name": "YouAI.tools",
-        "da": 35,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://youai.tools/",
         "steps": [
@@ -3495,7 +3495,7 @@ export const sitesData = [
         "id": 281,
         "category": "SaaS, AI & Startup Directories",
         "name": "GptE.ai",
-        "da": 40,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://gpte.ai/submit-a-tool/",
         "steps": [
@@ -3508,7 +3508,7 @@ export const sitesData = [
         "id": 282,
         "category": "SaaS, AI & Startup Directories",
         "name": "GPTsHunter",
-        "da": 42,
+        "da": 41,
         "type": "Nofollow",
         "url": "https://gptshunter.com/",
         "steps": [
@@ -3521,7 +3521,7 @@ export const sitesData = [
         "id": 283,
         "category": "SaaS, AI & Startup Directories",
         "name": "Igniter.ai",
-        "da": 40,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://igniter.ai/",
         "steps": [
@@ -3534,7 +3534,7 @@ export const sitesData = [
         "id": 284,
         "category": "SaaS, AI & Startup Directories",
         "name": "NextGenTools",
-        "da": 35,
+        "da": 33,
         "type": "Nofollow",
         "url": "https://nextgentools.me/",
         "steps": [
@@ -3547,7 +3547,7 @@ export const sitesData = [
         "id": 285,
         "category": "SaaS, AI & Startup Directories",
         "name": "AIWorldTools",
-        "da": 35,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://aiworldtools.com/",
         "steps": [
@@ -3560,7 +3560,7 @@ export const sitesData = [
         "id": 286,
         "category": "SaaS, AI & Startup Directories",
         "name": "EverythingAI",
-        "da": 40,
+        "da": 45,
         "type": "Nofollow",
         "url": "https://everythingai.club/",
         "steps": [
@@ -3573,7 +3573,7 @@ export const sitesData = [
         "id": 287,
         "category": "SaaS, AI & Startup Directories",
         "name": "AIValley",
-        "da": 45,
+        "da": 46,
         "type": "Nofollow",
         "url": "https://aivalley.ai/",
         "steps": [
@@ -3586,7 +3586,7 @@ export const sitesData = [
         "id": 288,
         "category": "SaaS, AI & Startup Directories",
         "name": "AISTacked",
-        "da": 40,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://aistacked.com/",
         "steps": [
@@ -3599,7 +3599,7 @@ export const sitesData = [
         "id": 289,
         "category": "SaaS, AI & Startup Directories",
         "name": "DailyZaps",
-        "da": 35,
+        "da": 36,
         "type": "Nofollow",
         "url": "https://dailyzaps.com/",
         "steps": [
@@ -3612,7 +3612,7 @@ export const sitesData = [
         "id": 290,
         "category": "SaaS, AI & Startup Directories",
         "name": "StackRadar",
-        "da": 40,
+        "da": 42,
         "type": "Nofollow",
         "url": "https://stackradar.co/",
         "steps": [
@@ -3638,7 +3638,7 @@ export const sitesData = [
         "id": 292,
         "category": "SaaS, AI & Startup Directories",
         "name": "AIToolkit",
-        "da": 45,
+        "da": 48,
         "type": "Nofollow",
         "url": "https://aitoolkit.org/",
         "steps": [
@@ -3651,7 +3651,7 @@ export const sitesData = [
         "id": 293,
         "category": "SaaS, AI & Startup Directories",
         "name": "SeekMe.ai",
-        "da": 38,
+        "da": 42,
         "type": "Nofollow",
         "url": "https://seekme.ai/",
         "steps": [
@@ -3664,7 +3664,7 @@ export const sitesData = [
         "id": 294,
         "category": "SaaS, AI & Startup Directories",
         "name": "FutureAIWiki",
-        "da": 35,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://futureaiwiki.com/",
         "steps": [
@@ -3677,7 +3677,7 @@ export const sitesData = [
         "id": 295,
         "category": "SaaS, AI & Startup Directories",
         "name": "SoftGist",
-        "da": 40,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://softgist.com/",
         "steps": [
@@ -3716,7 +3716,7 @@ export const sitesData = [
         "id": 298,
         "category": "SaaS, AI & Startup Directories",
         "name": "BlogRags",
-        "da": 35,
+        "da": 33,
         "type": "Nofollow",
         "url": "https://blogrags.com/",
         "steps": [
@@ -3729,7 +3729,7 @@ export const sitesData = [
         "id": 299,
         "category": "SaaS, AI & Startup Directories",
         "name": "Library Phygital",
-        "da": 40,
+        "da": 43,
         "type": "Nofollow",
         "url": "https://library.phygital.plus/",
         "steps": [
@@ -3755,7 +3755,7 @@ export const sitesData = [
         "id": 301,
         "category": "SaaS, AI & Startup Directories",
         "name": "FutureForgeZ",
-        "da": 35,
+        "da": 36,
         "type": "Nofollow",
         "url": "https://futureforgez.com/",
         "steps": [
@@ -3768,7 +3768,7 @@ export const sitesData = [
         "id": 302,
         "category": "SaaS, AI & Startup Directories",
         "name": "ToolsAI.net",
-        "da": 40,
+        "da": 42,
         "type": "Nofollow",
         "url": "https://toolsai.net/",
         "steps": [
@@ -3794,7 +3794,7 @@ export const sitesData = [
         "id": 305,
         "category": "SaaS, AI & Startup Directories",
         "name": "FindMyAITool.io",
-        "da": 40,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://findmyaitool.io/",
         "steps": [
@@ -3807,7 +3807,7 @@ export const sitesData = [
         "id": 306,
         "category": "SaaS, AI & Startup Directories",
         "name": "AIToolTips",
-        "da": 35,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://aitooltips.com/",
         "steps": [
@@ -3820,7 +3820,7 @@ export const sitesData = [
         "id": 308,
         "category": "SaaS, AI & Startup Directories",
         "name": "ToolSpedia",
-        "da": 42,
+        "da": 45,
         "type": "Nofollow",
         "url": "https://toolspedia.io/",
         "steps": [
@@ -3833,7 +3833,7 @@ export const sitesData = [
         "id": 309,
         "category": "SaaS, AI & Startup Directories",
         "name": "AIListo",
-        "da": 38,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://ailisto.com/",
         "steps": [
@@ -3859,7 +3859,7 @@ export const sitesData = [
         "id": 311,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Bucket",
-        "da": 40,
+        "da": 41,
         "type": "Nofollow",
         "url": "https://aibucket.io/submit-a-tool/",
         "steps": [
@@ -3872,7 +3872,7 @@ export const sitesData = [
         "id": 312,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Alert",
-        "da": 38,
+        "da": 36,
         "type": "Nofollow",
         "url": "https://aialert.io/",
         "steps": [
@@ -3885,7 +3885,7 @@ export const sitesData = [
         "id": 313,
         "category": "SaaS, AI & Startup Directories",
         "name": "Tools Index",
-        "da": 35,
+        "da": 36,
         "type": "Nofollow",
         "url": "https://toolsindex.ai/",
         "steps": [
@@ -3898,7 +3898,7 @@ export const sitesData = [
         "id": 314,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Tools Info",
-        "da": 35,
+        "da": 37,
         "type": "Nofollow",
         "url": "https://aitoolsinfo.com/",
         "steps": [
@@ -3924,7 +3924,7 @@ export const sitesData = [
         "id": 316,
         "category": "SaaS, AI & Startup Directories",
         "name": "Insane AI Tools",
-        "da": 45,
+        "da": 44,
         "type": "Nofollow",
         "url": "https://insaneai.tools/",
         "steps": [
@@ -3937,7 +3937,7 @@ export const sitesData = [
         "id": 317,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Tree",
-        "da": 38,
+        "da": 41,
         "type": "Nofollow",
         "url": "https://aitree.io/",
         "steps": [
@@ -3950,7 +3950,7 @@ export const sitesData = [
         "id": 318,
         "category": "SaaS, AI & Startup Directories",
         "name": "SaaS Adviser",
-        "da": 40,
+        "da": 45,
         "type": "Nofollow",
         "url": "https://saasadviser.co/",
         "steps": [
@@ -3963,7 +3963,7 @@ export const sitesData = [
         "id": 319,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Zip",
-        "da": 35,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://aizip.net/",
         "steps": [
@@ -3976,7 +3976,7 @@ export const sitesData = [
         "id": 320,
         "category": "SaaS, AI & Startup Directories",
         "name": "Tools For Humans",
-        "da": 42,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://toolsforhumans.ai/",
         "steps": [
@@ -3989,7 +3989,7 @@ export const sitesData = [
         "id": 321,
         "category": "SaaS, AI & Startup Directories",
         "name": "EasySaveAI",
-        "da": 35,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://easysaveai.com/",
         "steps": [
@@ -4015,7 +4015,7 @@ export const sitesData = [
         "id": 323,
         "category": "SaaS, AI & Startup Directories",
         "name": "RateNow AI",
-        "da": 35,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://ratenow.ai/",
         "steps": [
@@ -4028,7 +4028,7 @@ export const sitesData = [
         "id": 324,
         "category": "SaaS, AI & Startup Directories",
         "name": "OpenWorld AI",
-        "da": 35,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://openworldai.com/",
         "steps": [
@@ -4041,7 +4041,7 @@ export const sitesData = [
         "id": 325,
         "category": "SaaS, AI & Startup Directories",
         "name": "Listed AI",
-        "da": 40,
+        "da": 41,
         "type": "Nofollow",
         "url": "https://listedai.co/",
         "steps": [
@@ -4054,7 +4054,7 @@ export const sitesData = [
         "id": 326,
         "category": "SaaS, AI & Startup Directories",
         "name": "BotPanels",
-        "da": 35,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://botpanels.com/",
         "steps": [
@@ -4067,7 +4067,7 @@ export const sitesData = [
         "id": 327,
         "category": "SaaS, AI & Startup Directories",
         "name": "The Outpost",
-        "da": 45,
+        "da": 50,
         "type": "Nofollow",
         "url": "https://theoutpost.ai/",
         "steps": [
@@ -4080,7 +4080,7 @@ export const sitesData = [
         "id": 328,
         "category": "SaaS, AI & Startup Directories",
         "name": "LaChief",
-        "da": 40,
+        "da": 42,
         "type": "Nofollow",
         "url": "https://lachief.io/",
         "steps": [
@@ -4093,7 +4093,7 @@ export const sitesData = [
         "id": 329,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Tools Bay",
-        "da": 35,
+        "da": 33,
         "type": "Nofollow",
         "url": "https://aitoolsbay.com/",
         "steps": [
@@ -4106,7 +4106,7 @@ export const sitesData = [
         "id": 330,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Toolz",
-        "da": 35,
+        "da": 33,
         "type": "Nofollow",
         "url": "https://aitoolz.ai/",
         "steps": [
@@ -4119,7 +4119,7 @@ export const sitesData = [
         "id": 331,
         "category": "SaaS, AI & Startup Directories",
         "name": "AINews.one",
-        "da": 35,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://ainews.one/",
         "steps": [
@@ -4132,7 +4132,7 @@ export const sitesData = [
         "id": 332,
         "category": "SaaS, AI & Startup Directories",
         "name": "Sales Hacking",
-        "da": 45,
+        "da": 47,
         "type": "Nofollow",
         "url": "https://sales-hacking.com/",
         "steps": [
@@ -4145,7 +4145,7 @@ export const sitesData = [
         "id": 333,
         "category": "SaaS, AI & Startup Directories",
         "name": "GPTsFor.me",
-        "da": 40,
+        "da": 44,
         "type": "Nofollow",
         "url": "https://gptsfor.me/",
         "steps": [
@@ -4158,7 +4158,7 @@ export const sitesData = [
         "id": 334,
         "category": "SaaS, AI & Startup Directories",
         "name": "Daily Bailey AI",
-        "da": 35,
+        "da": 34,
         "type": "Nofollow",
         "url": "https://dailybaileyai.com/",
         "steps": [
@@ -4171,7 +4171,7 @@ export const sitesData = [
         "id": 336,
         "category": "SaaS, AI & Startup Directories",
         "name": "Tool Assistant",
-        "da": 35,
+        "da": 36,
         "type": "Nofollow",
         "url": "https://toolassistant.com/",
         "steps": [
@@ -4184,7 +4184,7 @@ export const sitesData = [
         "id": 337,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Tools Club",
-        "da": 40,
+        "da": 45,
         "type": "Nofollow",
         "url": "https://aitoolsclub.com/",
         "steps": [
@@ -4197,7 +4197,7 @@ export const sitesData = [
         "id": 338,
         "category": "SaaS, AI & Startup Directories",
         "name": "OpenToolsAI",
-        "da": 45,
+        "da": 48,
         "type": "Nofollow",
         "url": "https://opentoolsai.com/",
         "steps": [
@@ -4210,7 +4210,7 @@ export const sitesData = [
         "id": 339,
         "category": "SaaS, AI & Startup Directories",
         "name": "EverythingAI Hub",
-        "da": 40,
+        "da": 44,
         "type": "Nofollow",
         "url": "https://everythingaihub.com/",
         "steps": [
@@ -4223,7 +4223,7 @@ export const sitesData = [
         "id": 340,
         "category": "SaaS, AI & Startup Directories",
         "name": "The Insane App",
-        "da": 42,
+        "da": 43,
         "type": "Nofollow",
         "url": "https://theinsaneapp.com/submit-ai-tool/",
         "steps": [
@@ -4236,7 +4236,7 @@ export const sitesData = [
         "id": 341,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Tool Wise",
-        "da": 35,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://aitoolwise.com/",
         "steps": [
@@ -4275,7 +4275,7 @@ export const sitesData = [
         "id": 344,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Tool Corner",
-        "da": 35,
+        "da": 33,
         "type": "Nofollow",
         "url": "https://aitoolscorner.com/",
         "steps": [
@@ -4288,7 +4288,7 @@ export const sitesData = [
         "id": 345,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Finder Info",
-        "da": 35,
+        "da": 34,
         "type": "Nofollow",
         "url": "https://aifinder.info/",
         "steps": [
@@ -4301,7 +4301,7 @@ export const sitesData = [
         "id": 346,
         "category": "SaaS, AI & Startup Directories",
         "name": "Tools-AI Online",
-        "da": 40,
+        "da": 42,
         "type": "Nofollow",
         "url": "https://tools-ai.online/",
         "steps": [
@@ -4314,7 +4314,7 @@ export const sitesData = [
         "id": 347,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Tools Mate",
-        "da": 35,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://aitoolsmate.com/",
         "steps": [
@@ -4327,7 +4327,7 @@ export const sitesData = [
         "id": 348,
         "category": "SaaS, AI & Startup Directories",
         "name": "Your AI Tool",
-        "da": 35,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://youraitool.com/",
         "steps": [
@@ -4340,7 +4340,7 @@ export const sitesData = [
         "id": 351,
         "category": "SaaS, AI & Startup Directories",
         "name": "Foundr AI",
-        "da": 70,
+        "da": 74,
         "type": "Nofollow",
         "url": "https://foundr.ai/",
         "steps": [
@@ -4353,7 +4353,7 @@ export const sitesData = [
         "id": 352,
         "category": "SaaS, AI & Startup Directories",
         "name": "Stack AI",
-        "da": 45,
+        "da": 44,
         "type": "Nofollow",
         "url": "https://stackai.co/",
         "steps": [
@@ -4366,7 +4366,7 @@ export const sitesData = [
         "id": 353,
         "category": "SaaS, AI & Startup Directories",
         "name": "SuperTools",
-        "da": 55,
+        "da": 53,
         "type": "Nofollow",
         "url": "https://supertools.therundown.ai/",
         "steps": [
@@ -4379,7 +4379,7 @@ export const sitesData = [
         "id": 354,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Marketing Directory",
-        "da": 40,
+        "da": 42,
         "type": "Nofollow",
         "url": "https://aimarketing.directory/",
         "steps": [
@@ -4392,7 +4392,7 @@ export const sitesData = [
         "id": 355,
         "category": "SaaS, AI & Startup Directories",
         "name": "NextPedia",
-        "da": 35,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://nextpedia.io/",
         "steps": [
@@ -4418,7 +4418,7 @@ export const sitesData = [
         "id": 357,
         "category": "SaaS, AI & Startup Directories",
         "name": "SaaSGPters",
-        "da": 35,
+        "da": 34,
         "type": "Nofollow",
         "url": "https://saasgpters.com/",
         "steps": [
@@ -4431,7 +4431,7 @@ export const sitesData = [
         "id": 358,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Awesome",
-        "da": 42,
+        "da": 41,
         "type": "Nofollow",
         "url": "https://aiawesome.com/",
         "steps": [
@@ -4444,7 +4444,7 @@ export const sitesData = [
         "id": 359,
         "category": "SaaS, AI & Startup Directories",
         "name": "TechLoMedia",
-        "da": 45,
+        "da": 46,
         "type": "Nofollow",
         "url": "https://techlomedia.in/",
         "steps": [
@@ -4470,7 +4470,7 @@ export const sitesData = [
         "id": 361,
         "category": "SaaS, AI & Startup Directories",
         "name": "Textify AI",
-        "da": 40,
+        "da": 41,
         "type": "Nofollow",
         "url": "https://textify.ai/",
         "steps": [
@@ -4496,7 +4496,7 @@ export const sitesData = [
         "id": 363,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Depot",
-        "da": 38,
+        "da": 41,
         "type": "Nofollow",
         "url": "https://aidepot.co/",
         "steps": [
@@ -4509,7 +4509,7 @@ export const sitesData = [
         "id": 364,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Stash",
-        "da": 40,
+        "da": 43,
         "type": "Nofollow",
         "url": "https://aistash.co/",
         "steps": [
@@ -4522,7 +4522,7 @@ export const sitesData = [
         "id": 365,
         "category": "SaaS, AI & Startup Directories",
         "name": "All Top Startups",
-        "da": 55,
+        "da": 56,
         "type": "Nofollow",
         "url": "https://alltopstartups.com/",
         "steps": [
@@ -4535,7 +4535,7 @@ export const sitesData = [
         "id": 366,
         "category": "SaaS, AI & Startup Directories",
         "name": "GPT Forge",
-        "da": 40,
+        "da": 44,
         "type": "Nofollow",
         "url": "https://gptforge.net/",
         "steps": [
@@ -4548,7 +4548,7 @@ export const sitesData = [
         "id": 367,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Forest",
-        "da": 38,
+        "da": 41,
         "type": "Nofollow",
         "url": "https://aiforest.wiki/",
         "steps": [
@@ -4561,7 +4561,7 @@ export const sitesData = [
         "id": 368,
         "category": "SaaS, AI & Startup Directories",
         "name": "100 Apps",
-        "da": 45,
+        "da": 49,
         "type": "Nofollow",
         "url": "https://100apps.org/",
         "steps": [
@@ -4574,7 +4574,7 @@ export const sitesData = [
         "id": 369,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI News Guru",
-        "da": 35,
+        "da": 33,
         "type": "Nofollow",
         "url": "https://ainews.guru/",
         "steps": [
@@ -4587,7 +4587,7 @@ export const sitesData = [
         "id": 370,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Tools Guide",
-        "da": 35,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://aitoolsguide.com/",
         "steps": [
@@ -4613,7 +4613,7 @@ export const sitesData = [
         "id": 372,
         "category": "SaaS, AI & Startup Directories",
         "name": "Free AI Tools",
-        "da": 35,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://free-ai-tools-directory.com/",
         "steps": [
@@ -4626,7 +4626,7 @@ export const sitesData = [
         "id": 373,
         "category": "SaaS, AI & Startup Directories",
         "name": "GPT Academy",
-        "da": 42,
+        "da": 47,
         "type": "Nofollow",
         "url": "https://gptacademy.co/",
         "steps": [
@@ -4639,7 +4639,7 @@ export const sitesData = [
         "id": 374,
         "category": "SaaS, AI & Startup Directories",
         "name": "InventList",
-        "da": 35,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://inventlist.com/",
         "steps": [
@@ -4652,7 +4652,7 @@ export const sitesData = [
         "id": 375,
         "category": "SaaS, AI & Startup Directories",
         "name": "Live Apps AI",
-        "da": 40,
+        "da": 43,
         "type": "Nofollow",
         "url": "https://liveapps.ai/",
         "steps": [
@@ -4665,7 +4665,7 @@ export const sitesData = [
         "id": 376,
         "category": "SaaS, AI & Startup Directories",
         "name": "Look AI Tools",
-        "da": 35,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://lookaitools.com/",
         "steps": [
@@ -4678,7 +4678,7 @@ export const sitesData = [
         "id": 377,
         "category": "SaaS, AI & Startup Directories",
         "name": "Mad Genius",
-        "da": 38,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://madgenius.co/",
         "steps": [
@@ -4704,7 +4704,7 @@ export const sitesData = [
         "id": 379,
         "category": "SaaS, AI & Startup Directories",
         "name": "Tool Hunter",
-        "da": 40,
+        "da": 45,
         "type": "Nofollow",
         "url": "https://toolhunter.ai/",
         "steps": [
@@ -4717,7 +4717,7 @@ export const sitesData = [
         "id": 380,
         "category": "SaaS, AI & Startup Directories",
         "name": "Web Of AI",
-        "da": 35,
+        "da": 33,
         "type": "Nofollow",
         "url": "https://webofai.com/",
         "steps": [
@@ -4730,7 +4730,7 @@ export const sitesData = [
         "id": 381,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Ware Hub",
-        "da": 35,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://aiwarehub.com/",
         "steps": [
@@ -4743,7 +4743,7 @@ export const sitesData = [
         "id": 382,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Tool Mate",
-        "da": 35,
+        "da": 33,
         "type": "Nofollow",
         "url": "https://aitoolmate.com/",
         "steps": [
@@ -4756,7 +4756,7 @@ export const sitesData = [
         "id": 383,
         "category": "SaaS, AI & Startup Directories",
         "name": "OBT AI",
-        "da": 35,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://obt.ai/",
         "steps": [
@@ -4769,7 +4769,7 @@ export const sitesData = [
         "id": 384,
         "category": "SaaS, AI & Startup Directories",
         "name": "Creaitives",
-        "da": 42,
+        "da": 44,
         "type": "Nofollow",
         "url": "https://creaitives.com/",
         "steps": [
@@ -4782,7 +4782,7 @@ export const sitesData = [
         "id": 385,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Updates",
-        "da": 35,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://aiupdates.ai/",
         "steps": [
@@ -4795,7 +4795,7 @@ export const sitesData = [
         "id": 386,
         "category": "SaaS, AI & Startup Directories",
         "name": "Browsing AI",
-        "da": 38,
+        "da": 43,
         "type": "Nofollow",
         "url": "https://browsing.ai/",
         "steps": [
@@ -4808,7 +4808,7 @@ export const sitesData = [
         "id": 387,
         "category": "SaaS, AI & Startup Directories",
         "name": "Next Gen Tool IO",
-        "da": 35,
+        "da": 33,
         "type": "Nofollow",
         "url": "https://nextgentool.io/",
         "steps": [
@@ -4834,7 +4834,7 @@ export const sitesData = [
         "id": 389,
         "category": "SaaS, AI & Startup Directories",
         "name": "The Tool Bus",
-        "da": 35,
+        "da": 37,
         "type": "Nofollow",
         "url": "https://thetoolbus.ai/",
         "steps": [
@@ -4847,7 +4847,7 @@ export const sitesData = [
         "id": 390,
         "category": "SaaS, AI & Startup Directories",
         "name": "Popular AI Tools",
-        "da": 45,
+        "da": 44,
         "type": "Nofollow",
         "url": "https://popularaitools.ai/",
         "steps": [
@@ -4860,7 +4860,7 @@ export const sitesData = [
         "id": 391,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Nave",
-        "da": 35,
+        "da": 33,
         "type": "Nofollow",
         "url": "https://ainave.com/",
         "steps": [
@@ -4873,7 +4873,7 @@ export const sitesData = [
         "id": 392,
         "category": "SaaS, AI & Startup Directories",
         "name": "AIPedia Hub",
-        "da": 35,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://aipediahub.com/",
         "steps": [
@@ -4886,7 +4886,7 @@ export const sitesData = [
         "id": 393,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Top Tools",
-        "da": 42,
+        "da": 47,
         "type": "Nofollow",
         "url": "https://aitoptools.com/",
         "steps": [
@@ -4899,7 +4899,7 @@ export const sitesData = [
         "id": 394,
         "category": "SaaS, AI & Startup Directories",
         "name": "Powered By AI",
-        "da": 40,
+        "da": 43,
         "type": "Nofollow",
         "url": "https://poweredbyai.app/",
         "steps": [
@@ -4912,7 +4912,7 @@ export const sitesData = [
         "id": 395,
         "category": "SaaS, AI & Startup Directories",
         "name": "100x Growth",
-        "da": 45,
+        "da": 46,
         "type": "Nofollow",
         "url": "https://100xgrowth.ai/",
         "steps": [
@@ -4925,7 +4925,7 @@ export const sitesData = [
         "id": 396,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Radar",
-        "da": 35,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://airadar.online/",
         "steps": [
@@ -4951,7 +4951,7 @@ export const sitesData = [
         "id": 398,
         "category": "SaaS, AI & Startup Directories",
         "name": "GetByte Tech",
-        "da": 35,
+        "da": 37,
         "type": "Nofollow",
         "url": "https://getbyte.tech/",
         "steps": [
@@ -4964,7 +4964,7 @@ export const sitesData = [
         "id": 399,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Top Rank",
-        "da": 35,
+        "da": 34,
         "type": "Nofollow",
         "url": "https://aitoprank.com/",
         "steps": [
@@ -4977,7 +4977,7 @@ export const sitesData = [
         "id": 400,
         "category": "SaaS, AI & Startup Directories",
         "name": "1 Payment Tools",
-        "da": 35,
+        "da": 33,
         "type": "Nofollow",
         "url": "https://1payment.tools/",
         "steps": [
@@ -4990,7 +4990,7 @@ export const sitesData = [
         "id": 401,
         "category": "SaaS, AI & Startup Directories",
         "name": "Ankore",
-        "da": 35,
+        "da": 36,
         "type": "Nofollow",
         "url": "https://ankore.io/",
         "steps": [
@@ -5003,7 +5003,7 @@ export const sitesData = [
         "id": 402,
         "category": "SaaS, AI & Startup Directories",
         "name": "ILib",
-        "da": 35,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://ilib.com/",
         "steps": [
@@ -5016,7 +5016,7 @@ export const sitesData = [
         "id": 404,
         "category": "SaaS, AI & Startup Directories",
         "name": "That AI Collection",
-        "da": 35,
+        "da": 39,
         "type": "Nofollow",
         "url": "https://thataicollection.com/",
         "steps": [
@@ -5029,7 +5029,7 @@ export const sitesData = [
         "id": 405,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Tool Mall",
-        "da": 35,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://aitoolmall.com/",
         "steps": [
@@ -5055,7 +5055,7 @@ export const sitesData = [
         "id": 407,
         "category": "SaaS, AI & Startup Directories",
         "name": "Top Apps AI",
-        "da": 40,
+        "da": 41,
         "type": "Nofollow",
         "url": "https://topapps.ai/",
         "steps": [
@@ -5068,7 +5068,7 @@ export const sitesData = [
         "id": 410,
         "category": "SaaS, AI & Startup Directories",
         "name": "Full Stack AI",
-        "da": 45,
+        "da": 46,
         "type": "Nofollow",
         "url": "https://fullstackai.co/",
         "steps": [
@@ -5081,7 +5081,7 @@ export const sitesData = [
         "id": 411,
         "category": "SaaS, AI & Startup Directories",
         "name": "AITach",
-        "da": 35,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://aitach.com/",
         "steps": [
@@ -5094,7 +5094,7 @@ export const sitesData = [
         "id": 413,
         "category": "SaaS, AI & Startup Directories",
         "name": "Paxi AI",
-        "da": 35,
+        "da": 34,
         "type": "Nofollow",
         "url": "https://paxi.ai/",
         "steps": [
@@ -5107,7 +5107,7 @@ export const sitesData = [
         "id": 421,
         "category": "SaaS, AI & Startup Directories",
         "name": "Hacker News (Show HN)",
-        "da": 85,
+        "da": 90,
         "type": "Dofollow",
         "url": "https://news.ycombinator.com/submit",
         "steps": [
@@ -5122,7 +5122,7 @@ export const sitesData = [
         "id": 422,
         "category": "SaaS, AI & Startup Directories",
         "name": "Reddit (r/startups)",
-        "da": 90,
+        "da": 95,
         "type": "Nofollow",
         "url": "https://www.reddit.com/r/startups/submit/",
         "steps": [
@@ -5150,7 +5150,7 @@ export const sitesData = [
         "id": 424,
         "category": "SaaS, AI & Startup Directories",
         "name": "Reddit (r/IMadeThis)",
-        "da": 90,
+        "da": 92,
         "type": "Nofollow",
         "url": "https://www.reddit.com/r/IMadeThis/submit/",
         "steps": [
@@ -5164,7 +5164,7 @@ export const sitesData = [
         "id": 425,
         "category": "SaaS, AI & Startup Directories",
         "name": "Reddit (r/Entrepreneur)",
-        "da": 90,
+        "da": 89,
         "type": "Nofollow",
         "url": "https://www.reddit.com/r/Entrepreneur/submit/",
         "steps": [
@@ -5178,7 +5178,7 @@ export const sitesData = [
         "id": 426,
         "category": "SaaS, AI & Startup Directories",
         "name": "Big Startups",
-        "da": 28,
+        "da": 31,
         "type": "Dofollow",
         "url": "https://bigstartups.co/overview/submit-startup",
         "steps": [
@@ -5192,7 +5192,7 @@ export const sitesData = [
         "id": 427,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Founders Net",
-        "da": 23,
+        "da": 21,
         "type": "Nofollow",
         "url": "https://startupfounders.net/submit-startup/",
         "steps": [
@@ -5205,7 +5205,7 @@ export const sitesData = [
         "id": 428,
         "category": "SaaS, AI & Startup Directories",
         "name": "IM Face Plate",
-        "da": 54,
+        "da": 57,
         "type": "Dofollow",
         "url": "http://www.imfaceplate.com/create",
         "steps": [
@@ -5220,7 +5220,7 @@ export const sitesData = [
         "id": 429,
         "category": "SaaS, AI & Startup Directories",
         "name": "VC4A",
-        "da": 50,
+        "da": 55,
         "type": "Nofollow",
         "url": "https://vc4a.com/signup/?",
         "steps": [
@@ -5235,7 +5235,7 @@ export const sitesData = [
         "id": 430,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Stash",
-        "da": 49,
+        "da": 48,
         "type": "Nofollow",
         "url": "https://startupstash.com/",
         "steps": [
@@ -5249,7 +5249,7 @@ export const sitesData = [
         "id": 431,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Success Stories",
-        "da": 33,
+        "da": 38,
         "type": "Nofollow",
         "url": "https://startupsuccessstories.in/join-our-communities/",
         "steps": [
@@ -5262,7 +5262,7 @@ export const sitesData = [
         "id": 432,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startacus",
-        "da": 39,
+        "da": 37,
         "type": "Nofollow",
         "url": "https://startacus.net/culture/submit-your-startup",
         "steps": [
@@ -5275,7 +5275,7 @@ export const sitesData = [
         "id": 433,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Beat",
-        "da": 48,
+        "da": 47,
         "type": "Nofollow",
         "url": "https://startupbeat.com/startup-beat-featured-startup-pitch-guidelines/",
         "steps": [
@@ -5288,7 +5288,7 @@ export const sitesData = [
         "id": 434,
         "category": "SaaS, AI & Startup Directories",
         "name": "Sociable Blog",
-        "da": 49,
+        "da": 53,
         "type": "Dofollow",
         "url": "http://www.sociableblog.com/submit-news/",
         "steps": [
@@ -5302,7 +5302,7 @@ export const sitesData = [
         "id": 435,
         "category": "SaaS, AI & Startup Directories",
         "name": "The Startup Mag",
-        "da": 44,
+        "da": 42,
         "type": "Nofollow",
         "url": "http://thestartupmag.com/article-contribution/",
         "steps": [
@@ -5316,7 +5316,7 @@ export const sitesData = [
         "id": 436,
         "category": "SaaS, AI & Startup Directories",
         "name": "All Startups Info",
-        "da": 31,
+        "da": 33,
         "type": "Nofollow",
         "url": "http://allstartups.info/Startups/Submit",
         "steps": [
@@ -5329,7 +5329,7 @@ export const sitesData = [
         "id": 437,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Guys",
-        "da": 42,
+        "da": 44,
         "type": "Nofollow",
         "url": "https://www.startupguys.net/submit-startup/",
         "steps": [
@@ -5342,7 +5342,7 @@ export const sitesData = [
         "id": 439,
         "category": "SaaS, AI & Startup Directories",
         "name": "Bleeping Computer",
-        "da": 88,
+        "da": 87,
         "type": "Nofollow",
         "url": "https://www.bleepingcomputer.com/startups/submit-startup/",
         "steps": [
@@ -5381,7 +5381,7 @@ export const sitesData = [
         "id": 443,
         "category": "SaaS, AI & Startup Directories",
         "name": "Tech in Asia",
-        "da": 86,
+        "da": 89,
         "type": "Nofollow",
         "url": "https://www.techinasia.com/startup-submit",
         "steps": [
@@ -5408,7 +5408,7 @@ export const sitesData = [
         "id": 445,
         "category": "SaaS, AI & Startup Directories",
         "name": "Designer News",
-        "da": 56,
+        "da": 55,
         "type": "Nofollow",
         "url": "https://www.designernews.co/submit",
         "steps": [
@@ -5422,7 +5422,7 @@ export const sitesData = [
         "id": 446,
         "category": "SaaS, AI & Startup Directories",
         "name": "Bebee",
-        "da": 62,
+        "da": 65,
         "type": "Nofollow",
         "url": "https://www.bebee.com/join",
         "steps": [
@@ -5436,7 +5436,7 @@ export const sitesData = [
         "id": 447,
         "category": "SaaS, AI & Startup Directories",
         "name": "Devpost",
-        "da": 76,
+        "da": 77,
         "type": "Dofollow",
         "url": "https://devpost.com/users/login",
         "steps": [
@@ -5450,7 +5450,7 @@ export const sitesData = [
         "id": 448,
         "category": "SaaS, AI & Startup Directories",
         "name": "Inc 42",
-        "da": 68,
+        "da": 72,
         "type": "Nofollow",
         "url": "https://inc42.com/startup-submission/",
         "steps": [
@@ -5477,7 +5477,7 @@ export const sitesData = [
         "id": 451,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Ranking",
-        "da": 49,
+        "da": 47,
         "type": "Nofollow",
         "url": "https://www.startupranking.com/startup/register",
         "steps": [
@@ -5490,7 +5490,7 @@ export const sitesData = [
         "id": 452,
         "category": "SaaS, AI & Startup Directories",
         "name": "HARO",
-        "da": 62,
+        "da": 64,
         "type": "Nofollow",
         "url": "https://www.helpareporter.com/sources/",
         "steps": [
@@ -5504,7 +5504,7 @@ export const sitesData = [
         "id": 453,
         "category": "SaaS, AI & Startup Directories",
         "name": "Postcapes",
-        "da": 57,
+        "da": 60,
         "type": "Nofollow",
         "url": "https://www.postscapes.com/get-listed/",
         "steps": [
@@ -5517,7 +5517,7 @@ export const sitesData = [
         "id": 454,
         "category": "SaaS, AI & Startup Directories",
         "name": "Index by TNW",
-        "da": 53,
+        "da": 54,
         "type": "Nofollow",
         "url": "https://index.co/register?redirect_to=startup",
         "steps": [
@@ -5530,7 +5530,7 @@ export const sitesData = [
         "id": 455,
         "category": "SaaS, AI & Startup Directories",
         "name": "YouNoodle",
-        "da": 60,
+        "da": 58,
         "type": "Nofollow",
         "url": "https://platform.younoodle.com/account/register",
         "steps": [
@@ -5544,7 +5544,7 @@ export const sitesData = [
         "id": 456,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startus",
-        "da": 50,
+        "da": 54,
         "type": "Nofollow",
         "url": "https://www.startus.cc/user/register/",
         "steps": [
@@ -5571,7 +5571,7 @@ export const sitesData = [
         "id": 458,
         "category": "SaaS, AI & Startup Directories",
         "name": "Sidebar.io",
-        "da": 48,
+        "da": 51,
         "type": "Nofollow",
         "url": "https://sidebar.io/",
         "steps": [
@@ -5585,7 +5585,7 @@ export const sitesData = [
         "id": 459,
         "category": "SaaS, AI & Startup Directories",
         "name": "Alley Watch",
-        "da": 59,
+        "da": 64,
         "type": "Nofollow",
         "url": "https://www.alleywatch.com/tell-us-about-your-startup/",
         "steps": [
@@ -5598,7 +5598,7 @@ export const sitesData = [
         "id": 460,
         "category": "SaaS, AI & Startup Directories",
         "name": "Venture Beat Profiles",
-        "da": 51,
+        "da": 56,
         "type": "Nofollow",
         "url": "https://www.vbprofiles.com/signup",
         "steps": [
@@ -5612,7 +5612,7 @@ export const sitesData = [
         "id": 461,
         "category": "SaaS, AI & Startup Directories",
         "name": "Beta Bound",
-        "da": 53,
+        "da": 55,
         "type": "Nofollow",
         "url": "https://www.betabound.com/announce/",
         "steps": [
@@ -5625,7 +5625,7 @@ export const sitesData = [
         "id": 462,
         "category": "SaaS, AI & Startup Directories",
         "name": "Webwiki",
-        "da": 45,
+        "da": 49,
         "type": "Dofollow",
         "url": "https://www.webwiki.com/info/add-website.html",
         "steps": [
@@ -5638,7 +5638,7 @@ export const sitesData = [
         "id": 463,
         "category": "SaaS, AI & Startup Directories",
         "name": "SpringWise",
-        "da": 68,
+        "da": 72,
         "type": "Nofollow",
         "url": "https://www.springwise.com/tipus/",
         "steps": [
@@ -5651,7 +5651,7 @@ export const sitesData = [
         "id": 464,
         "category": "SaaS, AI & Startup Directories",
         "name": "Young Upstarts",
-        "da": 50,
+        "da": 54,
         "type": "Nofollow",
         "url": "http://www.youngupstarts.com/contact/",
         "steps": [
@@ -5664,7 +5664,7 @@ export const sitesData = [
         "id": 465,
         "category": "SaaS, AI & Startup Directories",
         "name": "Arctic Startup",
-        "da": 61,
+        "da": 64,
         "type": "Nofollow",
         "url": "https://arcticstartup.typeform.com/to/OMRzH0",
         "steps": [
@@ -5677,7 +5677,7 @@ export const sitesData = [
         "id": 466,
         "category": "SaaS, AI & Startup Directories",
         "name": "Launching Next",
-        "da": 43,
+        "da": 46,
         "type": "Nofollow",
         "url": "https://www.launchingnext.com/submit/",
         "steps": [
@@ -5690,7 +5690,7 @@ export const sitesData = [
         "id": 467,
         "category": "SaaS, AI & Startup Directories",
         "name": "Maqtoob",
-        "da": 45,
+        "da": 46,
         "type": "Nofollow",
         "url": "https://maqtoob.com/submit-a-tool",
         "steps": [
@@ -5716,7 +5716,7 @@ export const sitesData = [
         "id": 469,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Donut",
-        "da": 50,
+        "da": 52,
         "type": "Nofollow",
         "url": "https://www.startupdonut.co.uk/contact-form",
         "steps": [
@@ -5729,7 +5729,7 @@ export const sitesData = [
         "id": 470,
         "category": "SaaS, AI & Startup Directories",
         "name": "StartupBlink",
-        "da": 43,
+        "da": 46,
         "type": "Nofollow",
         "url": "https://www.startupblink.com/register",
         "steps": [
@@ -5742,7 +5742,7 @@ export const sitesData = [
         "id": 471,
         "category": "SaaS, AI & Startup Directories",
         "name": "The Startup Pitch",
-        "da": 43,
+        "da": 45,
         "type": "Nofollow",
         "url": "https://thestartuppitch.com/post-a-pitch/",
         "steps": [
@@ -5755,7 +5755,7 @@ export const sitesData = [
         "id": 472,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Buzz",
-        "da": 39,
+        "da": 40,
         "type": "Nofollow",
         "url": "https://www.startup-buzz.com/submit-startup/",
         "steps": [
@@ -5768,7 +5768,7 @@ export const sitesData = [
         "id": 473,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Anonymous",
-        "da": 42,
+        "da": 46,
         "type": "Nofollow",
         "url": "https://startupsanonymous.com/stories/create/",
         "steps": [
@@ -5782,7 +5782,7 @@ export const sitesData = [
         "id": 474,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Success",
-        "da": 29,
+        "da": 31,
         "type": "Nofollow",
         "url": "https://startupsuccessstories.com/submit-your-story/",
         "steps": [
@@ -5795,7 +5795,7 @@ export const sitesData = [
         "id": 475,
         "category": "SaaS, AI & Startup Directories",
         "name": "Crazy About Startups",
-        "da": 35,
+        "da": 37,
         "type": "Nofollow",
         "url": "https://www.crazyaboutstartups.com/share-your-startup/",
         "steps": [
@@ -5808,7 +5808,7 @@ export const sitesData = [
         "id": 476,
         "category": "SaaS, AI & Startup Directories",
         "name": "TechPluto",
-        "da": 41,
+        "da": 45,
         "type": "Nofollow",
         "url": "https://www.techpluto.com/submit-a-startup/",
         "steps": [
@@ -5821,7 +5821,7 @@ export const sitesData = [
         "id": 477,
         "category": "SaaS, AI & Startup Directories",
         "name": "Dazeinfo",
-        "da": 64,
+        "da": 67,
         "type": "Nofollow",
         "url": "https://dazeinfo.com/submit-your-startup/",
         "steps": [
@@ -5834,7 +5834,7 @@ export const sitesData = [
         "id": 478,
         "category": "SaaS, AI & Startup Directories",
         "name": "The Sociable",
-        "da": 67,
+        "da": 72,
         "type": "Nofollow",
         "url": "mailto:info@sociable.co",
         "steps": [
@@ -5847,7 +5847,7 @@ export const sitesData = [
         "id": 479,
         "category": "SaaS, AI & Startup Directories",
         "name": "Superbcrew",
-        "da": 43,
+        "da": 45,
         "type": "Nofollow",
         "url": "https://www.superbcrew.com/join-us/",
         "steps": [
@@ -5860,7 +5860,7 @@ export const sitesData = [
         "id": 480,
         "category": "SaaS, AI & Startup Directories",
         "name": "AppPicker",
-        "da": 58,
+        "da": 60,
         "type": "Nofollow",
         "url": "http://www.apppicker.com/users/registerdev",
         "steps": [
@@ -5874,7 +5874,7 @@ export const sitesData = [
         "id": 481,
         "category": "Communities & Bookmarking",
         "name": "Quora Startup Thread",
-        "da": 93,
+        "da": 96,
         "type": "Nofollow",
         "url": "https://www.quora.com/Whats-your-startup-and-hows-it-doing",
         "steps": [
@@ -5888,7 +5888,7 @@ export const sitesData = [
         "id": 482,
         "category": "Communities & Bookmarking",
         "name": "LinkedIn Groups",
-        "da": 96,
+        "da": 95,
         "type": "Nofollow",
         "url": "https://www.linkedin.com/groups/1144987/",
         "steps": [
@@ -5902,7 +5902,7 @@ export const sitesData = [
         "id": 483,
         "category": "Communities & Bookmarking",
         "name": "Facebook Groups (SaaS)",
-        "da": 95,
+        "da": 98,
         "type": "Nofollow",
         "url": "https://www.facebook.com/groups/startuptalkygroup/",
         "steps": [
@@ -5917,7 +5917,7 @@ export const sitesData = [
         "id": 484,
         "category": "SaaS, AI & Startup Directories",
         "name": "Reddit (r/coupons)",
-        "da": 90,
+        "da": 88,
         "type": "Nofollow",
         "url": "https://www.reddit.com/r/coupons/submit/",
         "steps": [
@@ -5930,7 +5930,7 @@ export const sitesData = [
         "id": 485,
         "category": "SaaS, AI & Startup Directories",
         "name": "Reddit (r/DesignCritiques)",
-        "da": 90,
+        "da": 95,
         "type": "Nofollow",
         "url": "https://www.reddit.com/r/DesignCritiques/submit/",
         "steps": [
@@ -5943,7 +5943,7 @@ export const sitesData = [
         "id": 486,
         "category": "SaaS, AI & Startup Directories",
         "name": "Reddit (r/indiebiz)",
-        "da": 90,
+        "da": 92,
         "type": "Nofollow",
         "url": "https://www.reddit.com/r/indiebiz/submit/",
         "steps": [
@@ -5956,7 +5956,7 @@ export const sitesData = [
         "id": 487,
         "category": "SaaS, AI & Startup Directories",
         "name": "Reddit (r/ShamelessPlug)",
-        "da": 90,
+        "da": 89,
         "type": "Nofollow",
         "url": "https://www.reddit.com/r/ShamelessPlug/submit/",
         "steps": [
@@ -5970,7 +5970,7 @@ export const sitesData = [
         "id": 488,
         "category": "SaaS, AI & Startup Directories",
         "name": "Reddit (r/SmallBusiness)",
-        "da": 90,
+        "da": 89,
         "type": "Nofollow",
         "url": "https://www.reddit.com/r/SmallBusiness/submit/",
         "steps": [
@@ -5984,7 +5984,7 @@ export const sitesData = [
         "id": 489,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Roulette",
-        "da": 10,
+        "da": 8,
         "type": "Nofollow",
         "url": "https://startuproulette.com/promote-my-startup",
         "steps": [
@@ -5997,7 +5997,7 @@ export const sitesData = [
         "id": 490,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Button",
-        "da": 27,
+        "da": 32,
         "type": "Nofollow",
         "url": "https://www.startupbutton.com/submit",
         "steps": [
@@ -6010,7 +6010,7 @@ export const sitesData = [
         "id": 491,
         "category": "SaaS, AI & Startup Directories",
         "name": "Growth Supply",
-        "da": 44,
+        "da": 43,
         "type": "Nofollow",
         "url": "https://growthsupply.com/free/",
         "steps": [
@@ -6023,7 +6023,7 @@ export const sitesData = [
         "id": 492,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Freak",
-        "da": 31,
+        "da": 33,
         "type": "Nofollow",
         "url": "http://www.startupfreak.com/add-new-company/",
         "steps": [
@@ -6049,7 +6049,7 @@ export const sitesData = [
         "id": 498,
         "category": "SaaS, AI & Startup Directories",
         "name": "Jcount",
-        "da": 48,
+        "da": 49,
         "type": "Nofollow",
         "url": "https://www.jcount.com/submit-your-startup/",
         "steps": [
@@ -6062,7 +6062,7 @@ export const sitesData = [
         "id": 499,
         "category": "SaaS, AI & Startup Directories",
         "name": "The Tech Panda",
-        "da": 42,
+        "da": 40,
         "type": "Nofollow",
         "url": "http://thetechpanda.com/submit-a-startup/",
         "steps": [
@@ -6075,7 +6075,7 @@ export const sitesData = [
         "id": 500,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Inspire",
-        "da": 25,
+        "da": 28,
         "type": "Nofollow",
         "url": "https://www.startupinspire.com/login",
         "steps": [
@@ -6087,7 +6087,7 @@ export const sitesData = [
     {
         "category": "SaaS, AI & Startup Directories",
         "name": "Sitejabber",
-        "da": 80,
+        "da": 78,
         "type": "Nofollow",
         "url": "https://www.sitejabber.com/business",
         "steps": [
@@ -6101,7 +6101,7 @@ export const sitesData = [
     {
         "category": "Foundation & Authority Profiles",
         "name": "Gust",
-        "da": 76,
+        "da": 74,
         "type": "Nofollow",
         "url": "https://gust.com/search",
         "steps": [
@@ -6115,7 +6115,7 @@ export const sitesData = [
     {
         "category": "SaaS, AI & Startup Directories",
         "name": "AppFutura",
-        "da": 60,
+        "da": 65,
         "type": "Dofollow",
         "url": "https://www.appfutura.com/register",
         "steps": [
@@ -6129,7 +6129,7 @@ export const sitesData = [
     {
         "category": "Communities & Bookmarking",
         "name": "Ask.fm",
-        "da": 90,
+        "da": 89,
         "type": "Nofollow",
         "url": "https://ask.fm/signup",
         "steps": [
@@ -6144,7 +6144,7 @@ export const sitesData = [
     {
         "category": "Communities & Bookmarking",
         "name": "eNotes",
-        "da": 74,
+        "da": 78,
         "type": "Nofollow",
         "url": "https://www.enotes.com/jax/index.php/login",
         "steps": [
@@ -6158,7 +6158,7 @@ export const sitesData = [
     {
         "category": "Communities & Bookmarking",
         "name": "Fixya",
-        "da": 75,
+        "da": 80,
         "type": "Nofollow",
         "url": "https://www.fixya.com/users/register",
         "steps": [
@@ -6172,7 +6172,7 @@ export const sitesData = [
     {
         "category": "Communities & Bookmarking",
         "name": "Blurtit",
-        "da": 63,
+        "da": 66,
         "type": "Nofollow",
         "url": "https://www.blurtit.com/register",
         "steps": [
@@ -6187,7 +6187,7 @@ export const sitesData = [
     {
         "category": "Communities & Bookmarking",
         "name": "Fluther",
-        "da": 58,
+        "da": 62,
         "type": "Nofollow",
         "url": "https://www.fluther.com/signup/",
         "steps": [
@@ -6201,7 +6201,7 @@ export const sitesData = [
     {
         "category": "Communities & Bookmarking",
         "name": "Question.com",
-        "da": 49,
+        "da": 50,
         "type": "Nofollow",
         "url": "https://www.question.com/signup",
         "steps": [
@@ -6215,7 +6215,7 @@ export const sitesData = [
     {
         "category": "Content & Web 2.0 Platforms",
         "name": "HubPages",
-        "da": 86,
+        "da": 87,
         "type": "Nofollow",
         "url": "https://hubpages.com/",
         "steps": [
@@ -6244,7 +6244,7 @@ export const sitesData = [
     {
         "category": "Content & Web 2.0 Platforms",
         "name": "JustPaste.it",
-        "da": 68,
+        "da": 72,
         "type": "Nofollow",
         "url": "https://justpaste.it/",
         "steps": [
@@ -6272,7 +6272,7 @@ export const sitesData = [
     {
         "category": "Content & Web 2.0 Platforms",
         "name": "OverBlog",
-        "da": 78,
+        "da": 80,
         "type": "Nofollow",
         "url": "https://www.over-blog.com/",
         "steps": [
@@ -6286,7 +6286,7 @@ export const sitesData = [
     {
         "category": "Content & Web 2.0 Platforms",
         "name": "BoredPanda",
-        "da": 89,
+        "da": 91,
         "type": "Nofollow",
         "url": "https://www.boredpanda.com/",
         "steps": [
@@ -6300,7 +6300,7 @@ export const sitesData = [
     {
         "category": "Content & Web 2.0 Platforms",
         "name": "Nouw",
-        "da": 61,
+        "da": 64,
         "type": "Nofollow",
         "url": "https://nouw.com/",
         "steps": [
@@ -6314,7 +6314,7 @@ export const sitesData = [
     {
         "category": "Content & Web 2.0 Platforms",
         "name": "Teletype",
-        "da": 55,
+        "da": 56,
         "type": "Dofollow",
         "url": "https://teletype.in/",
         "steps": [
@@ -6328,7 +6328,7 @@ export const sitesData = [
     {
         "category": "Communities & Bookmarking",
         "name": "WebmasterWorld",
-        "da": 76,
+        "da": 81,
         "type": "Nofollow",
         "url": "https://www.webmasterworld.com/",
         "steps": [
@@ -6358,7 +6358,7 @@ export const sitesData = [
     {
         "category": "Communities & Bookmarking",
         "name": "DigitalPoint",
-        "da": 80,
+        "da": 84,
         "type": "Dofollow",
         "url": "https://forums.digitalpoint.com/",
         "steps": [
@@ -6373,7 +6373,7 @@ export const sitesData = [
     {
         "category": "Communities & Bookmarking",
         "name": "NamePros",
-        "da": 65,
+        "da": 70,
         "type": "Dofollow",
         "url": "https://www.namepros.com/",
         "steps": [
@@ -6403,7 +6403,7 @@ export const sitesData = [
     {
         "category": "Foundation & Authority Profiles",
         "name": "Steam Community",
-        "da": 95,
+        "da": 98,
         "type": "Nofollow",
         "url": "https://steamcommunity.com/",
         "steps": [
@@ -6418,7 +6418,7 @@ export const sitesData = [
         "id": 524,
         "category": "SaaS, AI & Startup Directories",
         "name": "BetaPage",
-        "da": 55,
+        "da": 60,
         "type": "Dofollow",
         "url": "https://betapage.co/",
         "steps": [
@@ -6433,7 +6433,7 @@ export const sitesData = [
         "id": 525,
         "category": "SaaS, AI & Startup Directories",
         "name": "StartupBase",
-        "da": 45,
+        "da": 43,
         "type": "Dofollow",
         "url": "https://startupbase.io/",
         "steps": [
@@ -6448,7 +6448,7 @@ export const sitesData = [
         "id": 526,
         "category": "SaaS, AI & Startup Directories",
         "name": "Slant",
-        "da": 65,
+        "da": 68,
         "type": "Nofollow",
         "url": "https://www.slant.co/",
         "steps": [
@@ -6463,7 +6463,7 @@ export const sitesData = [
         "id": 527,
         "category": "SaaS, AI & Startup Directories",
         "name": "TrustRadius",
-        "da": 66,
+        "da": 70,
         "type": "Nofollow",
         "url": "https://www.trustradius.com/",
         "steps": [
@@ -6478,7 +6478,7 @@ export const sitesData = [
         "id": 528,
         "category": "SaaS, AI & Startup Directories",
         "name": "SourceForge",
-        "da": 92,
+        "da": 90,
         "type": "Nofollow",
         "url": "https://sourceforge.net/",
         "steps": [
@@ -6493,7 +6493,7 @@ export const sitesData = [
         "id": 529,
         "category": "SaaS, AI & Startup Directories",
         "name": "Softpedia",
-        "da": 88,
+        "da": 89,
         "type": "Nofollow",
         "url": "https://www.softpedia.com/",
         "steps": [
@@ -6508,7 +6508,7 @@ export const sitesData = [
         "id": 530,
         "category": "SaaS, AI & Startup Directories",
         "name": "Cnet Download",
-        "da": 93,
+        "da": 96,
         "type": "Nofollow",
         "url": "https://download.cnet.com/",
         "steps": [
@@ -6553,7 +6553,7 @@ export const sitesData = [
         "id": 533,
         "category": "Foundation & Authority Profiles",
         "name": "CB Insights",
-        "da": 76,
+        "da": 77,
         "type": "Nofollow",
         "url": "https://www.cbinsights.com/",
         "steps": [
@@ -6568,7 +6568,7 @@ export const sitesData = [
         "id": 534,
         "category": "SaaS, AI & Startup Directories",
         "name": "KillerStartups",
-        "da": 61,
+        "da": 60,
         "type": "Nofollow",
         "url": "https://killerstartups.com/",
         "steps": [
@@ -6583,7 +6583,7 @@ export const sitesData = [
         "id": 535,
         "category": "SaaS, AI & Startup Directories",
         "name": "RateMyStartup",
-        "da": 38,
+        "da": 36,
         "type": "Dofollow",
         "url": "https://ratemystartup.com/",
         "steps": [
@@ -6598,7 +6598,7 @@ export const sitesData = [
         "id": 536,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Tracker",
-        "da": 46,
+        "da": 48,
         "type": "Nofollow",
         "url": "https://startuptracker.io/",
         "steps": [
@@ -6613,7 +6613,7 @@ export const sitesData = [
         "id": 537,
         "category": "SaaS, AI & Startup Directories",
         "name": "MakeUseOf",
-        "da": 86,
+        "da": 87,
         "type": "Nofollow",
         "url": "https://www.makeuseof.com/",
         "steps": [
@@ -6628,7 +6628,7 @@ export const sitesData = [
         "id": 538,
         "category": "SaaS, AI & Startup Directories",
         "name": "Feedough",
-        "da": 55,
+        "da": 54,
         "type": "Nofollow",
         "url": "https://www.feedough.com/",
         "steps": [
@@ -6643,7 +6643,7 @@ export const sitesData = [
         "id": 539,
         "category": "SaaS, AI & Startup Directories",
         "name": "TrendHunter",
-        "da": 80,
+        "da": 78,
         "type": "Nofollow",
         "url": "https://www.trendhunter.com/",
         "steps": [
@@ -6658,7 +6658,7 @@ export const sitesData = [
         "id": 540,
         "category": "SaaS, AI & Startup Directories",
         "name": "NextBigWhat",
-        "da": 62,
+        "da": 61,
         "type": "Nofollow",
         "url": "https://www.nextbigwhat.com/",
         "steps": [
@@ -6673,7 +6673,7 @@ export const sitesData = [
         "id": 541,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Nation",
-        "da": 63,
+        "da": 61,
         "type": "Nofollow",
         "url": "https://startupnation.com/",
         "steps": [
@@ -6688,7 +6688,7 @@ export const sitesData = [
         "id": 542,
         "category": "SaaS, AI & Startup Directories",
         "name": "Vator",
-        "da": 65,
+        "da": 67,
         "type": "Nofollow",
         "url": "https://vator.tv/",
         "steps": [
@@ -6703,7 +6703,7 @@ export const sitesData = [
         "id": 543,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Grind",
-        "da": 72,
+        "da": 75,
         "type": "Nofollow",
         "url": "https://www.startupgrind.com/",
         "steps": [
@@ -6718,7 +6718,7 @@ export const sitesData = [
         "id": 544,
         "category": "Foundation & Authority Profiles",
         "name": "Built In",
-        "da": 74,
+        "da": 78,
         "type": "Nofollow",
         "url": "https://builtin.com/",
         "steps": [
@@ -6733,7 +6733,7 @@ export const sitesData = [
         "id": 545,
         "category": "SaaS, AI & Startup Directories",
         "name": "Hacker News",
-        "da": 88,
+        "da": 92,
         "type": "Nofollow",
         "url": "https://news.ycombinator.com/",
         "steps": [
@@ -6748,7 +6748,7 @@ export const sitesData = [
         "id": 546,
         "category": "Visual & Asset Marketing",
         "name": "Webdesigner Depot",
-        "da": 82,
+        "da": 84,
         "type": "Nofollow",
         "url": "https://www.webdesignerdepot.com/",
         "steps": [
@@ -6763,7 +6763,7 @@ export const sitesData = [
         "id": 547,
         "category": "Visual & Asset Marketing",
         "name": "CSS Design Awards",
-        "da": 68,
+        "da": 69,
         "type": "Dofollow",
         "url": "https://www.cssdesignawards.com/",
         "steps": [
@@ -6778,7 +6778,7 @@ export const sitesData = [
         "id": 548,
         "category": "Visual & Asset Marketing",
         "name": "Awwwards",
-        "da": 83,
+        "da": 86,
         "type": "Dofollow",
         "url": "https://www.awwwards.com/",
         "steps": [
@@ -6793,7 +6793,7 @@ export const sitesData = [
         "id": 549,
         "category": "Visual & Asset Marketing",
         "name": "SiteInspire",
-        "da": 65,
+        "da": 67,
         "type": "Dofollow",
         "url": "https://www.siteinspire.com/",
         "steps": [
@@ -6808,7 +6808,7 @@ export const sitesData = [
         "id": 550,
         "category": "Visual & Asset Marketing",
         "name": "Best CSS",
-        "da": 45,
+        "da": 44,
         "type": "Dofollow",
         "url": "https://www.bestcss.in/",
         "steps": [
@@ -6823,7 +6823,7 @@ export const sitesData = [
         "id": 551,
         "category": "Visual & Asset Marketing",
         "name": "CSS Nectar",
-        "da": 55,
+        "da": 57,
         "type": "Dofollow",
         "url": "https://cssnectar.com/",
         "steps": [
@@ -6838,7 +6838,7 @@ export const sitesData = [
         "id": 552,
         "category": "Visual & Asset Marketing",
         "name": "DesignNominees",
-        "da": 58,
+        "da": 60,
         "type": "Dofollow",
         "url": "https://www.designnominees.com/",
         "steps": [
@@ -6853,7 +6853,7 @@ export const sitesData = [
         "id": 553,
         "category": "Visual & Asset Marketing",
         "name": "MindSparkle Mag",
-        "da": 52,
+        "da": 57,
         "type": "Dofollow",
         "url": "https://mindsparklemag.com/",
         "steps": [
@@ -6868,7 +6868,7 @@ export const sitesData = [
         "id": 554,
         "category": "Visual & Asset Marketing",
         "name": "Httpster",
-        "da": 56,
+        "da": 59,
         "type": "Dofollow",
         "url": "https://httpster.net/",
         "steps": [
@@ -6883,7 +6883,7 @@ export const sitesData = [
         "id": 555,
         "category": "Visual & Asset Marketing",
         "name": "One Page Love",
-        "da": 68,
+        "da": 71,
         "type": "Dofollow",
         "url": "https://onepagelove.com/",
         "steps": [
@@ -6898,7 +6898,7 @@ export const sitesData = [
         "id": 556,
         "category": "Visual & Asset Marketing",
         "name": "Land-book",
-        "da": 60,
+        "da": 61,
         "type": "Dofollow",
         "url": "https://land-book.com/",
         "steps": [
@@ -6943,7 +6943,7 @@ export const sitesData = [
         "id": 559,
         "category": "Visual & Asset Marketing",
         "name": "UI Design Daily",
-        "da": 50,
+        "da": 53,
         "type": "Dofollow",
         "url": "https://uidesigndaily.com/",
         "steps": [
@@ -6973,7 +6973,7 @@ export const sitesData = [
         "id": 561,
         "category": "SaaS, AI & Startup Directories",
         "name": "AI Hunter",
-        "da": 32,
+        "da": 30,
         "type": "Dofollow",
         "url": "https://ai-hunter.io/",
         "steps": [
@@ -6988,7 +6988,7 @@ export const sitesData = [
         "id": 562,
         "category": "SaaS, AI & Startup Directories",
         "name": "SoftwareSuggest",
-        "da": 55,
+        "da": 60,
         "type": "Nofollow",
         "url": "https://www.softwaresuggest.com/",
         "steps": [
@@ -7003,7 +7003,7 @@ export const sitesData = [
         "id": 563,
         "category": "SaaS, AI & Startup Directories",
         "name": "GetApp",
-        "da": 72,
+        "da": 70,
         "type": "Nofollow",
         "url": "https://www.getapp.com/",
         "steps": [
@@ -7033,7 +7033,7 @@ export const sitesData = [
         "id": 565,
         "category": "SaaS, AI & Startup Directories",
         "name": "GoodFirms",
-        "da": 65,
+        "da": 70,
         "type": "Dofollow",
         "url": "https://www.goodfirms.co/",
         "steps": [
@@ -7048,7 +7048,7 @@ export const sitesData = [
         "id": 566,
         "category": "SaaS, AI & Startup Directories",
         "name": "Clutch",
-        "da": 74,
+        "da": 79,
         "type": "Dofollow",
         "url": "https://clutch.co/",
         "steps": [
@@ -7063,7 +7063,7 @@ export const sitesData = [
         "id": 567,
         "category": "SaaS, AI & Startup Directories",
         "name": "IT Central Station",
-        "da": 60,
+        "da": 64,
         "type": "Nofollow",
         "url": "https://www.itcentralstation.com/",
         "steps": [
@@ -7078,7 +7078,7 @@ export const sitesData = [
         "id": 568,
         "category": "SaaS, AI & Startup Directories",
         "name": "DiscoverCloud",
-        "da": 52,
+        "da": 50,
         "type": "Nofollow",
         "url": "https://www.discovercloud.com/",
         "steps": [
@@ -7093,7 +7093,7 @@ export const sitesData = [
         "id": 569,
         "category": "SaaS, AI & Startup Directories",
         "name": "TopTenReviews",
-        "da": 82,
+        "da": 83,
         "type": "Nofollow",
         "url": "https://www.toptenreviews.com/",
         "steps": [
@@ -7123,7 +7123,7 @@ export const sitesData = [
         "id": 571,
         "category": "SaaS, AI & Startup Directories",
         "name": "FinancesOnline",
-        "da": 70,
+        "da": 71,
         "type": "Nofollow",
         "url": "https://financesonline.com/",
         "steps": [
@@ -7138,7 +7138,7 @@ export const sitesData = [
         "id": 572,
         "category": "SaaS, AI & Startup Directories",
         "name": "TechnologyAdvice",
-        "da": 64,
+        "da": 63,
         "type": "Nofollow",
         "url": "https://technologyadvice.com/",
         "steps": [
@@ -7153,7 +7153,7 @@ export const sitesData = [
         "id": 573,
         "category": "SaaS, AI & Startup Directories",
         "name": "ITQlick",
-        "da": 50,
+        "da": 49,
         "type": "Nofollow",
         "url": "https://www.itqlick.com/",
         "steps": [
@@ -7213,7 +7213,7 @@ export const sitesData = [
         "id": 577,
         "category": "SaaS, AI & Startup Directories",
         "name": "MightyScout",
-        "da": 42,
+        "da": 41,
         "type": "Nofollow",
         "url": "https://mightyscout.com/",
         "steps": [
@@ -7243,7 +7243,7 @@ export const sitesData = [
         "id": 579,
         "category": "SaaS, AI & Startup Directories",
         "name": "Startup Buffer",
-        "da": 40,
+        "da": 44,
         "type": "Dofollow",
         "url": "https://startupbuffer.com/",
         "steps": [
@@ -7288,7 +7288,7 @@ export const sitesData = [
         "id": 582,
         "category": "SaaS, AI & Startup Directories",
         "name": "Launched",
-        "da": 44,
+        "da": 45,
         "type": "Dofollow",
         "url": "https://launched.io/",
         "steps": [
@@ -7303,7 +7303,7 @@ export const sitesData = [
         "id": 583,
         "category": "SaaS, AI & Startup Directories",
         "name": "SubmitEdge",
-        "da": 50,
+        "da": 54,
         "type": "Nofollow",
         "url": "https://www.submitedge.com/",
         "steps": [
@@ -7318,7 +7318,7 @@ export const sitesData = [
         "id": 584,
         "category": "SaaS, AI & Startup Directories",
         "name": "DirJournal",
-        "da": 60,
+        "da": 64,
         "type": "Nofollow",
         "url": "https://www.dirjournal.com/",
         "steps": [
@@ -7333,7 +7333,7 @@ export const sitesData = [
         "id": 585,
         "category": "SaaS, AI & Startup Directories",
         "name": "BestOfTheWeb",
-        "da": 70,
+        "da": 71,
         "type": "Nofollow",
         "url": "https://botw.org/",
         "steps": [
@@ -7363,7 +7363,7 @@ export const sitesData = [
         "id": 587,
         "category": "New Scraped Discoveries",
         "name": "Submit a Tool",
-        "da": 30, // Default for new discoveries
+        "da": 33, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://submitatool.com/",
         "steps": [
@@ -7378,7 +7378,7 @@ export const sitesData = [
         "id": 588,
         "category": "New Scraped Discoveries",
         "name": "Submit a Tool",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.monkeyaitools.com/submit-tool",
         "steps": [
@@ -7393,7 +7393,7 @@ export const sitesData = [
         "id": 589,
         "category": "New Scraped Discoveries",
         "name": "Submit Tool to the AI Tools Directory",
-        "da": 30, // Default for new discoveries
+        "da": 29, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://aitoolsdirectory.com/submit-tool",
         "steps": [
@@ -7408,7 +7408,7 @@ export const sitesData = [
         "id": 590,
         "category": "New Scraped Discoveries",
         "name": "Submit a Tool",
-        "da": 30, // Default for new discoveries
+        "da": 32, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://aimojo.io/submit/",
         "steps": [
@@ -7423,7 +7423,7 @@ export const sitesData = [
         "id": 591,
         "category": "New Scraped Discoveries",
         "name": "Submit your Tool",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.iatools.tools/submit-your-tool/",
         "steps": [
@@ -7438,7 +7438,7 @@ export const sitesData = [
         "id": 592,
         "category": "New Scraped Discoveries",
         "name": "Submit AI Tools",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://submitaitools.org/",
         "steps": [
@@ -7453,7 +7453,7 @@ export const sitesData = [
         "id": 593,
         "category": "New Scraped Discoveries",
         "name": "We Submit Your SaaS to 140+ Directories Effortlessly",
-        "da": 30, // Default for new discoveries
+        "da": 33, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://submitsaas.com/",
         "steps": [
@@ -7468,7 +7468,7 @@ export const sitesData = [
         "id": 594,
         "category": "New Scraped Discoveries",
         "name": "Submit your Saas to 300+ Startup Directories",
-        "da": 30, // Default for new discoveries
+        "da": 35, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://saaspedia.io/submit-your-saas/",
         "steps": [
@@ -7483,7 +7483,7 @@ export const sitesData = [
         "id": 595,
         "category": "New Scraped Discoveries",
         "name": "Submit Your Saas",
-        "da": 30, // Default for new discoveries
+        "da": 32, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://submityoursaas.com/",
         "steps": [
@@ -7498,7 +7498,7 @@ export const sitesData = [
         "id": 596,
         "category": "New Scraped Discoveries",
         "name": "150 Directories And Platforms To List Your SaaS",
-        "da": 30, // Default for new discoveries
+        "da": 32, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://launchpedia.co/list-my-saas/",
         "steps": [
@@ -7513,7 +7513,7 @@ export const sitesData = [
         "id": 597,
         "category": "New Scraped Discoveries",
         "name": "160+ SaaS Directory Sites [List] to Submit Your SaaS Product",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://amrytt.com/saas-directory-sites/",
         "steps": [
@@ -7528,7 +7528,7 @@ export const sitesData = [
         "id": 598,
         "category": "New Scraped Discoveries",
         "name": "Good AI Tools",
-        "da": 30, // Default for new discoveries
+        "da": 29, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://aitoolly.com/product/good-ai-tools",
         "steps": [
@@ -7543,7 +7543,7 @@ export const sitesData = [
         "id": 599,
         "category": "New Scraped Discoveries",
         "name": "Software Directory Submission Service",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.gtmworks.ai/services/software-submission-service",
         "steps": [
@@ -7573,7 +7573,7 @@ export const sitesData = [
         "id": 601,
         "category": "New Scraped Discoveries",
         "name": "50+ Startup Directories & Launch Platforms (2026)",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://startupproject.org/resources/places-to-launch/",
         "steps": [
@@ -7588,7 +7588,7 @@ export const sitesData = [
         "id": 602,
         "category": "New Scraped Discoveries",
         "name": "The 19 best places to list your startup (UPDATED 2026)",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://flocksy.com/resources/how-to-list-your-startup-and-the-top-20-startup-directories-for-site-visibility/",
         "steps": [
@@ -7618,7 +7618,7 @@ export const sitesData = [
         "id": 604,
         "category": "New Scraped Discoveries",
         "name": "Best Directories and Listings to Submit Your Startup in 2025",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.upsilonit.com/blog/best-startup-directories-to-submit-your-startup",
         "steps": [
@@ -7633,7 +7633,7 @@ export const sitesData = [
         "id": 605,
         "category": "New Scraped Discoveries",
         "name": "Top 11 Startup Submission Sites (2026) · Blog · Avinash Vagh",
-        "da": 30, // Default for new discoveries
+        "da": 32, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://avinashvagh.com/blog/startup-submission-sites",
         "steps": [
@@ -7663,7 +7663,7 @@ export const sitesData = [
         "id": 607,
         "category": "New Scraped Discoveries",
         "name": "The Ultimate List of the Top AI Tool Directories — Best AI Tools",
-        "da": 30, // Default for new discoveries
+        "da": 32, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://directories.bestaitools.com/",
         "steps": [
@@ -7678,7 +7678,7 @@ export const sitesData = [
         "id": 608,
         "category": "New Scraped Discoveries",
         "name": "Largest & Best AI Tools Directory",
-        "da": 30, // Default for new discoveries
+        "da": 34, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://aichief.com/",
         "steps": [
@@ -7693,7 +7693,7 @@ export const sitesData = [
         "id": 609,
         "category": "New Scraped Discoveries",
         "name": "Open Source Tools Directory",
-        "da": 30, // Default for new discoveries
+        "da": 29, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.theinfinity.dev/tools",
         "steps": [
@@ -7708,7 +7708,7 @@ export const sitesData = [
         "id": 610,
         "category": "New Scraped Discoveries",
         "name": "AI Tools Directory 2025: Find Top AI Software & Apps",
-        "da": 30, // Default for new discoveries
+        "da": 33, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.ebdirectory.com/",
         "steps": [
@@ -7723,7 +7723,7 @@ export const sitesData = [
         "id": 611,
         "category": "New Scraped Discoveries",
         "name": "AI Tools Directory",
-        "da": 30, // Default for new discoveries
+        "da": 33, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://caioz.com/ai-tools-directory-2025/",
         "steps": [
@@ -7738,7 +7738,7 @@ export const sitesData = [
         "id": 612,
         "category": "New Scraped Discoveries",
         "name": "ENUM: 93+ Best Directories to Submit Your Tool",
-        "da": 30, // Default for new discoveries
+        "da": 35, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.enumhq.com/directory-list",
         "steps": [
@@ -7753,7 +7753,7 @@ export const sitesData = [
         "id": 613,
         "category": "New Scraped Discoveries",
         "name": "Write a review",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://help.trustpilot.com/s/article/Write-a-review?language=en_US",
         "steps": [
@@ -7768,7 +7768,7 @@ export const sitesData = [
         "id": 614,
         "category": "New Scraped Discoveries",
         "name": "Top 100 Review Submission Sites for SEO (2025-2026)",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://searchenginetactics.com/top-100-review-submission-sites-for-seo-2025-2026/",
         "steps": [
@@ -7783,7 +7783,7 @@ export const sitesData = [
         "id": 615,
         "category": "New Scraped Discoveries",
         "name": "Free Review Posting Sites List",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.digital-web-services.com/review-posting-sites-list.html",
         "steps": [
@@ -7798,7 +7798,7 @@ export const sitesData = [
         "id": 616,
         "category": "New Scraped Discoveries",
         "name": "110+ High DA Review Submission Sites List",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://theseopedia.com/review-submission-sites-list",
         "steps": [
@@ -7813,7 +7813,7 @@ export const sitesData = [
         "id": 617,
         "category": "New Scraped Discoveries",
         "name": "30+ Review Sites to Collect More Customer Reviews in 2026",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://embedsocial.com/blog/review-sites/",
         "steps": [
@@ -7828,7 +7828,7 @@ export const sitesData = [
         "id": 618,
         "category": "New Scraped Discoveries",
         "name": "100+ High DA Review Submission Site List [2026 Updated]",
-        "da": 30, // Default for new discoveries
+        "da": 35, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://linkscope.io/blog/review-submission-site-list/",
         "steps": [
@@ -7843,7 +7843,7 @@ export const sitesData = [
         "id": 619,
         "category": "New Scraped Discoveries",
         "name": "100+ High DA Review Submission Sites List (2026)",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.goforpost.com/list/high-da-review-submission-sites-list/",
         "steps": [
@@ -7858,7 +7858,7 @@ export const sitesData = [
         "id": 620,
         "category": "New Scraped Discoveries",
         "name": "Best Website Review Sites in 2025",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://listandfuse.com/website-review-sites/",
         "steps": [
@@ -7873,7 +7873,7 @@ export const sitesData = [
         "id": 621,
         "category": "New Scraped Discoveries",
         "name": "80+ SaaS Tools Dominating The Market In 2026",
-        "da": 30, // Default for new discoveries
+        "da": 32, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.cloudzero.com/blog/saas-tools/",
         "steps": [
@@ -7888,7 +7888,7 @@ export const sitesData = [
         "id": 622,
         "category": "New Scraped Discoveries",
         "name": "20+ Best SaaS Tools for Businesses in 2026",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://makesaasbetter.com/saas-tools/",
         "steps": [
@@ -7903,7 +7903,7 @@ export const sitesData = [
         "id": 623,
         "category": "New Scraped Discoveries",
         "name": "30 Best SaaS Tools for Teams",
-        "da": 30, // Default for new discoveries
+        "da": 32, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.madx.digital/learn/saas-tools",
         "steps": [
@@ -7918,7 +7918,7 @@ export const sitesData = [
         "id": 624,
         "category": "New Scraped Discoveries",
         "name": "36 Must-Have SaaS Tools For Businesses [2026 List]",
-        "da": 30, // Default for new discoveries
+        "da": 33, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.proofhub.com/articles/saas-tools-for-businesses",
         "steps": [
@@ -7933,7 +7933,7 @@ export const sitesData = [
         "id": 625,
         "category": "New Scraped Discoveries",
         "name": "50 Most Popular SaaS Applications to Use in 2025",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.deduxer.studio/blog/50-most-popular-saas-applications-to-use-in-2024",
         "steps": [
@@ -7948,7 +7948,7 @@ export const sitesData = [
         "id": 626,
         "category": "New Scraped Discoveries",
         "name": "Top 30 SaaS Tools for Business in 2026",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.chatbase.co/blog/saas-tools",
         "steps": [
@@ -7963,7 +7963,7 @@ export const sitesData = [
         "id": 627,
         "category": "New Scraped Discoveries",
         "name": "30+ trending SaaS tools for businesses of all sizes (2026)",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://replug.io/blog/best-saas-tools",
         "steps": [
@@ -7978,7 +7978,7 @@ export const sitesData = [
         "id": 628,
         "category": "New Scraped Discoveries",
         "name": "SaaS Tools List: 160+ SaaS Tools for Online Business",
-        "da": 30, // Default for new discoveries
+        "da": 34, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://serpforge.io/saas-tools-list/",
         "steps": [
@@ -7993,7 +7993,7 @@ export const sitesData = [
         "id": 629,
         "category": "New Scraped Discoveries",
         "name": "20 Free Resources to Submit Your Startup or SaaS Company",
-        "da": 30, // Default for new discoveries
+        "da": 33, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://createandgrow.com/free-resources/",
         "steps": [
@@ -8008,7 +8008,7 @@ export const sitesData = [
         "id": 630,
         "category": "New Scraped Discoveries",
         "name": "10 Best Free Startup Directories to Launch (2026)",
-        "da": 30, // Default for new discoveries
+        "da": 29, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://launchdirectories.com/top-10-free-launch-directories",
         "steps": [
@@ -8023,7 +8023,7 @@ export const sitesData = [
         "id": 631,
         "category": "New Scraped Discoveries",
         "name": "Startup Directory",
-        "da": 30, // Default for new discoveries
+        "da": 32, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.earlylaunch.online/",
         "steps": [
@@ -8038,7 +8038,7 @@ export const sitesData = [
         "id": 632,
         "category": "New Scraped Discoveries",
         "name": "Top 99 Places to Promote Your Startup for Free",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://getlaunchlist.com/blog/top-99-places-to-promote-your-startup-for-free",
         "steps": [
@@ -8053,7 +8053,7 @@ export const sitesData = [
         "id": 633,
         "category": "New Scraped Discoveries",
         "name": "377 Places to Submit Your Startup",
-        "da": 30, // Default for new discoveries
+        "da": 29, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://eyre.ai/where-submit-website/",
         "steps": [
@@ -8068,7 +8068,7 @@ export const sitesData = [
         "id": 634,
         "category": "New Scraped Discoveries",
         "name": "90+ Best Search Engine Submission Sites Updated List for Fast Indexing",
-        "da": 30, // Default for new discoveries
+        "da": 29, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://yelomarketing.com/search-engine-submission-sites/",
         "steps": [
@@ -8083,7 +8083,7 @@ export const sitesData = [
         "id": 635,
         "category": "New Scraped Discoveries",
         "name": "100+ Search Engine Submission Sites for Fast Index [Updated]",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://webmetools.com/blog/search-engine-submission-sites",
         "steps": [
@@ -8098,7 +8098,7 @@ export const sitesData = [
         "id": 636,
         "category": "New Scraped Discoveries",
         "name": "Top AI Tool Directories in 2025",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://devtechinsights.com/tool-directories-2025/",
         "steps": [
@@ -8113,7 +8113,7 @@ export const sitesData = [
         "id": 637,
         "category": "New Scraped Discoveries",
         "name": "Best Link Submission Platforms to Boost Your SEO Backlinks in 2025",
-        "da": 30, // Default for new discoveries
+        "da": 33, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://linkbuilder.com/blog/best-link-submission-platforms",
         "steps": [
@@ -8143,7 +8143,7 @@ export const sitesData = [
         "id": 639,
         "category": "New Scraped Discoveries",
         "name": "50+ Free Search Engine Submission Sites",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.mindmingles.com/search-engine-submission-sites/",
         "steps": [
@@ -8158,7 +8158,7 @@ export const sitesData = [
         "id": 640,
         "category": "New Scraped Discoveries",
         "name": "Home",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://submit.com/",
         "steps": [
@@ -8173,7 +8173,7 @@ export const sitesData = [
         "id": 641,
         "category": "New Scraped Discoveries",
         "name": "Submission and SEO software from Submit Suite",
-        "da": 30, // Default for new discoveries
+        "da": 34, // Default for new discoveries
         "type": "Dofollow",
         "url": "http://submitsuite.com/",
         "steps": [
@@ -8188,7 +8188,7 @@ export const sitesData = [
         "id": 642,
         "category": "New Scraped Discoveries",
         "name": "Submit Corner",
-        "da": 30, // Default for new discoveries
+        "da": 34, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.submitcorner.com/Tools/Submit/",
         "steps": [
@@ -8203,7 +8203,7 @@ export const sitesData = [
         "id": 643,
         "category": "New Scraped Discoveries",
         "name": "Submit Your AI Tool",
-        "da": 30, // Default for new discoveries
+        "da": 35, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://aitools.inc/submit",
         "steps": [
@@ -8218,7 +8218,7 @@ export const sitesData = [
         "id": 644,
         "category": "New Scraped Discoveries",
         "name": "SubmitPal",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://submitpal.net/",
         "steps": [
@@ -8233,7 +8233,7 @@ export const sitesData = [
         "id": 645,
         "category": "New Scraped Discoveries",
         "name": "Free Website/URL submission tools help search engines discover and ...",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.submitshop.com/free-submit/",
         "steps": [
@@ -8263,7 +8263,7 @@ export const sitesData = [
         "id": 647,
         "category": "New Scraped Discoveries",
         "name": "Search for....",
-        "da": 30, // Default for new discoveries
+        "da": 32, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://thesaasdirectory.com/",
         "steps": [
@@ -8278,7 +8278,7 @@ export const sitesData = [
         "id": 648,
         "category": "New Scraped Discoveries",
         "name": "Top SaaS Directories",
-        "da": 30, // Default for new discoveries
+        "da": 34, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.topsaasdirectories.com/",
         "steps": [
@@ -8293,7 +8293,7 @@ export const sitesData = [
         "id": 649,
         "category": "New Scraped Discoveries",
         "name": "Free List of 170+ SaaS Directories to Submit your Startup",
-        "da": 30, // Default for new discoveries
+        "da": 28, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://getleadwave.io/list-of-saas-directories",
         "steps": [
@@ -8323,7 +8323,7 @@ export const sitesData = [
         "id": 651,
         "category": "New Scraped Discoveries",
         "name": "SaaS Directory",
-        "da": 30, // Default for new discoveries
+        "da": 29, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://saasdirectory.app/",
         "steps": [
@@ -8338,7 +8338,7 @@ export const sitesData = [
         "id": 652,
         "category": "New Scraped Discoveries",
         "name": "SaaS Directory Finder & List of SaaS Directories — Redline Digital",
-        "da": 30, // Default for new discoveries
+        "da": 32, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://redline.digital/saas-directories/",
         "steps": [
@@ -8368,7 +8368,7 @@ export const sitesData = [
         "id": 654,
         "category": "New Scraped Discoveries",
         "name": "The 42 Best Tools of 2026",
-        "da": 30, // Default for new discoveries
+        "da": 34, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.techgearlab.com/topics/tools/best-tools",
         "steps": [
@@ -8383,7 +8383,7 @@ export const sitesData = [
         "id": 655,
         "category": "New Scraped Discoveries",
         "name": "Submit AI Tool",
-        "da": 30, // Default for new discoveries
+        "da": 35, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://aitoolsdir.com/submit-ai-tool/",
         "steps": [
@@ -8398,7 +8398,7 @@ export const sitesData = [
         "id": 656,
         "category": "New Scraped Discoveries",
         "name": "Submit an AI Tool",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://aitoolsdirectory.site/submit.html",
         "steps": [
@@ -8413,7 +8413,7 @@ export const sitesData = [
         "id": 657,
         "category": "New Scraped Discoveries",
         "name": "Submit Tool",
-        "da": 30, // Default for new discoveries
+        "da": 32, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://aitoolslist.com/submit/",
         "steps": [
@@ -8428,7 +8428,7 @@ export const sitesData = [
         "id": 658,
         "category": "New Scraped Discoveries",
         "name": "50+ Best AI Directories to Submit Your Tool (2025 Guide)",
-        "da": 30, // Default for new discoveries
+        "da": 31, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://listmyai.net/blog/ai-directories-submit-your-tool",
         "steps": [
@@ -8443,7 +8443,7 @@ export const sitesData = [
         "id": 659,
         "category": "New Scraped Discoveries",
         "name": "ListingBott",
-        "da": 30, // Default for new discoveries
+        "da": 34, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://listingbott.com/",
         "steps": [
@@ -8458,7 +8458,7 @@ export const sitesData = [
         "id": 660,
         "category": "New Scraped Discoveries",
         "name": "Submit Your AI Tool",
-        "da": 30, // Default for new discoveries
+        "da": 34, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://toolsaiapp.com/submit-your-ai-tool/",
         "steps": [
@@ -8473,7 +8473,7 @@ export const sitesData = [
         "id": 661,
         "category": "New Scraped Discoveries",
         "name": "Submit AI Tool",
-        "da": 30, // Default for new discoveries
+        "da": 32, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://diraictory.com/submit",
         "steps": [
@@ -8488,7 +8488,7 @@ export const sitesData = [
         "id": 662,
         "category": "New Scraped Discoveries",
         "name": "ListYourTool.com",
-        "da": 30, // Default for new discoveries
+        "da": 34, // Default for new discoveries
         "type": "Dofollow",
         "url": "https://www.listyourtool.com/submit-tool",
         "steps": [

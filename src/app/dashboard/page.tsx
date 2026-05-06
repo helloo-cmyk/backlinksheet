@@ -46,10 +46,6 @@ export default function Dashboard() {
   const [isScraping, setIsScraping] = useState(false);
   const [scrapingLogs, setScrapingLogs] = useState<string[]>(["[SYSTEM] Bot standing by..."]);
 
-  // Monitoring UI State
-  const [isMonitoring, setIsMonitoring] = useState(false);
-  const [monitorLogs, setMonitorLogs] = useState<string[]>(["[SYSTEM] Monitoring system ready."]);
-
   useEffect(() => {
     const fetchSession = async () => {
       const { data: { session } } = await supabase.auth.getSession();
@@ -292,6 +288,7 @@ export default function Dashboard() {
                 <li><button onClick={() => setActiveTab("spy")} className={`w-full text-left px-4 py-2.5 rounded-lg text-sm transition-all flex items-center gap-3 ${activeTab === 'spy' ? 'bg-blue-600/10 text-blue-400 border border-blue-500/20' : 'text-zinc-400 hover:bg-zinc-800'}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg> Competitor Spy</button></li>
                 <li><button onClick={() => setActiveTab("monitoring")} className={`w-full text-left px-4 py-2.5 rounded-lg text-sm transition-all flex items-center gap-3 ${activeTab === 'monitoring' ? 'bg-blue-600/10 text-blue-400 border border-blue-500/20' : 'text-zinc-400 hover:bg-zinc-800'}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg> Monitoring</button></li>
                 <li><button onClick={() => setActiveTab("tools")} className={`w-full text-left px-4 py-2.5 rounded-lg text-sm transition-all flex items-center gap-3 ${activeTab === 'tools' ? 'bg-blue-600/10 text-blue-400 border border-blue-500/20' : 'text-zinc-400 hover:bg-zinc-800'}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg> Bulk Tools</button></li>
+                <li><button onClick={() => setActiveTab("team")} className={`w-full text-left px-4 py-2.5 rounded-lg text-sm transition-all flex items-center gap-3 ${activeTab === 'team' ? 'bg-blue-600/10 text-blue-400 border border-blue-500/20' : 'text-zinc-400 hover:bg-zinc-800'}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> Team</button></li>
               </ul>
             </div>
 
@@ -581,6 +578,74 @@ export default function Dashboard() {
                     </table>
                   </div>
                 )}
+              </div>
+            )}
+            {activeTab === 'team' && (
+              <div className="max-w-4xl animate-fade-in">
+                <div className="flex justify-between items-center mb-12">
+                  <div>
+                    <h1 className="text-3xl font-black text-white mb-2">Team Collaboration</h1>
+                    <p className="text-zinc-500">Manage who can access and edit this project.</p>
+                  </div>
+                  <button className="px-6 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20 flex items-center gap-2">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    Invite Member
+                  </button>
+                </div>
+
+                <div className="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl mb-12">
+                  <table className="w-full text-left border-collapse">
+                    <thead>
+                      <tr className="bg-zinc-950/50 border-b border-zinc-800">
+                        <th className="px-8 py-5 text-[10px] font-black text-zinc-500 uppercase tracking-widest">User</th>
+                        <th className="px-8 py-5 text-[10px] font-black text-zinc-500 uppercase tracking-widest">Role</th>
+                        <th className="px-8 py-5 text-[10px] font-black text-zinc-500 uppercase tracking-widest text-right">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-zinc-800/50 hover:bg-zinc-900/30 transition-all">
+                        <td className="px-8 py-6">
+                          <div className="flex items-center gap-4">
+                            <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg">U</div>
+                            <div>
+                              <div className="text-sm font-bold text-white">You (Owner)</div>
+                              <div className="text-xs text-zinc-500">{user?.email}</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td className="px-8 py-6">
+                          <span className="px-3 py-1 bg-blue-500/10 text-blue-400 text-[10px] font-black rounded-full border border-blue-500/20 uppercase tracking-widest">Owner</span>
+                        </td>
+                        <td className="px-8 py-6 text-right">
+                          <span className="text-emerald-500 text-[10px] font-black uppercase tracking-widest">Active</span>
+                        </td>
+                      </tr>
+                      {/* Placeholder for other members */}
+                      <tr className="border-b border-zinc-800/50 opacity-50 grayscale">
+                        <td className="px-8 py-6">
+                          <div className="flex items-center gap-4">
+                            <div className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center font-bold text-zinc-500">?</div>
+                            <div>
+                              <div className="text-sm font-bold text-zinc-400">Invite pending...</div>
+                              <div className="text-xs text-zinc-600">colleague@company.com</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td className="px-8 py-6">
+                          <span className="px-3 py-1 bg-zinc-800 text-zinc-500 text-[10px] font-black rounded-full border border-zinc-700 uppercase tracking-widest">Editor</span>
+                        </td>
+                        <td className="px-8 py-6 text-right">
+                          <span className="text-zinc-600 text-[10px] font-black uppercase tracking-widest">Sent</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div className="bg-blue-600/5 border border-blue-600/10 rounded-3xl p-8">
+                  <h3 className="text-lg font-bold mb-2">Pro Tip: Agency Mode</h3>
+                  <p className="text-zinc-400 text-sm leading-relaxed">Inviting clients as 'Viewers' allows them to track progress in real-time without giving them permission to change statuses or delete links.</p>
+                </div>
               </div>
             )}
           </main>

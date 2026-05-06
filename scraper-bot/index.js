@@ -5,29 +5,34 @@ const fs = require('fs');
 
 puppeteer.use(StealthPlugin());
 
+const fileName = 'master_results.csv';
+
 async function scrapeDuckDuckGo(keywords) {
   if (!keywords || keywords.length === 0) {
     console.error("Please provide search keywords.");
     process.exit(1);
   }
 
-  const fileName = 'master_results.csv';
   const seenUrls = new Set();
+  
+  // 1. Load from static sites.ts to avoid duplicates from the built-in list
+  try {
+    const { sitesData } = require('../src/data/sites');
+    sitesData.forEach(s => seenUrls.add(s.url.trim()));
+    console.log(`📊 Pre-loaded ${seenUrls.size} sites from sites.ts`);
+  } catch (e) { console.log("⚠️ Could not load sites.ts for duplicate checking."); }
 
-  // Load existing URLs from master_results.csv if it exists
+  // 2. Load from master_results.csv
   if (fs.existsSync(fileName)) {
     const content = fs.readFileSync(fileName, 'utf8');
-    const lines = content.split('\n');
-    lines.forEach(line => {
-      // Very basic URL extraction from CSV line
-      const match = line.match(/https?:\/\/[^\s,]+/);
-      if (match) seenUrls.add(match[0].trim());
+    content.split('\n').forEach(line => {
+      // Improved regex to handle quoted URLs in CSV
+      const match = line.match(/"(https?:\/\/[^"]+)"/) || line.match(/(https?:\/\/[^\s,]+)/);
+      if (match) seenUrls.add((match[1] || match[0]).trim());
     });
-    console.log(`📂 Pre-loaded ${seenUrls.size} existing URLs from ${fileName}`);
+    console.log(`📂 Total seen URLs (including CSV): ${seenUrls.size}`);
   }
 
-  console.log(`🚀 Starting scraper for ${keywords.length} footprints...`);
-  
   const browser = await puppeteer.launch({
     headless: "new",
     args: ['--no-sandbox', '--disable-setuid-sandbox']
@@ -37,58 +42,97 @@ async function scrapeDuckDuckGo(keywords) {
   const allResults = [];
   
   for (const query of keywords) {
-    if (allResults.length >= 200) break; 
-
-    console.log(`\n🔎 Footprint: "${query}"`);
-    let currentUrl = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`;
+    console.log(`\n🔎 Searching Footprint: "${query}"`);
+    let searchUrl = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`;
     
     try {
-      await page.goto(currentUrl, { waitUntil: 'domcontentloaded' });
+      await page.goto(searchUrl, { waitUntil: 'domcontentloaded' });
       
-      const pageData = await page.evaluate(() => {
-        const items = document.querySelectorAll('.result');
-        const results = [];
-        
-        items.forEach(item => {
+      const searchResults = await page.evaluate(() => {
+        return Array.from(document.querySelectorAll('.result')).map(item => {
           const titleEl = item.querySelector('.result__title .result__a');
           const urlEl = item.querySelector('.result__url');
-          const snippetEl = item.querySelector('.result__snippet');
-          
           if (titleEl && urlEl) {
             let rawUrl = urlEl.getAttribute('href').trim();
+            const title = titleEl.innerText.trim();
+            
+            // Filter out submission services and agencies
+            const badKeywords = ['we submit', 'submit your saas', 'submission service', 'effortlessly', 'list of directories', 'agency', 'marketing'];
+            const isBad = badKeywords.some(kw => title.toLowerCase().includes(kw));
+            
+            if (isBad) return null;
+
             if (rawUrl.includes('uddg=')) {
               const match = rawUrl.match(/uddg=([^&]+)/);
               if (match) rawUrl = decodeURIComponent(match[1]);
             }
-            if (rawUrl.startsWith('//')) rawUrl = 'https:' + rawUrl;
-
-            const uselessDomains = ['facebook.com', 'twitter.com', 'instagram.com', 'linkedin.com', 'youtube.com', 'google.com', 'bing.com', 'yahoo.com', 'duckduckgo.com', 'wikipedia.org'];
-            const isUseless = uselessDomains.some(domain => rawUrl.toLowerCase().includes(domain));
-
-            if (!isUseless && rawUrl.startsWith('http')) {
-              results.push({
-                title: titleEl.innerText.trim().replace(/,/g, ''), // Basic CSV escaping
-                url: rawUrl,
-                snippet: snippetEl ? snippetEl.innerText.trim().replace(/,/g, '') : ''
-              });
-            }
+            return { title: title, url: rawUrl };
           }
-        });
-        return results;
+          return null;
+        }).filter(r => r && r.url.startsWith('http'));
       });
 
-      let addedCount = 0;
-      for (const res of pageData) {
-        if (!seenUrls.has(res.url)) {
-          seenUrls.add(res.url);
-          allResults.push(res);
-          addedCount++;
+      for (const res of searchResults) {
+        if (seenUrls.has(res.url)) continue;
+
+        console.log(`  👀 Checking: ${res.url}`);
+        
+        // 1. Visit the page to see if it's a LIST or a DIRECTORY
+        try {
+          const subPage = await browser.newPage();
+          await subPage.goto(res.url, { waitUntil: 'networkidle2', timeout: 20000 });
+          
+          const pageType = await subPage.evaluate(() => {
+            const text = document.body.innerText.toLowerCase();
+            const linkCount = document.querySelectorAll('a').length;
+            const isList = text.includes('list of') || text.includes('directories') || (linkCount > 50 && text.includes('submit'));
+            return isList ? 'LIST' : 'DIRECTORY';
+          });
+
+          if (pageType === 'LIST') {
+            console.log(`    📜 Identified as a LIST PAGE. Extracting directory links...`);
+            const subLinks = await subPage.evaluate(() => {
+              return Array.from(document.querySelectorAll('a'))
+                .map(a => ({ title: a.innerText.trim(), url: a.href }))
+                .filter(a => {
+                  const isExternal = a.url.startsWith('http') && !a.url.includes(window.location.hostname);
+                  const isLikelyDirectory = a.title.toLowerCase().includes('submit') || a.title.toLowerCase().includes('directory') || a.url.includes('submit');
+                  return isExternal && isLikelyDirectory;
+                });
+            });
+
+            console.log(`    ✨ Found ${subLinks.length} sub-directories in this list.`);
+            for (const sub of subLinks) {
+              if (!seenUrls.has(sub.url)) {
+                seenUrls.add(sub.url);
+                allResults.push({ title: sub.title, url: sub.url, source: res.url, type: 'EXTRACTED' });
+              }
+            }
+          } else {
+            // It's a direct directory, extract contact info
+            const contactInfo = await subPage.evaluate(() => {
+              const emailMatch = document.body.innerText.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/);
+              const contactLink = Array.from(document.querySelectorAll('a')).find(a => a.innerText.toLowerCase().includes('contact') || a.href.toLowerCase().includes('contact'));
+              return { email: emailMatch ? emailMatch[0] : '', contactUrl: contactLink ? contactLink.href : '' };
+            });
+
+            seenUrls.add(res.url);
+            allResults.push({ 
+              title: res.title, 
+              url: res.url, 
+              source: 'SEARCH', 
+              type: 'DIRECTORY',
+              email: contactInfo.email,
+              contact_url: contactInfo.contactUrl
+            });
+          }
+          await subPage.close();
+        } catch (e) {
+          console.error(`    ⚠️ Failed to crawl ${res.url}: ${e.message}`);
         }
       }
-      console.log(`✅ Added ${addedCount} new unique links. Total in memory: ${allResults.length}`);
-
     } catch (err) {
-      console.error(`❌ Error scraping "${query}":`, err.message);
+      console.error(`❌ Error searching "${query}":`, err.message);
     }
   }
 
@@ -100,34 +144,22 @@ async function scrapeDuckDuckGo(keywords) {
       header: [
         { id: 'title', title: 'Website Title' },
         { id: 'url', title: 'Target URL' },
-        { id: 'snippet', title: 'Description/Snippet' }
+        { id: 'type', title: 'Type' },
+        { id: 'source', title: 'Found via List' },
+        { id: 'email', title: 'Contact Email' },
+        { id: 'contact_url', title: 'Contact Page' }
       ],
-      append: fs.existsSync(fileName) // Append if file exists
+      append: fs.existsSync(fileName)
     });
 
     await csvWriter.writeRecords(allResults);
-    console.log(`\n🎉 DONE! Added ${allResults.length} new unique opportunities to ${fileName}.`);
-  } else {
-    console.log("❌ No NEW results found. All scraped links were already in the master file.");
+    console.log(`\n🎉 DONE! Added ${allResults.length} records (including sub-links from lists).`);
   }
 }
 
-// Support for multiple keywords from command line or default list
 let keywords = process.argv.slice(2);
 if (keywords.length === 0) {
-  // Default list if none provided
-  keywords = [
-    "submit a tool",
-    "add startup directory",
-    "submit SaaS tool",
-    "startup submission sites",
-    "list of tool directories",
-    "submit website for review",
-    "SaaS tool list",
-    "submit startup for free",
-    "add your tool to directory",
-    "best tool submission sites"
-  ];
+  keywords = ["list of startup directories", "submit saas tool directory", "places to get backlinks for startups"];
 }
 
 scrapeDuckDuckGo(keywords);
