@@ -629,35 +629,76 @@ export default function Dashboard() {
                       onClick={async () => {
                         if (!activeProject) return;
                         setIsMonitoring(true);
-                        setMonitorLogs(prev => [...prev, "[SYSTEM] Starting Global Directory Audit..."]);
+                        setMonitorLogs(prev => [...prev, "[SYSTEM] Starting Global Directory Audit...", "[TIP] Auditing in parallel batches of 5 for speed..."]);
                         
-                        const auditList = sitesData.slice(0, 20); 
+                        const deadSites: any[] = [];
+                        const auditList = sitesData; // Full list
+                        const batchSize = 5;
 
-                        for (const site of auditList) {
-                          setMonitorLogs(prev => [...prev, `🩺 Auditing: ${site.name}...`]);
-                          try {
-                            const res = await fetch('/api/monitor', {
-                              method: 'POST',
-                              headers: { 'Content-Type': 'application/json' },
-                              body: JSON.stringify({ siteUrl: site.url, targetUrl: 'health-check' })
-                            });
-                            const result = await res.json();
-                            if (result.status === 'dead') {
-                              setMonitorLogs(prev => [...prev, `💀 ${site.name}: DEAD / EXPIRED`]);
-                            } else {
-                              setMonitorLogs(prev => [...prev, `✅ ${site.name}: ONLINE`]);
+                        for (let i = 0; i < auditList.length; i += batchSize) {
+                          const batch = auditList.slice(i, i + batchSize);
+                          
+                          await Promise.all(batch.map(async (site) => {
+                            setMonitorLogs(prev => [...prev, `🩺 Auditing: ${site.name}...`]);
+                            try {
+                              const res = await fetch('/api/monitor', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ siteUrl: site.url, targetUrl: 'health-check' })
+                              });
+                              const result = await res.json();
+                              if (result.status === 'dead') {
+                                setMonitorLogs(prev => [...prev, `💀 ${site.name}: DEAD / EXPIRED`]);
+                                deadSites.push({ name: site.name, url: site.url, reason: result.error || 'Offline' });
+                              } else {
+                                setMonitorLogs(prev => [...prev, `✅ ${site.name}: ONLINE`]);
+                              }
+                            } catch (e) {
+                              setMonitorLogs(prev => [...prev, `⚠️ ${site.name}: Check Failed`]);
                             }
-                          } catch (e) {
-                            setMonitorLogs(prev => [...prev, `⚠️ ${site.name}: Check Failed`]);
-                          }
+                          }));
                         }
+
+                        if (deadSites.length > 0) {
+                          setMonitorLogs(prev => [...prev, `🏁 Audit complete. Found ${deadSites.length} dead sites.`]);
+                          // Create a download for the dead sites
+                          const csvContent = "data:text/csv;charset=utf-8,Name,URL,Reason\n" + deadSites.map(s => `${s.name},${s.url},${s.reason}`).join("\n");
+                          const encodedUri = encodeURI(csvContent);
+                          const link = document.createElement("a");
+                          link.setAttribute("href", encodedUri);
+                          link.setAttribute("download", "dead_sites_report.csv");
+                          document.body.appendChild(link);
+                          // We will let the user trigger it via the new UI button instead of auto-download
+                        }
+
                         setIsMonitoring(false);
                         setMonitorLogs(prev => [...prev, "🏁 Global Audit complete."]);
                       }}
                       disabled={isMonitoring}
                       className="w-full py-3 mt-4 rounded-xl text-xs font-black uppercase tracking-widest bg-zinc-800 text-zinc-400 border border-zinc-700 hover:bg-zinc-700 transition-all"
                     >
-                      Audit All Directories (Online Check)
+                      Audit All Directories (Parallel Check)
+                    </button>
+                    
+                    <button 
+                      onClick={() => {
+                        // Logic to find dead logs from monitorLogs and export
+                        const deadLogs = monitorLogs.filter(log => log.includes('💀'));
+                        if (deadLogs.length === 0) {
+                          alert("No dead sites found in current logs.");
+                          return;
+                        }
+                        const csvContent = "data:text/csv;charset=utf-8,Report Log\n" + deadLogs.join("\n");
+                        const encodedUri = encodeURI(csvContent);
+                        const link = document.createElement("a");
+                        link.setAttribute("href", encodedUri);
+                        link.setAttribute("download", "dead_sites_list.csv");
+                        document.body.appendChild(link);
+                        link.click();
+                      }}
+                      className="w-full py-2 mt-2 rounded-lg text-[10px] font-black uppercase tracking-widest text-rose-500 hover:text-rose-400 transition-all"
+                    >
+                      Download Dead Sites Report
                     </button>
                   </div>
                 </div>
