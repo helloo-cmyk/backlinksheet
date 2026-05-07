@@ -1,7 +1,6 @@
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const { createClient } = require('@supabase/supabase-js');
-require('dotenv').config();
 
 puppeteer.use(StealthPlugin());
 
@@ -67,8 +66,6 @@ async function runBulkMonitor(projectId) {
   }
 
   for (const link of backlinks) {
-    // We need the site URL from the sitesData or local db
-    // For now, let's assume we store the 'url' in the backlink record or can fetch it
     const result = await verifyBacklink(link.site_url, project.target_url);
     
     await supabase.from('project_backlinks')
