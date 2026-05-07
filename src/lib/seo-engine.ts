@@ -1,11 +1,13 @@
-import puppeteer from 'puppeteer-extra';
-import StealthPlugin from 'puppeteer-extra-plugin-stealth';
-import { createClient } from '@supabase/supabase-js';
-
-// Setup Stealth
-puppeteer.use(StealthPlugin());
-
+// SEO Engine with Lazy Loading to fix Next.js build errors
 export async function verifyBacklinkRealtime(siteUrl: string, targetUrl: string) {
+  // Lazy load modules only when called
+  const puppeteer = (await import('puppeteer-extra')).default;
+  const StealthPlugin = (await import('puppeteer-extra-plugin-stealth')).default;
+  
+  if (!(puppeteer as any)._plugins?.length) {
+    (puppeteer as any).use(StealthPlugin());
+  }
+
   console.log(`📡 Real-time Monitoring: ${siteUrl}`);
   
   const browser = await (puppeteer as any).launch({ 
@@ -37,6 +39,13 @@ export async function verifyBacklinkRealtime(siteUrl: string, targetUrl: string)
 }
 
 export async function getRealDA(domain: string) {
+  const puppeteer = (await import('puppeteer-extra')).default;
+  const StealthPlugin = (await import('puppeteer-extra-plugin-stealth')).default;
+  
+  if (!(puppeteer as any)._plugins?.length) {
+    (puppeteer as any).use(StealthPlugin());
+  }
+
   const browser = await (puppeteer as any).launch({ 
     headless: "new",
     args: ['--no-sandbox', '--disable-setuid-sandbox']

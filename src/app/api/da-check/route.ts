@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { getRealDA } from '@/lib/seo-engine';
 
+export const dynamic = 'force-dynamic';
+
 export async function POST(request: Request) {
   try {
     const { domains } = await request.json();

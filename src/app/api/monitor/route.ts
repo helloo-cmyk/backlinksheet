@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { verifyBacklinkRealtime } from '@/lib/seo-engine';
 
+export const dynamic = 'force-dynamic';
+
 export async function POST(request: Request) {
   try {
     const { siteUrl, targetUrl } = await request.json();
