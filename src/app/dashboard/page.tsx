@@ -159,7 +159,8 @@ export default function Dashboard() {
   };
 
   const updateStatus = async (id: number, status: string) => {
-    await upsertBacklinkRecord(id, { status });
+    const site = sitesData.find(s => s.id === id);
+    await upsertBacklinkRecord(id, { status, site_url: site?.url });
   };
 
   const generatePitch = (site: any) => {
