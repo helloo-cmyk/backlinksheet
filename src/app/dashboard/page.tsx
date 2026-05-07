@@ -577,28 +577,68 @@ export default function Dashboard() {
                       </div>
                     </div>
                     <button 
-                      onClick={() => {
+                      onClick={async () => {
+                        if (!activeProjectId || !activeProject) return;
                         setIsMonitoring(true);
-                        setMonitorLogs(prev => [...prev, `[USER] Manual check triggered for ${activeProject?.name}`, "[SYSTEM] Fetching live backlinks...", "[ENGINE] Visiting 12 URLs..."]);
-                        setTimeout(() => {
+                        setMonitorLogs(prev => [...prev, `[USER] Starting professional health check for ${activeProject.name}...`]);
+                        
+                        const linksToCheck = Object.values(backlinkData).filter(d => d.status === 'live' || d.status === 'outreach');
+                        
+                        if (linksToCheck.length === 0) {
+                          setMonitorLogs(prev => [...prev, "⚠️ No links found to verify. Mark some links as 'Live' or 'Outreach' first."]);
                           setIsMonitoring(false);
-                          setMonitorLogs(prev => [...prev, "🏁 Check complete. All links verified."]);
-                        }, 5000);
+                          return;
+                        }
+
+                        for (const link of linksToCheck) {
+                          // Find site URL from sitesData
+                          const site = sitesData.find(s => s.id === link.site_id);
+                          const siteUrl = site?.url;
+                          
+                          if (!siteUrl) continue;
+
+                          setMonitorLogs(prev => [...prev, `🔍 Verifying: ${site.name}...`]);
+                          
+                          try {
+                            const res = await fetch('/api/monitor', {
+                              method: 'POST',
+                              headers: { 'Content-Type': 'application/json' },
+                              body: JSON.stringify({ 
+                                siteUrl: siteUrl, 
+                                targetUrl: activeProject.target_url,
+                                backlinkId: link.id
+                              })
+                            });
+                            const result = await res.json();
+                            
+                            if (result.status === 'live') {
+                              setMonitorLogs(prev => [...prev, `✅ ${site.name}: Verified (DoFollow)`]);
+                            } else {
+                              setMonitorLogs(prev => [...prev, `❌ ${site.name}: Link Missing or Redirected`]);
+                              updateStatus(link.site_id, 'dropped');
+                            }
+                          } catch (e) {
+                            setMonitorLogs(prev => [...prev, `⚠️ Error checking ${site.name}`]);
+                          }
+                        }
+
+                        setIsMonitoring(false);
+                        setMonitorLogs(prev => [...prev, "🏁 Professional check complete."]);
                       }}
                       disabled={isMonitoring}
                       className={`w-full py-4 rounded-xl font-black uppercase tracking-widest transition-all ${isMonitoring ? 'bg-zinc-800 text-zinc-600' : 'bg-emerald-600 text-white hover:bg-emerald-500 shadow-xl shadow-emerald-600/20'}`}
                     >
-                      {isMonitoring ? 'Verifying Links...' : '⚡ Run Health Check Now'}
+                      {isMonitoring ? 'Verifying with Puppeteer...' : '⚡ Run Real Health Check'}
                     </button>
                   </div>
                 </div>
 
                 <div className="bg-zinc-950 border border-zinc-800 rounded-2xl overflow-hidden">
                   <div className="px-6 py-4 bg-zinc-900/50 border-b border-zinc-800 flex justify-between items-center">
-                    <span className="text-xs font-bold text-zinc-500 uppercase tracking-widest">Monitoring History</span>
+                    <span className="text-xs font-bold text-zinc-500 uppercase tracking-widest">Real-Time Verification Logs</span>
                   </div>
                   <div className="p-6 h-48 overflow-y-auto font-mono text-[11px] text-zinc-500 custom-scrollbar">
-                    {monitorLogs.map((log, i) => <div key={i} className="mb-1">{log}</div>)}
+                    {monitorLogs.map((log, i) => <div key={i} className={`mb-1 ${log.includes('✅') ? 'text-emerald-400' : log.includes('❌') ? 'text-rose-400' : ''}`}>{log}</div>)}
                   </div>
                 </div>
               </div>
@@ -619,20 +659,30 @@ export default function Dashboard() {
                   />
                   
                   <button 
-                    onClick={() => {
+                    onClick={async () => {
+                      if (!bulkDomains) return;
                       setIsCheckingDA(true);
                       const domains = bulkDomains.split('\n').filter(d => d.trim());
-                      // Simulate DA check results
-                      setTimeout(() => {
-                        const mockResults = domains.map(d => ({ domain: d.trim(), da: Math.floor(Math.random() * (90 - 20) + 20) }));
-                        setDaResults(mockResults);
+                      
+                      try {
+                        const response = await fetch('/api/da-check', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({ domains })
+                        });
+                        const results = await response.json();
+                        setDaResults(results.map((r: any) => ({ domain: r.domain, da: r.da, ss: r.ss })));
+                      } catch (err) {
+                        console.error("DA Check Failed:", err);
+                        alert("Failed to fetch real-time DA. Make sure the scraper engine is online.");
+                      } finally {
                         setIsCheckingDA(false);
-                      }, 3000);
+                      }
                     }}
                     disabled={isCheckingDA || !bulkDomains}
                     className={`w-full py-5 rounded-2xl font-black uppercase tracking-widest transition-all ${isCheckingDA ? 'bg-zinc-800 text-zinc-600' : 'bg-blue-600 text-white hover:bg-blue-500 shadow-2xl shadow-blue-600/30'}`}
                   >
-                    {isCheckingDA ? 'Analyzing Domains...' : '🔍 Start Bulk DA Analysis'}
+                    {isCheckingDA ? 'Analyzing Real-Time Data...' : '🔍 Start Real-Time DA Analysis'}
                   </button>
                 </div>
 
@@ -643,11 +693,12 @@ export default function Dashboard() {
                         <tr className="bg-zinc-900/80 border-b border-zinc-800">
                           <th className="px-8 py-4 text-[10px] font-black text-zinc-500 uppercase tracking-widest">Domain</th>
                           <th className="px-8 py-4 text-[10px] font-black text-zinc-500 uppercase tracking-widest">Authority (DA)</th>
+                          <th className="px-8 py-4 text-[10px] font-black text-zinc-500 uppercase tracking-widest">Spam Score</th>
                           <th className="px-8 py-4 text-[10px] font-black text-zinc-500 uppercase tracking-widest text-right">Status</th>
                         </tr>
                       </thead>
                       <tbody>
-                        {daResults.map((res, i) => (
+                        {daResults.map((res: any, i) => (
                           <tr key={i} className="border-b border-zinc-800/50 hover:bg-zinc-900/30 transition-all">
                             <td className="px-8 py-4 text-sm font-bold text-white">{res.domain}</td>
                             <td className="px-8 py-4">
@@ -657,6 +708,9 @@ export default function Dashboard() {
                                 </div>
                                 <span className="text-sm font-black text-blue-400">{res.da}</span>
                               </div>
+                            </td>
+                            <td className="px-8 py-4">
+                              <span className={`text-sm font-black ${(res.ss || 0) > 10 ? 'text-rose-500' : 'text-emerald-500'}`}>{res.ss || 0}%</span>
                             </td>
                             <td className="px-8 py-4 text-right">
                               <span className="px-2 py-0.5 bg-emerald-500/10 text-emerald-500 text-[10px] font-bold rounded border border-emerald-500/20 uppercase">Verified</span>

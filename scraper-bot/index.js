@@ -80,14 +80,31 @@ async function scrapeDuckDuckGo(keywords) {
         // 1. Visit the page to see if it's a LIST or a DIRECTORY
         try {
           const subPage = await browser.newPage();
-          await subPage.goto(res.url, { waitUntil: 'networkidle2', timeout: 20000 });
+          const response = await subPage.goto(res.url, { waitUntil: 'networkidle2', timeout: 20000 });
           
+          if (!response || response.status() !== 200) {
+            console.log(`    ❌ Skipping broken link: ${res.url} (Status: ${response ? response.status() : 'Timeout'})`);
+            await subPage.close();
+            continue;
+          }
+
           const pageType = await subPage.evaluate(() => {
             const text = document.body.innerText.toLowerCase();
+            const title = document.title.toLowerCase();
             const linkCount = document.querySelectorAll('a').length;
-            const isList = text.includes('list of') || text.includes('directories') || (linkCount > 50 && text.includes('submit'));
+            
+            const hasDirectoryIntent = title.includes('directory') || title.includes('submit') || title.includes('list') || text.includes('add your startup');
+            const isList = text.includes('list of') || text.includes('directories') || (linkCount > 40 && text.includes('submit'));
+            
+            if (!hasDirectoryIntent && linkCount < 10) return 'TRASH';
             return isList ? 'LIST' : 'DIRECTORY';
           });
+
+          if (pageType === 'TRASH') {
+            console.log(`    🗑️ Identified as irrelevant content. Skipping.`);
+            await subPage.close();
+            continue;
+          }
 
           if (pageType === 'LIST') {
             console.log(`    📜 Identified as a LIST PAGE. Extracting directory links...`);
