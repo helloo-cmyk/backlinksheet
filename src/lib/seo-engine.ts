@@ -18,7 +18,21 @@ export async function verifyBacklinkRealtime(siteUrl: string, targetUrl: string)
   try {
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
-    await page.goto(siteUrl, { waitUntil: 'networkidle2', timeout: 30000 });
+    const response = await page.goto(siteUrl, { waitUntil: 'networkidle2', timeout: 30000 });
+    
+    if (!response || response.status() !== 200) {
+      return { status: 'dead', error: `Site Offline (Status: ${response?.status()})` };
+    }
+
+    // Check for "Domain Parked" or "For Sale" indicators
+    const isDead = await page.evaluate(() => {
+      const text = document.body.innerText.toLowerCase();
+      return text.includes('domain for sale') || text.includes('this domain is parked') || text.includes('buy this domain');
+    });
+
+    if (isDead) {
+      return { status: 'dead', error: 'Domain Expired/Parked' };
+    }
     
     const linkInfo = await page.evaluate((target: string) => {
       const links = Array.from(document.querySelectorAll('a'));

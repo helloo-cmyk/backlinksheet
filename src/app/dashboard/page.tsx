@@ -586,37 +586,30 @@ export default function Dashboard() {
                         const linksToCheck = Object.values(backlinkData).filter(d => d.status === 'live' || d.status === 'outreach');
                         
                         if (linksToCheck.length === 0) {
-                          setMonitorLogs(prev => [...prev, "⚠️ No links found to verify. Mark some links as 'Live' or 'Outreach' first."]);
+                          setMonitorLogs(prev => [...prev, "⚠️ No live links found. Use 'Audit All Directories' below to check site status."]);
                           setIsMonitoring(false);
                           return;
                         }
 
                         for (const link of linksToCheck) {
-                          // Find site URL from sitesData
                           const site = sitesData.find(s => s.id === link.site_id);
                           const siteUrl = site?.url;
-                          
                           if (!siteUrl) continue;
 
-                          setMonitorLogs(prev => [...prev, `🔍 Verifying: ${site.name}...`]);
-                          
+                          setMonitorLogs(prev => [...prev, `🔍 Verifying Link: ${site.name}...`]);
                           try {
                             const res = await fetch('/api/monitor', {
                               method: 'POST',
                               headers: { 'Content-Type': 'application/json' },
-                              body: JSON.stringify({ 
-                                siteUrl: siteUrl, 
-                                targetUrl: activeProject.target_url,
-                                backlinkId: link.id
-                              })
+                              body: JSON.stringify({ siteUrl: siteUrl, targetUrl: activeProject.target_url })
                             });
                             const result = await res.json();
-                            
                             if (result.status === 'live') {
                               setMonitorLogs(prev => [...prev, `✅ ${site.name}: Verified (DoFollow)`]);
+                            } else if (result.status === 'dead') {
+                              setMonitorLogs(prev => [...prev, `💀 ${site.name}: SITE IS DEAD (404/EXPIRED)`]);
                             } else {
-                              setMonitorLogs(prev => [...prev, `❌ ${site.name}: Link Missing or Redirected`]);
-                              updateStatus(link.site_id, 'dropped');
+                              setMonitorLogs(prev => [...prev, `❌ ${site.name}: Link Missing`]);
                             }
                           } catch (e) {
                             setMonitorLogs(prev => [...prev, `⚠️ Error checking ${site.name}`]);
@@ -630,6 +623,41 @@ export default function Dashboard() {
                       className={`w-full py-4 rounded-xl font-black uppercase tracking-widest transition-all ${isMonitoring ? 'bg-zinc-800 text-zinc-600' : 'bg-emerald-600 text-white hover:bg-emerald-500 shadow-xl shadow-emerald-600/20'}`}
                     >
                       {isMonitoring ? 'Verifying with Puppeteer...' : '⚡ Run Real Health Check'}
+                    </button>
+
+                    <button 
+                      onClick={async () => {
+                        if (!activeProject) return;
+                        setIsMonitoring(true);
+                        setMonitorLogs(prev => [...prev, "[SYSTEM] Starting Global Directory Audit..."]);
+                        
+                        const auditList = sitesData.slice(0, 20); 
+
+                        for (const site of auditList) {
+                          setMonitorLogs(prev => [...prev, `🩺 Auditing: ${site.name}...`]);
+                          try {
+                            const res = await fetch('/api/monitor', {
+                              method: 'POST',
+                              headers: { 'Content-Type': 'application/json' },
+                              body: JSON.stringify({ siteUrl: site.url, targetUrl: 'health-check' })
+                            });
+                            const result = await res.json();
+                            if (result.status === 'dead') {
+                              setMonitorLogs(prev => [...prev, `💀 ${site.name}: DEAD / EXPIRED`]);
+                            } else {
+                              setMonitorLogs(prev => [...prev, `✅ ${site.name}: ONLINE`]);
+                            }
+                          } catch (e) {
+                            setMonitorLogs(prev => [...prev, `⚠️ ${site.name}: Check Failed`]);
+                          }
+                        }
+                        setIsMonitoring(false);
+                        setMonitorLogs(prev => [...prev, "🏁 Global Audit complete."]);
+                      }}
+                      disabled={isMonitoring}
+                      className="w-full py-3 mt-4 rounded-xl text-xs font-black uppercase tracking-widest bg-zinc-800 text-zinc-400 border border-zinc-700 hover:bg-zinc-700 transition-all"
+                    >
+                      Audit All Directories (Online Check)
                     </button>
                   </div>
                 </div>
