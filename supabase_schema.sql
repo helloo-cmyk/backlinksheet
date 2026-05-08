@@ -12,7 +12,9 @@ create table public.project_backlinks (
   id uuid default gen_random_uuid() primary key,
   project_id uuid references public.projects(id) on delete cascade not null,
   site_id integer not null,
-  status text check (status in ('pending', 'completed')) default 'pending',
+  status text check (status in ('pending', 'outreach', 'live', 'rejected')) default 'pending',
+  contact_email text,
+  contact_url text,
   notes text default '',
   created_at timestamp with time zone default timezone('utc'::text, now()) not null,
   unique(project_id, site_id) -- A project can only have one tracking record per site

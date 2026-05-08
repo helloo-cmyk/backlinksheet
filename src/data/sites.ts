@@ -7358,5 +7358,1145 @@ export const sitesData = [
         ],
         "tip": "Curated by AI. Make sure to use high-quality screenshots and descriptions for SaaS directories.",
         "pricing": "Paid / Freemium"
+    },
+    {
+        "id": 587,
+        "category": "New Scraped Discoveries",
+        "name": "Submit a Tool",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://submitatool.com/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "The easiest way to submit your tool to top AI and SaaS directories. Track your submission progress w...",
+        "pricing": "Free"
+    },
+    {
+        "id": 588,
+        "category": "New Scraped Discoveries",
+        "name": "Submit a Tool",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.monkeyaitools.com/submit-tool",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Submit a Tool At Monkey AI Tools, we're constantly scouting for the newest and most innovative AI ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 589,
+        "category": "New Scraped Discoveries",
+        "name": "Submit Tool to the AI Tools Directory",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://aitoolsdirectory.com/submit-tool",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Got a cool AI tool that's not listed on our site? Or do you love an AI-related product that you wo...",
+        "pricing": "Free"
+    },
+    {
+        "id": 590,
+        "category": "New Scraped Discoveries",
+        "name": "Submit a Tool",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://aimojo.io/submit/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Stand out with a Verified Listing that gets your AI tool featured site-wide! From the Home page to...",
+        "pricing": "Free"
+    },
+    {
+        "id": 591,
+        "category": "New Scraped Discoveries",
+        "name": "Submit your Tool",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.iatools.tools/submit-your-tool/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Do you have an AI tool that can help others transform their projects? At iatools.tools, we want to...",
+        "pricing": "Free"
+    },
+    {
+        "id": 592,
+        "category": "New Scraped Discoveries",
+        "name": "Submit AI Tools",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://submitaitools.org/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Submit AI Tools - AI Tool Submission Directory Find and Explore the Best AI Tools Submit AI Tools ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 593,
+        "category": "New Scraped Discoveries",
+        "name": "We Submit Your SaaS to 140+ Directories Effortlessly",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://submitsaas.com/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Increase your SaaS visibility by submitting to 140+ directories. Save time, gain high-quality back...",
+        "pricing": "Free"
+    },
+    {
+        "id": 594,
+        "category": "New Scraped Discoveries",
+        "name": "Submit your Saas to 300+ Startup Directories",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://saaspedia.io/submit-your-saas/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Submit your saas to 300+ Startup Directories including AI, Saas and Software listing websites with...",
+        "pricing": "Free"
+    },
+    {
+        "id": 595,
+        "category": "New Scraped Discoveries",
+        "name": "Submit Your Saas",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://submityoursaas.com/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Submit Your Saas makes me 100x more productive. I launched my SaaS in days instead of a month...",
+        "pricing": "Free"
+    },
+    {
+        "id": 596,
+        "category": "New Scraped Discoveries",
+        "name": "150 Directories And Platforms To List Your SaaS",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://launchpedia.co/list-my-saas/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Submit your saas on these directories, launch platforms, maker communities, startups sites, and ge...",
+        "pricing": "Free"
+    },
+    {
+        "id": 597,
+        "category": "New Scraped Discoveries",
+        "name": "160+ SaaS Directory Sites [List] to Submit Your SaaS Product",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://amrytt.com/saas-directory-sites/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Want to list your SaaS product in 2025? Find the best SaaS directories to boost visibility, gain t...",
+        "pricing": "Free"
+    },
+    {
+        "id": 598,
+        "category": "New Scraped Discoveries",
+        "name": "Good AI Tools",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://aitoolly.com/product/good-ai-tools",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "SubmitSaas is an online platform designed to help you submit your SaaS (Software as a Service) pro...",
+        "pricing": "Free"
+    },
+    {
+        "id": 599,
+        "category": "New Scraped Discoveries",
+        "name": "Software Directory Submission Service",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.gtmworks.ai/services/software-submission-service",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Software Submission Service - Upload your data once, get your SaaS submitted in up to 20+ software...",
+        "pricing": "Free"
+    },
+    {
+        "id": 600,
+        "category": "New Scraped Discoveries",
+        "name": "Free Startup Submission Directories: 1000+ Sites for 2026",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://digitalbiztalk.com/article/the-ultimate-2026-guide-to-startup-submission-directories",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Launching a startup in 2026? This comprehensive guide explores a massive, free directory of 1000+ ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 601,
+        "category": "New Scraped Discoveries",
+        "name": "50+ Startup Directories & Launch Platforms (2026)",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://startupproject.org/resources/places-to-launch/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Curated list of 50 startup directories and launch platforms ranked by domain authority. Get visibi...",
+        "pricing": "Free"
+    },
+    {
+        "id": 602,
+        "category": "New Scraped Discoveries",
+        "name": "The 19 best places to list your startup (UPDATED 2026)",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://flocksy.com/resources/how-to-list-your-startup-and-the-top-20-startup-directories-for-site-visibility/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "What are startup directories? Startup Directories are websites that help collate and organize list...",
+        "pricing": "Free"
+    },
+    {
+        "id": 603,
+        "category": "New Scraped Discoveries",
+        "name": "Top 20 Startup Directories to Promote Your Business in 2024",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.feedbear.com/blog/startup-directories",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Discover 20 essential startup directories to submit your business. Learn tools and strategies to boo...",
+        "pricing": "Free"
+    },
+    {
+        "id": 604,
+        "category": "New Scraped Discoveries",
+        "name": "Best Directories and Listings to Submit Your Startup in 2025",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.upsilonit.com/blog/best-startup-directories-to-submit-your-startup",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Discover the top startup directories and listings to submit your business. Increase your chances of ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 605,
+        "category": "New Scraped Discoveries",
+        "name": "Top 11 Startup Submission Sites (2026) · Blog · Avinash Vagh",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://avinashvagh.com/blog/startup-submission-sites",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Explore 11 top startup submission sites in 2026 to promote your product, get backlinks, improve SE...",
+        "pricing": "Free"
+    },
+    {
+        "id": 606,
+        "category": "New Scraped Discoveries",
+        "name": "20 Startup Directories to Submit Your Startup Today",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://noonlaunch.com/blog/20-startup-directories-to-submit-your-startup-today",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Startup directories help you earn backlinks, boost visibility, and reach early adopters. Here are ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 607,
+        "category": "New Scraped Discoveries",
+        "name": "The Ultimate List of the Top AI Tool Directories — Best AI Tools",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://directories.bestaitools.com/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "A comprehensive, up-to-date list of AI tool directories with monthly visits, unique visitors, doma...",
+        "pricing": "Free"
+    },
+    {
+        "id": 608,
+        "category": "New Scraped Discoveries",
+        "name": "Largest & Best AI Tools Directory",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://aichief.com/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Discover 11,531+ AI tools across 272+ categories. Find the best AI solutions for productivity, cre...",
+        "pricing": "Free"
+    },
+    {
+        "id": 609,
+        "category": "New Scraped Discoveries",
+        "name": "Open Source Tools Directory",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.theinfinity.dev/tools",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Discover the best open source alternatives and tools. Browse through our curated collection with G...",
+        "pricing": "Free"
+    },
+    {
+        "id": 610,
+        "category": "New Scraped Discoveries",
+        "name": "AI Tools Directory 2025: Find Top AI Software & Apps",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.ebdirectory.com/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Discover the most comprehensive AI tools directory of 2025. Browse 1500 curated AI software, machi...",
+        "pricing": "Free"
+    },
+    {
+        "id": 611,
+        "category": "New Scraped Discoveries",
+        "name": "AI Tools Directory",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://caioz.com/ai-tools-directory-2025/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "AI Tools Directory 2025 is your go-to hub to explore the most powerful and trending generative AI ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 612,
+        "category": "New Scraped Discoveries",
+        "name": "ENUM: 93+ Best Directories to Submit Your Tool",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.enumhq.com/directory-list",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "This list only includes directories with an Authority Rank of more than 20 (with a few exceptions ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 613,
+        "category": "New Scraped Discoveries",
+        "name": "Write a review",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://help.trustpilot.com/s/article/Write-a-review?language=en_US",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "To write a review on Trustpilot, you need to have had a genuine buying or service experience with ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 614,
+        "category": "New Scraped Discoveries",
+        "name": "Top 100 Review Submission Sites for SEO (2025-2026)",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://searchenginetactics.com/top-100-review-submission-sites-for-seo-2025-2026/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Discover the best review submission sites for backlinks to enhance your SEO strategy and improve you...",
+        "pricing": "Free"
+    },
+    {
+        "id": 615,
+        "category": "New Scraped Discoveries",
+        "name": "Free Review Posting Sites List",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.digital-web-services.com/review-posting-sites-list.html",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Free Review posting sites list, Get the best review submission websites for products and services ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 616,
+        "category": "New Scraped Discoveries",
+        "name": "110+ High DA Review Submission Sites List",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://theseopedia.com/review-submission-sites-list",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Boost your SEO and online reputation with our list of high-DA review submission sites. Increase vi...",
+        "pricing": "Free"
+    },
+    {
+        "id": 617,
+        "category": "New Scraped Discoveries",
+        "name": "30+ Review Sites to Collect More Customer Reviews in 2026",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://embedsocial.com/blog/review-sites/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Practical tips and a list of industry-specific websites where you can submit your business to collec...",
+        "pricing": "Free"
+    },
+    {
+        "id": 618,
+        "category": "New Scraped Discoveries",
+        "name": "100+ High DA Review Submission Site List [2026 Updated]",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://linkscope.io/blog/review-submission-site-list/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Discover 100+ FREE high DA review submission sites list for 2026. Submit reviews, earn quality bac...",
+        "pricing": "Free"
+    },
+    {
+        "id": 619,
+        "category": "New Scraped Discoveries",
+        "name": "100+ High DA Review Submission Sites List (2026)",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.goforpost.com/list/high-da-review-submission-sites-list/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Write the best reviews about your products and services through high-da review submission sites list...",
+        "pricing": "Free"
+    },
+    {
+        "id": 620,
+        "category": "New Scraped Discoveries",
+        "name": "Best Website Review Sites in 2025",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://listandfuse.com/website-review-sites/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Discover the best website review sites and online review platforms. Learn how reviews boost SEO, c...",
+        "pricing": "Free"
+    },
+    {
+        "id": 621,
+        "category": "New Scraped Discoveries",
+        "name": "80+ SaaS Tools Dominating The Market In 2026",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.cloudzero.com/blog/saas-tools/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Discover top SaaS tools to increase team productivity and operational efficiency, reduce developme...",
+        "pricing": "Free"
+    },
+    {
+        "id": 622,
+        "category": "New Scraped Discoveries",
+        "name": "20+ Best SaaS Tools for Businesses in 2026",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://makesaasbetter.com/saas-tools/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Explore the top SaaS tools of 2026 that are transforming businesses. Uncover key features, benefit...",
+        "pricing": "Free"
+    },
+    {
+        "id": 623,
+        "category": "New Scraped Discoveries",
+        "name": "30 Best SaaS Tools for Teams",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.madx.digital/learn/saas-tools",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Compare 30 essential SaaS tools ranked by features, pricing, and ROI. Our expert guide covers the ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 624,
+        "category": "New Scraped Discoveries",
+        "name": "36 Must-Have SaaS Tools For Businesses [2026 List]",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.proofhub.com/articles/saas-tools-for-businesses",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "SaaS tools to use to take your business to the next level. Check out these 36 SaaS tools that every ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 625,
+        "category": "New Scraped Discoveries",
+        "name": "50 Most Popular SaaS Applications to Use in 2025",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.deduxer.studio/blog/50-most-popular-saas-applications-to-use-in-2024",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Key Takeaways Best SaaS applications in 2024, highlighting their role in revolutionizing business ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 626,
+        "category": "New Scraped Discoveries",
+        "name": "Top 30 SaaS Tools for Business in 2026",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.chatbase.co/blog/saas-tools",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Looking for useful SaaS tools? This list of 30 top picks will help your business work faster, stay...",
+        "pricing": "Free"
+    },
+    {
+        "id": 627,
+        "category": "New Scraped Discoveries",
+        "name": "30+ trending SaaS tools for businesses of all sizes (2026)",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://replug.io/blog/best-saas-tools",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Explore the top 30+ SaaS tools for businesses in 2026 that can enhance efficiency, productivity, a...",
+        "pricing": "Free"
+    },
+    {
+        "id": 628,
+        "category": "New Scraped Discoveries",
+        "name": "SaaS Tools List: 160+ SaaS Tools for Online Business",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://serpforge.io/saas-tools-list/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Feeling overwhelmed by the abundance of SaaS tools? Our handy list have listed all the tools & cut...",
+        "pricing": "Free"
+    },
+    {
+        "id": 629,
+        "category": "New Scraped Discoveries",
+        "name": "20 Free Resources to Submit Your Startup or SaaS Company",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://createandgrow.com/free-resources/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Boost visibility and SEO! Discover 20 free resources and platforms to submit your SaaS or startup fo...",
+        "pricing": "Free"
+    },
+    {
+        "id": 630,
+        "category": "New Scraped Discoveries",
+        "name": "10 Best Free Startup Directories to Launch (2026)",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://launchdirectories.com/top-10-free-launch-directories",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Top 10 free directories to launch your startup. High-traffic platforms with quality backlinks. Compl...",
+        "pricing": "Free"
+    },
+    {
+        "id": 631,
+        "category": "New Scraped Discoveries",
+        "name": "Startup Directory",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.earlylaunch.online/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Submit your startup and explore innovative products in our curated directory. Gain visibility, att...",
+        "pricing": "Free"
+    },
+    {
+        "id": 632,
+        "category": "New Scraped Discoveries",
+        "name": "Top 99 Places to Promote Your Startup for Free",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://getlaunchlist.com/blog/top-99-places-to-promote-your-startup-for-free",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "99 free places to promote your startup in 2026 — directories, communities, and launch platforms th...",
+        "pricing": "Free"
+    },
+    {
+        "id": 633,
+        "category": "New Scraped Discoveries",
+        "name": "377 Places to Submit Your Startup",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://eyre.ai/where-submit-website/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Looking for places to submit website of your startup? We bring you a list of 370+ directories to sub...",
+        "pricing": "Free"
+    },
+    {
+        "id": 634,
+        "category": "New Scraped Discoveries",
+        "name": "90+ Best Search Engine Submission Sites Updated List for Fast Indexing",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://yelomarketing.com/search-engine-submission-sites/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "We tested multiple search engine submission sites and selected reliable platforms to speed up indexi...",
+        "pricing": "Free"
+    },
+    {
+        "id": 635,
+        "category": "New Scraped Discoveries",
+        "name": "100+ Search Engine Submission Sites for Fast Index [Updated]",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://webmetools.com/blog/search-engine-submission-sites",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "100+ Top & Free Search Engine Submission Sites List 2026 Massive List of Search Engine Submission ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 636,
+        "category": "New Scraped Discoveries",
+        "name": "Top AI Tool Directories in 2025",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://devtechinsights.com/tool-directories-2025/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "This guide helps you navigate the top AI tool directories where you can submit your tool for disco...",
+        "pricing": "Free"
+    },
+    {
+        "id": 637,
+        "category": "New Scraped Discoveries",
+        "name": "Best Link Submission Platforms to Boost Your SEO Backlinks in 2025",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://linkbuilder.com/blog/best-link-submission-platforms",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Discover the 7 best link submission platforms to improve your SEO. Compare pricing, domain authori...",
+        "pricing": "Free"
+    },
+    {
+        "id": 638,
+        "category": "New Scraped Discoveries",
+        "name": "Top 5 Free Websites to Submit AI Tools",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://toollist.ai/article/top-5-free-websites-to-submit-ai-tools",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "In the rapidly evolving world of artificial intelligence, gaining visibility for your AI tools can...",
+        "pricing": "Free"
+    },
+    {
+        "id": 639,
+        "category": "New Scraped Discoveries",
+        "name": "50+ Free Search Engine Submission Sites",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.mindmingles.com/search-engine-submission-sites/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Find 50+ search engine submission sites and free web submission sites. Make your site more discovera...",
+        "pricing": "Free"
+    },
+    {
+        "id": 640,
+        "category": "New Scraped Discoveries",
+        "name": "Home",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://submit.com/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Organizations worldwide, from governments and universities to foundations and non-profits, trust S...",
+        "pricing": "Free"
+    },
+    {
+        "id": 641,
+        "category": "New Scraped Discoveries",
+        "name": "Submission and SEO software from Submit Suite",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "http://submitsuite.com/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "SEO and submission software including Website Submitter, Feed Submitter, Article Submitter, Articl...",
+        "pricing": "Free"
+    },
+    {
+        "id": 642,
+        "category": "New Scraped Discoveries",
+        "name": "Submit Corner",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.submitcorner.com/Tools/Submit/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Automated Submit is a free web tool which will submit your website to the top search engines automat...",
+        "pricing": "Free"
+    },
+    {
+        "id": 643,
+        "category": "New Scraped Discoveries",
+        "name": "Submit Your AI Tool",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://aitools.inc/submit",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Submit your tool and get listed on the fastest growing directory of AI Tools....",
+        "pricing": "Free"
+    },
+    {
+        "id": 644,
+        "category": "New Scraped Discoveries",
+        "name": "SubmitPal",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://submitpal.net/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Save time submitting your AI tool to directories with SubmitPal. Auto-fill forms, track submission...",
+        "pricing": "Free"
+    },
+    {
+        "id": 645,
+        "category": "New Scraped Discoveries",
+        "name": "Free Website/URL submission tools help search engines discover and ...",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.submitshop.com/free-submit/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Need help getting your website noticed by search engines? Free website submission tools can help y...",
+        "pricing": "Free"
+    },
+    {
+        "id": 646,
+        "category": "New Scraped Discoveries",
+        "name": "Home",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://submityouraitool.com/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Submit your AI tool for free and reach a global audience! Fast, easy listings to boost visibility ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 647,
+        "category": "New Scraped Discoveries",
+        "name": "Search for....",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://thesaasdirectory.com/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Submit your SaaS company to The SaaS Directory, a global directory of SaaS companies.\"\"...",
+        "pricing": "Free"
+    },
+    {
+        "id": 648,
+        "category": "New Scraped Discoveries",
+        "name": "Top SaaS Directories",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.topsaasdirectories.com/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Top SaaS Directories 100 Top Web Directory Submission Sites and Platforms to List Your SaaS All Cate...",
+        "pricing": "Free"
+    },
+    {
+        "id": 649,
+        "category": "New Scraped Discoveries",
+        "name": "Free List of 170+ SaaS Directories to Submit your Startup",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://getleadwave.io/list-of-saas-directories",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "LeadWave's hand-researched list of 170+ SaaS directories and websites to list your SaaS startup. S...",
+        "pricing": "Free"
+    },
+    {
+        "id": 650,
+        "category": "New Scraped Discoveries",
+        "name": "Curated List Of The Top 20 SaaS Product Directories",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://revenuezen.com/saas-directories/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Check out our favorite SaaS product directories and learn how your company can get featured, and s...",
+        "pricing": "Free"
+    },
+    {
+        "id": 651,
+        "category": "New Scraped Discoveries",
+        "name": "SaaS Directory",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://saasdirectory.app/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "The Yellow Pages of SaaS. Browse 360+ verified SaaS products with real revenue data, rankings, and...",
+        "pricing": "Free"
+    },
+    {
+        "id": 652,
+        "category": "New Scraped Discoveries",
+        "name": "SaaS Directory Finder & List of SaaS Directories — Redline Digital",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://redline.digital/saas-directories/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "TechnologyAdvice is a user-focused SaaS directory that facilitates informed purchasing decisions b...",
+        "pricing": "Free"
+    },
+    {
+        "id": 653,
+        "category": "New Scraped Discoveries",
+        "name": "40+ Best Directories to Submit Your SaaS Product in 2026",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://saasconsult.co/blog/top-directories-to-list-your-saas/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Complete list of 40+ SaaS directories to submit your product in 2026 — organised by priority, doma...",
+        "pricing": "Free"
+    },
+    {
+        "id": 654,
+        "category": "New Scraped Discoveries",
+        "name": "The 42 Best Tools of 2026",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.techgearlab.com/topics/tools/best-tools",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Quality tools can last a lifetime and help you handle everything from day-to-day fix-it tasks to m...",
+        "pricing": "Free"
+    },
+    {
+        "id": 655,
+        "category": "New Scraped Discoveries",
+        "name": "Submit AI Tool",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://aitoolsdir.com/submit-ai-tool/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Want to Update or Remove Your Tool? If your tool is already listed and you need to update details ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 656,
+        "category": "New Scraped Discoveries",
+        "name": "Submit an AI Tool",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://aitoolsdirectory.site/submit.html",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Submit an AI Tool for Review AI Tools Directory accepts submissions from developers, startups, and...",
+        "pricing": "Free"
+    },
+    {
+        "id": 657,
+        "category": "New Scraped Discoveries",
+        "name": "Submit Tool",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://aitoolslist.com/submit/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "AI Tools List is a leading directory showcasing the latest and most impactful AI-powered solutions...",
+        "pricing": "Free"
+    },
+    {
+        "id": 658,
+        "category": "New Scraped Discoveries",
+        "name": "50+ Best AI Directories to Submit Your Tool (2025 Guide)",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://listmyai.net/blog/ai-directories-submit-your-tool",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "I submitted my AI tool to 50+ directories. Here's which ones actually work in 2025 - the complete ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 659,
+        "category": "New Scraped Discoveries",
+        "name": "ListingBott",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://listingbott.com/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "#1 directory submission service on the market since 2022 Submit Website To Directories with Listin...",
+        "pricing": "Free"
+    },
+    {
+        "id": 660,
+        "category": "New Scraped Discoveries",
+        "name": "Submit Your AI Tool",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://toolsaiapp.com/submit-your-ai-tool/",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Join our community of innovators by listing your AI application or tool. Reach a wider audience and ...",
+        "pricing": "Free"
+    },
+    {
+        "id": 661,
+        "category": "New Scraped Discoveries",
+        "name": "Submit AI Tool",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://diraictory.com/submit",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Submit your AI tool to our comprehensive directory. Share your artificial intelligence application w...",
+        "pricing": "Free"
+    },
+    {
+        "id": 662,
+        "category": "New Scraped Discoveries",
+        "name": "ListYourTool.com",
+        "da": 30, // Default for new discoveries
+        "type": "Dofollow",
+        "url": "https://www.listyourtool.com/submit-tool",
+        "steps": [
+            "Visit the submission page.",
+            "Fill in your tool details (Name, URL, Tagline).",
+            "Submit for review."
+        ],
+        "tip": "Submit Your AI Tool to Our Directory Join the leading AI tools library and showcase your innovation ...",
+        "pricing": "Free"
     }
 ];
