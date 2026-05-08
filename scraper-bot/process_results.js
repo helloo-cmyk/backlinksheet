@@ -1,81 +1,102 @@
 const fs = require('fs');
-const csv = require('csv-parser');
+const path = require('path');
 
-const results = [];
-const sitesTsPath = '../src/data/sites.ts';
-let lastId = 600; // Starting ID for new discoveries
+const csvPath = 'd:/backlink-saas/scraper-bot/master_results.csv';
+const sitesTsPath = 'd:/backlink-saas/src/data/sites.ts';
 
-// Read existing sites.ts to avoid duplicates and find last ID
-if (fs.existsSync(sitesTsPath)) {
-    const content = fs.readFileSync(sitesTsPath, 'utf8');
-    const idMatches = content.match(/"id":\s*(\d+)/g);
-    if (idMatches) {
-        lastId = Math.max(...idMatches.map(m => parseInt(m.match(/\d+/)[0]))) + 1;
-    }
+if (!fs.existsSync(csvPath)) {
+    console.error("CSV file not found.");
+    process.exit(1);
 }
 
-console.log(`🚀 Starting merge from master_results.csv (Starting ID: ${lastId})`);
+const csvData = fs.readFileSync(csvPath, 'utf8');
+const lines = csvData.split('\n');
+const headers = lines[0].split(',');
 
-fs.createReadStream('master_results.csv')
-  .pipe(csv())
-  .on('data', (data) => results.push(data))
-  .on('end', () => {
-    // Filter for quality and relevance
-    const filtered = results.filter(site => {
-        const title = site['Website Title']?.toLowerCase() || '';
-        const url = site['Target URL']?.toLowerCase() || '';
-        const snippet = site['Description/Snippet']?.toLowerCase() || '';
-        
-        // Exclude common irrelevant stuff
-        const irrelevant = ['facebook', 'twitter', 'linkedin', 'google', 'blog', 'news', 'article', 'how-to', 'guide'];
-        const isIrrelevant = irrelevant.some(term => title.includes(term) || url.includes(term));
-        
-        // Must look like a directory or submission page
-        const isSubmission = title.includes('submit') || title.includes('add') || title.includes('directory') || title.includes('list') ||
-                           url.includes('submit') || url.includes('directory') || url.includes('add');
-        
-        return !isIrrelevant && isSubmission;
-    });
+const sitesTsContent = fs.readFileSync(sitesTsPath, 'utf8');
 
-    console.log(`✅ Filtered ${filtered.length} high-quality candidates from ${results.length} total raw links.`);
+const relevantKeywords = ['submit', 'directory', 'list', 'saas', 'startup', 'tool', 'ai', 'add', 'database', 'discover', 'explore'];
+const irrelevantKeywords = ['windows', 'how to', 'support', 'lifewire', 'geek', 'config', 'support.microsoft', 'theitbros', 'solveyourtech', 'thewindowsclub', 'techbout', 'howtogeek', 'windowsdigitals', 'windowsreport', 'intowindows', 'elevenforum', 'shellhacks', 'superuser', 'stackoverflow', 'spiceworks', 'techviral', 'windowsloop', 'popularmechanics', 'thisoldhouse', 'homegrail', 'bobvila', 'familyhandyman', 'tooltrip', 'popsci', 'ranker'];
 
-    let newEntries = '';
-    filtered.forEach((site, index) => {
-        const id = lastId + index;
-        const title = site['Website Title'].split(' - ')[0].split(' | ')[0].trim();
-        const url = site['Target URL'];
-        const snippet = site['Description/Snippet'].slice(0, 150).replace(/"/g, "'") + '...';
-        const email = site['Contact Email'] || '';
-        const contactUrl = site['Contact/Submit Page'] || '';
+const cleanResults = [];
+const seenDomains = new Set();
 
-        newEntries += `    {
+// Extract domains from sites.ts to avoid duplicates
+const domainRegex = /https?:\/\/([^\/\s"']+)/g;
+let match;
+while ((match = domainRegex.exec(sitesTsContent)) !== null) {
+    seenDomains.add(match[1].replace('www.', '').toLowerCase());
+}
+
+lines.slice(1).forEach(line => {
+    if (!line.trim()) return;
+    
+    // Split by comma but handle potential quotes
+    const parts = line.split(',');
+    if (parts.length < 2) return;
+    
+    const title = parts[0].trim().replace(/^"|"$/g, '');
+    const url = parts[1].trim().replace(/^"|"$/g, '');
+    const snippet = parts.slice(2).join(',').trim().replace(/^"|"$/g, '');
+
+    const lowerTitle = title.toLowerCase();
+    const lowerSnippet = snippet.toLowerCase();
+    const lowerUrl = url.toLowerCase();
+
+    // 1. Basic relevance check
+    const isRelevant = relevantKeywords.some(kw => lowerTitle.includes(kw) || lowerSnippet.includes(kw));
+    const isIrrelevant = irrelevantKeywords.some(kw => lowerTitle.includes(kw) || lowerSnippet.includes(kw) || lowerUrl.includes(kw));
+
+    if (isRelevant && !isIrrelevant) {
+        try {
+            const domain = new URL(url).hostname.replace('www.', '').toLowerCase();
+            if (!seenDomains.has(domain)) {
+                seenDomains.add(domain);
+                cleanResults.push({ title, url, snippet });
+            }
+        } catch (e) {}
+    }
+});
+
+console.log(`✅ Filtered down to ${cleanResults.length} high-quality, new sites.`);
+
+// Save cleaned CSV
+const newCsvContent = [lines[0], ...cleanResults.map(r => `"${r.title}","${r.url}","${r.snippet}"`)].join('\n');
+fs.writeFileSync(csvPath, newCsvContent);
+
+// Prepare sites.ts additions
+// Find the last ID in sites.ts
+const idMatch = sitesTsContent.match(/"id":\s*(\d+)/g);
+let lastId = 0;
+if (idMatch) {
+    lastId = Math.max(...idMatch.map(m => parseInt(m.match(/\d+/)[0])));
+}
+
+const newSites = cleanResults.map((site, index) => {
+    const id = lastId + index + 1;
+    return `    {
         "id": ${id},
         "category": "New Scraped Discoveries",
-        "name": "${title}",
-        "da": 30,
+        "name": "${site.title.split(' - ')[0].split(' | ')[0].trim()}",
+        "da": 30, // Default for new discoveries
         "type": "Dofollow",
-        "url": "${url}",
+        "url": "${site.url}",
         "steps": [
             "Visit the submission page.",
-            "Fill in your tool details.",
+            "Fill in your tool details (Name, URL, Tagline).",
             "Submit for review."
         ],
-        "tip": "${snippet}",
-        "pricing": "Free",
-        "contact_email": "${email}",
-        "contact_url": "${contactUrl}"
-    },\n`;
-    });
+        "tip": "${site.snippet.slice(0, 100)}...",
+        "pricing": "Free"
+    }`;
+});
 
-    if (newEntries) {
-        let sitesContent = fs.readFileSync(sitesTsPath, 'utf8');
-        // Find the last closing bracket of the array
-        const lastBracketIndex = sitesContent.lastIndexOf('];');
-        const updatedContent = sitesContent.slice(0, lastBracketIndex) + newEntries + sitesContent.slice(lastBracketIndex);
-        
-        fs.writeFileSync(sitesTsPath, updatedContent);
-        console.log(`🎉 Successfully appended ${filtered.length} new sites to src/data/sites.ts`);
-    } else {
-        console.log("⚠️ No new qualifying sites found to append.");
-    }
-  });
+if (newSites.length > 0) {
+    // Append to sites.ts before the final ]
+    const lastBracketIndex = sitesTsContent.lastIndexOf('];');
+    const updatedContent = sitesTsContent.slice(0, lastBracketIndex).trim() + ',\n' + newSites.join(',\n') + '\n];';
+    fs.writeFileSync(sitesTsPath, updatedContent);
+    console.log(`🚀 Successfully added ${newSites.length} sites to src/data/sites.ts`);
+} else {
+    console.log("No new sites to add to database.");
+}

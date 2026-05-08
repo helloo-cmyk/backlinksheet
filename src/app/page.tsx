@@ -1,330 +1,187 @@
-"use client";
+import Link from "next/link";
 
-import { useState, useEffect } from "react";
-import { sitesData } from "@/data/sites";
-import { createClient } from "@/utils/supabase/client";
-import { useRouter } from "next/navigation";
-import BacklinkDashboard from "./components/BacklinkDashboard";
-import ScraperBot from "./components/ScraperBot";
-import BulkTools from "./components/BulkTools";
-
-export default function Page() {
-  const router = useRouter();
-  const supabase = createClient();
-
-  const [user, setUser] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState<"backlinks" | "scraper" | "bulk">("backlinks");
-
-  // Projects state
-  const [projects, setProjects] = useState<any[]>([]);
-  const [activeProjectId, setActiveProjectId] = useState<string | null>(null);
-  const [showNewProjectModal, setShowNewProjectModal] = useState(false);
-  const [newProjectName, setNewProjectName] = useState("");
-  const [newProjectUrl, setNewProjectUrl] = useState("");
-
-  // Backlink state
-  const [backlinkData, setBacklinkData] = useState<Record<number, any>>({});
-  const [searchTerm, setSearchTerm] = useState("");
-  const [currentCategory, setCurrentCategory] = useState("All");
-  const [pricingFilter, setPricingFilter] = useState("all");
-  const [statusFilter, setStatusFilter] = useState("all");
-  const [copiedNoteId, setCopiedNoteId] = useState<number | null>(null);
-  const [activePitch, setActivePitch] = useState<{ id: number; text: string } | null>(null);
-
-  useEffect(() => {
-    const fetchSession = async () => {
-      const { data: { user }, error } = await supabase.auth.getUser();
-      if (error || !user) {
-        router.push("/login");
-        return;
-      }
-      setUser(user);
-      await loadProjects(user.id);
-    };
-    fetchSession();
-  }, []);
-
-  const loadProjects = async (userId: string) => {
-    const { data, error } = await supabase
-      .from("projects")
-      .select("*")
-      .eq("user_id", userId)
-      .order("created_at", { ascending: false });
-
-    if (data && data.length > 0) {
-      setProjects(data);
-      setActiveProjectId(data[0].id);
-      await loadProjectData(data[0].id);
-    } else {
-      setLoading(false);
-    }
-  };
-
-  const loadProjectData = async (projectId: string) => {
-    setLoading(true);
-    const { data } = await supabase
-      .from("project_backlinks")
-      .select("*")
-      .eq("project_id", projectId);
-
-    if (data) {
-      const dataMap: Record<number, any> = {};
-      data.forEach(d => {
-        dataMap[d.site_id] = d;
-      });
-      setBacklinkData(dataMap);
-    }
-    setLoading(false);
-  };
-
-  const switchProject = async (projectId: string) => {
-    setActiveProjectId(projectId);
-    await loadProjectData(projectId);
-  };
-
-  const createProject = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!newProjectName || !newProjectUrl) return;
-
-    const { data } = await supabase
-      .from("projects")
-      .insert([{ user_id: user.id, name: newProjectName, target_url: newProjectUrl }])
-      .select();
-
-    if (data && data.length > 0) {
-      setProjects([data[0], ...projects]);
-      setActiveProjectId(data[0].id);
-      setBacklinkData({});
-      setShowNewProjectModal(false);
-      setNewProjectName("");
-      setNewProjectUrl("");
-    }
-  };
-
-  const upsertBacklinkRecord = async (siteId: number, updates: any) => {
-    if (!activeProjectId) return;
-    
-    const { data: existing } = await supabase
-      .from("project_backlinks")
-      .select("id")
-      .eq("project_id", activeProjectId)
-      .eq("site_id", siteId)
-      .single();
-
-    if (existing) {
-      await supabase.from("project_backlinks").update(updates).eq("id", existing.id);
-    } else {
-      await supabase.from("project_backlinks").insert([{ project_id: activeProjectId, site_id: siteId, ...updates }]);
-    }
-  };
-
-  const handleNoteChange = async (id: number, text: string) => {
-    setBacklinkData({ ...backlinkData, [id]: { ...(backlinkData[id] || {}), notes: text } });
-  };
-
-  const updateStatus = async (id: number, status: string) => {
-    setBacklinkData({ ...backlinkData, [id]: { ...(backlinkData[id] || {}), status } });
-    await upsertBacklinkRecord(id, { status });
-  };
-
-  const insertDate = (id: number) => {
-    const dateStr = new Date().toLocaleDateString("en-US", { month: "short", day: "numeric" });
-    const currentNote = backlinkData[id]?.notes || "";
-    const newNote = currentNote + (currentNote ? "\n" : "") + `[${dateStr}] `;
-    handleNoteChange(id, newNote);
-    upsertBacklinkRecord(id, { notes: newNote });
-  };
-
-  const copyNotes = (id: number) => {
-    const note = backlinkData[id]?.notes || "";
-    navigator.clipboard.writeText(note);
-    setCopiedNoteId(id);
-    setTimeout(() => setCopiedNoteId(null), 2000);
-  };
-
-  const generatePitch = (site: any) => {
-    const activeProject = projects.find(p => p.id === activeProjectId);
-    const projectName = activeProject?.name || "my SaaS";
-    const projectUrl = activeProject?.target_url || "our website";
-    const templates = [
-      `Hi ${site.name} Team,\n\nI just discovered your directory and was impressed by the quality of tools listed. I'm building ${projectName} (${projectUrl}) and would love to submit it for a listing. \n\nCould you let me know the best way to get featured? \n\nBest regards,\nFounder, ${projectName}`,
-      `Hello,\n\nI'm reaching out to see if you're still accepting new submissions for the ${site.category} section on ${site.name}. We recently launched ${projectName} and I think it would be a great fit for your audience.\n\nLooking forward to hearing from you!\n\nCheers,\n${projectName} Team`
-    ];
-    const pitch = templates[Math.floor(Math.random() * templates.length)];
-    setActivePitch({ id: site.id, text: pitch });
-  };
-
-  const handleLogout = async () => {
-    await supabase.auth.signOut();
-    router.push("/login");
-  };
-
-  const categories = ["All", ...Array.from(new Set(sitesData.map((s) => s.category)))];
-  const completedCount = Object.values(backlinkData).filter((d: any) => d.status === "live").length;
-  const progressPercent = sitesData.length > 0 ? Math.round((completedCount / sitesData.length) * 100) : 0;
-  const activeProject = projects.find(p => p.id === activeProjectId);
-
-  if (loading && projects.length === 0) {
-    return <div className="min-h-screen bg-zinc-950 flex items-center justify-center"><div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div></div>;
-  }
-
+export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans selection:bg-blue-500/30 flex flex-col">
-      {/* Modals */}
-      {activePitch && (
-        <div className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 max-w-lg w-full shadow-2xl">
-            <h2 className="text-xl font-bold mb-4 text-white flex items-center gap-2">AI Pitch Generator</h2>
-            <textarea readOnly className="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-4 mb-6 text-zinc-300 text-sm h-48 outline-none" value={activePitch.text} />
-            <div className="flex gap-3">
-              <button onClick={() => setActivePitch(null)} className="flex-1 py-3 bg-zinc-800 rounded-lg font-semibold hover:bg-zinc-700">Close</button>
-              <button onClick={() => { navigator.clipboard.writeText(activePitch.text); alert("Copied!"); }} className="flex-1 py-3 bg-blue-600 text-white rounded-lg font-semibold">Copy Pitch</button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {showNewProjectModal && (
-        <div className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 max-w-md w-full">
-            <h2 className="text-xl font-bold mb-6 text-white">Create New Project</h2>
-            <form onSubmit={createProject} className="space-y-4">
-              <input required type="text" value={newProjectName} onChange={e => setNewProjectName(e.target.value)} className="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-3 text-white outline-none" placeholder="Project Name" />
-              <input required type="url" value={newProjectUrl} onChange={e => setNewProjectUrl(e.target.value)} className="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-3 text-white outline-none" placeholder="https://acme.com" />
-              <div className="flex gap-3 mt-8">
-                <button type="button" onClick={() => setShowNewProjectModal(false)} className="flex-1 py-3 bg-zinc-800 rounded-lg font-semibold">Cancel</button>
-                <button type="submit" className="flex-1 py-3 bg-blue-600 text-white rounded-lg font-semibold">Create</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
-
-      {/* Header */}
-      <header className="sticky top-0 z-50 flex items-center justify-between px-8 py-4 bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-800 shadow-sm">
+    <div className="min-h-screen bg-zinc-950 text-white font-sans selection:bg-blue-500/30 overflow-x-hidden">
+      
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full z-50 border-b border-white/5 bg-zinc-950/80 backdrop-blur-md px-8 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3 text-2xl font-extrabold tracking-tight">
           <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(37,99,235,0.4)]">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
           </div>
-          <span className="text-white">Backlink<span className="text-blue-500 font-medium">Dash</span></span>
+          <span>Backlink<span className="text-blue-500 font-medium">Dash</span></span>
+        </div>
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+          <a href="#features" className="hover:text-white transition-colors">Features</a>
+          <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
+          <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
         </div>
         <div className="flex items-center gap-4">
-          <div className="flex items-center bg-zinc-900 border border-zinc-800 rounded-full px-6 py-1.5 gap-6">
-            <div className="flex flex-col items-center">
-              <span className="text-xl font-extrabold text-white">{sitesData.length}</span>
-              <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-semibold">Total</span>
-            </div>
-            <div className="w-px h-5 bg-zinc-700"></div>
-            <div className="flex flex-col items-center">
-              <span className="text-xl font-extrabold text-blue-500">{completedCount}</span>
-              <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-semibold">Done</span>
-            </div>
-          </div>
-          <button onClick={handleLogout} className="p-2 rounded-full bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-white" title="Logout">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
-          </button>
+          <Link href="/login" className="text-sm font-semibold text-zinc-400 hover:text-white transition-colors">Login</Link>
+          <Link href="/dashboard" className="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-full text-sm font-bold transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)]">
+            Start Prospecting
+          </Link>
         </div>
-      </header>
+      </nav>
 
-      <div className="flex flex-1 overflow-hidden">
-        {/* Sidebar */}
-        <aside className="w-72 bg-zinc-900/40 border-r border-zinc-800 p-6 overflow-y-auto custom-scrollbar flex flex-col gap-8 shrink-0">
-          <div>
-            <div className="flex justify-between items-center mb-4 text-xs font-bold text-zinc-500 uppercase tracking-widest">
-              <span>Your Projects</span>
-              <button onClick={() => setShowNewProjectModal(true)} className="text-blue-500 hover:text-blue-400">+</button>
-            </div>
-            <ul className="space-y-1.5">
-              {projects.map(p => (
-                <li key={p.id}>
-                  <button onClick={() => switchProject(p.id)} className={`w-full text-left px-4 py-2 rounded-lg text-sm transition-all flex items-center gap-3 ${activeProjectId === p.id ? "bg-blue-600 text-white font-medium" : "text-zinc-400 hover:bg-zinc-800"}`}>
-                    <div className={`w-2 h-2 rounded-full ${activeProjectId === p.id ? 'bg-white' : 'bg-zinc-600'}`}></div>
-                    <span className="truncate">{p.name}</span>
-                  </button>
-                </li>
-              ))}
-            </ul>
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-20 px-8 overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.1),transparent_70%)] pointer-events-none"></div>
+        <div className="max-w-5xl mx-auto text-center relative z-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            New: AI Pitch Generator v2.0
           </div>
-
-          <nav className="space-y-1.5">
-            <div className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Features</div>
-            <button onClick={() => setActiveTab("backlinks")} className={`w-full flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium transition-all ${activeTab === 'backlinks' ? 'bg-zinc-800 text-white' : 'text-zinc-400 hover:bg-zinc-800/50'}`}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-              Backlinks
-            </button>
-            <button onClick={() => setActiveTab("scraper")} className={`w-full flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium transition-all ${activeTab === 'scraper' ? 'bg-zinc-800 text-white' : 'text-zinc-400 hover:bg-zinc-800/50'}`}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-              Scraper Bot
-            </button>
-            <button onClick={() => setActiveTab("bulk")} className={`w-full flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium transition-all ${activeTab === 'bulk' ? 'bg-zinc-800 text-white' : 'text-zinc-400 hover:bg-zinc-800/50'}`}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-              Bulk Tools
-            </button>
-          </nav>
-
-          {activeTab === "backlinks" && (
-            <div>
-              <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Categories</h3>
-              <ul className="space-y-1.5 max-h-64 overflow-y-auto custom-scrollbar pr-2">
-                {categories.map((cat) => (
-                  <li key={cat}>
-                    <button onClick={() => setCurrentCategory(cat)} className={`w-full text-left px-4 py-2 rounded-lg text-sm transition-all flex items-center justify-between group ${currentCategory === cat ? "bg-zinc-800 text-white font-medium" : "text-zinc-400 hover:bg-zinc-800/50"}`}>
-                      <span className="truncate">{cat}</span>
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          <div className="mt-auto">
-            <div className="flex justify-between items-center mb-3">
-              <span className="text-sm font-semibold text-zinc-300">Progress</span>
-              <span className="text-sm font-bold text-blue-500">{progressPercent}%</span>
-            </div>
-            <div className="h-2 w-full bg-zinc-800 rounded-full overflow-hidden">
-              <div className="h-full bg-blue-500 transition-all duration-500" style={{ width: `${progressPercent}%` }}></div>
+          <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-8 bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent leading-[1.1]">
+            Stop Chasing Backlinks.<br />
+            <span className="text-blue-500">Start Dominating SERPs.</span>
+          </h1>
+          <p className="text-lg md:text-xl text-zinc-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+            The world's first automated prospecting engine for SaaS founders. Discover, scrape, and pitch 500+ high-DA directories in minutes, not months.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link href="/dashboard" className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-lg font-bold transition-all transform hover:-translate-y-1 shadow-[0_10px_30px_rgba(37,99,235,0.4)]">
+              Get 76+ Free Backlinks Now
+            </Link>
+            <a href="#features" className="w-full sm:w-auto px-8 py-4 bg-zinc-900 hover:bg-zinc-800 text-white rounded-xl text-lg font-bold border border-zinc-800 transition-all">
+              Watch Demo
+            </a>
+          </div>
+          
+          {/* Dashboard Preview Mockup */}
+          <div className="mt-20 relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+            <div className="relative bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="flex items-center gap-1.5 px-4 py-3 bg-zinc-800/50 border-b border-zinc-800">
+                <div className="w-3 h-3 rounded-full bg-rose-500/50"></div>
+                <div className="w-3 h-3 rounded-full bg-amber-500/50"></div>
+                <div className="w-3 h-3 rounded-full bg-emerald-500/50"></div>
+                <div className="ml-4 flex-1 bg-zinc-950 rounded py-1 px-3 text-[10px] text-zinc-600 text-left">https://backlinkdash.vercel.app/dashboard</div>
+              </div>
+              <div className="aspect-video bg-zinc-950 flex items-center justify-center">
+                 <div className="text-zinc-800 font-bold text-4xl">DASHBOARD PREVIEW</div>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent"></div>
             </div>
           </div>
-        </aside>
-
-        {/* Content Area */}
-        <div className="flex-1 flex flex-col overflow-hidden">
-          {activeTab === "backlinks" && (
-            <BacklinkDashboard 
-              activeProject={activeProject}
-              backlinkData={backlinkData}
-              searchTerm={searchTerm}
-              setSearchTerm={setSearchTerm}
-              pricingFilter={pricingFilter}
-              setPricingFilter={setPricingFilter}
-              statusFilter={statusFilter}
-              setStatusFilter={setStatusFilter}
-              currentCategory={currentCategory}
-              onUpdateStatus={updateStatus}
-              onHandleNoteChange={handleNoteChange}
-              onUpsertRecord={upsertBacklinkRecord}
-              onInsertDate={insertDate}
-              onCopyNotes={copyNotes}
-              onGeneratePitch={generatePitch}
-              copiedNoteId={copiedNoteId}
-            />
-          )}
-          {activeTab === "scraper" && <ScraperBot />}
-          {activeTab === "bulk" && (
-            <BulkTools 
-              projectId={activeProjectId} 
-              backlinkData={backlinkData} 
-              onBulkUpdate={async (ids, updates) => {
-                for (const id of ids) {
-                  await updateStatus(id, updates.status);
-                }
-              }} 
-            />
-          )}
         </div>
-      </div>
+      </section>
+
+      {/* Features Grid */}
+      <section id="features" className="py-24 px-8 bg-zinc-900/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-black mb-4">Built for Aggressive SEO.</h2>
+            <p className="text-zinc-500 max-w-xl mx-auto">Everything you need to scale your backlink profile without hiring an expensive agency.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Feature 1 */}
+            <div className="bg-zinc-900/50 border border-zinc-800 p-8 rounded-2xl hover:border-blue-500/50 transition-all group">
+              <div className="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6 border border-blue-500/20 group-hover:scale-110 transition-transform">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Advanced Scraper</h3>
+              <p className="text-sm text-zinc-500 leading-relaxed">Our bot deep-crawls the web using 50+ unique footprints to find hidden directories and submission portals your competitors miss.</p>
+            </div>
+            {/* Feature 2 */}
+            <div className="bg-zinc-900/50 border border-zinc-800 p-8 rounded-2xl hover:border-blue-500/50 transition-all group">
+              <div className="w-12 h-12 bg-indigo-600/10 rounded-xl flex items-center justify-center mb-6 border border-indigo-500/20 group-hover:scale-110 transition-transform">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366f1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">AI Pitch Generator</h3>
+              <p className="text-sm text-zinc-500 leading-relaxed">Generate personalized, high-converting outreach messages in one click. No more "Hi, please list me" emails.</p>
+            </div>
+            {/* Feature 3 */}
+            <div className="bg-zinc-900/50 border border-zinc-800 p-8 rounded-2xl hover:border-blue-500/50 transition-all group">
+              <div className="w-12 h-12 bg-emerald-600/10 rounded-xl flex items-center justify-center mb-6 border border-emerald-500/20 group-hover:scale-110 transition-transform">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Live Monitoring</h3>
+              <p className="text-sm text-zinc-500 leading-relaxed">We automatically check if your backlinks are still active. Get notified the second a link is dropped or changed.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof / Stats */}
+      <section className="py-20 px-8 border-y border-white/5">
+        <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="text-center">
+            <div className="text-4xl font-black text-white mb-1">500+</div>
+            <div className="text-xs uppercase tracking-widest text-zinc-500 font-bold">Directories</div>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-black text-blue-500 mb-1">12k</div>
+            <div className="text-xs uppercase tracking-widest text-zinc-500 font-bold">Links Built</div>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-black text-white mb-1">94%</div>
+            <div className="text-xs uppercase tracking-widest text-zinc-500 font-bold">Success Rate</div>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-black text-blue-500 mb-1">24/7</div>
+            <div className="text-xs uppercase tracking-widest text-zinc-500 font-bold">Monitoring</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-24 px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-black mb-16">Simple Pricing. Infinite Links.</h2>
+          <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-12 relative overflow-hidden group">
+             <div className="absolute top-0 right-0 px-6 py-2 bg-blue-600 text-[10px] font-black uppercase tracking-widest rounded-bl-xl">Best Value</div>
+             <div className="text-zinc-400 uppercase tracking-widest font-bold text-xs mb-4">Lifetime Access</div>
+             <div className="text-6xl font-black text-white mb-6">$49<span className="text-2xl text-zinc-600 font-medium">/once</span></div>
+             <ul className="space-y-4 mb-10 text-zinc-400">
+               <li className="flex items-center justify-center gap-2">
+                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                 Full Database Access (500+ Sites)
+               </li>
+               <li className="flex items-center justify-center gap-2">
+                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                 Unlimited AI Pitches
+               </li>
+               <li className="flex items-center justify-center gap-2">
+                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                 Unlimited Scraper Usage
+               </li>
+               <li className="flex items-center justify-center gap-2">
+                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                 Lifetime Support & Updates
+               </li>
+             </ul>
+             <Link href="/dashboard" className="block w-full py-4 bg-white text-black rounded-xl text-lg font-bold hover:bg-zinc-200 transition-all shadow-[0_10px_30px_rgba(255,255,255,0.1)]">
+               Get Started for Free
+             </Link>
+             <p className="mt-4 text-[10px] text-zinc-600 font-medium uppercase tracking-widest">No credit card required for free trials.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12 px-8 border-t border-white/5 bg-zinc-950">
+        <div className="max-w-6xl mx-auto flex flex-col md:row items-center justify-between gap-8">
+          <div className="flex items-center gap-3 text-xl font-extrabold tracking-tight">
+            <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            </div>
+            <span>Backlink<span className="text-blue-500 font-medium">Dash</span></span>
+          </div>
+          <div className="text-[10px] text-zinc-600 uppercase tracking-widest font-bold">
+            © 2026 BacklinkDash. All rights reserved.
+          </div>
+          <div className="flex gap-6 text-xs text-zinc-500 font-medium">
+            <a href="#" className="hover:text-white transition-colors">Privacy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms</a>
+            <a href="#" className="hover:text-white transition-colors">Twitter</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
