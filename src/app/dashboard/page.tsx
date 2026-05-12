@@ -113,9 +113,9 @@ export default function DashboardPage() {
       .single();
 
     if (existing) {
-      await supabase.from("project_backlinks").update(updates).eq("id", existing.id);
+      await supabase.from("project_backlinks").update({ ...updates, last_checked_at: new Date().toISOString() }).eq("id", existing.id);
     } else {
-      await supabase.from("project_backlinks").insert([{ project_id: activeProjectId, site_id: siteId, ...updates }]);
+      await supabase.from("project_backlinks").insert([{ project_id: activeProjectId, site_id: siteId, ...updates, last_checked_at: new Date().toISOString() }]);
     }
   };
 
@@ -124,8 +124,9 @@ export default function DashboardPage() {
   };
 
   const updateStatus = async (id: number, status: string) => {
-    setBacklinkData({ ...backlinkData, [id]: { ...(backlinkData[id] || {}), status } });
-    await upsertBacklinkRecord(id, { status });
+    const now = new Date().toISOString();
+    setBacklinkData({ ...backlinkData, [id]: { ...(backlinkData[id] || {}), status, last_checked_at: now } });
+    await upsertBacklinkRecord(id, { status, last_checked_at: now });
   };
 
   const insertDate = (id: number) => {
@@ -161,8 +162,31 @@ export default function DashboardPage() {
   };
 
   const categories = ["All", ...Array.from(new Set(sitesData.map((s) => s.category)))];
-  const completedCount = Object.values(backlinkData).filter((d: any) => d.status === "live").length;
-  const progressPercent = sitesData.length > 0 ? Math.round((completedCount / sitesData.length) * 100) : 0;
+  
+  const backlinkValues = Object.values(backlinkData);
+  const submittedCount = backlinkValues.filter((d: any) => d.status === "submitted").length;
+  const liveCount = backlinkValues.filter((d: any) => d.status === "live").length;
+  
+  const today = new Date().toLocaleDateString("en-CA"); // YYYY-MM-DD
+  const todayCount = backlinkValues.filter((d: any) => 
+    d.last_checked_at && d.last_checked_at.startsWith(today) && (d.status === "submitted" || d.status === "live")
+  ).length;
+
+  const progressPercent = sitesData.length > 0 ? Math.round(((submittedCount + liveCount) / sitesData.length) * 100) : 0;
+  
+  // Find last activity
+  const sortedByTime = [...backlinkValues].sort((a, b) => 
+    new Date(b.last_checked_at || 0).getTime() - new Date(a.last_checked_at || 0).getTime()
+  );
+  const lastActiveSiteId = sortedByTime[0]?.site_id;
+  const lastActiveSite = sitesData.find(s => s.id === lastActiveSiteId);
+
+  // Find next pending
+  const nextPendingSite = sitesData.find(s => 
+    (currentCategory === "All" || s.category === currentCategory) && 
+    (!backlinkData[s.id] || backlinkData[s.id].status === "pending")
+  );
+
   const activeProject = projects.find(p => p.id === activeProjectId);
 
   if (loading && projects.length === 0) {
@@ -210,15 +234,25 @@ export default function DashboardPage() {
           <span className="text-white">Backlink<span className="text-blue-500 font-medium">Dash</span></span>
         </div>
         <div className="flex items-center gap-4">
-          <div className="flex items-center bg-zinc-900 border border-zinc-800 rounded-full px-6 py-1.5 gap-6">
+          <div className="flex items-center bg-zinc-900 border border-zinc-800 rounded-full px-6 py-2 gap-6 shadow-inner">
             <div className="flex flex-col items-center">
               <span className="text-xl font-extrabold text-white">{sitesData.length}</span>
-              <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-semibold">Total</span>
+              <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Library</span>
             </div>
-            <div className="w-px h-5 bg-zinc-700"></div>
+            <div className="w-px h-6 bg-zinc-800"></div>
             <div className="flex flex-col items-center">
-              <span className="text-xl font-extrabold text-blue-500">{completedCount}</span>
-              <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-semibold">Done</span>
+              <span className="text-xl font-extrabold text-indigo-400">{submittedCount}</span>
+              <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Submitted</span>
+            </div>
+            <div className="w-px h-6 bg-zinc-800"></div>
+            <div className="flex flex-col items-center">
+              <span className="text-xl font-extrabold text-emerald-500">{liveCount}</span>
+              <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Live</span>
+            </div>
+            <div className="w-px h-6 bg-zinc-800"></div>
+            <div className="flex flex-col items-center group relative">
+              <span className="text-xl font-extrabold text-orange-400 animate-pulse">{todayCount}</span>
+              <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Today</span>
             </div>
           </div>
           <button onClick={handleLogout} className="p-2 rounded-full bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-white" title="Logout">
@@ -264,17 +298,45 @@ export default function DashboardPage() {
           </nav>
 
           {activeTab === "backlinks" && (
-            <div>
-              <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Categories</h3>
-              <ul className="space-y-1.5 max-h-64 overflow-y-auto custom-scrollbar pr-2">
-                {categories.map((cat) => (
-                  <li key={cat}>
-                    <button onClick={() => setCurrentCategory(cat)} className={`w-full text-left px-4 py-2 rounded-lg text-sm transition-all flex items-center justify-between group ${currentCategory === cat ? "bg-zinc-800 text-white font-medium" : "text-zinc-400 hover:bg-zinc-800/50"}`}>
-                      <span className="truncate">{cat}</span>
-                    </button>
-                  </li>
-                ))}
-              </ul>
+            <div className="flex flex-col gap-6">
+              {lastActiveSite && (
+                <div className="bg-zinc-800/30 border border-zinc-800 rounded-xl p-4">
+                  <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest block mb-2">Last Activity</span>
+                  <div className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                    <span className="text-sm font-medium text-white truncate">{lastActiveSite.name}</span>
+                  </div>
+                </div>
+              )}
+
+              {nextPendingSite && (
+                <div className="bg-blue-600/10 border border-blue-500/20 rounded-xl p-4">
+                  <span className="text-[10px] font-bold text-blue-400 uppercase tracking-widest block mb-2">Next to Submit</span>
+                  <p className="text-sm font-semibold text-white mb-3 truncate">{nextPendingSite.name}</p>
+                  <button 
+                    onClick={() => {
+                      setSearchTerm(nextPendingSite.name);
+                      setCurrentCategory(nextPendingSite.category);
+                    }}
+                    className="w-full py-1.5 bg-blue-600 text-white text-[10px] font-bold uppercase rounded-lg hover:bg-blue-500 transition-colors"
+                  >
+                    Jump to Site
+                  </button>
+                </div>
+              )}
+
+              <div>
+                <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Categories</h3>
+                <ul className="space-y-1.5 max-h-64 overflow-y-auto custom-scrollbar pr-2">
+                  {categories.map((cat) => (
+                    <li key={cat}>
+                      <button onClick={() => setCurrentCategory(cat)} className={`w-full text-left px-4 py-2 rounded-lg text-sm transition-all flex items-center justify-between group ${currentCategory === cat ? "bg-zinc-800 text-white font-medium" : "text-zinc-400 hover:bg-zinc-800/50"}`}>
+                        <span className="truncate">{cat}</span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           )}
 

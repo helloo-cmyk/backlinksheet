@@ -171,6 +171,7 @@ export default function BacklinkDashboard({
                     onChange={(e) => onUpdateStatus(site.id, e.target.value)}
                     className={`w-full py-2.5 rounded-lg text-sm font-bold text-center appearance-none cursor-pointer transition-all outline-none border
                       ${currentStatus === 'live' ? 'bg-emerald-600 text-white border-emerald-500 shadow-[0_4px_12px_rgba(16,185,129,0.3)]' : 
+                        currentStatus === 'submitted' ? 'bg-indigo-600 text-white border-indigo-500 shadow-[0_4px_12px_rgba(79,70,229,0.3)]' :
                         currentStatus === 'outreach' ? 'bg-blue-600 text-white border-blue-500 shadow-[0_4px_12px_rgba(37,99,235,0.3)]' :
                         currentStatus === 'rejected' ? 'bg-rose-600 text-white border-rose-500' :
                         'bg-zinc-800 text-zinc-400 border-zinc-700 hover:text-white hover:bg-zinc-700'
@@ -178,6 +179,7 @@ export default function BacklinkDashboard({
                   >
                     <option value="pending">⏳ Pending</option>
                     <option value="outreach">✉️ Outreach</option>
+                    <option value="submitted">📥 Submitted</option>
                     <option value="live">✅ Live</option>
                     <option value="rejected">❌ Rejected</option>
                   </select>

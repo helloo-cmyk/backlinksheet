@@ -12,7 +12,7 @@ create table public.project_backlinks (
   id uuid default gen_random_uuid() primary key,
   project_id uuid references public.projects(id) on delete cascade not null,
   site_id integer not null,
-  status text check (status in ('pending', 'outreach', 'live', 'rejected', 'dropped')) default 'pending',
+  status text check (status in ('pending', 'outreach', 'submitted', 'live', 'rejected', 'dropped')) default 'pending',
   contact_email text,
   contact_url text,
   notes text default '',
