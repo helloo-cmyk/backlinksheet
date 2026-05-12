@@ -203,7 +203,7 @@ export const sitesData = [
     },
     {
         "id": 14,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "Toolify.ai",
         "da": 58,
         "type": "Dofollow",
@@ -3127,7 +3127,7 @@ export const sitesData = [
     },
     {
         "id": 252,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "Futurepedia",
         "da": 62,
         "type": "Nofollow",
@@ -3141,7 +3141,7 @@ export const sitesData = [
     },
     {
         "id": 253,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "There's An AI For That",
         "da": 65,
         "type": "Nofollow",
@@ -3168,7 +3168,7 @@ export const sitesData = [
     },
     {
         "id": 255,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "Top AI Tools",
         "da": 50,
         "type": "Nofollow",
@@ -3206,34 +3206,8 @@ export const sitesData = [
         "pricing": "Free"
     },
     {
-        "id": 258,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AllThingsAI",
-        "da": 52,
-        "type": "Nofollow",
-        "url": "https://allthingsai.com/submit",
-        "steps": [
-            "Submit and wait for review."
-        ],
-        "tip": "Curated AI directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 259,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AIScout",
-        "da": 45,
-        "type": "Nofollow",
-        "url": "https://aiscout.net/submit-tool/",
-        "steps": [
-            "Submit tool details."
-        ],
-        "tip": "Large database of AI tools.",
-        "pricing": "Free"
-    },
-    {
         "id": 260,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "EasyWithAI",
         "da": 40,
         "type": "Nofollow",
@@ -3242,19 +3216,6 @@ export const sitesData = [
             "Submit form."
         ],
         "tip": "User-friendly directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 261,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AICYclopedia",
-        "da": 42,
-        "type": "Nofollow",
-        "url": "https://aicyclopedia.com/submit-a-tool/",
-        "steps": [
-            "Submit URL."
-        ],
-        "tip": "Growing AI library.",
         "pricing": "Free"
     },
     {
@@ -3271,21 +3232,8 @@ export const sitesData = [
         "pricing": "Free"
     },
     {
-        "id": 263,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AI-Hunter",
-        "da": 40,
-        "type": "Nofollow",
-        "url": "https://ai-hunter.io/submit-a-tool/",
-        "steps": [
-            "Submit form."
-        ],
-        "tip": "Niche AI hunting site.",
-        "pricing": "Free"
-    },
-    {
         "id": 264,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "AIToolNet",
         "da": 35,
         "type": "Nofollow",
@@ -3307,19 +3255,6 @@ export const sitesData = [
             "Submit tool."
         ],
         "tip": "Tech and AI directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 266,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "Wikiaitools",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://wikiaitools.com/",
-        "steps": [
-            "Submit info."
-        ],
-        "tip": "Wiki-style directory.",
         "pricing": "Free"
     },
     {
@@ -3346,45 +3281,6 @@ export const sitesData = [
             "Submit URL."
         ],
         "tip": "General AI directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 269,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "LetsView",
-        "da": 75,
-        "type": "Nofollow",
-        "url": "https://letsview.com/",
-        "steps": [
-            "Reach out for partnership/listing."
-        ],
-        "tip": "High DA tech site.",
-        "pricing": "Free"
-    },
-    {
-        "id": 270,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "UneedBest",
-        "da": 45,
-        "type": "Nofollow",
-        "url": "https://uneedbest.com/",
-        "steps": [
-            "Submit your tool."
-        ],
-        "tip": "Startup-focused directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 271,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "Insidr.ai",
-        "da": 42,
-        "type": "Nofollow",
-        "url": "https://www.insidr.ai/",
-        "steps": [
-            "Submit for review."
-        ],
-        "tip": "Professional AI guide site.",
         "pricing": "Free"
     },
     {
@@ -3415,7 +3311,7 @@ export const sitesData = [
     },
     {
         "id": 274,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "DoMore.ai",
         "da": 40,
         "type": "Nofollow",
@@ -3428,7 +3324,7 @@ export const sitesData = [
     },
     {
         "id": 276,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "AiXploria",
         "da": 40,
         "type": "Nofollow",
@@ -3441,7 +3337,7 @@ export const sitesData = [
     },
     {
         "id": 277,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "OpenTools",
         "da": 45,
         "type": "Nofollow",
@@ -3454,7 +3350,7 @@ export const sitesData = [
     },
     {
         "id": 278,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "FindMyAITool",
         "da": 42,
         "type": "Nofollow",
@@ -3463,71 +3359,6 @@ export const sitesData = [
             "Submit URL."
         ],
         "tip": "Clean search engine for AI.",
-        "pricing": "Free"
-    },
-    {
-        "id": 279,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "YouAI.tools",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://youai.tools/",
-        "steps": [
-            "Submit tool."
-        ],
-        "tip": "General AI tools.",
-        "pricing": "Free"
-    },
-    {
-        "id": 280,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "ChatGPtdemo",
-        "da": 45,
-        "type": "Nofollow",
-        "url": "https://chatgptdemo.com/",
-        "steps": [
-            "Submit your GPT or AI tool."
-        ],
-        "tip": "High traffic for GPT-related tools.",
-        "pricing": "Free"
-    },
-    {
-        "id": 281,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "GptE.ai",
-        "da": 40,
-        "type": "Nofollow",
-        "url": "https://gpte.ai/submit-a-tool/",
-        "steps": [
-            "Submit form."
-        ],
-        "tip": "GPT ecosystem directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 282,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "GPTsHunter",
-        "da": 42,
-        "type": "Nofollow",
-        "url": "https://gptshunter.com/",
-        "steps": [
-            "Submit your custom GPT."
-        ],
-        "tip": "Essential for OpenAI GPT builders.",
-        "pricing": "Free"
-    },
-    {
-        "id": 283,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "Igniter.ai",
-        "da": 40,
-        "type": "Nofollow",
-        "url": "https://igniter.ai/",
-        "steps": [
-            "Submit your tool for indexing."
-        ],
-        "tip": "Clean AI resource site.",
         "pricing": "Free"
     },
     {
@@ -3544,32 +3375,6 @@ export const sitesData = [
         "pricing": "Free"
     },
     {
-        "id": 285,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AIWorldTools",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://aiworldtools.com/",
-        "steps": [
-            "Submit URL."
-        ],
-        "tip": "Global AI reach.",
-        "pricing": "Free"
-    },
-    {
-        "id": 286,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "EverythingAI",
-        "da": 40,
-        "type": "Nofollow",
-        "url": "https://everythingai.club/",
-        "steps": [
-            "Submit to the club."
-        ],
-        "tip": "Community-driven directory.",
-        "pricing": "Free"
-    },
-    {
         "id": 287,
         "category": "SaaS, AI & Startup Directories",
         "name": "AIValley",
@@ -3580,19 +3385,6 @@ export const sitesData = [
             "Submit for review."
         ],
         "tip": "High quality AI catalog.",
-        "pricing": "Free"
-    },
-    {
-        "id": 288,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AISTacked",
-        "da": 40,
-        "type": "Nofollow",
-        "url": "https://aistacked.com/",
-        "steps": [
-            "Submit tool stack."
-        ],
-        "tip": "SaaS and AI stack focus.",
         "pricing": "Free"
     },
     {
@@ -3635,32 +3427,6 @@ export const sitesData = [
         "pricing": "Free"
     },
     {
-        "id": 292,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AIToolkit",
-        "da": 45,
-        "type": "Nofollow",
-        "url": "https://aitoolkit.org/",
-        "steps": [
-            "Submit your open toolkit."
-        ],
-        "tip": "Developer and AI toolkit focus.",
-        "pricing": "Free"
-    },
-    {
-        "id": 293,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "SeekMe.ai",
-        "da": 38,
-        "type": "Nofollow",
-        "url": "https://seekme.ai/",
-        "steps": [
-            "Submit tool."
-        ],
-        "tip": "AI search discovery.",
-        "pricing": "Free"
-    },
-    {
         "id": 294,
         "category": "SaaS, AI & Startup Directories",
         "name": "FutureAIWiki",
@@ -3671,19 +3437,6 @@ export const sitesData = [
             "Submit info."
         ],
         "tip": "Wiki-style directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 295,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "SoftGist",
-        "da": 40,
-        "type": "Nofollow",
-        "url": "https://softgist.com/",
-        "steps": [
-            "Submit software."
-        ],
-        "tip": "General software directory.",
         "pricing": "Free"
     },
     {
@@ -3713,19 +3466,6 @@ export const sitesData = [
         "pricing": "Free"
     },
     {
-        "id": 298,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "BlogRags",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://blogrags.com/",
-        "steps": [
-            "Submit your tool blog."
-        ],
-        "tip": "Niche blog and tool directory.",
-        "pricing": "Free"
-    },
-    {
         "id": 299,
         "category": "SaaS, AI & Startup Directories",
         "name": "Library Phygital",
@@ -3740,7 +3480,7 @@ export const sitesData = [
     },
     {
         "id": 300,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "AITools.fyi",
         "da": 42,
         "type": "Nofollow",
@@ -3749,32 +3489,6 @@ export const sitesData = [
             "Submit your tool info."
         ],
         "tip": "Clean info-first directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 301,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "FutureForgeZ",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://futureforgez.com/",
-        "steps": [
-            "Submit tool."
-        ],
-        "tip": "New tech focus.",
-        "pricing": "Free"
-    },
-    {
-        "id": 302,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "ToolsAI.net",
-        "da": 40,
-        "type": "Nofollow",
-        "url": "https://toolsai.net/",
-        "steps": [
-            "Submit URL."
-        ],
-        "tip": "General AI resource.",
         "pricing": "Free"
     },
     {
@@ -3792,7 +3506,7 @@ export const sitesData = [
     },
     {
         "id": 305,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "FindMyAITool.io",
         "da": 40,
         "type": "Nofollow",
@@ -3818,7 +3532,7 @@ export const sitesData = [
     },
     {
         "id": 308,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "ToolSpedia",
         "da": 42,
         "type": "Nofollow",
@@ -3827,32 +3541,6 @@ export const sitesData = [
             "Submit tool."
         ],
         "tip": "Large SaaS/AI library.",
-        "pricing": "Free"
-    },
-    {
-        "id": 309,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AIListo",
-        "da": 38,
-        "type": "Nofollow",
-        "url": "https://ailisto.com/",
-        "steps": [
-            "Submit tool."
-        ],
-        "tip": "Simple list directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 310,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "NanAI Tools",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://nanai.tools/",
-        "steps": [
-            "Submit tool."
-        ],
-        "tip": "Modern AI focus.",
         "pricing": "Free"
     },
     {
@@ -3869,58 +3557,6 @@ export const sitesData = [
         "pricing": "Free"
     },
     {
-        "id": 312,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AI Alert",
-        "da": 38,
-        "type": "Nofollow",
-        "url": "https://aialert.io/",
-        "steps": [
-            "Submit for feature."
-        ],
-        "tip": "Alert-based discovery.",
-        "pricing": "Free"
-    },
-    {
-        "id": 313,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "Tools Index",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://toolsindex.ai/",
-        "steps": [
-            "Submit URL."
-        ],
-        "tip": "Comprehensive AI index.",
-        "pricing": "Free"
-    },
-    {
-        "id": 314,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AI Tools Info",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://aitoolsinfo.com/",
-        "steps": [
-            "Add your tool."
-        ],
-        "tip": "Info-centric directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 315,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AIBleak",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://aibleak.com/",
-        "steps": [
-            "Submit tool."
-        ],
-        "tip": "Niche tech catalog.",
-        "pricing": "Free"
-    },
-    {
         "id": 316,
         "category": "SaaS, AI & Startup Directories",
         "name": "Insane AI Tools",
@@ -3934,19 +3570,6 @@ export const sitesData = [
         "pricing": "Free"
     },
     {
-        "id": 317,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AI Tree",
-        "da": 38,
-        "type": "Nofollow",
-        "url": "https://aitree.io/",
-        "steps": [
-            "Add link to tree."
-        ],
-        "tip": "Visual AI directory.",
-        "pricing": "Free"
-    },
-    {
         "id": 318,
         "category": "SaaS, AI & Startup Directories",
         "name": "SaaS Adviser",
@@ -3957,19 +3580,6 @@ export const sitesData = [
             "Submit SaaS/AI software."
         ],
         "tip": "Professional advisory directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 319,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AI Zip",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://aizip.net/",
-        "steps": [
-            "Submit tool."
-        ],
-        "tip": "Minimalist index.",
         "pricing": "Free"
     },
     {
@@ -3987,7 +3597,7 @@ export const sitesData = [
     },
     {
         "id": 321,
-        "category": "SaaS, AI & Startup Directories",
+        "category": "Paid & Freemium Directories",
         "name": "EasySaveAI",
         "da": 35,
         "type": "Nofollow",
@@ -3996,45 +3606,6 @@ export const sitesData = [
             "Submit tool."
         ],
         "tip": "Curation focus.",
-        "pricing": "Free"
-    },
-    {
-        "id": 322,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AI Repo Hub",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://airepohub.com/",
-        "steps": [
-            "Submit repository."
-        ],
-        "tip": "Repo style directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 323,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "RateNow AI",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://ratenow.ai/",
-        "steps": [
-            "Submit for rating."
-        ],
-        "tip": "Review-based discovery.",
-        "pricing": "Free"
-    },
-    {
-        "id": 324,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "OpenWorld AI",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://openworldai.com/",
-        "steps": [
-            "Add tool."
-        ],
-        "tip": "Global AI catalog.",
         "pricing": "Free"
     },
     {
@@ -4048,19 +3619,6 @@ export const sitesData = [
             "Submit tool info."
         ],
         "tip": "Clean list directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 326,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "BotPanels",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://botpanels.com/",
-        "steps": [
-            "Submit your AI bot."
-        ],
-        "tip": "Bot-specific directory.",
         "pricing": "Free"
     },
     {
@@ -4100,19 +3658,6 @@ export const sitesData = [
             "Submit URL."
         ],
         "tip": "Standard directory.",
-        "pricing": "Free"
-    },
-    {
-        "id": 330,
-        "category": "SaaS, AI & Startup Directories",
-        "name": "AI Toolz",
-        "da": 35,
-        "type": "Nofollow",
-        "url": "https://aitoolz.ai/",
-        "steps": [
-            "Add tool."
-        ],
-        "tip": "Simple index.",
         "pricing": "Free"
     },
     {
@@ -7363,7 +6908,7 @@ export const sitesData = [
         "id": 587,
         "category": "New Scraped Discoveries",
         "name": "Submit a Tool",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://submitatool.com/",
         "steps": [
@@ -7378,7 +6923,7 @@ export const sitesData = [
         "id": 588,
         "category": "New Scraped Discoveries",
         "name": "Submit a Tool",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.monkeyaitools.com/submit-tool",
         "steps": [
@@ -7393,7 +6938,7 @@ export const sitesData = [
         "id": 589,
         "category": "New Scraped Discoveries",
         "name": "Submit Tool to the AI Tools Directory",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://aitoolsdirectory.com/submit-tool",
         "steps": [
@@ -7408,7 +6953,7 @@ export const sitesData = [
         "id": 590,
         "category": "New Scraped Discoveries",
         "name": "Submit a Tool",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://aimojo.io/submit/",
         "steps": [
@@ -7423,7 +6968,7 @@ export const sitesData = [
         "id": 591,
         "category": "New Scraped Discoveries",
         "name": "Submit your Tool",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.iatools.tools/submit-your-tool/",
         "steps": [
@@ -7438,7 +6983,7 @@ export const sitesData = [
         "id": 592,
         "category": "New Scraped Discoveries",
         "name": "Submit AI Tools",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://submitaitools.org/",
         "steps": [
@@ -7453,7 +6998,7 @@ export const sitesData = [
         "id": 593,
         "category": "New Scraped Discoveries",
         "name": "We Submit Your SaaS to 140+ Directories Effortlessly",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://submitsaas.com/",
         "steps": [
@@ -7468,7 +7013,7 @@ export const sitesData = [
         "id": 594,
         "category": "New Scraped Discoveries",
         "name": "Submit your Saas to 300+ Startup Directories",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://saaspedia.io/submit-your-saas/",
         "steps": [
@@ -7483,7 +7028,7 @@ export const sitesData = [
         "id": 595,
         "category": "New Scraped Discoveries",
         "name": "Submit Your Saas",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://submityoursaas.com/",
         "steps": [
@@ -7498,7 +7043,7 @@ export const sitesData = [
         "id": 596,
         "category": "New Scraped Discoveries",
         "name": "150 Directories And Platforms To List Your SaaS",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://launchpedia.co/list-my-saas/",
         "steps": [
@@ -7513,7 +7058,7 @@ export const sitesData = [
         "id": 597,
         "category": "New Scraped Discoveries",
         "name": "160+ SaaS Directory Sites [List] to Submit Your SaaS Product",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://amrytt.com/saas-directory-sites/",
         "steps": [
@@ -7528,7 +7073,7 @@ export const sitesData = [
         "id": 598,
         "category": "New Scraped Discoveries",
         "name": "Good AI Tools",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://aitoolly.com/product/good-ai-tools",
         "steps": [
@@ -7543,7 +7088,7 @@ export const sitesData = [
         "id": 599,
         "category": "New Scraped Discoveries",
         "name": "Software Directory Submission Service",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.gtmworks.ai/services/software-submission-service",
         "steps": [
@@ -7558,7 +7103,7 @@ export const sitesData = [
         "id": 600,
         "category": "New Scraped Discoveries",
         "name": "Free Startup Submission Directories: 1000+ Sites for 2026",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://digitalbiztalk.com/article/the-ultimate-2026-guide-to-startup-submission-directories",
         "steps": [
@@ -7573,7 +7118,7 @@ export const sitesData = [
         "id": 601,
         "category": "New Scraped Discoveries",
         "name": "50+ Startup Directories & Launch Platforms (2026)",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://startupproject.org/resources/places-to-launch/",
         "steps": [
@@ -7588,7 +7133,7 @@ export const sitesData = [
         "id": 602,
         "category": "New Scraped Discoveries",
         "name": "The 19 best places to list your startup (UPDATED 2026)",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://flocksy.com/resources/how-to-list-your-startup-and-the-top-20-startup-directories-for-site-visibility/",
         "steps": [
@@ -7603,7 +7148,7 @@ export const sitesData = [
         "id": 603,
         "category": "New Scraped Discoveries",
         "name": "Top 20 Startup Directories to Promote Your Business in 2024",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.feedbear.com/blog/startup-directories",
         "steps": [
@@ -7618,7 +7163,7 @@ export const sitesData = [
         "id": 604,
         "category": "New Scraped Discoveries",
         "name": "Best Directories and Listings to Submit Your Startup in 2025",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.upsilonit.com/blog/best-startup-directories-to-submit-your-startup",
         "steps": [
@@ -7633,7 +7178,7 @@ export const sitesData = [
         "id": 605,
         "category": "New Scraped Discoveries",
         "name": "Top 11 Startup Submission Sites (2026) · Blog · Avinash Vagh",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://avinashvagh.com/blog/startup-submission-sites",
         "steps": [
@@ -7648,7 +7193,7 @@ export const sitesData = [
         "id": 606,
         "category": "New Scraped Discoveries",
         "name": "20 Startup Directories to Submit Your Startup Today",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://noonlaunch.com/blog/20-startup-directories-to-submit-your-startup-today",
         "steps": [
@@ -7663,7 +7208,7 @@ export const sitesData = [
         "id": 607,
         "category": "New Scraped Discoveries",
         "name": "The Ultimate List of the Top AI Tool Directories — Best AI Tools",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://directories.bestaitools.com/",
         "steps": [
@@ -7678,7 +7223,7 @@ export const sitesData = [
         "id": 608,
         "category": "New Scraped Discoveries",
         "name": "Largest & Best AI Tools Directory",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://aichief.com/",
         "steps": [
@@ -7693,7 +7238,7 @@ export const sitesData = [
         "id": 609,
         "category": "New Scraped Discoveries",
         "name": "Open Source Tools Directory",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.theinfinity.dev/tools",
         "steps": [
@@ -7708,7 +7253,7 @@ export const sitesData = [
         "id": 610,
         "category": "New Scraped Discoveries",
         "name": "AI Tools Directory 2025: Find Top AI Software & Apps",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.ebdirectory.com/",
         "steps": [
@@ -7723,7 +7268,7 @@ export const sitesData = [
         "id": 611,
         "category": "New Scraped Discoveries",
         "name": "AI Tools Directory",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://caioz.com/ai-tools-directory-2025/",
         "steps": [
@@ -7738,7 +7283,7 @@ export const sitesData = [
         "id": 612,
         "category": "New Scraped Discoveries",
         "name": "ENUM: 93+ Best Directories to Submit Your Tool",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.enumhq.com/directory-list",
         "steps": [
@@ -7753,7 +7298,7 @@ export const sitesData = [
         "id": 613,
         "category": "New Scraped Discoveries",
         "name": "Write a review",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://help.trustpilot.com/s/article/Write-a-review?language=en_US",
         "steps": [
@@ -7768,7 +7313,7 @@ export const sitesData = [
         "id": 614,
         "category": "New Scraped Discoveries",
         "name": "Top 100 Review Submission Sites for SEO (2025-2026)",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://searchenginetactics.com/top-100-review-submission-sites-for-seo-2025-2026/",
         "steps": [
@@ -7783,7 +7328,7 @@ export const sitesData = [
         "id": 615,
         "category": "New Scraped Discoveries",
         "name": "Free Review Posting Sites List",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.digital-web-services.com/review-posting-sites-list.html",
         "steps": [
@@ -7798,7 +7343,7 @@ export const sitesData = [
         "id": 616,
         "category": "New Scraped Discoveries",
         "name": "110+ High DA Review Submission Sites List",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://theseopedia.com/review-submission-sites-list",
         "steps": [
@@ -7813,7 +7358,7 @@ export const sitesData = [
         "id": 617,
         "category": "New Scraped Discoveries",
         "name": "30+ Review Sites to Collect More Customer Reviews in 2026",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://embedsocial.com/blog/review-sites/",
         "steps": [
@@ -7828,7 +7373,7 @@ export const sitesData = [
         "id": 618,
         "category": "New Scraped Discoveries",
         "name": "100+ High DA Review Submission Site List [2026 Updated]",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://linkscope.io/blog/review-submission-site-list/",
         "steps": [
@@ -7843,7 +7388,7 @@ export const sitesData = [
         "id": 619,
         "category": "New Scraped Discoveries",
         "name": "100+ High DA Review Submission Sites List (2026)",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.goforpost.com/list/high-da-review-submission-sites-list/",
         "steps": [
@@ -7858,7 +7403,7 @@ export const sitesData = [
         "id": 620,
         "category": "New Scraped Discoveries",
         "name": "Best Website Review Sites in 2025",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://listandfuse.com/website-review-sites/",
         "steps": [
@@ -7873,7 +7418,7 @@ export const sitesData = [
         "id": 621,
         "category": "New Scraped Discoveries",
         "name": "80+ SaaS Tools Dominating The Market In 2026",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.cloudzero.com/blog/saas-tools/",
         "steps": [
@@ -7888,7 +7433,7 @@ export const sitesData = [
         "id": 622,
         "category": "New Scraped Discoveries",
         "name": "20+ Best SaaS Tools for Businesses in 2026",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://makesaasbetter.com/saas-tools/",
         "steps": [
@@ -7903,7 +7448,7 @@ export const sitesData = [
         "id": 623,
         "category": "New Scraped Discoveries",
         "name": "30 Best SaaS Tools for Teams",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.madx.digital/learn/saas-tools",
         "steps": [
@@ -7918,7 +7463,7 @@ export const sitesData = [
         "id": 624,
         "category": "New Scraped Discoveries",
         "name": "36 Must-Have SaaS Tools For Businesses [2026 List]",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.proofhub.com/articles/saas-tools-for-businesses",
         "steps": [
@@ -7933,7 +7478,7 @@ export const sitesData = [
         "id": 625,
         "category": "New Scraped Discoveries",
         "name": "50 Most Popular SaaS Applications to Use in 2025",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.deduxer.studio/blog/50-most-popular-saas-applications-to-use-in-2024",
         "steps": [
@@ -7948,7 +7493,7 @@ export const sitesData = [
         "id": 626,
         "category": "New Scraped Discoveries",
         "name": "Top 30 SaaS Tools for Business in 2026",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.chatbase.co/blog/saas-tools",
         "steps": [
@@ -7963,7 +7508,7 @@ export const sitesData = [
         "id": 627,
         "category": "New Scraped Discoveries",
         "name": "30+ trending SaaS tools for businesses of all sizes (2026)",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://replug.io/blog/best-saas-tools",
         "steps": [
@@ -7978,7 +7523,7 @@ export const sitesData = [
         "id": 628,
         "category": "New Scraped Discoveries",
         "name": "SaaS Tools List: 160+ SaaS Tools for Online Business",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://serpforge.io/saas-tools-list/",
         "steps": [
@@ -7993,7 +7538,7 @@ export const sitesData = [
         "id": 629,
         "category": "New Scraped Discoveries",
         "name": "20 Free Resources to Submit Your Startup or SaaS Company",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://createandgrow.com/free-resources/",
         "steps": [
@@ -8008,7 +7553,7 @@ export const sitesData = [
         "id": 630,
         "category": "New Scraped Discoveries",
         "name": "10 Best Free Startup Directories to Launch (2026)",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://launchdirectories.com/top-10-free-launch-directories",
         "steps": [
@@ -8023,7 +7568,7 @@ export const sitesData = [
         "id": 631,
         "category": "New Scraped Discoveries",
         "name": "Startup Directory",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.earlylaunch.online/",
         "steps": [
@@ -8038,7 +7583,7 @@ export const sitesData = [
         "id": 632,
         "category": "New Scraped Discoveries",
         "name": "Top 99 Places to Promote Your Startup for Free",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://getlaunchlist.com/blog/top-99-places-to-promote-your-startup-for-free",
         "steps": [
@@ -8053,7 +7598,7 @@ export const sitesData = [
         "id": 633,
         "category": "New Scraped Discoveries",
         "name": "377 Places to Submit Your Startup",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://eyre.ai/where-submit-website/",
         "steps": [
@@ -8068,7 +7613,7 @@ export const sitesData = [
         "id": 634,
         "category": "New Scraped Discoveries",
         "name": "90+ Best Search Engine Submission Sites Updated List for Fast Indexing",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://yelomarketing.com/search-engine-submission-sites/",
         "steps": [
@@ -8083,7 +7628,7 @@ export const sitesData = [
         "id": 635,
         "category": "New Scraped Discoveries",
         "name": "100+ Search Engine Submission Sites for Fast Index [Updated]",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://webmetools.com/blog/search-engine-submission-sites",
         "steps": [
@@ -8098,7 +7643,7 @@ export const sitesData = [
         "id": 636,
         "category": "New Scraped Discoveries",
         "name": "Top AI Tool Directories in 2025",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://devtechinsights.com/tool-directories-2025/",
         "steps": [
@@ -8113,7 +7658,7 @@ export const sitesData = [
         "id": 637,
         "category": "New Scraped Discoveries",
         "name": "Best Link Submission Platforms to Boost Your SEO Backlinks in 2025",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://linkbuilder.com/blog/best-link-submission-platforms",
         "steps": [
@@ -8128,7 +7673,7 @@ export const sitesData = [
         "id": 638,
         "category": "New Scraped Discoveries",
         "name": "Top 5 Free Websites to Submit AI Tools",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://toollist.ai/article/top-5-free-websites-to-submit-ai-tools",
         "steps": [
@@ -8143,7 +7688,7 @@ export const sitesData = [
         "id": 639,
         "category": "New Scraped Discoveries",
         "name": "50+ Free Search Engine Submission Sites",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.mindmingles.com/search-engine-submission-sites/",
         "steps": [
@@ -8158,7 +7703,7 @@ export const sitesData = [
         "id": 640,
         "category": "New Scraped Discoveries",
         "name": "Home",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://submit.com/",
         "steps": [
@@ -8173,7 +7718,7 @@ export const sitesData = [
         "id": 641,
         "category": "New Scraped Discoveries",
         "name": "Submission and SEO software from Submit Suite",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "http://submitsuite.com/",
         "steps": [
@@ -8188,7 +7733,7 @@ export const sitesData = [
         "id": 642,
         "category": "New Scraped Discoveries",
         "name": "Submit Corner",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.submitcorner.com/Tools/Submit/",
         "steps": [
@@ -8203,7 +7748,7 @@ export const sitesData = [
         "id": 643,
         "category": "New Scraped Discoveries",
         "name": "Submit Your AI Tool",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://aitools.inc/submit",
         "steps": [
@@ -8218,7 +7763,7 @@ export const sitesData = [
         "id": 644,
         "category": "New Scraped Discoveries",
         "name": "SubmitPal",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://submitpal.net/",
         "steps": [
@@ -8233,7 +7778,7 @@ export const sitesData = [
         "id": 645,
         "category": "New Scraped Discoveries",
         "name": "Free Website/URL submission tools help search engines discover and ...",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.submitshop.com/free-submit/",
         "steps": [
@@ -8248,7 +7793,7 @@ export const sitesData = [
         "id": 646,
         "category": "New Scraped Discoveries",
         "name": "Home",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://submityouraitool.com/",
         "steps": [
@@ -8263,7 +7808,7 @@ export const sitesData = [
         "id": 647,
         "category": "New Scraped Discoveries",
         "name": "Search for....",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://thesaasdirectory.com/",
         "steps": [
@@ -8278,7 +7823,7 @@ export const sitesData = [
         "id": 648,
         "category": "New Scraped Discoveries",
         "name": "Top SaaS Directories",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.topsaasdirectories.com/",
         "steps": [
@@ -8293,7 +7838,7 @@ export const sitesData = [
         "id": 649,
         "category": "New Scraped Discoveries",
         "name": "Free List of 170+ SaaS Directories to Submit your Startup",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://getleadwave.io/list-of-saas-directories",
         "steps": [
@@ -8308,7 +7853,7 @@ export const sitesData = [
         "id": 650,
         "category": "New Scraped Discoveries",
         "name": "Curated List Of The Top 20 SaaS Product Directories",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://revenuezen.com/saas-directories/",
         "steps": [
@@ -8323,7 +7868,7 @@ export const sitesData = [
         "id": 651,
         "category": "New Scraped Discoveries",
         "name": "SaaS Directory",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://saasdirectory.app/",
         "steps": [
@@ -8338,7 +7883,7 @@ export const sitesData = [
         "id": 652,
         "category": "New Scraped Discoveries",
         "name": "SaaS Directory Finder & List of SaaS Directories — Redline Digital",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://redline.digital/saas-directories/",
         "steps": [
@@ -8353,7 +7898,7 @@ export const sitesData = [
         "id": 653,
         "category": "New Scraped Discoveries",
         "name": "40+ Best Directories to Submit Your SaaS Product in 2026",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://saasconsult.co/blog/top-directories-to-list-your-saas/",
         "steps": [
@@ -8368,7 +7913,7 @@ export const sitesData = [
         "id": 654,
         "category": "New Scraped Discoveries",
         "name": "The 42 Best Tools of 2026",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.techgearlab.com/topics/tools/best-tools",
         "steps": [
@@ -8383,7 +7928,7 @@ export const sitesData = [
         "id": 655,
         "category": "New Scraped Discoveries",
         "name": "Submit AI Tool",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://aitoolsdir.com/submit-ai-tool/",
         "steps": [
@@ -8398,7 +7943,7 @@ export const sitesData = [
         "id": 656,
         "category": "New Scraped Discoveries",
         "name": "Submit an AI Tool",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://aitoolsdirectory.site/submit.html",
         "steps": [
@@ -8413,7 +7958,7 @@ export const sitesData = [
         "id": 657,
         "category": "New Scraped Discoveries",
         "name": "Submit Tool",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://aitoolslist.com/submit/",
         "steps": [
@@ -8428,7 +7973,7 @@ export const sitesData = [
         "id": 658,
         "category": "New Scraped Discoveries",
         "name": "50+ Best AI Directories to Submit Your Tool (2025 Guide)",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://listmyai.net/blog/ai-directories-submit-your-tool",
         "steps": [
@@ -8443,7 +7988,7 @@ export const sitesData = [
         "id": 659,
         "category": "New Scraped Discoveries",
         "name": "ListingBott",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://listingbott.com/",
         "steps": [
@@ -8458,7 +8003,7 @@ export const sitesData = [
         "id": 660,
         "category": "New Scraped Discoveries",
         "name": "Submit Your AI Tool",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://toolsaiapp.com/submit-your-ai-tool/",
         "steps": [
@@ -8473,7 +8018,7 @@ export const sitesData = [
         "id": 661,
         "category": "New Scraped Discoveries",
         "name": "Submit AI Tool",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://diraictory.com/submit",
         "steps": [
@@ -8488,7 +8033,7 @@ export const sitesData = [
         "id": 662,
         "category": "New Scraped Discoveries",
         "name": "ListYourTool.com",
-        "da": 30, // Default for new discoveries
+        "da": 30,
         "type": "Dofollow",
         "url": "https://www.listyourtool.com/submit-tool",
         "steps": [
